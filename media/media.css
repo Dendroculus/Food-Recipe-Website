@@ -1,0 +1,10 @@
+@font-face {
+        font-family: "Shipporo Mincho";
+        src: url("../assets/fonts/ShipporoMincho-Regular.ttf") format ('truetype');
+        font-weight: 700;
+}
+
+p {
+    text-align: left;
+    font-family: "Shippori Mincho", serif;
+}
