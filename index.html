@@ -1,56 +1,60 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-
-
-<style>
-  @font-face {
-  font-family: 'Shippori Mincho';
-  src: url('../assets/fonts/ShipporiMincho-Bold.ttf') format('truetype');
-  font-weight: 700;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  font-family: 'Shippori Mincho', serif;
-  font-weight: bold;
-}
-
-/* inline block agar semua list dalam 1 baris, margin right agar spasi ke kanan */
-li {
-  display: inline-block; 
-  margin-right: 15px;
-  background-color: #f16b8a;
-  padding: 5px 10px 8px 12px;
-  align-items: center;
-  border-radius: 50px;
-  border: 1px solid #ccc;
-}
-
-/* agar gad text biru dan garis biru */
-li a {
-  color: #000000;
-  text-decoration: none; 
-}
-
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CSS-Only Dropdown</title>
+  <link rel="stylesheet" href="index.css" />
 </head>
 <body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#">
+        <img src="assets/images/KNY-Logo.png" alt="Site logo" />
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul class="menu">
+          <li class="menu-item has-submenu">
+            <a href="#" class="menu-link">Story</a>
+            <ul class="submenu">
+              <li><a href="#">Arcs</a></li>
+              <li><a href="#">Episodes</a></li>
+              <li><a href="#">Timeline</a></li>
+            </ul>
+          </li>
 
-<nav>
+          <li class="menu-item has-submenu">
+            <a href="#" class="menu-link">Characters</a>
+            <ul class="submenu">
+              <li><a href="#">Demons Slayers</a></li>
+              <li><a href="#">Hashira</a></li>
+              <li><a href="#">Demons</a></li>
+              <li><a href="#">Upper Rank</a></li>
+              <li><a href="#">Lower Rank</a></li>
+              <li><a href="#">Supporting</a></li>
+            </ul>
+          </li>
 
-<ul>
-  <li><a href="/characters/index.html">Characters</a></li>
-  <li><a href="/story/index.html">Story</a></li>
-  <li><a href="/entertainment/index.html">Entertainment</a></li>
-  <li><a href="/media/index.html">Media</a></li>
-  <li><a href="/pillars/index.html">Pillars</a></li>
-</ul>
+          <li class="menu-item has-submenu">
+            <a href="#" class="menu-link">Media</a>
+            <ul class="submenu">
+              <li><a href="#">Anime</a></li>
+              <li><a href="#">Manga</a></li>
+              <li><a href="#">Movies</a></li>
+            </ul>
+          </li>
 
-</nav>
-
-
+          <li class="menu-item has-submenu">
+            <a href="#" class="menu-link">Entertainment</a>
+            <ul class="submenu">
+              <li><a href="#">Games</a></li>
+              <li><a href="#">Musics</a></li>
+              <li><a href="#">Soundtracks</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 </body>
 </html>
