@@ -1,10 +1,191 @@
-@font-face {
-        font-family: "Shipporo Mincho";
-        src: url("../assets/fonts/ShipporoMincho-Regular.ttf") format ('truetype');
-        font-weight: 700;
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    margin: 0;
 }
 
-p {
-    text-align: left;
+@font-face {
+    font-family: "Shipporo Mincho";
+    src: url(/assets/fonts/ShipporiMincho-SemiBold.ttf) format("truetype");
+    font-weight: 700;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(7, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.caption {
+    background: linear-gradient(135deg, #36080e, #852020);
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.caption h3 {
+    font-size: 50px;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
     font-family: "Shippori Mincho", serif;
+}
+                
+.subtitle {
+    font-size: 40px;
+    opacity: 0.9;
+    font-family: "Shippori Mincho", serif;
+}
+                
+.content {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    background-color: #f1e1e1;
+}
+        
+.manga-cover {
+    text-align: center;
+    margin-bottom: 20px;
+}
+        
+.manga-cover img {
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    height: 500px;
+
+}
+                
+.section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #340404;
+}
+                
+.section:last-child {
+    border-bottom: none;
+}
+                
+.section h3 {
+    color: #35020d;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #7b1111;
+    font-size: 40px;
+}
+                
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+                
+.info-item {
+    background-color: #fceded;
+    padding: 12px;
+    border-radius: 5px;
+    border-left: 4px solid #852020;
+}
+                
+.info-label {
+    font-weight: bold;
+    font-size: 25px;
+    color: #360d0d;
+    margin-bottom: 5px;
+}
+
+.info {
+    font-size: 20px;
+    font-family: "Shippori Mincho", serif;
+}
+        
+.character-item {
+    list-style-type: disc;
+    font-size: 20px;
+    padding: 5px 0;
+    margin-left: 0;
+}
+                
+.chapter-list {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    gap: 10px;
+    padding-left: 0;
+}
+                
+.chapter-item {
+    background-color: #f9f9f9;
+    padding: 12px 15px;
+    border-radius: 5px;
+    font-size: 30px;
+}
+                
+.chapter-item:hover {
+    background-color: #eef2f7;
+    transform: translateY(-2px);
+}
+                
+.chapter-number {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #852020;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px;
+    margin-right: 10px;
+    font-size: 30px;
+}
+                
+.synopsis-item {
+    background-color: #e8bbbb;
+    padding: 20px;
+    border-radius: 5px;
+    line-height: 1.8;
+}
+
+.synopsis-item p {
+    font-size: 30px;
+}
+                
+.highlight {
+    color: #852020;
+    font-weight: bold;
+}
+        
+.left-column {
+    grid-column: 1;
+}
+        
+.right-column {
+    grid-column: 2;
+}
+                
+@media (max-width: 768px) {
+    .info-grid, .chapters-list {
+        grid-template-columns: 1fr;
+    }
+            
+    .content {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+            
+    .left-column, .right-column {
+        grid-column: 1;
+    }
+                    
+    .caption h3 {
+        font-size: 2rem;
+    }
+
 }
