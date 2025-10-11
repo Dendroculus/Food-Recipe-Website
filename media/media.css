@@ -1,9 +1,83 @@
-body {
-    background-color: #f5f5f5;
-    color: #333;
-    line-height: 1.6;
-    padding: 20px;
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body {
+  height: 100%;
+  font-family: var(--font);
+  background: rgb(44, 12, 12);
+  color: var(--text);
+}
+
+.navbar {
+    background: linear-gradient(135deg, #36080e, #470a0a);
+    padding: 0 30px;
+    border-bottom: 2px solid #2d0707;
+}
+
+.manga-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0;
+    padding: 0;
+    height: 120px;
+    gap: 30px;
+}
+
+.manga-menu li {
+    margin: 0;
+    padding: 0;
+}
+
+.manga-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    display: block;
+    font-family: "Shippori Mincho", serif;
+    font-size: 30px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.manga-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.manga-menu a:active {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+    .manga-menu {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px 0;
+    }
+    
+    .manga-menu a {
+        padding: 10px 15px;
+        font-size: 14px;
+        margin: 2px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 0 15px;
+    }
+    
+    .nav-menu {
+        justify-content: space-around;
+    }
+    
+    .nav-menu a {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
 }
 
 @font-face {
@@ -13,8 +87,8 @@ body {
 }
 
 .container {
+    margin-top: 50px;
     max-width: 900px;
-    margin: 0 auto;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(7, 0, 0, 0.1);
@@ -51,7 +125,7 @@ body {
         
 .manga-cover {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
         
 .manga-cover img {
@@ -63,13 +137,8 @@ body {
 }
                 
 .section {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     padding-bottom: 20px;
-    border-bottom: 1px solid #340404;
-}
-                
-.section:last-child {
-    border-bottom: none;
 }
                 
 .section h3 {
@@ -83,12 +152,12 @@ body {
 .info-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 15px;
+    gap: 10px;
     margin-bottom: 20px;
 }
                 
 .info-item {
-    background-color: #fceded;
+    background-color: #f8eeee;
     padding: 12px;
     border-radius: 5px;
     border-left: 4px solid #852020;
@@ -110,45 +179,51 @@ body {
     list-style-type: disc;
     font-size: 20px;
     padding: 5px 0;
-    margin-left: 0;
+    margin-left: 25px;
 }
                 
 .chapter-list {
     list-style-type: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
-    gap: 10px;
     padding-left: 0;
 }
                 
 .chapter-item {
-    background-color: #f9f9f9;
-    padding: 12px 15px;
-    border-radius: 5px;
+    background: white;
+    padding: 18px 25px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
     font-size: 30px;
+    font-weight: bold;
 }
                 
 .chapter-item:hover {
-    background-color: #eef2f7;
-    transform: translateY(-2px);
+    border-color: #852020;
+    box-shadow: 0 4px 12px rgba(133, 32, 32, 0.15);
+    transform: translateX(5px);
 }
                 
 .chapter-number {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    background-color: #852020;
+    background: #852020;
     color: white;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 25px;
-    margin-right: 10px;
-    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    flex-shrink: 0;
 }
                 
 .synopsis-item {
     background-color: #e8bbbb;
-    padding: 20px;
+    padding: 25px;
     border-radius: 5px;
     line-height: 1.8;
 }
