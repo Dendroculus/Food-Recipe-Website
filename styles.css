@@ -14,30 +14,24 @@
   width: 100%;
   list-style: none;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   padding: 1.5rem 2.5rem;
-}
-
-.left, .celestial, .right {
-  display: flex;
   align-items: center;
 }
 
 .nav-left {
   display: flex;
   gap: 1.5rem;
-  text-transform: uppercase;
 }
 
 .navtop a {
   position: relative;
   text-decoration: none;
   color: #007A70;
-  text-transform: uppercase;
   font-weight: 600;
   font-size: 0.9rem;
   padding-bottom: 3px;
+  text-transform: uppercase;
 }
 
 .navtop a::after {
@@ -61,8 +55,6 @@
 
 .navtop-dropdown {
   opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
   transform: translateY(6px);
   transition: opacity 160ms ease, transform 160ms ease;
   position: absolute;
@@ -73,21 +65,15 @@
   background: #fff;
   box-shadow: 0 6px 18px rgba(0,0,0,0.12);
   border-radius: 8px;
-  z-index: 50;
   display: flex;
   flex-direction: column;
+  pointer-events: none;
 }
 
-.dropdown-container:hover .navtop-dropdown,
-.dropdown-container:focus-within .navtop-dropdown {
+.dropdown-container:hover .navtop-dropdown {
   opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
   transform: translateY(0);
-}
-
-.dropdown-container:hover > .recipes-link {
-  color: #00BFA5;
+  pointer-events: auto;
 }
 
 .navtop-dropdown li a {
@@ -116,13 +102,13 @@
 }
 
 .right {
-  justify-content: flex-end;
+  display: flex;
   gap: 1.5rem;
+  justify-content: flex-end;
 }
 
 .right img {
   width: 2rem;
-  height: auto;
   filter: brightness(0);
   transition: filter 0.2s ease;
 }
