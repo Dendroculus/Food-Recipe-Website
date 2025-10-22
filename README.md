@@ -8,7 +8,7 @@
 
 
 <p align="center">
-  <em>A clean, lightweight, and modern starting point for your delicious food blog or recipe collection. Inspired by elegant and functional designs like Jamie Oliver's website.</em>
+  <em>A clean, lightweight, and modern starting point for your delicious food blog or recipe collection. Inspired by elegant and functional designs inspired by Jamie Oliver's website.</em>
 </p>
 
 
