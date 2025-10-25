@@ -22,7 +22,7 @@ body {
     display: flex;
     margin: 5rem auto;
     width: 62rem;
-    border: 2px solid;
+    border: 1px solid;
     border-radius: 2.5rem;
     box-shadow: 0 0 2rem ;
 }
@@ -32,6 +32,7 @@ body {
     flex-direction: column;
     width: 50%;
     padding: 2rem;
+    border-radius: 2rem 0 0 2rem;
 }
 
 #head{
@@ -74,7 +75,7 @@ body {
 
 .form_login input[type ="email"]:invalid,
 .form_login input[type ="password"]:invalid{
-    border: 2px solid red;
+    border: 1px solid red;
 }
 
 #footer{
@@ -86,7 +87,7 @@ body {
 }
 
 #footer label{
-    margin-right: 7.5rem;
+    margin-right: 9rem;
 }
 
 #footer a{
@@ -151,9 +152,9 @@ body {
 #right{
     width: 50%;
     padding: 2rem;
-    border: 2px solid;
     display: flex;
     flex-direction: column;
+    border-radius: 0 2rem 2rem 0;
 }
 
 .head_right{
@@ -175,3 +176,96 @@ body {
 
 .form_signup input[type ="text"],
 .form_signup input[type ="email"],
+.form_signup input[type ="password"]{
+    padding: 0.8rem 0.7rem;
+    margin-bottom: 1.5rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    border: 1px solid gray;
+    outline: none;
+    box-shadow: 0 0.5rem 1rem rgb(192, 184, 184);
+}
+
+.form_signup input[type ="text"]:invalid,
+.form_signup input[type ="email"]:invalid,
+.form_signup input[type ="password"]:invalid{
+    border: 1px solid red;
+}
+
+#footer_signup{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 1rem;
+    margin-top: 1rem;
+}
+
+#button_signup{
+    margin:1.5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0.8rem 0;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    border-radius: 1rem;
+    text-decoration: none;
+    box-shadow: 0 0.5rem 1.5rem rgb(192, 184, 184);
+}
+
+#or_signup{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: grey;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+#or_signup::before,
+#or_signup::after{
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #aaa;
+}
+
+#or_signup::after{
+    margin-left: 0.5rem;
+}
+
+#or_signup::before{
+    margin-right: 0.5rem;
+}
+
+#sign_in{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1rem;
+    margin-bottom: 1rem;
+}
+
+.container_gambar_signup{
+    margin-top: 1rem;   
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* responsive */
+/* @media (max-width: 900px){
+    .form_box{
+        flex-direction: column;
+        width: 90%;
+    }
+
+    #left,
+    #right{
+        width: 100%;
+    }
+
+    #footer label{
+        margin-right: 2rem;
+    }
+} */
