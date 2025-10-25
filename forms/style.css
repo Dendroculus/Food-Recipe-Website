@@ -25,7 +25,6 @@
   --radius: 2.5rem;
   --ease: cubic-bezier(.2,.8,.2,1);
   --accent: #111;
-  --webkit-backdrop-filter: blur();
 }
 
 .visually-hidden{
@@ -48,7 +47,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* background-attachment:fixed; */
   color: #111;
   line-height: 1.4;
   display:flex;
