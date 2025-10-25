@@ -18,6 +18,8 @@
 
 body {
   background-image: linear-gradient(174.2deg, rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4%);
+  color: #007A70;
+  background-attachment: fixed;
 }
 
 .navtop > ul {
@@ -148,8 +150,6 @@ body {
   100% { transform: rotate(360deg); }
 }
 
-
-
 .navtop-dropdown li a span {
   justify-self: start; 					
   display: flex;
@@ -157,8 +157,12 @@ body {
   height: 100%;
 }
 
-.site-search .search {
-  max-width: 68.75rem;
+.site-search {
+  flex-shrink: 0;
+}
+
+.site-search .search {  
+  max-width: 100%;
   margin: 1rem auto;
   height: 3.5rem;
   display: flex;
@@ -238,4 +242,21 @@ body {
   background: #e9e9e9;
   font-size: 1rem;
   outline: none;
+}
+
+.hero-search-container {
+  display: flex;
+  justify-content: space-evenly;  
+  padding: 2rem 20%; 
+  min-height: 150px;
+}
+
+.hero h1 {
+  text-align: left;
+  font-family: 'Playwrite', sans-serif;
+}
+
+.hero-text-and-desc {
+    display: block; 
+    max-width: 40rem; /
 }
