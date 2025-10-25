@@ -14,33 +14,63 @@
                     <h1>WELCOME BACK 👋</h1>
                     <p id="details">Welcome back! Please enter your details.</p>
                 </header>
-                <form action="Sign in" id="form">
+                <form action="Sign_in">
                     <section class="form_login">
                         <label for="email" class="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Enter your email" autocomplete="off">
+                        <input type="email" name="email" id="email" placeholder="Enter your email" autocomplete="off" minlength="5">
                         <label for="password" class="password">Password</label>
-                        <input type="password" name="password" id="password" placeholder="Enter your password" autocomplete="off">
+                        <input type="password" name="password" id="password" placeholder="Enter your password" autocomplete="off" minlength="4">
                     </section>
                     <div id="footer">
-                        <input type="checkbox" > 
+                        <input type="checkbox" >
                         <label for="checkbox">Remember me</label>
                         <a href="#">Forgot password?</a>
                     </div>
+                    <a href="#" id="button">Sign in</a>
                     <p id="or">Or</p>
+                        <div id="sign_up">
+                            <p>Don't have an account?<a href="#"> Sign up</a></p>
+                        </div>
                     <section class="container_gambar">
                         <img src="" alt="google">
                         <img src="" alt="facebook">
                         <img src="" alt="github">
                         <img src="" alt="X">
                     </section>
-                    <div id="sign_up">
-                        <p>Don't have an account?<a href="#"> Sign up for free!</a></p>
-                    </div>
                 </form>
             </section>
         </div>
         <div id="right">
-            <img src="" alt="recept">
+            <section id="all_right">
+                <div class="head_right">
+                    <h1>SIGN UP</h1>
+                </div>
+                <form action="Sign_up">
+                    <section class="form_signup">
+                        <label for="username" class="username">Username</label>
+                        <input type="text" name="username" id="username" placeholder="Enter your username" autocomplete="off">
+                        <label for="email_signup" class="email_signup">Email</label>
+                        <input type="email" name="email_signup" id="email_signup" placeholder="Enter your email" autocomplete="off">
+                        <label for="password_signup" class="password_signup">Password</label>
+                        <input type="password" name="password_signup" id="password_signup" placeholder="Enter your password" autocomplete="off">
+                    </section>
+                    <div id="footer_signup">
+                        <input type="checkbox" > 
+                        <label for="checkbox_signup">I agree to the Terms of Service and Privacy Policy</label>
+                    </div>
+                    <a href="#" id="button_signup">Sign up</a>
+                    <div id="sign_in">
+                        <p>Already have an account?<a href="#"> Sign in</a></p>
+                    </div>
+                    <p id="or_signup">Or</p>
+                    <div class="container_gambar_signup">
+                        <img src="" alt="google">
+                        <img src="" alt="facebook">
+                        <img src="" alt="github">
+                        <img src="" alt="X">
+                    </div>
+                </form>
+            </section>
         </div>
     </section>
 </body>
