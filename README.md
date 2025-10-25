@@ -1,134 +1,101 @@
-# Kimetsu no Yaiba - Fandom Website Project
+<h1 align="center">🍳 CELESTIAL — Your Modern Food & Recipe Website Template 🍽️</h1>
 
-<p align="left">
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"/>
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/>
-  <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap"/>
-  <img src="https://img.shields.io/badge/License-MIT-28a745?style=for-the-badge" alt="License: MIT"/>
+<p align="center">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3">
+  <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="License: MIT">
 </p>
 
 
-## Table of Contents
+<p align="center">
+  <em>A clean, lightweight, and modern starting point for your delicious food blog or recipe collection. Inspired by elegant and functional designs inspired by Jamie Oliver's website.</em>
+</p>
 
-- [Project Description](#project-description)
-- [Key Features](#key-features)
-- [Technology Stack](#technology-stack)
-- [Project Status](#project-status)
-- [Development Roadmap](#development-roadmap)
-- [Screenshots](#screenshots)
-- [Contributors](#contributors)
-- [License](#license)
 
-## Project Description
+## ⚠️ Disclaimer
 
-This project is a fan-made informational website dedicated to the "Demon Slayer: Kimetsu no Yaiba" universe. It is designed to be a fully responsive and aesthetically pleasing web application that consolidates information about the series' characters, plot, media adaptations, and more, serving as a central hub for both new and longtime fans.
+Some images used in this project are sourced from Google Images and are for educational and demonstration purposes only. All rights belong to their respective owners.
 
-## Key Features
+## 📌 About This Project
 
-- **Detailed Character Profiles:** In-depth pages covering character abilities, skills, and histories.
-- **Comprehensive Story Arcs:** Summaries and key events from the main story plot.
-- **Hashira Backstories:** A dedicated section exploring the rich backstories of the Pillars.
-- **Media Library:** Information on the original manga, anime movies, music, and related games.
-- **Fully Responsive Design:** A seamless user experience across desktop, tablet, and mobile devices.
+**CELESTIAL** is a minimal, single-page website template built purely with **HTML and CSS**. It was created as a learning exercise to explore clean navigation patterns and provide a simple, beautiful foundation for anyone wanting to share their culinary creations online.
 
-## Technology Stack
+Whether you're a home cook sharing family recipes, a food blogger documenting your adventures, or just need a simple portfolio, CELESTIAL offers an elegant starting point. It features a responsive three-column navigation bar and a sleek CSS-only hover dropdown menu – no JavaScript required!
 
-- **HTML5:** For the core structure and content of the website.
-- **CSS3:** For custom styling, animations, and adherence to the project's unique color theme.
-- **Bootstrap 5:** For the responsive grid system, pre-styled components, and rapid UI development.
 
-## Project Status
 
-### 🚧 In Development 🚧
 
-This project is currently under active development. The target deadline for completion is **Saturday, 9 November 2025**. The repository is being structured, and pages are being built according to the roadmap below.
 
-## Development Roadmap
+## 🚀 Live Demo & Preview
 
-The project is divided into the following modules. Each team member is responsible for the design and implementation of their assigned section.
+To preview the template locally:
+1.  Clone this repository.
+2.  Open the `index.html` file directly in your web browser.
 
-#### 1. Characters & Skills 
-This module covers the profiles and abilities of the main protagonists, antagonists, and supporting cast.
--  Character Hub Page
--  Protagonists Detail Page
--  Antagonists Detail Page
--  Supporting Cast Page
 
-#### 2. Arcs & Plot 
-This module details the progression of the main story through its various arcs.
--  Story Arcs Overview Page
--  Early Arcs Summary
--  Mid-Series Arcs Summary
--  Final Arcs Summary
 
-#### 3. Backstory of the Pillars (Hashira) 
-This module provides a deep dive into the backgrounds and motivations of the nine Hashira.
--  Hashira Introduction Page
--  Hashira Backstories (Part 1)
--  Hashira Backstories (Part 2)
--  Hashira Backstories (Part 3)
+## ⚙️ Getting Started & Local Development
 
-#### 4. Manga & Movies 
-This module contains information about the source manga and its feature-film adaptations.
--  Media Hub Page
--  Manga Volumes & Chapters
--  Movie: Mugen Train
--  Other Media Adaptations
+Want to tinker with the code? Here’s how:
 
-#### 5. Music & Games 
-This module features the series' iconic soundtracks and information on related video games.
--  Music & Soundtracks Page
--  Opening & Ending Themes
--  Video Game: The Hinokami Chronicles
--  Other Related Games
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/Dendroculus/Food-Recipe-Website.git](https://github.com/Dendroculus/Food-Recipe-Website.git)
+    ```
+2.  **Navigate to the project directory:**
+    ```bash
+    cd Food-Recipe-Website
+    ```
+3.  **Open `index.html`** in your browser to see the template.
 
-## Screenshots
+For a smoother development experience with **live reload** (automatically updates the browser when you save changes):
 
-*(Screenshots of the final website design will be added here upon completion.)*
+-   **Using VS Code**: Install the "Live Server" extension. Right-click on `index.html` and choose "Open with Live Server".
+-   **Using Python 3**: Run `python -m http.server 8000` in your terminal and open `http://localhost:8000` in your browser.
 
-## Contributors
 
-<table border="0" cellspacing="20" cellpadding="10" align="Left" style="background:linear-gradient(135deg, #0a1633, #0f2047);">
-  <tr>
-    <td align="center" style="background:#15264b; border-radius:15px; padding:15px; box-shadow:0 4px 12px rgba(0,0,0,0.6); width:160px;">
-      <a href="https://github.com/Dendroculus" style="text-decoration:none; color:#e0eaff;">
-        <img src="https://github.com/Dendroculus.png" width="100" height="100" alt="Hans 展豪"
-             style="border-radius:50%; box-shadow:0 0 8px rgba(0,123,255,0.3); margin-bottom:8px;">
-        <br/>
-        <span style="font-size:16px; font-weight:600;">Hans 展豪</span>
-      </a>
-    </td>
-    <td align="center" style="background:#15264b; border-radius:15px; padding:15px; box-shadow:0 4px 12px rgba(0,0,0,0.6); width:160px;">
-      <a href="https://github.com/Jess2Jes" style="text-decoration:none; color:#e0eaff;">
-        <img src="https://github.com/Jess2Jes.png" width="100" height="100" alt="Jess2Jes"
-             style="border-radius:50%; box-shadow:0 0 8px rgba(0,123,255,0.3); margin-bottom:8px;">
-        <br/>
-        <span style="font-size:16px; font-weight:600;">Jessica</span>
-      </a>
-    </td>
-    <td align="center" style="background:#15264b; border-radius:15px; padding:15px; box-shadow:0 4px 12px rgba(0,0,0,0.6); width:160px;">
-      <a href="https://github.com/StevNard" style="text-decoration:none; color:#e0eaff;">
-        <img src="https://github.com/StevNard.png" width="100" height="100" alt="StevNard"
-             style="border-radius:50%; box-shadow:0 0 8px rgba(0,123,255,0.3); margin-bottom:8px;">
-        <br/>
-        <span style="font-size:16px; font-weight:600;">Steven</span>
-      </a>
-    </td>
-    <td align="center" style="background:#15264b; border-radius:15px; padding:15px; box-shadow:0 4px 12px rgba(0,0,0,0.6); width:160px;">
-      <a href="https://github.com/Solynixx" style="text-decoration:none; color:#e0eaff;">
-        <img src="https://github.com/Solynixx.png" width="100" height="100" alt="Solynixx"
-             style="border-radius:50%; box-shadow:0 0 8px rgba(0,123,255,0.3); margin-bottom:8px;">
-        <br/>
-        <span style="font-size:16px; font-weight:600;">Edbert</span>
-      </a>
-    </td>
-    <td align="center" style="background:#15264b; border-radius:15px; padding:15px; box-shadow:0 4px 12px rgba(0,0,0,0.6); width:160px;">
-      <a href="https://github.com/Milkdrinker-creator" style="text-decoration:none; color:#e0eaff;">
-        <img src="https://github.com/Milkdrinker-creator.png" width="100" height="100" alt="Milkdrinker-creator"
-             style="border-radius:50%; box-shadow:0 0 8px rgba(0,123,255,0.3); margin-bottom:8px;">
-        <br/>
-        <span style="font-size:16px; font-weight:600;">Kindy</span>
-      </a>
-    </td>
-  </tr>
-</table>
+
+## 📂 Project Structure
+
+This is a temporary structure; subject names may change later:
+```
+Food-Recipe-Website/
+├── index.html          # Main HTML structure and content
+├── styles.css          # All CSS styling
+├── assets/             # Folder for images and icons
+│   └── ...
+└── font/               # Folder for local font files (e.g., Montserrat)
+    └── ...
+```
+
+
+
+## 🧩 How to Use & Customize
+
+Making CELESTIAL your own is easy:
+
+1.  **Change Title/Logo**: Edit the text inside `<li class="celestial">...</li>` in `index.html`. You can replace `CELESTIAL 💫` with your site name or an `<img>` tag for a logo.
+2.  **Update Left Navigation Links**: Modify the `<a>` tags within `<ul class="left">...</ul>`.
+3.  **Update Right Icons/Links**: Change the `<img>` tags inside `<ul class="right">...</ul>`. Consider using inline SVGs for better quality and styling options.
+4.  **Edit Dropdown Menu Items**: Update the list items (`<li>`) inside `<ul class="recipes-dropdown">...</ul>`.
+5.  **Customize Styles**: Open `styles.css` and adjust colors, fonts, spacing, etc. The template uses the *Montserrat* font locally – make sure it's in the `/font` folder or switch to a web font via CSS `@import`.
+
+
+
+## 🤝 Contributing
+
+Got ideas or found a bug? Contributions are welcome!
+
+1.  Fork the repository.
+2.  Create your feature branch (`git checkout -b feature/AmazingFeature`).
+3.  Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+4.  Push to the branch (`git push origin feature/AmazingFeature`).
+5.  Open a Pull Request with a clear description of your changes.
+
+*Please include screenshots if you make UI changes!*
+
+
+
+## 📄 License
+
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for more details.

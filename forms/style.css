@@ -1,0 +1,131 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat/static/Montserrat-Regular.ttf') format('woff2');
+}
+
+@font-face {
+  font-family: 'Playwrite';
+  src: url('/fonts/Playwrite_DE_SAS/static/PlaywriteDESAS-Regular.ttf') format('woff2');
+  font-weight: bold;
+}
+
+body {
+    font-family: 'Montserrat';
+}
+
+/* ---------------left--------------- */
+
+.form_box{
+    display: flex;
+    margin: 5rem auto;
+    width: 62rem;
+    border: 2px solid;
+}
+
+#left{
+    border: 2px solid pink;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 2rem;
+    background-color: linear-gradient(90deg,  azure, grey );
+}
+
+#head{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#details{
+    font-weight:500;
+    color: grey;
+}
+
+
+#all_left{
+    padding: 0px 1.5rem;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form_login{
+    display: flex;
+    flex-direction: column;;
+    font-weight: 800;
+}
+
+.email,
+.password{
+    margin: 0.8rem 0.5rem;
+}
+
+
+input[type ="email"],
+input[type ="password"]{
+    padding: 0.8rem 0.7rem;
+    margin-bottom: 1.5rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    border: 1px solid gray;
+    outline: none;
+    box-shadow: 0 0.5rem 1rem rgb(192, 184, 184);
+}
+
+#footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+#footer label{
+    margin-right: 7.5rem;
+}
+
+#footer a{
+    text-decoration: none;
+}
+
+#or{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: grey;
+    font-weight: 500;
+}
+
+#or::before,
+#or::after{
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #aaa;
+}
+
+#or::before{
+    margin-right: 0.5rem;
+}
+
+#or::after{
+    margin-left: 0.5rem;
+}
+
+.container_gambar{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+#sign_up{
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+/* right */
+#right{
+    width: 50%;
+    border: 2px solid orange;
+}

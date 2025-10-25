@@ -1,59 +1,120 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Homepage</title>
-  <link rel="stylesheet" href="index.css" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Home</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <a class="brand" href="#">
-        <img src="assets/images/home/KNY-Logo.png" alt="Site logo" />
-      </a>
-      <nav class="main-nav" aria-label="Primary">
-        <ul class="menu">
-          <li class="menu-item has-submenu">
-            <a href="#" class="menu-link">Story</a>
-            <ul class="submenu">
-              <li><a href="#">Arcs</a></li>
-              <li><a href="#">Episodes</a></li>
-              <li><a href="#">Timeline</a></li>
+  <nav class="navtop">
+    <ul>
+      <li class="left">
+        <div class="nav-left">
+          <div class="dropdown-container">
+            <a href="#" class="recipes-link">RECIPES</a>
+            <ul class="navtop-dropdown">
+              <li>
+                <a href="#">
+                  <img src="./assets/main_course/main_course_pfp.jpg" alt="Main course" />
+                  <span>Main Course</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./assets/appetizers/appetizers_pfp.jpg" alt="Appetizers" />
+                  <span>Appetizers</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./assets/salad/salad_pfp.jpg" alt="Salad" />
+                  <span>Salad</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./assets/desserts/desserts_pfp.jpg" alt="Desserts" />
+                  <span>Desserts</span>
+                </a>
+              </li>
             </ul>
-          </li>
-          <li class="menu-item has-submenu">
-            <a href="#" class="menu-link">Characters</a>
-            <ul class="submenu">
-              <li><a href="#">Demons Slayers</a></li>
-              <li><a href="#">Hashira</a></li>
-              <li><a href="#">Demons</a></li>
-              <li><a href="#">Upper Rank</a></li>
-              <li><a href="#">Lower Rank</a></li>
-              <li><a href="#">Supporting</a></li>
-            </ul>
-          </li>
+          </div>
 
-          <li class="menu-item has-submenu">
-            <a href="#" class="menu-link">Media</a>
-            <ul class="submenu">
-              <li><a href="#">Anime</a></li>
-              <li><a href="#">Manga</a></li>
-              <li><a href="#">Movies</a></li>
+          <div class="dropdown-container">
+            <a href="#">INSPIRATION</a>
+           <ul class="navtop-dropdown">
+              <li>
+                <a href="#">
+                  <img src="./assets/inspiration/stellar_tips_pfp.jpg" alt="Stellar Tips" />
+                  <span>Stellar Tips</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./assets/inspiration/seasonal_constellation_pfp.png" alt="Seasonal Constellations" />
+                  <span>Seasonal Constellations</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./assets/inspiration/kitchen_universe_pfp.png" alt="Kitchen Universe" />
+                  <span>Kitchen Universe</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./assets/inspiration/guiding_stars_pfp.png" alt="Guiding Stars" />
+                  <span>Guiding Stars</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./assets/inspiration/orbit_of_flavors_pfp.png" alt="Orbit Of Flavors" />
+                  <span>Orbit Of Flavors</span>
+                </a>
+              </li>
             </ul>
-          </li>
+          </div>
 
-          <li class="menu-item has-submenu">
-            <a href="#" class="menu-link">Entertainment</a>
-            <ul class="submenu">
-              <li><a href="#">Games</a></li>
-              <li><a href="#">Musics</a></li>
-              <li><a href="#">Soundtracks</a></li>
+          <div class="dropdown-container">
+            <a href="#">SHOP</a>
+            <ul class="navtop-dropdown">
+              <li><a href="#">Placeholder 1</a></li>
+              <li><a href="#">Placeholder 2</a></li>
+              <li><a href="#">Placeholder 3</a></li>
             </ul>
-          </li>
-        </ul>
-      </nav>
+          </div>
+
+          <div class="dropdown-container">
+            <a href="#">ABOUT US</a>
+            <ul class="navtop-dropdown">
+              <li><a href="#">Placeholder 1</a></li>
+              <li><a href="#">Placeholder 2</a></li>
+              <li><a href="#">Placeholder 3</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      <li class="celestial">
+        <a href="index.html">CELESTIAL 💫</a>
+      </li>
+
+      <li class="right">
+        <a href="#"><img src="./assets/user.png" alt="user" /></a>
+        <a href="#"><img src="./assets/shopping_cart.png" alt="shopping bag" /></a>
+      </li>
+    </ul>
+  </nav>
+
+  <form class="site-search" action="#">
+    <div class="search">
+      <button type="submit">
+        <img src="./assets/search.png" alt="search" />
+      </button>
+      <input type="text" placeholder="Start searching..." />
     </div>
-  </header>
+  </form>
 </body>
 </html>
