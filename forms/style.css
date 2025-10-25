@@ -25,6 +25,7 @@
   --radius: 2.5rem;
   --ease: cubic-bezier(.2,.8,.2,1);
   --accent: #111;
+  --webkit-backdrop-filter: blur();
 }
 
 .visually-hidden{
@@ -36,13 +37,18 @@
 }
 
 html, body {
-  height: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
 }
 
 body {
   font-family: 'Montserrat';
-  background-image: linear-gradient(174.2deg, rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4%);
-  background-attachment: fixed;
+  background: url(/assets/forms/background.jpeg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* background-attachment:fixed; */
   color: #111;
   line-height: 1.4;
   display:flex;
