@@ -360,6 +360,7 @@ body {
 .fyp-image a {
   max-width: 17rem;
   margin: 0.5rem 0.75rem 0;
+  color: rgb(209, 53, 209);
   font-weight: bold;
   background-color: white;
   word-spacing: 0.15rem;
@@ -450,9 +451,26 @@ body {
 }
 
 .footer-title {
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: 'Playwrite', sans-serif;
   padding: 0.5rem;
+  color: #fff;
+  text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+  animation: glow 1.5s infinite alternate;
+}
+
+.footer-title:hover {
+  transform: translateY(-0.125rem);
+}
+
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px #ff005e, 0 0 15px #ff005e;
+  }
+  100% {
+    text-shadow: 0 0 10px #00d4ff, 0 0 30px #00d4ff;
+  }
 }
 
 .socials-logo {
@@ -466,6 +484,12 @@ body {
   width: 2.5rem;
   transition: filter 0.2s ease;
 }
+
+.socials-logo img:hover {
+  transform: translateY(-0.3rem);
+}
+
+
 
 @media (max-width: 1200px) {
   .hero-search-container {
