@@ -11,6 +11,9 @@
 
 body {
     font-family: 'Montserrat';
+    background-image: linear-gradient(174.2deg, rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4%);
+    background-attachment: fixed;
+
 }
 
 /* ---------------left--------------- */
@@ -20,10 +23,11 @@ body {
     margin: 5rem auto;
     width: 62rem;
     border: 2px solid;
+    border-radius: 2.5rem;
+    box-shadow: 0 0 2rem ;
 }
 
 #left{
-    border: 2px solid pink;
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -124,8 +128,15 @@ input[type ="password"]{
     text-align: center;
 }
 
+#sign_up a{
+    text-decoration: none;
+}
+
 /* right */
 #right{
     width: 50%;
-    border: 2px solid orange;
+}
+
+#right img{
+    width: auto;
 }
