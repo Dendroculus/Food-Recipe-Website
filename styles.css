@@ -112,8 +112,8 @@ body {
 
 .navtop-dropdown li a {
   display: grid;
-  grid-template-columns: 9rem 1fr;
-    padding: 0.75rem 1rem;
+  grid-template-columns: 9rem auto;
+  padding: 0.75rem 1rem;
   color: #1a6f67;
   font-weight: 800;
   letter-spacing: 0.02em;
