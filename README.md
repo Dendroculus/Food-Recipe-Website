@@ -12,6 +12,9 @@
 </p>
 
 
+## ⚠️ Disclaimer
+
+Some images used in this project are sourced from Google Images and are for educational and demonstration purposes only. All rights belong to their respective owners.
 
 ## 📌 About This Project
 
