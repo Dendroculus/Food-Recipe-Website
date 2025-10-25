@@ -177,6 +177,7 @@ body {
 .site-search .search:hover {
   box-shadow: 0 0.75rem 2.5rem rgba(0,0,0,0.12);
   filter: brightness(0.95);
+  transform: translateY(-0.125rem);
 }
 
 .site-search .search button {
@@ -289,7 +290,7 @@ body {
   text-decoration: none;
   color: white;
   font-size: 0.875rem;
-  font-weight: 570;
+  font-weight: 595;
   background-color: #21b9ac;  
   border-radius: 1rem;
   padding: 0.5rem 0.75rem;
@@ -306,10 +307,11 @@ body {
 .more .explore:hover{
   background-color: #00bfa5;
   box-shadow: 0 0.25rem 0.75rem rgba(0, 191, 165, 0.3);
+  transform: translateY(-0.125rem);
 }
 
 .today-picks h1:hover,
-.more .subscribe:hover{
+.more .subscribe:hover {
   color: #00bfa5;
   text-shadow: 0 0.25rem 0.625rem rgba(0, 191, 165, 0.3);
   transform: translateY(-0.125rem);
@@ -324,11 +326,15 @@ body {
   min-height: 9.375rem;
 }
 .today-picks {
-    position: absolute;
     margin: 2rem 5rem ;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+}
+.today-picks-fyp {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
 .today-picks h1 {
@@ -336,11 +342,130 @@ body {
   margin-bottom: 0.5rem;
 }
 
-.fyp-image img {
+.fyp-image {
     width: 17rem;
-    height: 9rem;
     border-radius: 1rem;
+    display: flex;
     object-fit: cover;
     margin-right: 1rem;
+    margin-bottom: 0.75rem;
     box-shadow: 0 0.625rem 2rem rgba(0,0,0,0.08);
+    flex-direction: column;
+    background: white;
+}
+
+.fyp-image img {
+  width: 100%;
+  height: 9rem;
+  object-fit: cover;
+  display: block;
+  border-radius: 1rem 1rem 0 0; 
+}
+
+.fyp-image a {
+    max-width: 17rem;
+    margin: 0.5rem 0.75rem 0;
+    font-weight: bold;
+    background-color: white;
+    word-spacing: 0.15rem;
+}
+
+.fyp-image p {
+    margin: 0.25rem 0.75rem;
+    color: gray;
+    font-size: 0.875rem;
+}
+
+.fyp-image:hover {
+    transform: translateY(-0.125rem);
+    box-shadow: 0 0.75rem 2.5rem rgba(0,0,0,0.12);
+}
+
+.fyp-image a:hover {
+    color: #00bfa5;
+}
+
+.quick-recipes form {
+    display: flex;
+    flex-direction: column; 
+    gap: 0.5rem;          
+}
+
+.quick-recipes {
+    margin-top: 1.5rem;
+    padding: 0.75rem;
+    background: #e0f0ed;
+    border-radius: 1rem;
+    box-shadow: 0 0.625rem 2rem rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+}   
+
+.quick-recipes .input-group {
+    display: flex;
+    gap: 0.5rem;            
+}
+
+.quick-recipes input {
+    outline: none;
+    flex: 1;                
+    padding: 0.5rem;
+    border-radius: 0.75rem;
+    border: 1px solid white;
+}
+
+.quick-recipes button {
+    outline: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.75rem;
+    border: none;
+    background-color: #00bfa5;
+    color: white;
+    cursor: pointer;
+}
+
+.quick-recipes label {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.quick-recipes input:focus {
+    box-shadow: none;   
+    border-color: white;
+}
+
+.quick-recipes:hover {
+    transform: translateY(-0.125rem);
+    box-shadow: 0 0.75rem 2.5rem rgba(0,0,0,0.12);
+}
+
+.quick-recipes button:hover {
+    background-color: #007a70;
+    transform: translateY(-0.125rem);
+}
+.main-footer {
+    margin-top: 3rem;
+    background-image: linear-gradient(200deg, rgb(235, 227, 214) 7.1%, rgba(240,246,238,1) 67.4%);
+    color: #007a70;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+
+.footer-title {
+    font-size: 2rem;
+    font-family: 'Playwrite', sans-serif;
+    padding: 1rem;
+}
+
+.socials-logo {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.socials-logo img {
+    width: 2.5rem;
+    transition: filter 0.2s ease;
 }
