@@ -32,7 +32,6 @@ body {
     flex-direction: column;
     width: 50%;
     padding: 2rem;
-    background-color: linear-gradient(90deg,  azure, grey );
 }
 
 #head{
@@ -50,11 +49,6 @@ body {
     padding: 0px 1.5rem;
 }
 
-#form{
-    display: flex;
-    flex-direction: column;
-}
-
 .form_login{
     display: flex;
     flex-direction: column;;
@@ -67,8 +61,8 @@ body {
 }
 
 
-input[type ="email"],
-input[type ="password"]{
+.form_login input[type ="email"],
+.form_login input[type ="password"]{
     padding: 0.8rem 0.7rem;
     margin-bottom: 1.5rem;
     border-radius: 1rem;
@@ -76,6 +70,11 @@ input[type ="password"]{
     border: 1px solid gray;
     outline: none;
     box-shadow: 0 0.5rem 1rem rgb(192, 184, 184);
+}
+
+.form_login input[type ="email"]:invalid,
+.form_login input[type ="password"]:invalid{
+    border: 2px solid red;
 }
 
 #footer{
@@ -99,7 +98,8 @@ input[type ="password"]{
     align-items: center;
     text-align: center;
     color: grey;
-    font-weight: 500;
+    font-weight: 400;
+    margin-bottom: 2rem;
 }
 
 #or::before,
@@ -118,25 +118,60 @@ input[type ="password"]{
 }
 
 .container_gambar{
-    margin-top: 1rem;
+    margin-top: 1rem;   
     display: flex;
     justify-content: space-around;
 }
 
+
 #sign_up{
-    margin-top: 1.5rem;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1rem;
+    margin-bottom: 1rem;
 }
 
-#sign_up a{
+#button{
+    margin:1.5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0.8rem 0;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    border-radius: 1rem;
     text-decoration: none;
+    box-shadow: 0 0.5rem 1.5rem rgb(192, 184, 184);
 }
 
 /* right */
 #right{
     width: 50%;
+    padding: 2rem;
+    border: 2px solid;
+    display: flex;
+    flex-direction: column;
 }
 
-#right img{
-    width: auto;
+.head_right{
+    text-align: center;
+    margin-bottom: 2rem;
 }
+
+.form_signup{
+    display: flex;
+    flex-direction: column;
+    font-weight: 800;
+}
+
+.username,
+.email_signup,
+.password_signup{
+    margin: 0.8rem 0.5rem;
+}
+
+.form_signup input[type ="text"],
+.form_signup input[type ="email"],
