@@ -11,15 +11,141 @@
         <nav class="header-navigation">
             <ul>
                 <li class="hamburger-menu">
-                    <button class="menu-button">
-                    <div class="menu-icon"></div>
-                    </button>
+                    <nav class="menu">
+                        <input type="checkbox" id="check">
+                        <label for="check" class="checkbtn">
+                            <i class="bars"></i>
+                        </label>
+                        <div class="recipe-menu">
+                            <h3>Recipes</h3>
+                            <div id="main-course">
+                                <img src="../assets/main_course/main_course_pfp.jpg" alt="Main Course Profile">
+                                <a href="#">Main Course</a>
+                            </div>
+                            <div id="dessert">
+                                <img src="../assets/desserts/desserts_pfp.jpg" alt="Dessert Profile">
+                                <a href="#">Dessert</a>
+                            </div>
+                            <div id="salad">
+                                <img src="../assets/salad/salad_pfp.jpg" alt="Salad Profile">
+                                <a href="#">Salad</a>
+                            </div>
+                            <div id="appetizer">
+                                <img src="../assets/appetizers/appetizers_pfp.jpg" alt="Appetizer Profile">
+                                <a href="#">Appetizer</a>
+                            </div>
+                        </div>
+                    </nav>
                 </li>
-                <li>
+                <li class="celestial-logo">
                     <a href="../index.html">CELESTIAL 💫</a>
+                </li>
+                <li class="other-logo">
+                    <a href="#" class="other"><img src="../assets/user.png" alt="user" width="32" height="32" /></a>
+                    <a href="#" class="other"><img src="../assets/shopping_cart.png" alt="shopping bag" width="32" height="32" /></a>
                 </li>
             </ul>
         </nav>
+        <form class="site-search" action="#">
+            <div class="search">
+                <button type="submit" aria-label="Search">
+                <img src="../assets/search.png" alt="search" width="24" height="24" />
+                </button>
+                <input type="text" placeholder="Start searching..." />
+            </div>
+        </form>
     </header>
+    <main>
+        <h2 class="recommended">Recommended Recipes</h2>
+        <section class="recipe-section">
+            <div class="card">
+                <img src="../assets/main_course/Chicken Cordon Bleu.png" alt="Chicken Cordon Bleu">
+                <div class="text">
+                    <a href="">Chicken Cordon Bleu</a>
+                    <p>30 mins</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/main_course/Lobster Mango Salad.webp" alt="Lobster Mango Salad">
+                <div class="text">
+                    <a href="">Lobster Mango Salad</a>
+                    <p>25 mins</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/main_course/Pork Chops Charcutiere Sauce.png" alt="Pork Chops Charcutiere Sauce">
+                <div class="text">
+                    <a href="">Pork Chops Charcutiere Sauce</a>
+                    <p>25 mins</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/main_course/Salmon Steak in Coconut Milk with Peas.png" alt="Salmon Steak in Coconut Milk with Peas">
+                <div class="text">
+                    <a href="">Salmon Steak</a>
+                    <p>25 mins</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/appetizers/Florentine Ciabatta.jpg" alt="Florentine Ciabatta">
+                <div class="text">
+                    <a href="">Florentine Ciabatta</a>
+                    <p>20 mins</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/appetizers/Fried Prosciutto Tortellini.jpg" alt="Fried Prosciutto Tortellini">
+                <div class="text">
+                    <a href="">Fried Prosciutto Tortellini</a>
+                    <p>20 mins</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/appetizers/Orange Marmalade Meatballs.jpg" alt="Florentine Ciabatta">
+                <div class="text">
+                    <a href="">Orange Marmalade Meatballs</a>
+                    <p>30 mins</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/appetizers/Grilled Tomato-Peach Pizza.jpg" alt="Florentine Ciabatta">
+                <div class="text">
+                    <a href="">Grilled Tomato Peach Pizza</a>
+                    <p>30 mins</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/desserts/Chocolate Sheet Cake.jpg" alt="Chocolate Sheet Cake">
+                <div class="text">
+                    <a href="">Chocolate Sheet Cake</a>
+                    <p>30 mins</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/desserts/Panacotta.png" alt="Panacotta">
+                <div class="text">
+                    <a href="">Panacotta</a>
+                    <p>40 mins</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/salad/Apple Salad.png" alt="Apple Salad">
+                <div class="text">
+                    <a href="">Apple Salad</a>
+                    <p>20 mins</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../assets/salad/Radicchio Salad.jpg" alt="Apple Salad">
+                <div class="text">
+                    <a href="">Radicchio Salad</a>
+                    <p>20 mins</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <h3>Copyright &copy; Celestial 2025</h3>
+    </footer>
 </body>
 </html>
