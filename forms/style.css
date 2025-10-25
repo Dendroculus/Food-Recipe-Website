@@ -15,12 +15,6 @@ body {
 
 /* ---------------left--------------- */
 
-#head{
-    text-align: center;
-    border: 2px solid rebeccapurple;
-
-}
-
 .form_box{
     display: flex;
     margin: 5rem auto;
@@ -33,12 +27,45 @@ body {
     display: flex;
     flex-direction: column;
     width: 50%;
-    padding: 4rem 2rem;
+    padding: 2rem;
+}
+
+#head{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#details{
+    font-weight:500;
+    color: grey;
+}
+
+
+#all_left{
+    padding: 0px 1.5rem;
 }
 
 #form{
     display: flex;
     flex-direction: column;
-    border: 2px solid blue;
 }
 
+label{
+    margin: 1.5rem 0 0.5rem 0.5rem;
+    font-weight: 800;
+}
+
+input[type ="email"],
+input[type ="password"]{
+    padding: 0.8rem 0.7rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    border: 1px solid gray;
+    outline: none;
+}
+
+/* right */
+#right{
+    width: 50%;
+    border: 2px solid orange;
+}
