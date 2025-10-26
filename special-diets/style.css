@@ -1,0 +1,153 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat/static/Montserrat-Regular.ttf') format('woff2');
+}
+
+@font-face {
+  font-family: 'Playwrite';
+  src: url('/fonts/Playwrite_DE_SAS/static/PlaywriteDESAS-Regular.ttf') format('woff2');
+  font-weight: bold;
+}
+
+body {
+  background-image: linear-gradient(174.2deg, rgb(251, 184, 85) 7.1%, rgb(229, 57, 57) 67.4%);
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.7;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: #ffffffdd;
+  backdrop-filter: blur(4px);
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.main-nav {
+    background: #a6ff00;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.main-nav a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.main-nav a:hover {
+    background: #30e8ba;
+    color: #fff;
+}
+
+p {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  margin-top: 0;
+  color: #2a4d2e;
+}
+
+h2 {
+  font-family: 'Playwrite', cursive;
+  font-size: 1.8rem;
+  color: #2cd142;
+  border-bottom: 3px solid #cde4cd;
+  padding-bottom: 0.3rem;
+  margin-top: 2rem;
+}
+h2 a {
+    text-decoration: none;
+    color: #2cd142;
+}
+
+h2 a:hover {
+    color: #30e8ba;
+    transition: color 0.3s ease;
+}
+h3 {
+  font-size: 1.3rem;
+  margin-top: 1.2rem;
+  color: #51714f;
+}
+
+ul {
+  margin-left: 1.5rem;
+  padding-left: 1rem;
+  list-style: square;
+}
+
+ol {
+  margin-left: 1.5rem;
+  padding-left: 1rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+h2 + h3 {
+  margin-top: 0.5rem;
+}
+
+
+@media (max-width: 600px) {
+  main {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+  p {
+    font-size: 1.6rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+div.scrollmenu {
+  background-color: #a2ea1c;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu a {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  color: black;
+  text-align: center;
+  padding: 8px;
+  text-decoration: none;
+  width: 325px; 
+  height: 350px;
+  box-sizing: border-box;
+  margin-right: 8px;
+  vertical-align: top;
+  background: transparent;
+} 
+
+div.scrollmenu a:hover {
+  background-color: #30e8ba;
+  font-size: 20px;
+  font-weight: bold;
+  transition: background-color 0.4s, font-size 0.4s;
+}
