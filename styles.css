@@ -8,6 +8,7 @@
   src: url('/fonts/Playwrite_DE_SAS/static/PlaywriteDESAS-Regular.ttf') format('woff2');
   font-weight: bold;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -33,6 +34,7 @@ body {
 
 .navtop > ul {
   position: fixed;
+  z-index: 1;
   background: linear-gradient(174.2deg, rgba(255,244,228,0.95) 7.1%, rgba(240,246,238,0.95) 67.4%);
   width: 100%;
   list-style: none;
@@ -41,6 +43,8 @@ body {
   padding: 1.5rem 2.5rem 0 2.5rem;
   border-radius: 0 0 2rem 2rem;
 }
+
+
 
 .navtop ul .left,
 .navtop ul .right {
@@ -80,6 +84,7 @@ body {
   text-transform: uppercase;
 }
 
+
 .navtop a {
   font-size: 0.9rem;
 }
@@ -102,6 +107,10 @@ body {
 
 .navtop a:hover::after {
   width: 100%;
+}
+
+.navtop a:hover {
+  transform: scale(1.07);
 }
 
 .menu-button {
@@ -169,8 +178,12 @@ body {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .navtop-dropdown li a span {
@@ -261,6 +274,7 @@ body {
   width: 100%;
   min-height: 9.375rem;
 }
+
 
 .hero h1 {
   text-align: left;
@@ -381,12 +395,13 @@ body {
 }
 
 .fyp-image:hover {
-  transform: translateY(-0.125rem);
+  transform: scale(1.05);
   box-shadow: 0 0.75rem 2.5rem rgba(0,0,0,0.12);
 }
 
 .fyp-image a:hover {
   color: #00bfa5;
+  transform: scale(1.02);
 }
 
 .quick-recipes {
@@ -456,6 +471,7 @@ body {
   color: #007a70;
   text-align: center;
   border-top: 1px solid rgba(0,0,0,0.08);
+  overflow-x: hidden;
 }
 
 .footer-title {
@@ -468,9 +484,8 @@ body {
 }
 
 .footer-title:hover {
-  transform: translateY(-0.125rem);
+  transform: scale(1.2);
 }
-
 
 @keyframes glow {
   0% {
@@ -487,8 +502,6 @@ body {
   gap: 0.5rem;
   border-radius: 0.5rem;
 }
-
-
 
 .socials-logo img {
   width: 2.5rem;
@@ -518,6 +531,37 @@ body {
   width: 100%;
 }
 
+.main-footer .footer-note {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: gray;
+}
+
+.footer-policy-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 0.75rem;
+}
+
+.footer-policy-links a {
+  text-decoration: none;
+  color: darkgrey;
+}
+
+
+.footer-policy-links:hover a {
+  color: gray; 
+}
+
+.footer-policy-links a:hover {
+  color: black;
+  transform: scale(1.03);
+}
+
+.footer-policy-links:hover a:not(:hover) {
+  opacity: 0.4;
+}
 
 @media (max-width: 1200px) {
   .hero-search-container {
@@ -632,7 +676,7 @@ body {
     background: transparent;
     user-select: none;
     cursor: pointer;
-    z-index: 1001; 
+    z-index: 1001;
   }
 
   .nav-left {
@@ -690,7 +734,7 @@ body {
 
   .hero-search-container {
     flex-direction: column;
-    padding: 1rem 1rem 0.5rem;
+    padding: calc(var(--nav-mobile-h) + 4.5rem) 1rem 0.5rem;
   }
 
   .site-search {
@@ -699,7 +743,12 @@ body {
   }
 
   .site-search .search {
-    margin: 0 0 1rem 0;
+    position: fixed;
+    top: calc(var(--nav-mobile-h) + 1.3rem); 
+    left: 1rem;
+    right: 1rem;
+    z-index: 1;
+    margin: 0;
   }
 
   .hero h1 {
