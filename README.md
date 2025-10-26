@@ -1,3 +1,5 @@
+EN | [CN](/docs/readmeCN.md)
+
 <h1 align="center">🍳 CELESTIAL — Your Modern Food & Recipe Website Template 🍽️</h1>
 
 <p align="center">
@@ -94,8 +96,48 @@ Got ideas or found a bug? Contributions are welcome!
 
 *Please include screenshots if you make UI changes!*
 
-
-
 ## 📄 License
 
 This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for more details.
+
+## 👤 Contributors
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/Dendroculus">
+        <img src="https://github.com/Dendroculus.png?size=100" width="100" height="100" alt="Hans 展豪" />
+      </a>
+      <br />
+      <a href="https://github.com/Dendroculus"><strong>Hans 展豪</strong></a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Jess2Jes">
+        <img src="https://github.com/Jess2Jes.png?size=100" width="100" height="100" alt="Jess2Jes" />
+      </a>
+      <br />
+      <a href="https://github.com/Jess2Jes"><strong>Jess2Jes</strong></a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Solynixx">
+        <img src="https://github.com/Solynixx.png?size=100" width="100" height="100" alt="Solynixx" />
+      </a>
+      <br />
+      <a href="https://github.com/Solynixx"><strong>Solynixx</strong></a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/StevNard">
+        <img src="https://github.com/StevNard.png?size=100" width="100" height="100" alt="StevNard" />
+      </a>
+      <br />
+      <a href="https://github.com/StevNard"><strong>StevNard</strong></a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/Milkdrinker-creator">
+        <img src="https://github.com/Milkdrinker-creator.png?size=100" width="100" height="100" alt="Milkdrinker-creator" />
+      </a>
+      <br />
+      <a href="https://github.com/Milkdrinker-creator"><strong>Milkdrinker-creator</strong></a>
+    </td>
+  </tr>
+</table>      
