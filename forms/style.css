@@ -43,7 +43,7 @@ html, body {
 
 body {
   font-family: 'Montserrat';
-  background: url(/assets/forms/background.jpeg.jpg);
+  background: url(/assets/forms/background.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -264,6 +264,14 @@ body {
   justify-content: center;
   gap: 1rem;
   opacity: .85;
+}
+
+.container_gambar img,
+.container_gambar_signup img{
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: contain;
+  cursor: pointer;
 }
 
 /* ---------------- Overlay animation ---------------- */
