@@ -463,26 +463,53 @@ main {
     text-align: center;
     font-size: 3rem;
     font-family: 'Georgia', serif;
-    color: #f6fffc;
+    color: #fff;
+    text-shadow: 0 -20px 80px, 0 0 2px, 0 0 1em #1f9188, 
+    0 0 0.3em #1f9188, 0 0 0.1em #1f9188, 0 10px 3px #1f9188;
     margin-top: 4.5rem;
     margin-bottom: 2.5rem;
     animation: flicker 1.5s infinite alternate;
 }
 
-@keyframes flicker {
-    0%, 18%, 22%, 25%, 53%, 57%, 100% {
-    text-shadow:
-     0 0 10px #fff, 
-     0 0 20px #fff, 
-     0 0 30px #036d64, 
-     0 0 40px #3c9790, 
-     0 0 50px #7bcfc8, 
-     0 0 60px #79d9d1, 
-     0 0 70px #5fa6a0;
-  }
+.blink {
+    animation: blink linear infinite 2s;
+}
 
-  20%, 24%, 55% {       
+.long-blink {
+    animation: blink linear infinite 3s;
+}
+
+@keyframes blink {
+  78% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  79%{
+     color: #1e8a7a;
+  }
+  80% {
+    
     text-shadow: none;
+  }
+  81% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  82% {
+    color: #1e8a7a;
+    text-shadow: none;
+  }
+  83% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  92% {
+    color: #1e8a7a;
+    text-shadow: none;
+  }
+  92.5% {
+    color: inherit;
+    text-shadow: inherit;
   }
 }
 
