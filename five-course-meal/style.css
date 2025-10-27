@@ -15,19 +15,21 @@
     box-sizing: border-box;
 }
 
-body {
+main {
     background-image: linear-gradient(174.2deg, rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4%);
     background-repeat: no-repeat;
+    padding-bottom: 2.5rem;
 }
 
 .header-navigation {
-    background-image: #fff;
+    background-image: linear-gradient(#f5f5f5, #faf0e6);
+    padding-block: 2rem;
 }
 
 .header-navigation ul {
     display: flex;
     gap: 2.5rem;
-    margin: 1.2rem 2rem 0 2rem;
+    margin: 0 2rem 0 2rem;
     list-style-type: none;
     justify-content: space-between;
     align-items: center;
@@ -36,7 +38,6 @@ body {
 .other-logo {
     display: flex;
     gap: 0.5rem;
-    margin-right: 0.5rem;
 }
 
 .other {
@@ -57,12 +58,13 @@ body {
 }
 
 .other:hover {
-    background-color: #fff;
+    background-color: #e9e8e8;
 }
 
 .celestial-logo {
   flex-shrink: 0;
   min-width: 0;
+  margin-left: 2.5rem;
 }
 
 :is(.celestial-logo a, .celestial-logo a:visited) {
@@ -275,18 +277,219 @@ body {
   outline: none;
 }
 
-.recommended {
+.main-course {
     text-align: center;
     font-size: 3rem;
     font-family: 'Playwrite', sans-serif;
     color: #007A70;
-    margin-block: 3rem;
+    padding-top: 2.5rem;
+    margin-top: 5rem;
+    margin-bottom: 1.5rem;
+}
+
+.text-container {
+    max-width: 75rem;
+    margin: 2.5rem auto;
+    padding: 0 2rem;
+}
+
+.text-container .content {
+    background-image: url("../assets/bg-image/cooking-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 35rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2.5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10%;
+}
+
+.text-container .content > * {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-shadow: 0.1rem 0.1rem 0.3rem #313a03;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-course-definition {
+    color: #8a8989;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    text-wrap: wrap;
+}
+
+.check-out {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    max-width: 32rem;
+    margin-inline: auto;
+}
+
+.text-container .content p:last-of-type {
+    font-weight: 500;
+    font-size: 1.2rem;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    border-left: 0.3rem solid #b7e19d;
+}
+
+.recommended-section {
+    margin: 1.5rem 2rem;
+}
+
+.heading-container {
+    display: flex;
+    margin-top: 1.2rem;
+    gap: 0.2rem;
+    justify-content: center;
+    margin-inline: 3.5rem;
+}
+
+.top-pick-heading {
+  text-align: center;
+  font-family: "Montserrat", serif;
+}
+
+.top-line {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #007A70;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+.top-line::after {
+    content: "";
+    position: absolute;
+    bottom: -0.1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6rem;
+    height: 0.2rem;
+    background: linear-gradient(90deg, #007A70, #bffbf6);
+}
+
+.bottom-line {
+    display: block;
+    font-size: 1.5rem;
+    color: #7f8c8d;
+    font-style: italic;
+    letter-spacing: 0.1rem;
+}
+
+.recommended-section, .recommended-img {
+    display: flex;
+    gap: 1rem;
+}
+
+.recommended-img {
+    justify-content: center;
+}
+
+.recommended-card {
+    position: relative;
+    width: 21rem;
+    height: 15rem;
+    border-radius: 20%;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+}
+
+.recommended-card:hover {
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+
+.recommended-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.recommended-card:hover img {
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #1f9188, #52aea7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    border-radius: 20%;
+}
+
+.recommended-card:hover .overlay {
+    opacity: 1;
+}
+
+.overlay .text {
+    color: #fff;
+    font-family: 'Playwrite', sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 2rem;
+    text-shadow: 1px 1px 3px #333;
+    transform: translateY(1rem);
+    transition: transform 0.4s ease;
+}
+
+.all-recipes h3 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Georgia', serif;
+    color: #f6fffc;
+    margin-top: 4.5rem;
+    margin-bottom: 2.5rem;
+    animation: flicker 1.5s infinite alternate;
+}
+
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow:
+     0 0 10px #fff, 
+     0 0 20px #fff, 
+     0 0 30px #036d64, 
+     0 0 40px #3c9790, 
+     0 0 50px #7bcfc8, 
+     0 0 60px #79d9d1, 
+     0 0 70px #5fa6a0;
+  }
+
+  20%, 24%, 55% {       
+    text-shadow: none;
+  }
 }
 
 .recipe-section {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin: 0 auto;
+    margin: 0 2rem;
     gap: 2rem;
 }
 
@@ -296,10 +499,11 @@ body {
     object-fit: cover;
     border-top-left-radius: 20%;
     border-top-right-radius: 20%;
+    cursor: pointer;
 }
 
 .recipe-section .card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-0.5rem);
     transition: transform 0.6s ease;
 }
 
@@ -310,10 +514,11 @@ body {
     box-shadow: 0 0.625rem 2rem rgba(0,0,0,0.08);
     transition: box-shadow 0.2s ease;
     text-align: center;
+    max-height: 35rem;
 }
 
 .card text {
-    padding: 1.5rem;
+    padding: 1rem 1.9rem;
 }
 
 .card a {
@@ -337,15 +542,32 @@ body {
 .footer {
   margin: 2.5rem;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: 'Montserrat', sans-serif;
   color: #007A70;
 }
 
 @media screen and (max-width: 960px) {
+
   .recipe-section {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
+  }
+
+  .heading-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .recommended-img {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .recommended-card {
+      width: 100%;
+      max-width: 25rem;
   }
 
   .card a {
