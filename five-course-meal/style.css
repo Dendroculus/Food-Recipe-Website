@@ -24,9 +24,14 @@ main {
 .header-navigation {
     background-image: linear-gradient(#f5f5f5, #faf0e6);
     padding-block: 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2000;
 }
 
 .header-navigation ul {
+    position: relative;
     display: flex;
     gap: 2.5rem;
     margin: 0 2rem 0 2rem;
@@ -44,11 +49,16 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 2.5em;
+    width: 2.5rem;
     height: 2.5rem;
     border-radius: 30%;
     background-color: transparent;
     transition: background-color 0.3s ease;
+}
+
+:is(#home, #home:visited) {
+    font-size: 1.8rem;
+    color: #20402d;
 }
 
 :is(.other img, .other img:visited) {
@@ -127,7 +137,7 @@ main {
 }
 
 #check:checked + .checkbtn .bars {
-     transform: rotate(45deg);
+    transform: rotate(45deg);
     top: 0;
 }
 
@@ -144,7 +154,7 @@ main {
     height: 100vh;
     background-color: #fff;
     box-shadow: -0.2rem 0 0.9rem #0b59191a;
-    padding: 5rem 2.5rem 2.5rem;
+    padding: 5rem 2rem 2.5rem;
     transition: left 0.3s ease;
     z-index: 10;
     overflow-y: auto;
@@ -160,7 +170,6 @@ main {
     gap: 1rem;
     align-items: center;
     padding: 0.75rem;
-    border-radius: 10%;
     transition: all 0.3 ease;
     margin-bottom: 0.5rem;
 }
@@ -179,102 +188,39 @@ main {
   font-weight: 700;
 }
 
+.border-bottom {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.8rem 0;
+    transition: all 0.3s ease;
+}
+
+.border-bottom::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0.18rem;
+    background: linear-gradient(90deg, #007A70, #00b3a1, #007A70);
+    transition: width 0.4s ease;
+    border-radius: 10%;
+}
+
+.border-bottom:hover:after {
+    width: 100%;
+}
+
 .recipe-menu > div:hover {
     background: #f4fdff;
-    transform: translateX(5px);
 }
 
 .recipe-menu img {
   width: 7rem;
   height: 5rem;
   border-radius: 10%;
-}
-
-.site-search {
-  flex-shrink: 0;
-}
-
-.site-search .search {  
-  max-width: 60%;
-  margin: 2rem auto;
-  height: 3.5rem;
-  display: flex;
-  align-items: center;
-  gap: 0.625rem;
-  padding: 0 1rem;
-  background: #e9e9e9;
-  border-radius: 1.375rem;
-  box-shadow: 0 0.625rem 2rem rgba(0,0,0,0.08);
-  transition: box-shadow 0.2s ease, filter 0.2s ease;
-}
-
-.site-search .search:hover {
-  box-shadow: 0 0.75rem 2.5rem rgba(0,0,0,0.12);
-  filter: brightness(0.95);
-}
-
-.site-search .search button {
-  background: #fff;
-  border: none;
-  border-radius: 50%;
-  padding: 0.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
-.site-search .search button img {
-  width: 1.5rem;
-  height: 1.5rem;
-  filter: brightness(0.5);
-}
-
-.site-search .search button:hover { 
-  background: #007A70; 
-}
-
-.site-search .search button:hover img { 
-  filter: brightness(0) invert(1); 
-}
-
-.site-search .search input {
-  flex: 1;
-  border: 0;
-  background: #e9e9e9;
-  font-size: 1rem;
-  outline: none;
-  padding-left: 0.5rem;
-}
-
-.site-search .search {
-  position: relative;
-}
-
-.site-search .search button {
-  position: absolute;
-  left: 1rem;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: left;
-}
-
-.site-search .search:focus-within button {
-  left: calc(100% - 3rem);
-  background: #007A70;
-}
-
-.site-search .search:focus-within button img {
-  filter: brightness(0) invert(1);
-}
-
-.site-search .search input {
-  width: 100%;
-  padding: 0.75rem 3rem; 
-  border: none;
-  background: #e9e9e9;
-  font-size: 1rem;
-  outline: none;
 }
 
 .main-course {
@@ -522,11 +468,20 @@ main {
 
 .recipe-section img {
     width: 100%;
-    height: 80%;
+    height: 100%;
     object-fit: cover;
     border-top-left-radius: 20%;
     border-top-right-radius: 20%;
     cursor: pointer;
+    display: block;
+}
+
+.card-image {
+  height: 12.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .recipe-section .card:hover {
@@ -534,25 +489,50 @@ main {
     transition: transform 0.6s ease;
 }
 
-.card {
+:is(.card, .card a:visited) {
     background-color: #fff;
     border-radius: 20%;
     overflow: hidden;
     box-shadow: 0 0.625rem 2rem rgba(0,0,0,0.08);
     transition: box-shadow 0.2s ease;
     text-align: center;
-    max-height: 35rem;
+    max-height: 25rem;
+    display: flex;
+    flex-direction: column;
+    animation: rainbow-border 3s infinite;
+}
+
+@keyframes rainbow-border {
+    0% {
+        border: 3px solid #007A70;
+    }
+    25% {
+        border: 3px solid #00b3a1;
+    }
+    50% {
+        border: 3px solid #b7e19d;
+    }
+    75% {
+        border: 3px solid #52aea7;
+    }
+    100% {
+        border: 3px solid #007A70;
+    }
 }
 
 .card text {
-    padding: 1rem 1.9rem;
+    padding: 1rem 2rem;
+    height: 12.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.card a {
+:is(.card a, .card a:visited) {
     text-decoration: none;
     color: #007A70;
     font-weight: 600;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     display: block;
     margin-bottom: 0.5rem;
     transition: color 0.2s ease;
@@ -564,14 +544,18 @@ main {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     opacity: 0.5;
+    margin-bottom: 2rem;
 }
 
 .footer {
   margin: 2.5rem;
   text-align: center;
-  font-size: 1.5rem;
-  font-family: 'Montserrat', sans-serif;
-  color: #007A70;
+}
+
+.footer h3 {
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #007A70;
 }
 
 @media screen and (max-width: 960px) {
@@ -612,17 +596,125 @@ main {
     color: #333;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     opacity: 0.5;
 }
 
 .card text {
   padding: 2rem;
 }
-
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
+
+   body {
+    overflow-x: hidden;
+  }
+
+  .main-course {
+      font-size: 2.5rem;
+  }
+
+  .main-course-definition {
+      font-size: 0.8rem;
+      margin: 0 1.5rem;
+  }
+
+  .check-out {
+    font-size: 1.1rem;
+    margin: 0 1rem 1rem 1rem;
+    max-width: 100%;
+  }
+
+  .text-container .content p:last-of-type {
+      font-size: 1.1rem;
+      padding: 0.8rem 1.2rem;
+      margin: 0 1rem;
+  }
+
+  .recommended-section {
+      margin: 1rem 0.5rem;
+  }
+
+  .heading-container {
+     margin-inline: 1rem;
+     margin-top: 1rem;
+     flex-direction: column;
+     gap: 0.5rem;
+  }
+
+  .top-line {
+      font-size: 2rem;
+      letter-spacing: 0.2rem;
+      margin-bottom: 0.3rem;
+  }
+
+  .top-line::after {
+      width: 4rem;
+      height: 0.15rem;
+  }
+
+  .recommended-img {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+  }
+
+  .header-navigation {
+    padding-block: 1rem;
+    box-sizing: border-box;
+  }
+
+  .header-navigation ul {
+      margin: 0 1rem;
+      gap: 1rem;
+  }
+
+  .celestial-logo {
+      margin-left: 2rem;
+      flex: 1;
+      align-items: center;
+  }
+
+  :is(.celestial-logo a, .celestial-logo a:visited) {
+      font-size: 1.5rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 150px;
+  }
+
+  .other-logo {
+      gap: 0.25rem;
+  }
+
+  .other {
+      width: 2rem;
+      height: 2rem;
+  }
+
+  #home {
+      font-size: 1.4rem;
+  }
+
+  :is(.other img, .other img:visited) {
+      width: 1.6rem;
+      height: 1.6rem;
+  }
+
+  .checkbtn {
+      width: 2rem;
+      height: 2rem;
+  }
+
+  .bars {
+      width: 2rem;
+  }
+
+  .bars::after {
+      width: 2rem;
+  }
+
   .recipe-section {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
@@ -643,17 +735,49 @@ main {
     color: #333;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    margin-bottom: 3rem;
     opacity: 0.5;
+    margin-bottom: 1rem;
 }
 
-.card text {
-  padding: 2rem;
-}
+  .card text {
+    padding: 2rem;
+  }
+
+ .footer {
+        font-size: 0.8rem;
+    }
 
 }
 
 @media screen and (max-width: 480px) {
+
+    .header-navigation ul {
+        margin: 0 0.5rem;
+        gap: 0.5rem;
+    }
+
+    :is(.celestial-logo a, .celestial-logo a:visited) {
+        font-size: 1.2rem;
+        max-width: 120px;
+    }
+
+    .other-logo {
+        gap: 0.15rem;
+    }
+
+    .other {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+
+    #home {
+        font-size: 1.2rem;
+    }
+
+    :is(.other img, .other img:visited) {
+        width: 1.4rem;
+        height: 1.4rem;
+    }
 
     .recipe-section {
         grid-template-columns: 1fr;
@@ -675,6 +799,15 @@ main {
     .other img {
         width: 18px;
         height: 18px;
+    }
+
+    :is(.card a, .card a:visited) {
+        font-size: 1.2rem;
+        display: block;
+    }
+
+    .footer {
+        font-size: 0.8rem;
     }
 
 }
