@@ -405,6 +405,71 @@ main {
     transition: transform 0.4s ease;
 }
 
+.youtube-title {
+    text-align: center;
+    text-align: center;
+    font-family: 'Playwrite', sans-serif;
+    font-size: 2.5rem;
+    padding-bottom: 3.5rem;
+    color: #d6fffc;
+    margin-bottom: 3.5rem;
+    text-shadow: 0 -20px 80px, 0 0 2px, 0 0 1em #1f9188, 
+        0 0 0.3em #1f9188, 0 0 0.1em #1f9188, 0 10px 3px #1f9188;
+}
+
+.youtube-shorts-videos {
+    padding: 2.5rem;
+    margin: 2rem auto;
+    max-width: 100rem;
+   background: linear-gradient(to bottom,
+        rgba(0, 122, 112, 0.01) 0%,
+        rgba(48, 164, 154, 0.3) 20%,
+        rgba(0, 122, 112, 0.6) 50%,
+        rgba(0, 122, 112, 0.3) 80%,
+        rgba(0, 122, 112, 0.02) 100%
+    );
+}
+
+.short-item {
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.short-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.short-video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 177.77%; 
+}
+
+.short-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 5%;
+}
+
+.btn-secondary {
+    background: linear-gradient(135deg, #00A8A8, #4dbb96);
+    border: none;
+    transform: scale(1.5);
+    font-weight: 600;
+    font-size: 2.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    box-shadow: 0 4px 12px rgba(0, 122, 112, 0.3);
+}
+
 .all-recipes h3 {
     text-align: center;
     font-size: 3rem;
@@ -559,7 +624,7 @@ main {
 }
 
 @media screen and (max-width: 1024px) {
-  
+
   .bars, .bars::after {
       margin-bottom: 0.8rem;
   }
@@ -805,6 +870,20 @@ main {
       width: 2rem;
   }
 
+  .youtube-shorts-videos {
+        padding: 2.5rem 2.5rem;
+    }
+    
+  .youtube-title {
+      font-size: 2.4rem;
+  }
+    
+  .short-video iframe {
+
+      height: 300px;
+      border-radius: 0;
+  }
+
   .recipe-section {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
@@ -895,6 +974,18 @@ main {
         max-width: 90%;
         margin-bottom: 0.5rem;
         padding: 0 1rem;
+    }
+
+    .youtube-shorts-videos {
+        padding: 1.5rem 0.5rem;
+    }
+    
+    .youtube-title {
+        font-size: 2.2rem;
+    }
+    
+    .short-video iframe {
+        height: 350px;
     }
 
     .recipe-section {
