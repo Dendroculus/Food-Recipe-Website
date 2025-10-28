@@ -18,7 +18,7 @@
 }
 
 :root{
-  --panel-bg: rgba(255, 225, 225, 0.8);
+  --panel-bg: rgba(255, 225, 225, 0.814);
   --text-muted: #070707;
   --overlay-grad: linear-gradient(135deg,#ff4b2b 0%, #ff416c 100%);
   --shadow: 0 24px 48px rgba(0,0,0,.12), 0 8px 24px rgba(0,0,0,.08);
@@ -193,6 +193,7 @@ body {
   text-decoration: underline;
 }
 
+
 /* Primary buttons (link-styled) */
 #button,
 #button_signup{
@@ -267,26 +268,34 @@ body {
   text-decoration: underline;
 }
 
-/* Social containers (kept minimal) */
 .container_gambar,
 .container_gambar_signup{
-  margin-top: .5rem;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 1rem;
-  opacity: .85;
+}
+
+.container_gambar a, 
+.container_gambar_signup a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  /* border: 3px solid #f0f9fe; */
+  border-radius: 50%;
+  z-index: 1;
+  overflow: hidden;
 }
 
 .container_gambar img,
 .container_gambar_signup img{
-  width: 2.5rem;
-  height: 2.5rem;
-  object-fit: contain;
-  cursor: pointer;
+  width: 3.7rem;
+  height: 3.7rem;
 }
 
 /* ---------------- Overlay animation ---------------- */
-
 /* Overlay shell covers one side at a time and slides across */
 .overlay-container{
   position: absolute;
