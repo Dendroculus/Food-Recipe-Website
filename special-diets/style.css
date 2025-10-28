@@ -10,11 +10,10 @@
 }
 
 body {
-  background-image: linear-gradient(174.2deg, rgb(251, 184, 85) 7.1%, rgb(229, 57, 57) 67.4%);
+  background: linear-gradient(#ffffff, #e6ac2d);
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
-  color: #333;
   line-height: 1.7;
 }
 
@@ -25,37 +24,189 @@ main {
   backdrop-filter: blur(4px);
   padding: 2.5rem;
   border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 20px black;
+}
+
+.menu {
+  background: #a2ea1c;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px black ;
+  padding-left: 1rem;
+}
+
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: left;
+  gap: 2rem;
+}
+
+.menu li {
+  margin: 0;
+}
+
+.celestial-logo {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.15rem;
+  z-index: 150;
+  text-align: center;
+}
+
+.celestial-logo a {
+  color: #333;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+}
+.menu a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.menu a:hover {
+  background: #30e8ba;
+  color: black;
+}
+
+.menu .dropdown {
+  position: relative;
+}
+
+.menu .dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #ffffff;
+  min-width: 220px;
+  max-height: 320px;
+  overflow-y: auto;
+  box-shadow: 0 6px 18px black;
+  border-radius: 8px;
+  padding: 8px;
+  z-index: 200;
+}
+
+.menu .dropdown:hover .dropdown-content,
+.menu .dropdown:focus-within .dropdown-content {
+  display: block;
+
+}
+
+.dropdown-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 6px;
+  border-radius: 6px;
+  color: #443f3f;
+  text-decoration: none;
+}
+
+.dropdown-item img {
+  width: 72px;
+  height: 54px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex: 0 0 auto;
+}
+
+.dropdown-item span {
+  font-weight: 600;
+}
+
+.dropdown-item:hover {
+  background: #30e8ba;
+  color: #fff;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .menu .dropdown-content {
+    position: static;
+    max-height: none;
+    overflow: visible;
+    width: 100%;
+    box-shadow: none;
+    background: #f9f9f9;
+    padding: 6px 0;
+  }
+  .dropdown-item img {
+    width: 60px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .celestial-logo {
+    position: static;
+    transform: none;
+    margin: 0.75rem 0;
+  }
+}
+
+.search-box {
+  text-align: right ;
+  margin: 1rem 0;
 }
 
 .main-nav {
-    background: #a6ff00;
-    padding: 1rem 0;
-    margin-bottom: 2rem;
+  background: #ff9100;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
 }
 
 .main-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .main-nav a {
-    color: #333;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: bold;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    transition: all 0.3s ease;
+  color: #333;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
 }
 
 .main-nav a:hover {
-    background: #30e8ba;
-    color: #fff;
+  background: #30e8ba;
 }
 
 p {
@@ -63,7 +214,7 @@ p {
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
   margin-top: 0;
-  color: #2a4d2e;
+  color: #fad82e;
 }
 
 h2 {
@@ -76,7 +227,7 @@ h2 {
 }
 h2 a {
     text-decoration: none;
-    color: #2cd142;
+    color: #14ed31;
 }
 
 h2 a:hover {
@@ -86,7 +237,7 @@ h2 a:hover {
 h3 {
   font-size: 1.3rem;
   margin-top: 1.2rem;
-  color: #51714f;
+  color: #11ff00;
 }
 
 ul {
@@ -108,6 +259,15 @@ h2 + h3 {
   margin-top: 0.5rem;
 }
 
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #ffffff;
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid #000000;
+}
+
 
 @media (max-width: 600px) {
   main {
@@ -126,28 +286,33 @@ div.scrollmenu {
   background-color: #a2ea1c;
   overflow: auto;
   white-space: nowrap;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 15px;
+  scrollbar-color: #000000 #b8b9a7;
 }
 
 div.scrollmenu a {
   display: inline-flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   color: black;
   text-align: center;
   padding: 8px;
   text-decoration: none;
-  width: 325px; 
-  height: 350px;
-  box-sizing: border-box;
+  width: 350px; 
+  height: 325px;
+  box-sizing:content-box;
   margin-right: 8px;
   vertical-align: top;
   background: transparent;
+  border-radius: 10px;
 } 
 
 div.scrollmenu a:hover {
   background-color: #30e8ba;
   font-size: 20px;
   font-weight: bold;
-  transition: background-color 0.4s, font-size 0.4s;
+  transition: background-color 0.3s, font-size 0.3s;
 }
