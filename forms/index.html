@@ -1,90 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Sign in</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css"/>
+  <title>Sign in / Sign up</title>
 </head>
 <body>
-    <input class="visually-hidden" type="radio" name="panel" id="to-signin" checked>
-    <input class="visually-hidden" type="radio" name="panel" id="to-signup">
-    <section class="form_box">
-        <div id="left">
-            <header id="head">
-                <h1>WELCOME BACK 👋</h1>
-                <p id="details">Welcome back! Please enter your details.</p>
-            </header>
-            <form action="Sign_in">
-                <section class="form_login">
-                    <label for="email" class="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Enter your email" autocomplete="off" minlength="5">
-                    <label for="password" class="password">Password</label>
-                    <input type="password" name="password" id="password" placeholder="Enter your password" autocomplete="off" minlength="4">
-                </section>
-                <div id="footer">
-                    <input type="checkbox" id="kotak" >
-                    <label for="kotak">Remember me</label>
-                    <a href="#">Forgot password?</a>
-                </div>
-                <a href="#" id="button">Sign in</a>
-                <p id="or">Or</p>
-                <div id="sign_up">
-                    <p>Don't have an account?<a href="#to-signup"> Sign up</a></p>
-                </div>
-                <section class="container_gambar">
-                    <a href="#"><img src="../assets/logo/Google.png" alt="google"></a>
-                    <a href="#"><img src="../assets/logo/Facebook.png" alt="facebook"></a>
-                    <a href="#"><img src="../assets/logo/Github.png" alt="github"></a>
-                    <a href="#"><img src="../assets/logo/X.png" alt="X"></a>
-                </section>
-            </form>
+  <!-- Use radios + labels (no URL hash needed) -->
+  <input class="visually-hidden" type="radio" name="panel" id="to-signin" checked>
+  <input class="visually-hidden" type="radio" name="panel" id="to-signup">
+
+  <section class="form_box">
+    <div id="left">
+      <header id="head">
+        <h1>WELCOME BACK 👋</h1>
+        <p id="details">Welcome back! Please enter your details.</p>
+      </header>
+
+      <form action="Sign_in">
+        <section class="form_login">
+          <label for="email" class="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Enter your email" autocomplete="off" minlength="5">
+          <label for="password" class="password">Password</label>
+          <input type="password" name="password" id="password" placeholder="Enter your password" autocomplete="off" minlength="4">
+        </section>
+
+        <div id="footer">
+          <div class="remember-wrap">
+            <input type="checkbox" id="kotak">
+            <label for="kotak">Remember me</label>
+          </div>
+          <a href="#">Forgot password?</a>
         </div>
 
-        <div id="right">
-            <div class="head_right">
-                <h1>SIGN UP</h1>
-            </div>
-            <form action="Sign_up">
-                <section class="form_signup">
-                    <label for="username" class="username">Username</label>
-                    <input type="text" name="username" id="username" placeholder="Enter your username" autocomplete="off" minlength="5">
-                    <label for="email_signup" class="email_signup">Email</label>
-                    <input type="email" name="email_signup" id="email_signup" placeholder="Enter your email" autocomplete="off" minlength="5">
-                    <label for="password_signup" class="password_signup">Password</label>
-                    <input type="password" name="password_signup" id="password_signup" placeholder="Enter your password" autocomplete="off" minlength="4">
-                </section>
-                <div id="footer_signup">
-                    <input type="checkbox" id="kotak2"> 
-                    <label for="kotak2">I agree to the Terms of Service and Privacy Policy</label>
-                </div>
-                <a href="#" id="button_signup">Sign up</a>
-                <div id="sign_in">
-                    <p>Already have an account?<a href="#to-signin"> Sign in</a></p>
-                </div>
-                <p id="or_signup">Or</p>
-                <div class="container_gambar_signup">
-                    <a><img src="../assets/logo/Google.png" alt="google"></a>
-                    <a><img src="../assets/logo/Facebook.png" alt="facebook"></a>
-                    <a><img src="../assets/logo/Github.png" alt="github"></a>
-                    <a><img src="../assets/logo/X.png" alt="X"></a>
-                </div>
-            </form>
+        <a href="#" id="button">Sign in</a>
+
+        <p id="or">Or</p>
+
+        <div id="sign_up">
+          <p>Don't have an account?
+            <!-- Tap to switch without needing URL hash -->
+            <label for="to-signup" class="switch-link"> Sign up</label>
+          </p>
         </div>
-        <section class="overlay-container" aria-hidden="true">
-          <div class="overlay">
-            <article class="overlay-panel overlay-left">
-              <h2>Welcome Back!</h2>
-              <p>To keep connected with us please login with your personal info</p>
-              <a href="#to-signin" class="to_btn">Sign In</a>
-            </article>
-            <article class="overlay-panel overlay-right">
-              <h2>Hello, Friend!</h2>
-              <p>Enter your personal details and start your journey with us</p>
-              <a href="#to-signup" class="to_btn">Sign Up</a>
-            </article>
-          </div>
+
+        <section class="container_gambar">
+          <a href="#"><img src="../assets/logo/Google.png" alt="google"></a>
+          <a href="#"><img src="../assets/logo/Facebook.png" alt="facebook"></a>
+          <a href="#"><img src="../assets/logo/Github.png" alt="github"></a>
+          <a href="#"><img src="../assets/logo/X.png" alt="X"></a>
         </section>
+      </form>
+    </div>
+
+    <div id="right">
+      <div class="head_right">
+        <h1>SIGN UP</h1>
+      </div>
+
+      <form action="Sign_up">
+        <section class="form_signup">
+          <label for="username" class="username">Username</label>
+          <input type="text" name="username" id="username" placeholder="Enter your username" autocomplete="off" minlength="5">
+          <label for="email_signup" class="email_signup">Email</label>
+          <input type="email" name="email_signup" id="email_signup" placeholder="Enter your email" autocomplete="off" minlength="5">
+          <label for="password_signup" class="password_signup">Password</label>
+          <input type="password" name="password_signup" id="password_signup" placeholder="Enter your password" autocomplete="off" minlength="4">
+        </section>
+
+        <div id="footer_signup">
+          <input type="checkbox" id="kotak2">
+          <label for="kotak2">I agree to the Terms of Service and Privacy Policy</label>
+        </div>
+
+        <a href="#" id="button_signup">Sign up</a>
+
+        <div id="sign_in">
+          <p>Already have an account?
+            <!-- Tap to switch back -->
+            <label for="to-signin" class="switch-link"> Sign in</label>
+          </p>
+        </div>
+
+        <p id="or_signup">Or</p>
+
+        <div class="container_gambar_signup">
+          <a href="#"><img src="../assets/logo/Google.png" alt="google"></a>
+          <a href="#"><img src="../assets/logo/Facebook.png" alt="facebook"></a>
+          <a href="#"><img src="../assets/logo/Github.png" alt="github"></a>
+          <a href="#"><img src="../assets/logo/X.png" alt="X"></a>
+        </div>
+      </form>
+    </div>
+
+    <!-- Make the entire gradient panel tappable via label -->
+    <section class="overlay-container" aria-hidden="true">
+      <div class="overlay">
+        <!-- Click anywhere on the panel to switch -->
+        <label for="to-signin" class="overlay-panel overlay-left" role="button" tabindex="0" aria-label="Switch to Sign In">
+          <h2>Welcome Back!</h2>
+          <p>To keep connected with us please login with your personal info</p>
+          <span class="to_btn">Sign In</span>
+        </label>
+
+        <label for="to-signup" class="overlay-panel overlay-right" role="button" tabindex="0" aria-label="Switch to Sign Up">
+          <h2>Hello, Friend!</h2>
+          <p>Enter your personal details and start your journey with us</p>
+          <span class="to_btn">Sign Up</span>
+        </label>
+      </div>
     </section>
+  </section>
 </body>
-</html
+</html>
