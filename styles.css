@@ -106,7 +106,8 @@ body {
 }
 
 .navtop a:hover {
-  transform: scale(1.07);
+  transform: scale(1.03);
+  border-radius: 1rem;
 }
 
 .menu-button {
@@ -127,12 +128,11 @@ body {
   transition: opacity 0.16s ease, transform 0.16s ease;
   background: #fff;
   min-width: 20rem;
-  padding: 0.75rem 0;
+  padding: 0.75rem 0 0 0;
   border-radius: 0.75rem;
   box-shadow: 0 0.875rem 2.25rem rgba(0,0,0,0.14);
   pointer-events: none;
   z-index: 1;
-  overflow: hidden;
   list-style: none;
 }
 
@@ -302,6 +302,7 @@ body {
 }
 
 .hero h1:hover,
+.section-title:hover,
 .celestial:hover {
   text-shadow: 0 0.25rem 0.5rem rgba(0, 191, 165, 0.3);
   transform: translateY(-0.125rem);
@@ -481,6 +482,11 @@ body {
   color: #007A70;
   margin-bottom: 1rem;
 }
+
+.section-title {
+  text-align: center;
+}
+
 
 .feature-card,
 .spotlight-card {
