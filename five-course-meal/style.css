@@ -558,11 +558,83 @@ main {
     color: #007A70;
 }
 
+@media screen and (max-width: 1024px) {
+  
+  .bars, .bars::after {
+      margin-bottom: 0.8rem;
+  }
+
+  .recommended-section {
+      display: flex;
+      justify-content: center;
+  }
+
+  .recipe-section {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .top-line {
+      font-size: 3.5rem;
+  }
+
+  .bottom-line {
+      font-size: 2.5rem;
+  }
+
+  .heading-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .recommended-img {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .recommended-card {
+      width: 100%;
+      max-width: 25rem;
+  }
+
+  .card a {
+    text-decoration: none;
+    color: #007A70;
+    font-weight: 600;
+    font-size: 1.7rem;
+    display: block;
+    margin-bottom: 0.5rem;
+    transition: color 0.2s ease;
+  }
+
+  .card p {
+      font-size: 1.4rem;
+      color: #333;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      opacity: 0.5;
+  }
+
+  .card text {
+    padding: 2rem;
+  }
+}
+
 @media screen and (max-width: 960px) {
 
   .recipe-section {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
+  }
+
+  .top-line {
+      font-size: 3.5rem;
+  }
+
+  .bottom-line {
+      font-size: 2.5rem;
   }
 
   .heading-container {
@@ -622,18 +694,29 @@ main {
 
   .check-out {
     font-size: 1.1rem;
-    margin: 0 1rem 1rem 1rem;
-    max-width: 100%;
+    max-width: 28rem;
+    margin-bottom: 0.8rem;
+  }
+
+
+  .text-container .content {
+      height: 25rem;
+      border-radius: 6%;
+      padding: 1.5rem;
   }
 
   .text-container .content p:last-of-type {
       font-size: 1.1rem;
       padding: 0.8rem 1.2rem;
+      border-left: 0.25rem solid #b7e19d;
       margin: 0 1rem;
+      max-width: 95%;
   }
 
   .recommended-section {
       margin: 1rem 0.5rem;
+      display: flex;
+      flex-direction: column;
   }
 
   .heading-container {
@@ -650,14 +733,24 @@ main {
   }
 
   .top-line::after {
-      width: 4rem;
+      width: 5.5rem;
       height: 0.15rem;
   }
 
   .recommended-img {
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
+      justify-content: center;
       gap: 1rem;
+  }
+
+  .recommended-card {
+      width: 20rem;
+      height: 8rem; 
+  }
+
+  .overlay .text {
+      font-size: 1.2rem;
   }
 
   .header-navigation {
@@ -678,9 +771,6 @@ main {
 
   :is(.celestial-logo a, .celestial-logo a:visited) {
       font-size: 1.5rem;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
       max-width: 150px;
   }
 
@@ -693,8 +783,8 @@ main {
       height: 2rem;
   }
 
-  #home {
-      font-size: 1.4rem;
+  :is(#home, #home:visited) {
+      font-size: 1.3rem;
   }
 
   :is(.other img, .other img:visited) {
@@ -752,7 +842,7 @@ main {
 @media screen and (max-width: 480px) {
 
     .header-navigation ul {
-        margin: 0 0.5rem;
+        margin: 0 0.1rem;
         gap: 0.5rem;
     }
 
@@ -779,16 +869,73 @@ main {
         height: 1.4rem;
     }
 
+    .bars, .bars::after {
+        width: 1.5rem;
+        height: 0.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .text-container .content {
+        height: 20rem;
+        border-radius: 5%;
+        padding-top: 1.5rem;
+    }
+
+    .text-container .content p:last-of-type {
+        margin: 6.5rem 0 1rem 0;
+        font-size: 0.7rem;
+        padding: 0.7rem 1rem;
+        border-left: 0.2rem solid #b7e19d;
+        border-radius: 5%;
+    }
+
+    .check-out {
+        font-size: 1rem;
+        line-height: 1.6;
+        max-width: 90%;
+        margin-bottom: 0.5rem;
+        padding: 0 1rem;
+    }
+
     .recipe-section {
         grid-template-columns: 1fr;
+    }
+
+    .overlay .text {
+      font-size: 0.8rem;
     }
             
     .header-navigation ul {
       padding: 0.75rem;
     }
+
+    .celestial-logo {
+        display: block;
+        margin: 0 1.2rem;
+    }
             
-    .celestial-logo a {
-        font-size: 1.6rem;
+    :is(.celestial-logo a, .celestial-logo a:visited) {
+        font-size: 1rem;
+    }
+
+    .recipe-menu {
+        width: 200px;
+        padding: 3rem 1rem 1.5rem;
+    }
+
+    .recipe-menu a {
+      font-size: 0.7rem;
+    }
+
+    .recipe-menu h3 {
+        font-size: 1.2rem;
+        margin-top: 2.5rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .recipe-menu img {
+        width: 5rem;
+        height: 3rem;
     }
             
     .other {
