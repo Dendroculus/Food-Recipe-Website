@@ -1,350 +1,470 @@
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Home</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>  
-    <nav class="navtop container-fluid">
-      <ul class="list-unstyled">
-        <li class="left">
-          <input type="checkbox" id="menu-toggle" class="menu-toggle" hidden />
-          <label for="menu-toggle" class="menu-button" title="Menu">MENU</label>
-          <div id="primary-nav" class="nav-left">
-            <div class="dropdown-container">
-              <a href="#" class="recipes-link">RECIPES</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Celestial Home</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>  
+  <nav class="navtop container-fluid">
+    <ul class="list-unstyled">
+      <li class="left">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" hidden />
+        <label for="menu-toggle" class="menu-button" title="Menu">MENU</label>
+        <div id="primary-nav" class="nav-left">
+          <div class="dropdown-container">
+            <a href="#" class="recipes-link">RECIPES</a>
+            <ul class="navtop-dropdown">
+              <li>
+                <a href="./five-course-meal/main-course.html">
+                  <img class="img-fluid" src="./assets/main_course/main_course_pfp.jpg" alt="Main course" loading="lazy" />
+                  <span>Main Course</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="img-fluid" src="./assets/appetizers/appetizers_pfp.jpg" alt="Appetizers" loading="lazy" />
+                  <span>Appetizers</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="img-fluid" src="./assets/salad/salad_pfp.jpg" alt="Salad" loading="lazy" />
+                  <span>Salad</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="img-fluid" src="./assets/desserts/desserts_pfp.jpg" alt="Desserts" loading="lazy" />
+                  <span>Desserts</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown-container">
+            <a href="#">INSPIRATION</a>
+            <ul class="navtop-dropdown">
+              <li>
+                <a href="#">
+                  <img class="img-fluid" src="./assets/inspiration/stellar_tips_pfp.jpg" alt="Stellar Tips" loading="lazy" />
+                  <span>Stellar Tips</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="img-fluid" src="./assets/inspiration/seasonal_constellation_pfp.png" alt="Seasonal Constellations" loading="lazy" />
+                  <span>Seasonal Constellations</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="img-fluid" src="./assets/inspiration/kitchen_universe_pfp.png" alt="Kitchen Universe" loading="lazy" />
+                  <span>Kitchen Universe</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="img-fluid" src="./assets/inspiration/guiding_stars_pfp.png" alt="Guiding Stars" loading="lazy" />
+                  <span>Guiding Stars</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="img-fluid" src="./assets/inspiration/orbit_of_flavors_pfp.png" alt="Orbit Of Flavors" loading="lazy" />
+                  <span>Orbit Of Flavors</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown-container">
+            <a href="#">SHOP</a>
+            <ul class="navtop-dropdown">
+              <li>
+                <a href="./five-course-meal/main-course.html">
+                  <img class="img-fluid" src="./assets/shop/Ingredients/ingredients_pfp.jpg" alt="Main course" loading="lazy" />
+                  <span>Cooking Ingredients</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="img-fluid" src="./assets/shop/Kitchen Tools/kitchen_tools_pfp.jpg" alt="Kitchen Tools" loading="lazy" />
+                  <span>Kitchen Tools</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="img-fluid" src="./assets/shop/Cookware Appliances/cookware_appliances_pfp.jpg" alt="Cookware & Appliances" loading="lazy" />
+                  <span>Cookware & Appliances</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="img-fluid" src="./assets/shop/Recipe Themed/recipe_themed_merch_pfp.png" alt="Recipe Themed Merch" loading="lazy" />
+                  <span>Recipe Themed Merch</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="img-fluid" src="./assets/shop/Digital Products/digital_products_pfp.PNG" alt="Digital Products" loading="lazy" />
+                  <span>Digital Products</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown-container">
+            <a href="#">ABOUT US</a>
               <ul class="navtop-dropdown">
                 <li>
                   <a href="./five-course-meal/main-course.html">
-                    <img class="img-fluid" src="./assets/main_course/main_course_pfp.jpg" alt="Main course" loading="lazy" />
-                    <span>Main Course</span>
+                    <img class="img-fluid" src="./assets/about us/about_us_pfp.png" alt="Main course" loading="lazy" />
+                    <span>Our Story</span>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <img class="img-fluid" src="./assets/appetizers/appetizers_pfp.jpg" alt="Appetizers" loading="lazy" />
-                    <span>Appetizers</span>
+                    <img class="img-fluid" src="./assets/about us/meet_the_team_pfp.png" alt="Appetizers" loading="lazy" />
+                    <span>Meet the Team</span>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <img class="img-fluid" src="./assets/salad/salad_pfp.jpg" alt="Salad" loading="lazy" />
-                    <span>Salad</span>
+                    <img class="img-fluid" src="./assets/about us/our_mission_pfp.png" alt="Salad" loading="lazy" />
+                    <span>Our Mission</span>
                   </a>
                 </li>
                 <li>
                   <a href="#">
-                    <img class="img-fluid" src="./assets/desserts/desserts_pfp.jpg" alt="Desserts" loading="lazy" />
-                    <span>Desserts</span>
+                    <img class="img-fluid" src="./assets/about us/contact_us_pfp.png" alt="Desserts" loading="lazy" />
+                    <span>Contact Us</span>
                   </a>
                 </li>
-              </ul>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="celestial">
+        <a href="index.html">CELESTIAL 💫</a>
+      </li>
+      <li class="right">
+        <a href="forms/index.html"><img class="img-fluid" src="./assets/icons/user.png" alt="user" width="32" height="32" /></a>
+        <a href="#"><img class="img-fluid" src="./assets/icons/shopping_cart.png" alt="shopping bag" width="32" height="32" /></a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="hero-search-container">
+    <div class="hero-text-and-desc">
+      <div class="hero">
+        <h1>Cook like a star - quick, seasonal recipes</h1> 
+      </div>
+      <p class="herodesc">
+        Discover a universe of easy-to-make, seasonal recipes that bring the flavors of the cosmos to your kitchen. Whether you're a novice cook or a seasoned chef, our collection of stellar dishes will inspire you to create meals that are out of this world.
+      </p>
+      <div class="more">
+        <a href="#" class="explore">EXPLORE RECIPES</a>
+        <a href="#quick-recipes-form" class="subscribe">SUBSCRIBE</a>
+      </div>
+      <div class="today-picks">
+        <h1>Today's Picks</h1>
+        <div class="today-picks-fyp">
+          <div class="fyp-image">
+            <img class="img-fluid" src="./assets/main_course/Pork Chops Charcutiere Sauce.png" alt="Pork Chops Charcutiere Sauce"/>
+            <a href="#">Pork Chops Charcutiere</a>
+            <p>30 min • Medium • ★ 4.8 </p>
+          </div>
+          <div class="fyp-image">
+            <img class="img-fluid" src="./assets/desserts/Panacotta.png" alt="Panacotta">
+            <a href="#">Panacotta</a>
+            <p>2 hr • Medium • ★ 4.7 </p>
+          </div>
+          <div class="fyp-image">
+            <img class="img-fluid" src="./assets/salad/salad_pfp.jpg" alt="Provino Salad">
+            <a href="#">Provino Salad</a>
+            <p>10 min • Easy • ★ 4.5 </p>
+          </div>
+        </div>
+        <div class="today-picks-fyp">
+          <div class="fyp-image">
+            <img class="img-fluid" src="./assets/desserts/desserts_pfp.jpg" alt="Bingsu"/>
+            <a href="#">Bingsu</a>
+            <p>24 min • Easy • ★ 4.4 </p>
+          </div>
+          <div class="fyp-image">
+            <img class="img-fluid" src="./assets/appetizers/Fried Prosciutto Tortellini.jpg" alt="Fried Prosciutto Tortellini">
+            <a href="#">Fried Prosciutto Tortellini</a>
+            <p>15 min • Medium • ★ 4.9 </p>
+          </div>
+          <div class="fyp-image">
+            <img class="img-fluid" src="./assets/main_course/Lobster Mango Salad.png" alt="Lobster Mango Salad">
+            <a href="#">Lobster Mango Salad</a>
+            <p>10 min • Medium • ★ 4.5 </p>
+          </div>
+        </div>
+        <div class="quick-recipes">
+          <form id="quick-recipes-form" action="quick-recipe-subscribe">
+            <label for="quick-subscribe">Get 5 quick recipes delivered to your inbox for free</label>
+            <div class="input-group">
+              <input type="email" id="quick-subscribe" class="form-control" placeholder="Enter your email" required />
+              <button type="submit" class="btn btn-primary">Subscribe</button>
             </div>
-            <div class="dropdown-container">
-              <a href="#">INSPIRATION</a>
-              <ul class="navtop-dropdown">
-                <li>
-                  <a href="#">
-                    <img class="img-fluid" src="./assets/inspiration/stellar_tips_pfp.jpg" alt="Stellar Tips" loading="lazy" />
-                    <span>Stellar Tips</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img class="img-fluid" src="./assets/inspiration/seasonal_constellation_pfp.png" alt="Seasonal Constellations" loading="lazy" />
-                    <span>Seasonal Constellations</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img class="img-fluid" src="./assets/inspiration/kitchen_universe_pfp.png" alt="Kitchen Universe" loading="lazy" />
-                    <span>Kitchen Universe</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img class="img-fluid" src="./assets/inspiration/guiding_stars_pfp.png" alt="Guiding Stars" loading="lazy" />
-                    <span>Guiding Stars</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img class="img-fluid" src="./assets/inspiration/orbit_of_flavors_pfp.png" alt="Orbit Of Flavors" loading="lazy" />
-                    <span>Orbit Of Flavors</span>
-                  </a>
-                </li>
-              </ul>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <form class="site-search" action="#">
+      <div class="search">
+        <button type="submit" title="Search">
+          <img class="img-fluid" src="./assets/icons/search.png" alt="search" width="24" height="24" />
+        </button>
+        <input type="text" class="form-control" placeholder="Start searching..." />
+      </div>
+    </form>
+  </div>
+
+  <section class="before-footer-features container my-4">
+    <h2 class="section-title">Featured — Recipe of the Week & Kitchen Tips</h2>
+    <div class="row g-3">
+      <div class="col-12 col-md-6">
+        <article class="card feature-card h-100 text-decoration-none">
+          <div class="row g-0 h-100 align-items-stretch">
+            <div class="col-4 col-sm-4 col-md-4">
+              <img src="./assets/main_course/Pork Chops Charcutiere Sauce.png" alt="Recipe of the Week" class="img-fluid rounded-start" />
             </div>
-            <div class="dropdown-container">
-              <a href="#">SHOP</a>
-              <ul class="navtop-dropdown">
-                <li>
-                  <a href="./five-course-meal/main-course.html">
-                    <img class="img-fluid" src="./assets/shop/Ingredients/ingredients_pfp.jpg" alt="Main course" loading="lazy" />
-                    <span>Cooking Ingredients</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img class="img-fluid" src="./assets/shop/Kitchen Tools/kitchen_tools_pfp.jpg" alt="Kitchen Tools" loading="lazy" />
-                    <span>Kitchen Tools</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img class="img-fluid" src="./assets/shop/Cookware Appliances/cookware_appliances_pfp.jpg" alt="Cookware & Appliances" loading="lazy" />
-                    <span>Cookware & Appliances</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img class="img-fluid" src="./assets/shop/Recipe Themed/recipe_themed_merch_pfp.png" alt="Recipe Themed Merch" loading="lazy" />
-                    <span>Recipe Themed Merch</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img class="img-fluid" src="./assets/shop/Digital Products/digital_products_pfp.PNG" alt="Digital Products" loading="lazy" />
-                    <span>Digital Products</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="dropdown-container">
-              <a href="#">ABOUT US</a>
-                 <ul class="navtop-dropdown">
-                  <li>
-                    <a href="./five-course-meal/main-course.html">
-                      <img class="img-fluid" src="./assets/about us/about_us_pfp.png" alt="Main course" loading="lazy" />
-                      <span>Our Story</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img class="img-fluid" src="./assets/about us/meet_the_team_pfp.png" alt="Appetizers" loading="lazy" />
-                      <span>Meet the Team</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img class="img-fluid" src="./assets/about us/our_mission_pfp.png" alt="Salad" loading="lazy" />
-                      <span>Our Mission</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img class="img-fluid" src="./assets/about us/contact_us_pfp.png" alt="Desserts" loading="lazy" />
-                      <span>Contact Us</span>
-                    </a>
-                  </li>
-              </ul>
+            <div class="col-8 col-sm-8 col-md-8">
+              <div class="card-body">
+                <h3 class="card-title">Recipe of the Week</h3>
+                <h4 class="mb-1">Pork Chops Charcutiere</h4>
+                <p class="small text-muted mb-2">30 min • Medium • ★ 4.8</p>
+                <p class="card-text">A quick star-worthy main that balances savory and bright flavors — perfect for weeknight dinners.</p>
+                <div class="d-flex gap-2 mt-2">
+                  <a href="#" class="btn btn-sm btn-success">View Recipe</a>
+                  <a href="#" class="btn btn-sm btn-outline-secondary">Save</a>
+                </div>
+              </div>
             </div>
           </div>
-        </li>
-        <li class="celestial">
-          <a href="index.html">CELESTIAL 💫</a>
-        </li>
-        <li class="right">
-          <a href="forms/index.html"><img class="img-fluid" src="./assets/icons/user.png" alt="user" width="32" height="32" /></a>
-          <a href="#"><img class="img-fluid" src="./assets/icons/shopping_cart.png" alt="shopping bag" width="32" height="32" /></a>
-        </li>
-      </ul>
+        </article>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="card h-100 spotlight-card">
+          <div class="card-body">
+            <h3 class="card-title">Kitchen Tips & Pantry Checklist</h3>
+            <ul class="list-unstyled small text-muted mb-3">
+              <li>• Use seasonal produce for better flavor and lower cost.</li>
+              <li>• Rest meat 5–10 minutes before slicing for juicier results.</li>
+              <li>• Keep a simple pantry: olive oil, vinegar, garlic, canned tomatoes, and dried herbs.</li>
+            </ul>
+            <details class="mt-2 nutrition-details">
+              <summary class="summary-btn">Quick Compare (click to open)</summary>
+              <div class="table-responsive mt-2">
+                <table class="table table-sm align-middle nutrition-table mb-0">
+                  <caption class="visually-hidden">Quick comparison of featured recipes</caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Recipe</th>
+                      <th scope="col">Prep</th>
+                      <th scope="col">Difficulty</th>
+                      <th scope="col">Calories</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Pork Chops Charcutiere</td>
+                      <td>30 min</td>
+                      <td>Medium</td>
+                      <td>520 kcal</td>
+                    </tr>
+                    <tr>
+                      <td>Panacotta</td>
+                      <td>2 hr</td>
+                      <td>Medium</td>
+                      <td>350 kcal</td>
+                    </tr>
+                    <tr>
+                      <td>Provino Salad</td>
+                      <td>10 min</td>
+                      <td>Easy</td>
+                      <td>210 kcal</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </details>
+            <p class="small text-muted mt-3 mb-0">Want more? Use the search above or subscribe to get weekly recipes in your inbox.</p>
+          </div>
+        </div>
+      </div>    
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <h1 class="footer-title">Socials</h1>
+    <div class="socials-logo">
+      <a href="#"><img class="img-fluid" src="./assets/logo/Github.png" alt="Github" /></a>
+      <a href="#"><img class="img-fluid" src="./assets/logo/Instagram.png" alt="Instagram" /></a>
+      <a href="#"><img class="img-fluid Facebook" src="./assets/logo/Facebook.png" alt="Facebook" /></a>
+      <a href="#"><img class="img-fluid" src="./assets/logo/X.png" alt="X" /></a>
+      <a href="#"><img class="img-fluid" src="./assets/logo/LinkedIn.jpg" alt="LinkedIn"></a>
+    </div>
+    <nav class="footer-policy-links">
+      <a href="#terms-modal">Terms of Use</a>
+      <a href="#privacy-modal">Privacy Policy</a>
+      <a href="#cookies-modal">Cookies</a>
     </nav>
+    <p class="footer-note">© 2024 Celestial. All rights reserved.</p>
+  </footer>
 
-    <div class="hero-search-container">
-      <div class="hero-text-and-desc">
-        <div class="hero">
-          <h1>Cook like a star - quick, seasonal recipes</h1> 
-        </div>
-        <p class="herodesc">
-          Discover a universe of easy-to-make, seasonal recipes that bring the flavors of the cosmos to your kitchen. Whether you're a novice cook or a seasoned chef, our collection of stellar dishes will inspire you to create meals that are out of this world.
+  <div id="terms-modal" class="modal">
+    <div class="modal-content">
+      <a href="#!" class="close">×</a>
+      <h2>Terms of Use</h2>
+      <p>This project is created for educational purposes only. All content, images, and code included are for study and demonstration.</p>
+      <p>Images used in this project are sourced randomly for learning purposes and are not intended for redistribution or commercial use.</p>
+      <p>The code is released under the MIT License. You are free to study, modify, and use it for personal learning or academic projects.</p>
+    </div>
+  </div>
+
+  <div id="privacy-modal" class="modal">
+    <div class="modal-content">
+      <a href="#!" class="close">×</a>
+      <h2>Privacy Policy</h2>
+      <p>No personal data is collected in this project. Any email inputs (e.g., in forms) are purely for demonstration and do not send or store real data.</p>
+      <p>This project is meant only to show functionality and interface design for learning purposes.</p>
+    </div>
+  </div>
+
+  <div id="cookies-modal" class="modal">
+    <div class="modal-content">
+      <a href="#!" class="close">×</a>
+      <h2>Cookies</h2>
+      <p>This project does not use cookies. Any references to cookies are for interface demonstration purposes only.</p>
+      <button class="accept btn">ACCEPT ALL</button>
+      <button class="reject btn">REJECT ALL</button>
+      <a href="#customize-modal" class="customize btn">CUSTOMIZE COOKIES</a>
+    </div>
+  </div>
+
+  <div id="customize-modal" class="modal">
+    <div class="modal-content cookie-modal">
+      <a href="#!" class="close" aria-label="Close">×</a>
+
+      <header class="cookie-header">
+        <h2>Manage Cookie Preferences</h2>
+        <p class="cookie-intro">
+          We use cookies and similar technologies to deliver, maintain, and improve our services, and to provide a personalised web experience.
+          You can review how this information is used and customise your preferences below. You may change your choices at any time as
+          described in our <a href="#privacy-modal">Privacy Policy</a>.
         </p>
-        <div class="more">
-          <a href="#" class="explore">EXPLORE RECIPES</a>
-          <a href="#quick-recipes-form" class="subscribe">SUBSCRIBE</a>
-        </div>
-        <div class="today-picks">
-          <h1>Today's Picks</h1>
-          <div class="today-picks-fyp">
-            <div class="fyp-image">
-              <img class="img-fluid" src="./assets/main_course/Pork Chops Charcutiere Sauce.png" alt="Pork Chops Charcutiere Sauce"/>
-              <a href="#">Pork Chops Charcutiere</a>
-              <p>30 min • Medium • ★ 4.8 </p>
-            </div>
-            <div class="fyp-image">
-              <img class="img-fluid" src="./assets/desserts/Panacotta.png" alt="Panacotta">
-              <a href="#">Panacotta</a>
-              <p>2 hr • Medium • ★ 4.7 </p>
-            </div>
-            <div class="fyp-image">
-              <img class="img-fluid" src="./assets/salad/salad_pfp.jpg" alt="Provino Salad">
-              <a href="#">Provino Salad</a>
-              <p>10 min • Easy • ★ 4.5 </p>
-            </div>
-          </div>
-          <div class="today-picks-fyp">
-            <div class="fyp-image">
-              <img class="img-fluid" src="./assets/desserts/desserts_pfp.jpg" alt="Bingsu"/>
-              <a href="#">Bingsu</a>
-              <p>24 min • Easy • ★ 4.4 </p>
-            </div>
-            <div class="fyp-image">
-              <img class="img-fluid" src="./assets/appetizers/Fried Prosciutto Tortellini.jpg" alt="Fried Prosciutto Tortellini">
-              <a href="#">Fried Prosciutto Tortellini</a>
-              <p>15 min • Medium • ★ 4.9 </p>
-            </div>
-            <div class="fyp-image">
-              <img class="img-fluid" src="./assets/main_course/Lobster Mango Salad.png" alt="Lobster Mango Salad">
-              <a href="#">Lobster Mango Salad</a>
-              <p>10 min • Medium • ★ 4.5 </p>
-            </div>
-          </div>
-          <div class="quick-recipes">
-            <form id="quick-recipes-form" action="quick-recipe-subscribe">
-              <label for="quick-subscribe">Get 5 quick recipes delivered to your inbox for free</label>
-              <div class="input-group">
-                <input type="email" id="quick-subscribe" class="form-control" placeholder="Enter your email" required />
-                <button type="submit" class="btn btn-primary">Subscribe</button>
+        <nav class="cookie-actions-top">
+          <a href="#!" class="ghost-action">Reject all</a>
+          <a href="#!" class="ghost-action">Accept all</a>
+        </nav>
+      </header>
+
+      <div class="cookie-body">
+        <section class="cookie-group">
+          <details open>
+            <summary>
+              <div class="sum-text">
+                <div class="title">Essential cookies</div>
+                <div class="desc">Required for the website to function. This includes security, network management, and accessibility.</div>
               </div>
-            </form>
-          </div>
-        </div>
-      </div>
+              <span class="badge locked">Required</span>
+            </summary>
+            <ul class="list">
+              <li>Load balancing and session management</li>
+              <li>Fraud prevention and security</li>
+              <li>Basic preferences like language</li>
+            </ul>
+          </details>
 
-      <form class="site-search" action="#">
-        <div class="search">
-          <button type="submit" title="Search">
-            <img class="img-fluid" src="./assets/icons/search.png" alt="search" width="24" height="24" />
-          </button>
-          <input type="text" class="form-control" placeholder="Start searching..." />
-        </div>
-      </form>
-    </div>
-
-    <section class="before-footer-features container my-4">
-      <h2 class="section-title">Featured — Recipe of the Week & Kitchen Tips</h2>
-      <div class="row g-3">
-        <div class="col-12 col-md-6">
-          <article class="card feature-card h-100 text-decoration-none">
-            <div class="row g-0 h-100 align-items-stretch">
-              <div class="col-4 col-sm-4 col-md-4">
-                <img src="./assets/main_course/Pork Chops Charcutiere Sauce.png" alt="Recipe of the Week" class="img-fluid rounded-start" />
+          <details>
+            <summary>
+              <div class="sum-text">
+                <div class="title">Analytics cookies</div>
+                <div class="desc">Help us understand site usage so we can improve recipes and features.</div>
               </div>
-              <div class="col-8 col-sm-8 col-md-8">
-                <div class="card-body">
-                  <h3 class="card-title">Recipe of the Week</h3>
-                  <h4 class="mb-1">Pork Chops Charcutiere</h4>
-                  <p class="small text-muted mb-2">30 min • Medium • ★ 4.8</p>
-                  <p class="card-text">A quick star-worthy main that balances savory and bright flavors — perfect for weeknight dinners.</p>
-                  <div class="d-flex gap-2 mt-2">
-                    <a href="#" class="btn btn-sm btn-success">View Recipe</a>
-                    <a href="#" class="btn btn-sm btn-outline-secondary">Save</a>
-                  </div>
-                </div>
+              <label class="switch" aria-label="Toggle analytics cookies">
+                <input type="checkbox" />
+                <span class="track"></span>
+                <span class="switch-text" aria-hidden="true"></span>
+              </label>
+            </summary>
+            <ul class="list">
+              <li>Aggregate traffic insights (pages visited, time on page)</li>
+              <li>Error tracking to fix broken pages</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>
+              <div class="sum-text">
+                <div class="title">Preference cookies</div>
+                <div class="desc">Remember your choices like theme, language, or favourite recipes.</div>
               </div>
-            </div>
-          </article>
-        </div>
-        <div class="col-12 col-md-6">
-          <div class="card h-100 spotlight-card">
-            <div class="card-body">
-              <h3 class="card-title">Kitchen Tips & Pantry Checklist</h3>
-              <ul class="list-unstyled small text-muted mb-3">
-                <li>• Use seasonal produce for better flavor and lower cost.</li>
-                <li>• Rest meat 5–10 minutes before slicing for juicier results.</li>
-                <li>• Keep a simple pantry: olive oil, vinegar, garlic, canned tomatoes, and dried herbs.</li>
-              </ul>
-              <details class="mt-2 nutrition-details">
-                <summary class="summary-btn">Quick Compare (click to open)</summary>
-                <div class="table-responsive mt-2">
-                  <table class="table table-sm align-middle nutrition-table mb-0">
-                    <caption class="visually-hidden">Quick comparison of featured recipes</caption>
-                    <thead>
-                      <tr>
-                        <th scope="col">Recipe</th>
-                        <th scope="col">Prep</th>
-                        <th scope="col">Difficulty</th>
-                        <th scope="col">Calories</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Pork Chops Charcutiere</td>
-                        <td>30 min</td>
-                        <td>Medium</td>
-                        <td>520 kcal</td>
-                      </tr>
-                      <tr>
-                        <td>Panacotta</td>
-                        <td>2 hr</td>
-                        <td>Medium</td>
-                        <td>350 kcal</td>
-                      </tr>
-                      <tr>
-                        <td>Provino Salad</td>
-                        <td>10 min</td>
-                        <td>Easy</td>
-                        <td>210 kcal</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </details>
-              <p class="small text-muted mt-3 mb-0">Want more? Use the search above or subscribe to get weekly recipes in your inbox.</p>
-            </div>
-          </div>
-        </div>    
-      </div>
-    </section>
+              <label class="switch" aria-label="Toggle preference cookies">
+                <input type="checkbox" checked />
+                <span class="track"></span>
+                <span class="switch-text" aria-hidden="true"></span>
+              </label>
+            </summary>
+            <ul class="list">
+              <li>Stores display preferences (e.g., dark mode)</li>
+              <li>Keeps items saved to your recipe list</li>
+            </ul>
+          </details>
 
-    <footer class="main-footer">
-      <h1 class="footer-title">Socials</h1>
-      <div class="socials-logo">
-        <a href="#"><img class="img-fluid" src="./assets/logo/Github.png" alt="Github" /></a>
-        <a href="#"><img class="img-fluid" src="./assets/logo/Instagram.png" alt="Instagram" /></a>
-        <a href="#"><img class="img-fluid Facebook" src="./assets/logo/Facebook.png" alt="Facebook" /></a>
-        <a href="#"><img class="img-fluid" src="./assets/logo/X.png" alt="X" /></a>
-        <a href="#"><img class="img-fluid" src="./assets/logo/LinkedIn.jpg" alt="LinkedIn"></a>
-      </div>
-      <nav class="footer-policy-links">
-        <a href="#terms-modal">Terms of Use</a>
-        <a href="#privacy-modal">Privacy Policy</a>
-        <a href="#cookies-modal">Cookies</a>
-      </nav>
-      <p class="footer-note">© 2024 Celestial. All rights reserved.</p>
-    </footer>
+          <details>
+            <summary>
+              <div class="sum-text">
+                <div class="title">Marketing cookies</div>
+                <div class="desc">Used to show you relevant content and offers based on your interests.</div>
+              </div>
+              <label class="switch" aria-label="Toggle marketing cookies">
+                <input type="checkbox" />
+                <span class="track"></span>
+                <span class="switch-text" aria-hidden="true"></span>
+              </label>
+            </summary>
+            <ul class="list">
+              <li>Limits how often you see the same promo</li>
+              <li>Measures campaign performance</li>
+            </ul>
+          </details>
 
-    <div id="terms-modal" class="modal">
-      <div class="modal-content">
-        <a href="#!" class="close">×</a>
-        <h2>Terms of Use</h2>
-        <p>This project is created for educational purposes only. All content, images, and code included are for study and demonstration.</p>
-        <p>Images used in this project are sourced randomly for learning purposes and are not intended for redistribution or commercial use.</p>
-        <p>The code is released under the MIT License. You are free to study, modify, and use it for personal learning or academic projects.</p>
+          <details>
+            <summary>
+              <div class="sum-text">
+                <div class="title">Precise geolocation data, and identification through device scanning</div>
+                <div class="desc">Allow us to use accurate location and device signals to deliver localised content.</div>
+              </div>
+              <label class="switch" aria-label="Toggle precise geolocation">
+                <input type="checkbox" />
+                <span class="track"></span>
+                <span class="switch-text" aria-hidden="true"></span>
+              </label>
+            </summary>
+            <ul class="list">
+              <li>Use exact location to tailor nearby seasonal ingredients</li>
+              <li>Identify device characteristics for fraud prevention</li>
+            </ul>
+          </details>
+        </section>
+
+        <a href="#!" class="partners-link">Partners</a>
       </div>
+
+      <footer class="cookie-footer">
+        <small class="legal">
+          You can update your choices at any time. See our <a href="#privacy-modal">Privacy Policy</a> and <a href="#cookies-modal">Cookies</a>.
+        </small>
+        <a href="#!" class="btn-cta">Save &amp; Exit</a>
+      </footer>
     </div>
+  </div>
 
-    <div id="privacy-modal" class="modal">
-      <div class="modal-content">
-        <a href="#!" class="close">×</a>
-        <h2>Privacy Policy</h2>
-        <p>No personal data is collected in this project. Any email inputs (e.g., in forms) are purely for demonstration and do not send or store real data.</p>
-        <p>This project is meant only to show functionality and interface design for learning purposes.</p>
-      </div>
-    </div>
-
-    <div id="cookies-modal" class="modal">
-      <div class="modal-content">
-        <a href="#!" class="close">×</a>
-        <h2>Cookies</h2>
-        <p>This project does not use cookies. Any references to cookies are for interface demonstration purposes only.</p>
-        <button class="accept btn">ACCEPT ALL</button>
-        <button class="reject btn">REJECT ALL</button>
-        <button class="customize btn">CUSTOMIZE COOKIES</button>
-      </div>
-    </div>
-  </body>
-  </html>
+</body>
+</html>
