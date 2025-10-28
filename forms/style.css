@@ -1,4 +1,3 @@
-/* Fonts */
 @font-face {
   font-family: 'Montserrat';
   src: url('/fonts/Montserrat/static/Montserrat-Regular.ttf') format('woff2');
@@ -10,7 +9,6 @@
   font-weight: bold;
 }
 
-/* Reset and base */
 *,
 *::before,
 *::after { box-sizing: border-box; }
@@ -23,7 +21,7 @@
   --radius: 2.5rem;
   --ease: cubic-bezier(.2,.8,.2,1);
   --accent: #111;
-  --overlay-h: clamp(12rem, 40vh, 18rem); /* mobile overlay height */
+  --overlay-h: clamp(12rem, 40vh, 18rem);
 }
 
 .visually-hidden{
@@ -47,7 +45,6 @@ body{
   padding: 2rem;
 }
 
-/* Form container */
 .form_box{
   position: relative;
   display: flex;
@@ -60,7 +57,6 @@ body{
   isolation: isolate;
 }
 
-/* Left / Right panels */
 #left, #right{
   width: 50%;
   padding: 2rem 2.25rem 2.25rem;
@@ -74,7 +70,6 @@ body{
 #left{ border-radius: var(--radius) 0 0 var(--radius); }
 #right{ border-radius: 0 var(--radius) var(--radius) 0; }
 
-/* Headers */
 #head, .head_right{ text-align: left; margin-bottom: 1.5rem; }
 
 #head h1, .head_right h1{
@@ -86,7 +81,6 @@ body{
 
 #details{ font-weight:500; color: rgb(76, 75, 75); margin: 0; }
 
-/* Forms */
 .form_login, .form_signup{
   display: flex;
   flex-direction: column;
@@ -123,7 +117,6 @@ body{
 
 .form_login input:invalid, .form_signup input:invalid{ border: 1px solid #e44; }
 
-/* Footer rows */
 #footer, #footer_signup{
   display: flex;
   align-items: center;
@@ -142,7 +135,6 @@ body{
 #footer a{ color: #5a5a5a; text-decoration: none; }
 #footer a:hover{ text-decoration: underline; }
 
-/* Primary buttons */
 #button, #button_signup{
   margin: 1rem 0 .75rem;
   display: inline-flex;
@@ -166,7 +158,6 @@ body{
 }
 #button:active, #button_signup:active{ transform: translateY(0); }
 
-/* "Or" separators */
 #or, #or_signup{
   display: flex; align-items: center; text-align: center;
   color: rgb(76, 75, 75); font-weight: 500; margin: 1rem 0; gap: .75rem;
@@ -175,7 +166,6 @@ body{
   content: ""; flex: 1; border-bottom: 1px solid #828181; transform: translateY(-1px);
 }
 
-/* Links between panels */
 #sign_up, #sign_in{
   display: flex; justify-content: center; align-items: center;
   height: 1.25rem; gap: .25rem; color: rgb(76, 75, 75);
@@ -191,7 +181,6 @@ body{
 }
 .switch-link:hover{ text-decoration: underline; }
 
-/* Socials */
 .container_gambar, .container_gambar_signup{
   display: flex; justify-content: center; align-items: center; gap: 1.5rem;
 }
@@ -208,12 +197,11 @@ body{
   box-shadow: 0 10px 24px rgba(0,0,0,.2);
 }
 
-/* ---------------- Overlay animation (desktop) ---------------- */
 .overlay-container{
   position: absolute;
   inset: 0;
   width: 50%;
-  left: 50%;           /* start covering the RIGHT half (Sign in view) */
+  left: 50%;
   height: 100%;
   overflow: hidden;
   z-index: 2;
@@ -241,7 +229,7 @@ body{
   flex-direction: column;
   justify-content: center;
   text-align: left;
-  cursor: pointer; /* entire panel is tappable/clickable */
+  cursor: pointer; 
 }
 
 .overlay-panel h2{
@@ -271,7 +259,6 @@ body{
   box-shadow: 0 10px 24px rgba(0,0,0,.15);
 }
 
-/* State: Sign Up (radio) */
 #to-signup:checked ~ .form_box .overlay-container{
   transform: translateX(-100%);
   border-radius: var(--radius) 0 0 var(--radius);
@@ -282,7 +269,6 @@ body{
 #to-signup:checked ~ .form_box #left{ transform: translateX(-12px); opacity: .98; }
 #to-signup:checked ~ .form_box #right{ transform: translateX(12px); opacity: 1; }
 
-/* State: Sign In (default) */
 #to-signin:checked ~ .form_box .overlay-container{
   transform: translateX(0);
   border-radius: 0 var(--radius) var(--radius) 0;
@@ -291,7 +277,6 @@ body{
 #to-signin:checked ~ .form_box #left{ transform: translateX(12px); }
 #to-signin:checked ~ .form_box #right{ transform: translateX(-12px); }
 
-/* Focus rings */
 #footer a, .switch-link, .to_btn{ outline: none; }
 .switch-link:focus-visible,
 .to_btn:focus-visible,
@@ -301,17 +286,12 @@ body{
   border-radius: 999px;
 }
 
-/* =========================
-   RESPONSIVE
-   ========================= */
 
-/* Tablet and down */
 @media (max-width: 900px){
   body{ padding: 1rem; }
   .form_box{ width: min(48rem, 96vw); }
 }
 
-/* Mobile layout */
 @media (max-width: 768px){
   :root{ --radius: 1.25rem; }
 
@@ -320,53 +300,28 @@ body{
     width: min(28rem, 95vw);
     min-height: unset;
     border-radius: var(--radius);
-    padding-top: var(--overlay-h); /* reserve space for the overlay at the top */
+    padding-top: 0;              
+    background: #fff;
+    box-shadow: 0 12px 36px rgba(0,0,0,.14);
   }
+
+  .overlay-container{ display: none !important; }
 
   #left, #right{
     width: 100%;
-    padding: 1rem 1.25rem 1.25rem;
-    transform: none !important; /* neutralize subtle desktop shifts */
+    padding: 1.25rem 1.25rem 1.25rem;
+    transform: none !important;
     opacity: 1 !important;
+    background: transparent;
+    border-radius: var(--radius);
   }
 
-  /* Show only the active form (avoid long scrolling) */
   #to-signin:checked ~ .form_box #right{ display: none; }
   #to-signup:checked ~ .form_box #left{ display: none; }
 
-  /* Overlay turns into a top band, with vertical slide inside it */
-  .overlay-container{
-    top: 0; left: 0; width: 100%;
-    height: var(--overlay-h);
-    border-radius: var(--radius) var(--radius) 0 0;
-    transform: none; /* container stays fixed at top */
-  }
-
-  .overlay{
-    left: 0;
-    width: 100%;
-    height: 200%;          /* stack two panels vertically */
-    flex-direction: column;
-    transform: translateY(0);
-    transition: transform .6s var(--ease);
-  }
-
-  .overlay-panel{
-    width: 100%;
-    height: 50%;           /* each panel takes half of overlay's double height */
-    padding: 1.25rem 1.25rem 1rem;
-  }
-
-  /* Slide the content up to show the "other" panel on Sign Up */
-  #to-signup:checked ~ .form_box .overlay{
-    transform: translateY(-50%);
-  }
-
-  /* Headings scale a touch smaller on mobile */
   #head h1, .head_right h1{ font-size: clamp(1.15rem, 4.5vw, 1.5rem); }
   #details{ font-size: clamp(.9rem, 3.6vw, 1rem); }
 
-  /* Inputs/buttons breathing room */
   .form_login input[type="email"],
   .form_login input[type="password"],
   .form_signup input[type="text"],
@@ -375,7 +330,6 @@ body{
     font-size: 1rem; padding: 0.85rem 0.85rem;
   }
 
-  /* Footers */
   #footer, #footer_signup{ gap: .75rem; }
   #footer{ flex-wrap: wrap; }
   #footer .remember-wrap{ gap: .4rem; }
@@ -385,23 +339,27 @@ body{
   #footer_signup{ align-items: flex-start; }
   #footer_signup label{ margin-right: 0; line-height: 1.3; }
 
-  /* Social icons slightly smaller on mobile */
-  .container_gambar, .container_gambar_signup{ gap: 1rem; }
-  .container_gambar a, .container_gambar_signup a{ width: 2.25rem; height: 2.25rem; }
-  .container_gambar img, .container_gambar_signup img{ width: 2.5rem; height: 2.5rem; }
+  .container_gambar, .container_gambar_signup{
+    gap: 1rem;
+    margin-top: 0.5rem;
+    padding-bottom: 0.75rem;
+    justify-content: center;
+  }
+  .container_gambar a, .container_gambar_signup a{
+    width: 2.25rem; height: 2.25rem;
+    background: transparent;
+    box-shadow: none;
+  }
+  .container_gambar img, .container_gambar_signup img{ width: 2.25rem; height: 2.25rem; }
 
-  /* Focus ring balance on mobile */
   .switch-link:focus-visible,
-  .to_btn:focus-visible,
   #button:focus-visible,
   #button_signup:focus-visible{
     box-shadow: 0 0 0 2px rgba(255,65,108,.35);
   }
 }
 
-/* Extra-small tweaks */
 @media (max-width: 420px){
   .form_box{ width: 94vw; }
   #footer a{ font-size: .95rem; }
-  .to_btn{ padding: .65rem 1rem; }
 }

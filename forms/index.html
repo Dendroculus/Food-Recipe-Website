@@ -7,7 +7,6 @@
   <title>Sign in / Sign up</title>
 </head>
 <body>
-  <!-- Use radios + labels (no URL hash needed) -->
   <input class="visually-hidden" type="radio" name="panel" id="to-signin" checked>
   <input class="visually-hidden" type="radio" name="panel" id="to-signup">
 
@@ -40,7 +39,6 @@
 
         <div id="sign_up">
           <p>Don't have an account?
-            <!-- Tap to switch without needing URL hash -->
             <label for="to-signup" class="switch-link"> Sign up</label>
           </p>
         </div>
@@ -78,7 +76,6 @@
 
         <div id="sign_in">
           <p>Already have an account?
-            <!-- Tap to switch back -->
             <label for="to-signin" class="switch-link"> Sign in</label>
           </p>
         </div>
@@ -94,10 +91,8 @@
       </form>
     </div>
 
-    <!-- Make the entire gradient panel tappable via label -->
     <section class="overlay-container" aria-hidden="true">
       <div class="overlay">
-        <!-- Click anywhere on the panel to switch -->
         <label for="to-signin" class="overlay-panel overlay-left" role="button" tabindex="0" aria-label="Switch to Sign In">
           <h2>Welcome Back!</h2>
           <p>To keep connected with us please login with your personal info</p>
