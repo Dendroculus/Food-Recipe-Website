@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat/static/Montserrat-Regular.ttf') format('woff2');
+}
+
+@font-face {
+  font-family: 'Playwrite';
+  src: url('/fonts/Playwrite_DE_SAS/static/PlaywriteDESAS-Regular.ttf') format('woff2');
+  font-weight: bold;
+}
