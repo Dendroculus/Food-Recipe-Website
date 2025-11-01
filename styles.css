@@ -992,6 +992,7 @@ body {
     background: linear-gradient(174.2deg, rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4%);
   }
 
+  
   .navtop > ul {
     padding: 0.5rem 1rem;
     gap: 0.5rem;
@@ -1003,6 +1004,9 @@ body {
   .celestial {
     flex: 1;
     order: 2;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     text-align: center;
   }
 
@@ -1076,7 +1080,7 @@ body {
   .site-search { order: -1; width: 100%; }
   .site-search .search {
     position: fixed;
-    top: calc(var(--nav-mobile-h) + 1.3rem);
+    top: calc(var(--nav-mobile-h) + 0.4rem);
     left: 1rem;
     right: 1rem;
     z-index: 900;

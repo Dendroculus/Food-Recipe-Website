@@ -182,6 +182,8 @@ body {
   --muted: #6c757d;
   --card-radius: .5rem;
   --img-height: 160px;
+  /* Match main site mobile nav height */
+  --nav-mobile-h: 56px;
 }
 
 
@@ -322,18 +324,33 @@ main h1 {
 #filter-oils:checked ~ #products .product.oils { display:block; }
 
 .product { display:block; }
-.product .card-img-top { height: var(--img-height); object-fit: cover; }
-.product-card .card-body { display:flex; flex-direction:column; gap:.5rem; }
+.product .card-img-top { height: var(--img-height); object-fit: cover; border-radius: 1.5rem 1.5rem 0 0;}
+.product-card .card-body { display:flex; flex-direction:column; gap:0.5rem; }
 .product-card .meta { color: var(--muted); font-size:.9rem; }
 
-/* details removed in favor of modals, keeping compatibility if any remain */
 .product-card details summary { cursor:pointer; list-style:none; }
 .product-card details summary::-webkit-details-marker { display:none; }
 
 .btn-add[aria-disabled="true"] { pointer-events:none; opacity:.85; }
 
+.btn-add {
+  transition: background-color 0.18s ease, transform 0.12s ease;
+}
+
+.product-card .btn-primary.btn-add:not([disabled]):not([aria-disabled="true"]):hover {
+  background-color: #007a70;
+  transform: scale(1.03)
+
+}
+
+.product-card .btn-add:not([disabled]):not([aria-disabled="true"]):hover {
+  background-color: #007a70;
+  transform: translateY(-0.125rem);
+}
+
 .product-card {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 1.5rem
 }
 
 .product-card:hover {
@@ -366,7 +383,6 @@ main h1 {
 
 .small.text-muted { color: var(--muted); font-size:.82rem; }
 
-/* Modal base (CSS-only, via :target) */
 .modal {
   position: fixed;
   top: 0;
@@ -425,3 +441,103 @@ main h1 {
   .filters label { font-size:.9rem; padding:.3rem .5rem; }
   .product .card-img-top { height:140px; }
 }
+
+@media (max-width: 768px) {
+  .navtop > ul {
+    padding: 0.5rem 1rem;
+    gap: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+    min-height: var(--nav-mobile-h);
+    border-radius: 0 0 1rem 1rem;
+  }
+
+  .celestial {
+    flex: 1;
+    order: 2;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  .navtop ul .left { order: 1; }
+  .navtop ul .right { order: 3; }
+
+  .right { gap: 0.75rem; }
+  .right img { width: 1.75rem; }
+  .celestial a { font-size: 1.25rem; }
+
+  .menu-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.4rem 0.75rem;
+    border: 2px solid #007A70;
+    color: #007A70;
+    border-radius: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    font-size: 0.9rem;
+    background: transparent;
+    user-select: none;
+    cursor: pointer;
+    z-index: 1001;
+  }
+
+  .nav-left {
+    display: none;
+    position: fixed;
+    top: var(--nav-mobile-h);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 1rem 2rem;
+    background: linear-gradient(180deg, rgba(255,255,255,0.98) 0%, rgba(240,246,238,0.98) 100%);
+    border-top: 1px solid rgba(0,0,0,0.08);
+    overflow-y: auto;
+    z-index: 1000;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  #menu-toggle:checked ~ .nav-left { display: flex; }
+
+  .dropdown-container { position: static; padding-bottom: 0.25rem; }
+
+  .navtop-dropdown {
+    position: static;
+    display: block;
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+    background: transparent;
+    box-shadow: none;
+    padding: 0.25rem 0 0.75rem;
+    min-width: 100%;
+  }
+  .navtop-dropdown li a { grid-template-columns: 3.5rem auto; padding: 0.5rem 0.25rem; }
+  .navtop-dropdown li a img { width: 3rem; height: 3rem; border: none; box-shadow: none; }
+  .navtop-dropdown li a:hover { background: #f6fbfa; }
+  .site-search { order: -1; width: 100%; }
+  .site-search .search {
+    position: fixed;
+    top: calc(var(--nav-mobile-h) + 0.4rem);
+    left: 1rem;
+    right: 1rem;
+    z-index: 900;
+    margin: 0;
+  }
+
+  .shop-main {
+    padding-top: calc(var(--nav-mobile-h) + 4.5rem);
+  }
+
+  .product .card-img-top { height: 140px; }
+}
+
+@media (max-width: 480px) {
+  .celestial a { font-size: 1.1rem; }
+  .right img { width: 1.5rem; }
+  .site-search .search { height: 3rem; }
+  .site-search .search input { font-size: 0.9rem; }
+}
+
