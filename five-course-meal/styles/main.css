@@ -241,8 +241,17 @@ main {
   border-radius: 10%;
 }
 
+.main-title {
+    padding-top: 8rem;
+    text-align: center;
+    font-size: 3.5rem;
+    font-family: "Playwrite", sans-serif;
+    margin-bottom: 3.5rem;
+    color: #007A70;
+}
+
 .section-title {
-    padding-top: 7.5rem;
+    padding-top: 2.5rem;
     text-align: center;
     font-size: 3.5rem;
     font-family: "Playwrite", sans-serif;
@@ -254,33 +263,61 @@ main {
     background: linear-gradient(174.2deg, rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4%);
 }
 
-.card-img-top-container {
-    height: 12.5rem;
+.card-img-container {
+    height: 13.5rem;
     overflow: hidden;
 }
 
-.card-img-top {
+.card-img {
     width: 100%;
     height: 100%;
     object-fit: cover; 
-    object-position: 0 -2.5rem;
 }
 
 .recipe-card {
-    background: white;
-    border-radius: 1rem;
-    transition: all 0.3s ease;
+    border-radius: 50% !important;
     cursor: pointer;
     overflow: hidden;
+    width: 13.5rem;
+    height: 13.5rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    background: linear-gradient(45deg, #2c2c2c, #1a1a1a);
+    box-shadow: 
+        inset 0 0 0 3px #333,
+        inset 0 0 0 6px #1a1a1a,
+        inset 0 0 0 9px #222,
+        0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    animation: rainbow-border 3s infinite;
 }
 
 .recipe-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 122, 112, 0.15);
+    animation: rotate linear infinite, rainbow-border 3s infinite;
+    animation-duration: 3s; 
 }
 
-.recipe-card:hover .card-img-top {
-    transform: scale(1);
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.dessert-section-description {
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #007A70;
+    font-weight: 600;
+    padding: 0.5rem;
 }
 
 .card-body {
