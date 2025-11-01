@@ -36,6 +36,8 @@ main {
     background-image: linear-gradient(174.2deg, rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4%);
     background-repeat: no-repeat;
     padding-bottom: 2.5rem;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .header-navigation {
