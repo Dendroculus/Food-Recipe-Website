@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shop — Cooking Ingredients</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./shop.css">
+</head>
+<body>
+  <nav class="navtop container-fluid">
+    <ul class="list-unstyled">
+      <li class="left">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" hidden />
+        <label for="menu-toggle" class="menu-button" title="Menu">☰</label>
+        <div id="primary-nav" class="nav-left">
+          <div class="dropdown-container">
+            <a href="#" class="recipes-link">RECIPES</a>
+            <ul class="navtop-dropdown">
+              <li>
+                <a href="../five-course-meal/main-page-html/main-course.html">
+                  <img class="img-fluid" src="../assets/main_course/main_course_pfp.jpg" alt="Main course" loading="lazy" />
+                  <span>Main Course</span>
+                </a>
+              </li>
+              <li>
+                <a href="../five-course-meal/main-page-html/appetizer.html">
+                  <img class="img-fluid" src="../assets/appetizers/appetizers_pfp.jpg" alt="Appetizers" loading="lazy" />
+                  <span>Appetizers</span>
+                </a>
+              </li>
+              <li>
+                <a href="../five-course-meal/main-page-html/salad.html">
+                  <img class="img-fluid" src="../assets/salad/salad_pfp.jpg" alt="Salad" loading="lazy" />
+                  <span>Salad</span>
+                </a>
+              </li>
+              <li>
+                <a href="../five-course-meal/main-page-html/dessert.html">
+                  <img class="img-fluid" src="../assets/desserts/desserts_pfp.jpg" alt="Desserts" loading="lazy" />
+                  <span>Desserts</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown-container">
+            <a href="#">INSPIRATION</a>
+            <ul class="navtop-dropdown">
+              <li>
+                <a href="#">
+                  <img class="img-fluid" src="../assets/inspiration/stellar_tips_pfp.jpg" alt="Stellar Tips" loading="lazy" />
+                  <span>Stellar Tips</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="img-fluid" src="../assets/inspiration/seasonal_constellation_pfp.png" alt="Seasonal Constellations" loading="lazy" />
+                  <span>Seasonal Constellations</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="img-fluid" src="../assets/inspiration/kitchen_universe_pfp.png" alt="Kitchen Universe" loading="lazy" />
+                  <span>Kitchen Universe</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="img-fluid" src="../assets/inspiration/guiding_stars_pfp.png" alt="Guiding Stars" loading="lazy" />
+                  <span>Guiding Stars</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="img-fluid" src="../assets/inspiration/orbit_of_flavors_pfp.png" alt="Orbit Of Flavors" loading="lazy" />
+                  <span>Orbit Of Flavors</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown-container">
+            <a href="#">SHOP</a>
+            <ul class="navtop-dropdown">
+              <li>
+                <a href="./ingredients_shop.html">
+                  <img class="img-fluid" src="../assets/shop/Ingredients/ingredients_pfp.jpg" alt="Cooking Ingredients" loading="lazy" />
+                  <span>Cooking Ingredients</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="img-fluid" src="../assets/shop/Kitchen Tools/kitchen_tools_pfp.jpg" alt="Kitchen Tools" loading="lazy" />
+                  <span>Kitchen Tools</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="img-fluid" src="../assets/shop/Cookware Appliances/cookware_appliances_pfp.jpg" alt="Cookware & Appliances" loading="lazy" />
+                  <span>Cookware & Appliances</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="img-fluid" src="../assets/shop/Recipe Themed/recipe_themed_merch_pfp.png" alt="Recipe Themed Merch" loading="lazy" />
+                  <span>Recipe Themed Merch</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="img-fluid" src="../assets/shop/Digital Products/digital_products_pfp.PNG" alt="Digital Products" loading="lazy" />
+                  <span>Digital Products</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown-container">
+            <a href="#">ABOUT US</a>
+              <ul class="navtop-dropdown">
+                <li>
+                  <a href="../five-course-meal/main-page-html/main-course.html">
+                    <img class="img-fluid" src="../assets/about us/about_us_pfp.png" alt="Our Story" loading="lazy" />
+                    <span>Our Story</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img class="img-fluid" src="../assets/about us/meet_the_team_pfp.png" alt="Meet the Team" loading="lazy" />
+                    <span>Meet the Team</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img class="img-fluid" src="../assets/about us/our_mission_pfp.png" alt="Our Mission" loading="lazy" />
+                    <span>Our Mission</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img class="img-fluid" src="../assets/about us/contact_us_pfp.png" alt="Contact Us" loading="lazy" />
+                    <span>Contact Us</span>
+                  </a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="celestial">
+        <a href="../index.html">CELESTIAL 💫</a>
+      </li>
+      <li class="right">
+        <a href="../forms/index.html"><img class="img-fluid" src="../assets/icons/user.png" alt="user" width="32" height="32" /></a>
+        <a href="./ingredients_shop.html"><img class="img-fluid" src="../assets/icons/shopping_cart.png" alt="shopping bag" width="32" height="32" /></a>
+      </li>
+    </ul>
+  </nav>
+
+  <main class="container my-4 shop-main">
+    <input type="radio" name="filter" id="filter-all" checked hidden />
+    <input type="radio" name="filter" id="filter-spices" hidden />
+    <input type="radio" name="filter" id="filter-pantry" hidden />
+    <input type="radio" name="filter" id="filter-oils" hidden />
+
+    <header class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3 mb-3">
+      <div>
+        <h1 class="h4 mb-1">Cooking Ingredients</h1>
+      </div>
+
+      <div class="d-flex gap-2 align-items-center">
+        <form class="site-search" action="#">
+          <div class="search">
+            <button type="submit" title="Search">
+              <img class="img-fluid" src="../assets/icons/search.png" alt="search" width="24" height="24" />
+            </button>
+            <input type="text" class="form-control" placeholder="Search ingredients..." />
+          </div>
+        </form>
+      </div>
+    </header>
+
+    <div class="filters" aria-label="Category filters">
+      <label for="filter-all" class="btn-label">All Categories</label>
+      <label for="filter-spices" class="btn-label">Spices & Seasonings</label>
+      <label for="filter-pantry" class="btn-label">Pantry & Canned</label>
+      <label for="filter-oils" class="btn-label">Oils & Vinegars</label>
+    </div>
+
+    <section id="products" class="row g-3" aria-live="polite">
+      <div class="col-12 col-sm-6 col-md-4 product spices">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="dried-oregano">
+          <img src="../assets/shop/Ingredients/Dried_Oregano.jpg" class="card-img-top" alt="Dried Oregano" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Dried Oregano</h5>
+            <div class="meta">30 g • Aromatic Mediterranean herb</div>
+            <div class="d-flex justify-content-between align-items-start mt-2">
+              <div>
+                <strong class="text-success text-nowrap">Rp 27.000</strong>
+                <div class="small text-muted">Stock: 80</div>
+              </div>
+              <div class="d-flex gap-2 align-items-start">
+                <a href="#details-oregano" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="dried-oregano">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product pantry">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="sea-salt-fine">
+          <img src="../assets/shop/Ingredients/Sea_Salt.jpg" class="card-img-top" alt="Sea Salt Fine" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Sea Salt — Fine</h5>
+            <div class="meta">500 g • Natural sea salt</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 37.500</strong>
+                <div class="small text-muted">Stock: 120</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-sea-salt" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="sea-salt-fine">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product oils">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="olive-oil-extra-virgin">
+          <img src="../assets/shop/Ingredients/Olive_Oil_Virgin.png" class="card-img-top" alt="Olive Oil" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Olive Oil — Extra Virgin</h5>
+            <div class="meta">250 ml • Premium cold-pressed</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 112.500</strong>
+                <div class="small text-muted">Stock: 24</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-olive-oil" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="olive-oil-extra-virgin">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product spices">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="black-pepper-ground">
+          <img src="../assets/shop/Ingredients/Black_Pepper_Ground.jpg" class="card-img-top" alt="Black Pepper" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Black Pepper — Ground</h5>
+            <div class="meta">50 g • Aromatic spice</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 18.000</strong>
+                <div class="small text-muted">Stock: 150</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-black-pepper" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="black-pepper-ground">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product spices">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="cumin-powder">
+          <img src="../assets/shop/Ingredients/Cumin_Powder.jpg" class="card-img-top" alt="Cumin Powder" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Cumin Powder</h5>
+            <div class="meta">40 g • Warm, earthy</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 22.500</strong>
+                <div class="small text-muted">Stock: 90</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-cumin" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="cumin-powder">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product pantry">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="brown-sugar">
+          <img src="../assets/shop/Ingredients/Brown_Sugar.jpg" class="card-img-top" alt="Brown Sugar" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Brown Sugar</h5>
+            <div class="meta">500 g • Soft & moist</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 48.000</strong>
+                <div class="small text-muted">Stock: 70</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-brown-sugar" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="brown-sugar">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product pantry">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="canned-tomatoes">
+          <img src="../assets/shop/Ingredients/Canned_Tomatoes.jpg" class="card-img-top" alt="Canned Tomatoes" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Canned Tomatoes</h5>
+            <div class="meta">400 g • Peeled, diced</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 30.000</strong>
+                <div class="small text-muted">Stock: 110</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-canned-tomatoes" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="canned-tomatoes">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product pantry">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="honey-wildflower">
+          <img src="../assets/shop/Ingredients/Honey_Wildflower.jpg" class="card-img-top" alt="Honey" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Honey — Wildflower</h5>
+            <div class="meta">250 g • Natural sweetener</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 67.500</strong>
+                <div class="small text-muted">Stock: 50</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-honey" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="honey-wildflower">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product oils">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="sesame-oil">
+          <img src="../assets/shop/Ingredients/Sesame_Oil.jpg" class="card-img-top" alt="Sesame Oil" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Sesame Oil</h5>
+            <div class="meta">150 ml • Toasted aroma</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 57.000</strong>
+                <div class="small text-muted">Stock: 45</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-sesame-oil" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="sesame-oil">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product oils">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="balsamic-vinegar">
+          <img src="../assets/shop/Ingredients/Balsamic_Vinnegar.jpg" class="card-img-top" alt="Balsamic Vinegar" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Balsamic Vinegar</h5>
+            <div class="meta">250 ml • Aged</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 82.500</strong>
+                <div class="small text-muted">Stock: 30</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-balsamic" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="balsamic-vinegar">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product oils">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="white-vinegar">
+          <img src="../assets/shop/Ingredients/White_Vinnegar.jpg" class="card-img-top" alt="White Vinegar" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">White Vinegar</h5>
+            <div class="meta">500 ml • Multipurpose</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 22.000</strong>
+                <div class="small text-muted">Stock: 200</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-white-vinegar" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="white-vinegar">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product spices">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="garlic-powder">
+          <img src="../assets/shop/Ingredients/Garlic_Powder.jpg" class="card-img-top" alt="Garlic Powder" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Garlic Powder</h5>
+            <div class="meta">60 g • Savoury & concentrated</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 20.000</strong>
+                <div class="small text-muted">Stock: 140</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-garlic-powder" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="garlic-powder">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product spices">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="smoked-paprika">
+          <img src="../assets/shop/Ingredients/Smoked_Paprika.jpg" class="card-img-top" alt="Smoked Paprika" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Smoked Paprika</h5>
+            <div class="meta">45 g • Sweet, smoky</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 28.500</strong>
+                <div class="small text-muted">Stock: 95</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-smoked-paprika" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="smoked-paprika">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product pantry">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="coconut-milk">
+          <img src="../assets/shop/Ingredients/Coconut_Milk.jpg" class="card-img-top" alt="Coconut Milk" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Coconut Milk</h5>
+            <div class="meta">400 ml • Creamy & rich</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 33.000</strong>
+                <div class="small text-muted">Stock: 85</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-coconut-milk" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="coconut-milk">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product pantry">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="soy-sauce-light">
+          <img src="../assets/shop/Ingredients/Light_Soy_Sauce.png" class="card-img-top" alt="Soy Sauce" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Soy Sauce — Light</h5>
+            <div class="meta">300 ml • Umami seasoning</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 26.000</strong>
+                <div class="small text-muted">Stock: 160</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-soy-sauce" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="soy-sauce-light">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product oils">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="truffle-oil">
+          <img src="../assets/shop/Ingredients/Truffle_Oil.jpg" class="card-img-top" alt="Truffle Oil" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Truffle Oil</h5>
+            <div class="meta">100 ml • Gourmet finishing oil</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 145.000</strong>
+                <div class="small text-muted">Stock: 12</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-truffle-oil" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="truffle-oil">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product spices">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="turmeric-powder">
+          <img src="../assets/shop/Ingredients/Turmeric_Powder.jpg" class="card-img-top" alt="Turmeric Powder" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Turmeric Powder</h5>
+            <div class="meta">100 g • Earthy, warm</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 32.000</strong>
+                <div class="small text-muted">Stock: 95</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-turmeric" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="turmeric-powder">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product spices">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="cinnamon-sticks">
+          <img src="../assets/shop/Ingredients/Cinnamon_Sticks.png" class="card-img-top" alt="Cinnamon Sticks" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Cinnamon Sticks</h5>
+            <div class="meta">50 g • Sweet, aromatic</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 45.000</strong>
+                <div class="small text-muted">Stock: 60</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-cinnamon" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="cinnamon-sticks">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product spices">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="nutmeg-whole">
+          <img src="../assets/shop/Ingredients/Nutmeg_Whole.jpg" class="card-img-top" alt="Whole Nutmeg" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Nutmeg — Whole</h5>
+            <div class="meta">40 g • Warm, sweet spice</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 39.000</strong>
+                <div class="small text-muted">Stock: 48</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-nutmeg" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="nutmeg-whole">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product spices">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="bay-leaves">
+          <img src="../assets/shop/Ingredients/Bay_Leaves.jpg" class="card-img-top" alt="Bay Leaves" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Bay Leaves</h5>
+            <div class="meta">15 g • Fragrant, savory</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 18.000</strong>
+                <div class="small text-muted">Stock: 130</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-bay-leaves" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="bay-leaves">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product spices">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="dried-basil">
+          <img src="../assets/shop/Ingredients/Dried_Basil.jpg" class="card-img-top" alt="Dried Basil" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Dried Basil</h5>
+            <div class="meta">25 g • Sweet herb</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 21.000</strong>
+                <div class="small text-muted">Stock: 105</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-basil" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="dried-basil">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product spices">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="thyme-dried">
+          <img src="../assets/shop/Ingredients/Dried_Thyme.jpg" class="card-img-top" alt="Dried Thyme" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Dried Thyme</h5>
+            <div class="meta">20 g • Robust Mediterranean herb</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 19.000</strong>
+                <div class="small text-muted">Stock: 110</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-thyme" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="thyme-dried">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product spices">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="rosemary-dried">
+          <img src="../assets/shop/Ingredients/Dried_Rosemary.png" class="card-img-top" alt="Dried Rosemary" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Dried Rosemary</h5>
+            <div class="meta">20 g • Pine-like fragrance</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 24.000</strong>
+                <div class="small text-muted">Stock: 92</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-rosemary" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="rosemary-dried">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product spices">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="cardamom-pods">
+          <img src="../assets/shop/Ingredients/Cardamom_Pods.jpg" class="card-img-top" alt="Cardamom Pods" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Cardamom Pods</h5>
+            <div class="meta">30 g • Floral, citrusy</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 58.000</strong>
+                <div class="small text-muted">Stock: 40</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-cardamom" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="cardamom-pods">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product spices">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="cloves-whole">
+          <img src="../assets/shop/Ingredients/Cloves_Whole.png" class="card-img-top" alt="Whole Cloves" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Cloves — Whole</h5>
+            <div class="meta">25 g • Warm, pungent</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 36.000</strong>
+                <div class="small text-muted">Stock: 54</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-cloves" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="cloves-whole">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product pantry">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="vanilla-extract">
+          <img src="../assets/shop/Ingredients/Vanilla_Extract.png" class="card-img-top" alt="Vanilla Extract" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Vanilla Extract</h5>
+            <div class="meta">50 ml • Pure vanilla</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 95.000</strong>
+                <div class="small text-muted">Stock: 28</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-vanilla" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="vanilla-extract">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product spices">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="saffron-threads">
+          <img src="../assets/shop/Ingredients/Saffron_Threads.png" class="card-img-top" alt="Saffron Threads" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Saffron Threads</h5>
+            <div class="meta">0.5 g • Premium spice</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 420.000</strong>
+                <div class="small text-muted">Stock: 6</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-saffron" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="saffron-threads">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product pantry">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="matcha-powder">
+          <img src="../assets/shop/Ingredients/Matcha_Powders.jpg" class="card-img-top" alt="Matcha Powder" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Matcha Powder</h5>
+            <div class="meta">30 g • Ceremonial grade</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 125.000</strong>
+                <div class="small text-muted">Stock: 22</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-matcha" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="matcha-powder">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product pantry">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="baking-powder">
+          <img src="../assets/shop/Ingredients/Baking_Powder.jpg" class="card-img-top" alt="Baking Powder" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Baking Powder</h5>
+            <div class="meta">200 g • Leavening agent</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 16.000</strong>
+                <div class="small text-muted">Stock: 180</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-baking-powder" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="baking-powder">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product pantry">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="cornstarch">
+          <img src="../assets/shop/Ingredients/Cornstarch.jpg" class="card-img-top" alt="Cornstarch" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Cornstarch</h5>
+            <div class="meta">200 g • Thickening agent</div>
+              <div class="d-flex justify-content-between align-items-center mt-2">
+                <div>
+                  <strong class="text-success">Rp 14.000</strong>
+                  <div class="small text-muted">Stock: 210</div>
+                </div>
+                <div class="d-flex gap-2">
+                  <a href="#details-cornstarch" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                  <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                    <input type="hidden" name="product_id" value="cornstarch">
+                    <input type="hidden" name="quantity" value="1">
+                    <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer text-center py-4 border-top">
+    <div class="container">
+    </div>
+  </footer>
+
+<div id="details-oregano" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-oregano">
+    <div class="modal-content">
+      <a href="#!" class="close" aria-label="Close">×</a>
+      <h2 id="modal-title-oregano">Dried Oregano</h2>
+      <p>Perfect for pizza, pasta, and salads. Store in an airtight container away from heat and light.</p>
+    </div>
+  </div>
+
+  <div id="details-sea-salt" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-sea-salt">
+    <div class="modal-content">
+      <a href="#!" class="close" aria-label="Close">×</a>
+      <h2 id="modal-title-sea-salt">Sea Salt — Fine</h2>
+      <p>Fine-grain sea salt with clean mineral flavor. Great for seasoning and finishing. Keep dry.</p>
+    </div>
+  </div>
+
+  <div id="details-olive-oil" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-olive-oil">
+    <div class="modal-content">
+      <a href="#!" class="close" aria-label="Close">×</a>
+      <h2 id="modal-title-olive-oil">Olive Oil — Extra Virgin</h2>
+      <p>Cold-pressed extra virgin olive oil for dressings, drizzling and low‑heat cooking. Store in a cool, dark place.</p>
+    </div>
+  </div>
+
+  <div id="details-black-pepper" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-black-pepper">
+    <div class="modal-content">
+      <a href="#!" class="close" aria-label="Close">×</a>
+      <h2 id="modal-title-black-pepper">Black Pepper — Ground</h2>
+      <p>Freshly ground black pepper for robust seasoning. Keep sealed for best aroma.</p>
+    </div>
+  </div>
+
+  <div id="details-cumin" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-cumin">
+    <div class="modal-content">
+      <a href="#!" class="close" aria-label="Close">×</a>
+      <h2 id="modal-title-cumin">Cumin Powder</h2>
+      <p>Warm, earthy cumin powder — essential for curries, stews and spice blends. Store in a cool dry place.</p>
+    </div>
+  </div>
+
+  <div id="details-brown-sugar" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-brown-sugar">
+    <div class="modal-content">
+      <a href="#!" class="close" aria-label="Close">×</a>
+      <h2 id="modal-title-brown-sugar">Brown Sugar</h2>
+      <p>Soft, moist brown sugar perfect for baking and sauces. Keep airtight to prevent hardening.</p>
+    </div>
+  </div>
+
+  <div id="details-canned-tomatoes" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-canned-tomatoes">
+    <div class="modal-content">
+      <a href="#!" class="close" aria-label="Close">×</a>
+      <h2 id="modal-title-canned-tomatoes">Canned Tomatoes</h2>
+      <p>Peeled and diced tomatoes — great for sauces, soups and stews. Use within a few days after opening.</p>
+    </div>
+  </div>
+
+  <div id="details-honey" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-honey">
+    <div class="modal-content">
+      <a href="#!" class="close" aria-label="Close">×</a>
+      <h2 id="modal-title-honey">Honey — Wildflower</h2>
+      <p>Natural wildflower honey. Use as a sweetener or glaze. Store at room temperature; it may crystallize but is still fine.</p>
+    </div>
+  </div>
+
+  <div id="details-sesame-oil" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-sesame-oil">
+    <div class="modal-content">
+      <a href="#!" class="close" aria-label="Close">×</a>
+      <h2 id="modal-title-sesame-oil">Sesame Oil</h2>
+      <p>Toasted sesame oil with a nutty aroma — use sparingly as a finishing oil for dressings and stir-fries.</p>
+    </div>
+  </div>
+
+  <div id="details-balsamic" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-balsamic">
+    <div class="modal-content">
+      <a href="#!" class="close" aria-label="Close">×</a>
+      <h2 id="modal-title-balsamic">Balsamic Vinegar</h2>
+      <p>Aged balsamic vinegar ideal for salads, glazes and reductions. Store in a cool pantry.</p>
+    </div>
+  </div>
+
+  <div id="details-white-vinegar" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-white-vinegar">
+    <div class="modal-content">
+      <a href="#!" class="close" aria-label="Close">×</a>
+      <h2 id="modal-title-white-vinegar">White Vinegar</h2>
+      <p>Multipurpose white vinegar — great for pickling, cleaning and cooking. Store sealed at room temperature.</p>
+    </div>
+  </div>
+
+  <div id="details-garlic-powder" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-garlic-powder">
+    <div class="modal-content">
+      <a href="#!" class="close" aria-label="Close">×</a>
+      <h2 id="modal-title-garlic-powder">Garlic Powder</h2>
+      <p>Savoury, concentrated garlic powder — convenient for rubs and quick seasoning.</p>
+    </div>
+  </div>
+
+  <div id="details-smoked-paprika" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-smoked-paprika">
+    <div class="modal-content">
+      <a href="#!" class="close" aria-label="Close">×</a>
+      <h2 id="modal-title-smoked-paprika">Smoked Paprika</h2>
+      <p>Sweet-smoky paprika for depth in stews, rubs and Spanish dishes. Store tightly sealed.</p>
+    </div>
+  </div>
+
+  <div id="details-coconut-milk" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-coconut-milk">
+    <div class="modal-content">
+      <a href="#!" class="close" aria-label="Close">×</a>
+      <h2 id="modal-title-coconut-milk">Coconut Milk</h2>
+      <p>Creamy coconut milk for curries and desserts. Shake or stir well; refrigerate after opening and use quickly.</p>
+    </div>
+  </div>
+
+  <div id="details-soy-sauce" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-soy-sauce">
+    <div class="modal-content">
+      <a href="#!" class="close" aria-label="Close">×</a>
+      <h2 id="modal-title-soy-sauce">Soy Sauce — Light</h2>
+      <p>Light soy sauce with a salty, umami flavor — perfect for marinades and seasoning. Store in a cool place.</p>
+    </div>
+  </div>
+
+  <div id="details-truffle-oil" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-truffle-oil">
+    <div class="modal-content">
+      <a href="#!" class="close" aria-label="Close">×</a>
+      <h2 id="modal-title-truffle-oil">Truffle Oil</h2>
+      <p>Gourmet finishing oil with truffle aroma — use sparingly to finish dishes; do not cook at high heat.</p>
+    </div>
+  </div>
+
+  <div id="details-turmeric" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-turmeric">
+    <div class="modal-content">
+      <a href="#!" class="close" aria-label="Close">×</a>
+      <h2 id="modal-title-turmeric">Turmeric Powder</h2>
+      <p>Bright, earthy turmeric for curries, marinades and golden lattes. Store away from direct sunlight.</p>
+    </div>
+  </div>
+
+  <div id="details-cinnamon" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-cinnamon">
+    <div class="modal-content">
+      <a href="#!" class="close" aria-label="Close">×</a>
+      <h2 id="modal-title-cinnamon">Cinnamon Sticks</h2>
+      <p>Whole cinnamon sticks for infusions, stews and baking. Tie into sachets or break as needed.</p>
+    </div>
+  </div>
+
+  <div id="details-nutmeg" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-nutmeg">
+    <div class="modal-content">
+      <a href="#!" class="close" aria-label="Close">×</a>
+      <h2 id="modal-title-nutmeg">Nutmeg — Whole</h2>
+      <p>Whole nutmeg with warm, sweet notes — grate fresh over custards, sauces, and savory dishes.</p>
+    </div>
+  </div>
+
+  <div id="details-bay-leaves" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-bay-leaves">
+    <div class="modal-content">
+      <a href="#!" class="close" aria-label="Close">×</a>
+      <h2 id="modal-title-bay-leaves">Bay Leaves</h2>
+      <p>Fragrant bay leaves for slow-cooked dishes and stocks. Remove before serving.</p>
+    </div>
+  </div>
+
+  <div id="details-basil" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-basil">
+    <div class="modal-content">
+      <a href="#!" class="close" aria-label="Close">×</a>
+      <h2 id="modal-title-basil">Dried Basil</h2>
+      <p>Sweet dried basil for pasta sauces, pizzas and Mediterranean dishes. Add toward the end of cooking for best flavor.</p>
+    </div>
+  </div>
+
+  <div id="details-thyme" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-thyme">
+    <div class="modal-content">
+      <a href="#!" class="close" aria-label="Close">×</a>
+      <h2 id="modal-title-thyme">Dried Thyme</h2>
+      <p>Robust thyme for roasting, soups and stews. Holds up well under long cooking.</p>
+    </div>
+  </div>
+
+  <div id="details-rosemary" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-rosemary">
+    <div class="modal-content">
+      <a href="#!" class="close" aria-label="Close">×</a>
+      <h2 id="modal-title-rosemary">Dried Rosemary</h2>
+      <p>Piney, aromatic rosemary for roasted meats, potatoes and focaccia. Crush before using to release flavor.</p>
+    </div>
+  </div>
+
+  <div id="details-cardamom" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-cardamom">
+    <div class="modal-content">
+      <a href="#!" class="close" aria-label="Close">×</a>
+      <h2 id="modal-title-cardamom">Cardamom Pods</h2>
+      <p>Floral, citrusy cardamom pods — great in chai, rice dishes and baked goods. Lightly crush to release seeds.</p>
+    </div>
+  </div>
+
+  <div id="details-cloves" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-cloves">
+    <div class="modal-content">
+      <a href="#!" class="close" aria-label="Close">×</a>
+      <h2 id="modal-title-cloves">Cloves — Whole</h2>
+      <p>Warm, pungent whole cloves for spiced drinks, pickles and marinades. Use sparingly, very aromatic.</p>
+    </div>
+  </div>
+
+  <div id="details-vanilla" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-vanilla">
+    <div class="modal-content">
+      <a href="#!" class="close" aria-label="Close">×</a>
+      <h2 id="modal-title-vanilla">Vanilla Extract</h2>
+      <p>Pure vanilla extract for baking and desserts. Store sealed away from heat and light for best quality.</p>
+    </div>
+  </div>
+
+  <div id="details-saffron" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-saffron">
+    <div class="modal-content">
+      <a href="#!" class="close" aria-label="Close">×</a>
+      <h2 id="modal-title-saffron">Saffron Threads</h2>
+      <p>Premium saffron threads — highly aromatic and coloring. Use a few threads infused in warm water for best effect.</p>
+    </div>
+  </div>
+
+  <div id="details-matcha" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-matcha">
+    <div class="modal-content">
+      <a href="#!" class="close" aria-label="Close">×</a>
+      <h2 id="modal-title-matcha">Matcha Powder</h2>
+      <p>Ceremonial-grade matcha powder for tea, lattes and baking. Sift before whisking to avoid clumps.</p>
+    </div>
+  </div>
+
+  <div id="details-baking-powder" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-baking-powder">
+    <div class="modal-content">
+      <a href="#!" class="close" aria-label="Close">×</a>
+      <h2 id="modal-title-baking-powder">Baking Powder</h2>
+      <p>Leavening agent for quick breads and cakes. Keep dry and replace if it loses its rise.</p>
+    </div>
+  </div>
+
+  <div id="details-cornstarch" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-cornstarch">
+    <div class="modal-content">
+      <a href="#!" class="close" aria-label="Close">×</a>
+      <h2 id="modal-title-cornstarch">Cornstarch</h2>
+      <p>Neutral thickening agent for sauces, gravies and custards. Mix with cold liquid before adding to hot liquids.</p>
+    </div>
+  </div>
+
+  
+</body>
+</html>

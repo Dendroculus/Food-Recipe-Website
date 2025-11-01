@@ -1706,6 +1706,12 @@ main {
         max-width: 95%;
     }
 
+    .celestial-logo {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-85%);
+    }
+
     .recommended-section {
         margin: 1rem 0.5rem;
         display: flex;
