@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shop — Cooking Ingredients</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./ingredients_shop.css">
+</head>
+<body>
+  <nav class="navtop container-fluid">
+    <ul class="list-unstyled">
+      <li class="left">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" hidden />
+        <label for="menu-toggle" class="menu-button" title="Menu">MENU</label>
+        <div id="primary-nav" class="nav-left">
+          <div class="dropdown-container">
+            <a href="#" class="recipes-link">RECIPES</a>
+            <ul class="navtop-dropdown">
+              <li>
+                <a href="../five-course-meal/main-page-html/main-course.html">
+                  <img class="img-fluid" src="../assets/main_course/main_course_pfp.jpg" alt="Main course" loading="lazy" />
+                  <span>Main Course</span>
+                </a>
+              </li>
+              <li>
+                <a href="../five-course-meal/main-page-html/appetizer.html">
+                  <img class="img-fluid" src="../assets/appetizers/appetizers_pfp.jpg" alt="Appetizers" loading="lazy" />
+                  <span>Appetizers</span>
+                </a>
+              </li>
+              <li>
+                <a href="../five-course-meal/main-page-html/salad.html">
+                  <img class="img-fluid" src="../assets/salad/salad_pfp.jpg" alt="Salad" loading="lazy" />
+                  <span>Salad</span>
+                </a>
+              </li>
+              <li>
+                <a href="../five-course-meal/main-page-html/dessert.html">
+                  <img class="img-fluid" src="../assets/desserts/desserts_pfp.jpg" alt="Desserts" loading="lazy" />
+                  <span>Desserts</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown-container">
+            <a href="#">INSPIRATION</a>
+            <ul class="navtop-dropdown">
+              <li>
+                <a href="#">
+                  <img class="img-fluid" src="../assets/inspiration/stellar_tips_pfp.jpg" alt="Stellar Tips" loading="lazy" />
+                  <span>Stellar Tips</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="img-fluid" src="../assets/inspiration/seasonal_constellation_pfp.png" alt="Seasonal Constellations" loading="lazy" />
+                  <span>Seasonal Constellations</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="img-fluid" src="../assets/inspiration/kitchen_universe_pfp.png" alt="Kitchen Universe" loading="lazy" />
+                  <span>Kitchen Universe</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="img-fluid" src="../assets/inspiration/guiding_stars_pfp.png" alt="Guiding Stars" loading="lazy" />
+                  <span>Guiding Stars</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="img-fluid" src="../assets/inspiration/orbit_of_flavors_pfp.png" alt="Orbit Of Flavors" loading="lazy" />
+                  <span>Orbit Of Flavors</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown-container">
+            <a href="#">SHOP</a>
+            <ul class="navtop-dropdown">
+              <li>
+                <a href="./ingredients_shop.html">
+                  <img class="img-fluid" src="../assets/shop/Ingredients/ingredients_pfp.jpg" alt="Cooking Ingredients" loading="lazy" />
+                  <span>Cooking Ingredients</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="img-fluid" src="../assets/shop/Kitchen Tools/kitchen_tools_pfp.jpg" alt="Kitchen Tools" loading="lazy" />
+                  <span>Kitchen Tools</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="img-fluid" src="../assets/shop/Cookware Appliances/cookware_appliances_pfp.jpg" alt="Cookware & Appliances" loading="lazy" />
+                  <span>Cookware & Appliances</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="img-fluid" src="../assets/shop/Recipe Themed/recipe_themed_merch_pfp.png" alt="Recipe Themed Merch" loading="lazy" />
+                  <span>Recipe Themed Merch</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="img-fluid" src="../assets/shop/Digital Products/digital_products_pfp.PNG" alt="Digital Products" loading="lazy" />
+                  <span>Digital Products</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown-container">
+            <a href="#">ABOUT US</a>
+              <ul class="navtop-dropdown">
+                <li>
+                  <a href="../five-course-meal/main-page-html/main-course.html">
+                    <img class="img-fluid" src="../assets/about us/about_us_pfp.png" alt="Our Story" loading="lazy" />
+                    <span>Our Story</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img class="img-fluid" src="../assets/about us/meet_the_team_pfp.png" alt="Meet the Team" loading="lazy" />
+                    <span>Meet the Team</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img class="img-fluid" src="../assets/about us/our_mission_pfp.png" alt="Our Mission" loading="lazy" />
+                    <span>Our Mission</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img class="img-fluid" src="../assets/about us/contact_us_pfp.png" alt="Contact Us" loading="lazy" />
+                    <span>Contact Us</span>
+                  </a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="celestial">
+        <a href="../index.html">CELESTIAL 💫</a>
+      </li>
+      <li class="right">
+        <a href="../forms/index.html"><img class="img-fluid" src="../assets/icons/user.png" alt="user" width="32" height="32" /></a>
+        <a href="./ingredients_shop.html"><img class="img-fluid" src="../assets/icons/shopping_cart.png" alt="shopping bag" width="32" height="32" /></a>
+      </li>
+    </ul>
+  </nav>
+
+  <main class="container my-4 shop-main">
+    <input type="radio" name="filter" id="filter-all" checked hidden />
+    <input type="radio" name="filter" id="filter-spices" hidden />
+    <input type="radio" name="filter" id="filter-pantry" hidden />
+    <input type="radio" name="filter" id="filter-oils" hidden />
+
+    <header class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3 mb-3">
+      <div>
+        <h1 class="h4 mb-1">Cooking Ingredients</h1>
+      </div>
+
+      <div class="d-flex gap-2 align-items-center">
+        <form class="site-search" action="#">
+          <div class="search">
+            <button type="submit" title="Search">
+              <img class="img-fluid" src="../assets/icons/search.png" alt="search" width="24" height="24" />
+            </button>
+            <input type="text" class="form-control" placeholder="Search ingredients..." />
+          </div>
+        </form>
+      </div>
+    </header>
+
+    <div class="filters" aria-label="Category filters">
+      <label for="filter-all" class="btn-label">All Categories</label>
+      <label for="filter-spices" class="btn-label">Spices & Seasonings</label>
+      <label for="filter-pantry" class="btn-label">Pantry & Canned</label>
+      <label for="filter-oils" class="btn-label">Oils & Vinegars</label>
+    </div>
+
+    <section id="products" class="row g-3" aria-live="polite">
+      <div class="col-12 col-sm-6 col-md-4 product spices">
+        <article class="card product-card h-100 border-0 shadow-sm">
+          <img src="../assets/shop/Ingredients/ingredients_pfp.jpg" class="card-img-top" alt="Dried Oregano" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Dried Oregano</h5>
+            <div class="meta">30 g • Aromatic Mediterranean herb</div>
+            <div class="d-flex justify-content-between align-items-start mt-2">
+              <div>
+                <strong class="text-success text-nowrap">Rp 27.000</strong>
+                <div class="small text-muted">Stock: 80</div>
+              </div>
+              <div class="d-flex gap-2 align-items-start">
+                <a href="#details-oregano" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <a class="btn btn-sm btn-primary btn-add" href="#" role="button" aria-disabled="true">Add</a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product pantry">
+        <article class="card product-card h-100 border-0 shadow-sm">
+          <img src="../assets/shop/Ingredients/ingredients_pfp.jpg" class="card-img-top" alt="Sea Salt Fine" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Sea Salt — Fine</h5>
+            <div class="meta">500 g • Natural sea salt</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 37.500</strong>
+                <div class="small text-muted">Stock: 120</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-sea-salt" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <a class="btn btn-sm btn-primary btn-add" href="#" role="button" aria-disabled="true">Add</a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product oils">
+        <article class="card product-card h-100 border-0 shadow-sm">
+          <img src="../assets/shop/Ingredients/ingredients_pfp.jpg" class="card-img-top" alt="Olive Oil" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Olive Oil — Extra Virgin</h5>
+            <div class="meta">250 ml • Premium cold-pressed</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 112.500</strong>
+                <div class="small text-muted">Stock: 24</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-olive-oil" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <a class="btn btn-sm btn-primary btn-add" href="#" role="button" aria-disabled="true">Add</a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product spices">
+        <article class="card product-card h-100 border-0 shadow-sm">
+          <img src="../assets/shop/Ingredients/ingredients_pfp.jpg" class="card-img-top" alt="Black Pepper" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Black Pepper — Ground</h5>
+            <div class="meta">50 g • Aromatic spice</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 18.000</strong>
+                <div class="small text-muted">Stock: 150</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-black-pepper" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <a class="btn btn-sm btn-primary btn-add" href="#" role="button" aria-disabled="true">Add</a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product spices">
+        <article class="card product-card h-100 border-0 shadow-sm">
+          <img src="../assets/shop/Ingredients/ingredients_pfp.jpg" class="card-img-top" alt="Cumin Powder" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Cumin Powder</h5>
+            <div class="meta">40 g • Warm, earthy</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 22.500</strong>
+                <div class="small text-muted">Stock: 90</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-cumin" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <a class="btn btn-sm btn-primary btn-add" href="#" role="button" aria-disabled="true">Add</a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product pantry">
+        <article class="card product-card h-100 border-0 shadow-sm">
+          <img src="../assets/shop/Ingredients/ingredients_pfp.jpg" class="card-img-top" alt="Brown Sugar" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Brown Sugar</h5>
+            <div class="meta">500 g • Soft & moist</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 48.000</strong>
+                <div class="small text-muted">Stock: 70</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-brown-sugar" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <a class="btn btn-sm btn-primary btn-add" href="#" role="button" aria-disabled="true">Add</a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product pantry">
+        <article class="card product-card h-100 border-0 shadow-sm">
+          <img src="../assets/shop/Ingredients/ingredients_pfp.jpg" class="card-img-top" alt="Canned Tomatoes" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Canned Tomatoes</h5>
+            <div class="meta">400 g • Peeled, diced</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 30.000</strong>
+                <div class="small text-muted">Stock: 110</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-canned-tomatoes" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <a class="btn btn-sm btn-primary btn-add" href="#" role="button" aria-disabled="true">Add</a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product pantry">
+        <article class="card product-card h-100 border-0 shadow-sm">
+          <img src="../assets/shop/Ingredients/ingredients_pfp.jpg" class="card-img-top" alt="Honey" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Honey — Wildflower</h5>
+            <div class="meta">250 g • Natural sweetener</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 67.500</strong>
+                <div class="small text-muted">Stock: 50</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-honey" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <a class="btn btn-sm btn-primary btn-add" href="#" role="button" aria-disabled="true">Add</a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product oils">
+        <article class="card product-card h-100 border-0 shadow-sm">
+          <img src="../assets/shop/Ingredients/ingredients_pfp.jpg" class="card-img-top" alt="Sesame Oil" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Sesame Oil</h5>
+            <div class="meta">150 ml • Toasted aroma</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 57.000</strong>
+                <div class="small text-muted">Stock: 45</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-sesame-oil" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <a class="btn btn-sm btn-primary btn-add" href="#" role="button" aria-disabled="true">Add</a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product oils">
+        <article class="card product-card h-100 border-0 shadow-sm">
+          <img src="../assets/shop/Ingredients/ingredients_pfp.jpg" class="card-img-top" alt="Balsamic Vinegar" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Balsamic Vinegar</h5>
+            <div class="meta">250 ml • Aged</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 82.500</strong>
+                <div class="small text-muted">Stock: 30</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-balsamic" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <a class="btn btn-sm btn-primary btn-add" href="#" role="button" aria-disabled="true">Add</a>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer text-center py-4 border-top">
+    <div class="container">
+    </div>
+  </footer>
+
+  <div id="details-oregano" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-oregano">
+    <div class="modal-content">
+      <a href="#!" class="close" aria-label="Close">×</a>
+      <h2 id="modal-title-oregano">Dried Oregano</h2>
+      <p>Perfect for pizza, pasta, and salads. Store in a cool, dry place.</p>
+    </div>
+  </div>
+
+  <div id="details-sea-salt" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-sea-salt">
+    <div class="modal-content">
+      <a href="#!" class="close" aria-label="Close">×</a>
+      <h2 id="modal-title-sea-salt">Sea Salt — Fine</h2>
+      <p>Fine-grain sea salt, great for everyday use.</p>
+    </div>
+  </div>
+
+  <div id="details-olive-oil" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-olive-oil">
+    <div class="modal-content">
+      <a href="#!" class="close" aria-label="Close">×</a>
+      <h2 id="modal-title-olive-oil">Olive Oil — Extra Virgin</h2>
+      <p>Cold-pressed olive oil. Ideal for dressings and finishing.</p>
+    </div>
+  </div>
+
+  <div id="details-black-pepper" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-black-pepper">
+    <div class="modal-content">
+      <a href="#!" class="close" aria-label="Close">×</a>
+      <h2 id="modal-title-black-pepper">Black Pepper — Ground</h2>
+      <p>Ground black pepper for everyday seasoning.</p>
+    </div>
+  </div>
+
+  <div id="details-cumin" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-cumin">
+    <div class="modal-content">
+      <a href="#!" class="close" aria-label="Close">×</a>
+      <h2 id="modal-title-cumin">Cumin Powder</h2>
+      <p>Great for curries and stir-fries.</p>
+    </div>
+  </div>
+
+  <div id="details-brown-sugar" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-brown-sugar">
+    <div class="modal-content">
+      <a href="#!" class="close" aria-label="Close">×</a>
+      <h2 id="modal-title-brown-sugar">Brown Sugar</h2>
+      <p>Ideal for baking and sauces.</p>
+    </div>
+  </div>
+
+  <div id="details-canned-tomatoes" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-canned-tomatoes">
+    <div class="modal-content">
+      <a href="#!" class="close" aria-label="Close">×</a>
+      <h2 id="modal-title-canned-tomatoes">Canned Tomatoes</h2>
+      <p>Great for sauces and soups — convenient and shelf-stable.</p>
+    </div>
+  </div>
+
+  <div id="details-honey" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-honey">
+    <div class="modal-content">
+      <a href="#!" class="close" aria-label="Close">×</a>
+      <h2 id="modal-title-honey">Honey — Wildflower</h2>
+      <p>Natural honey — great for drinks and marinades.</p>
+    </div>
+  </div>
+
+  <div id="details-sesame-oil" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-sesame-oil">
+    <div class="modal-content">
+      <a href="#!" class="close" aria-label="Close">×</a>
+      <h2 id="modal-title-sesame-oil">Sesame Oil</h2>
+      <p>Toasted aroma ideal for stir-fries and dressings.</p>
+    </div>
+  </div>
+
+  <div id="details-balsamic" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-balsamic">
+    <div class="modal-content">
+      <a href="#!" class="close" aria-label="Close">×</a>
+      <h2 id="modal-title-balsamic">Balsamic Vinegar</h2>
+      <p>For salads, glazes, and reductions.</p>
+    </div>
+  </div>
+
+  
+</body>
+</html>

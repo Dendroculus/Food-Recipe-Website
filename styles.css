@@ -29,6 +29,7 @@ body {
 
 .navtop > ul {
   position: fixed;
+  top: 0;
   z-index: 1000;
   background: linear-gradient(174.2deg, rgba(255,244,228,0.95) 7.1%, rgba(240,246,238,0.95) 67.4%);
   width: 100%;
