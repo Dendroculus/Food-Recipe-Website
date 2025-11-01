@@ -60,6 +60,7 @@ body {
   filter: brightness(0) saturate(200%) invert(48%) sepia(94%) hue-rotate(120deg);
 }
 
+
 .navtop a, .celestial a {
   position: relative;
   text-decoration: none;
@@ -182,12 +183,14 @@ body {
   --muted: #6c757d;
   --card-radius: .5rem;
   --img-height: 160px;
-  /* Match main site mobile nav height */
   --nav-mobile-h: 56px;
 }
 
-
-
+#home img {
+  width: 2rem;
+  height: 2rem;
+  padding-bottom: 0.1rem;
+}
 
 .shop-main { padding-top: 6.5rem; }
 @media (max-width: 768px) {
@@ -198,6 +201,7 @@ body {
   box-shadow: none; 
   outline: none; 
 }
+
 
 .navbar-brand.celestial {
   font-family: 'Playwrite', sans-serif;
@@ -453,17 +457,16 @@ main h1 {
   }
 
   .celestial {
-    flex: 1;
-    order: 2;
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    right: 7.25rem;  
+    transform: none;
     text-align: center;
   }
+  
   .navtop ul .left { order: 1; }
   .navtop ul .right { order: 3; }
 
-  .right { gap: 0.75rem; }
+  .right { gap: 0.75rem; align-items: center; }
   .right img { width: 1.75rem; }
   .celestial a { font-size: 1.25rem; }
 
@@ -532,6 +535,12 @@ main h1 {
   }
 
   .product .card-img-top { height: 140px; }
+
+  #home img {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding-bottom: 0;
+  }
 }
 
 @media (max-width: 480px) {
@@ -541,3 +550,10 @@ main h1 {
   .site-search .search input { font-size: 0.9rem; }
 }
 
+
+@media (max-width:1024px) {
+    .celestial {
+    left: 3rem;
+    right: 5rem;  
+  }
+}
