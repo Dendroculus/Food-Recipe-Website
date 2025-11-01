@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Shop — Cooking Ingredients</title>
+  <title>Shop — Kitchen Tools</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="./shop.css">
@@ -89,15 +89,9 @@
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="./kitchen_tools.html">
                   <img class="img-fluid" src="../assets/shop/Kitchen Tools/kitchen_tools_pfp.jpg" alt="Kitchen Tools" loading="lazy" />
                   <span>Kitchen Tools</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img class="img-fluid" src="../assets/shop/Cookware Appliances/cookware_appliances_pfp.jpg" alt="Cookware & Appliances" loading="lazy" />
-                  <span>Cookware & Appliances</span>
                 </a>
               </li>
               <li>
@@ -149,22 +143,27 @@
         <a href="../index.html">CELESTIAL 💫</a>
       </li>
       <li class="right">
-        <a href="../../index.html" target="_blank" id="home"><img src="../assets/icons/house.png" alt="home" width="32" height="32" /></a>
-        <a href="../forms/index.html"><img class="img-fluid" src="../assets/icons/user.png" alt="user" width="32" height="32" /></a>
-        <a href="./ingredients_shop.html"><img class="img-fluid" src="../assets/icons/shopping_cart.png" alt="shopping bag" width="32" height="32" /></a>
+        <a href="../../index.html" target="_blank" id="home"><img src="../assets/icons/house.png" alt="home"/></a>
+        <a href="../forms/index.html"><img class="img-fluid" src="../assets/icons/user.png" alt="user"/></a>
+        <a href="./ingredients_shop.html"><img class="img-fluid" src="../assets/icons/shopping_cart.png" alt="shopping bag"/></a>
       </li>
     </ul>
   </nav>
 
   <main class="container my-4 shop-main">
     <input type="radio" name="filter" id="filter-all" checked hidden />
-    <input type="radio" name="filter" id="filter-spices" hidden />
-    <input type="radio" name="filter" id="filter-pantry" hidden />
-    <input type="radio" name="filter" id="filter-oils" hidden />
+    <input type="radio" name="filter" id="filter-blenders" hidden />
+    <input type="radio" name="filter" id="filter-cutlery" hidden />
+    <input type="radio" name="filter" id="filter-electric" hidden />
+    <input type="radio" name="filter" id="filter-cookware" hidden />
+    <input type="radio" name="filter" id="filter-bakeware" hidden />
+    <input type="radio" name="filter" id="filter-storage" hidden />
+    <input type="radio" name="filter" id="filter-dinnerware" hidden />
+    <input type="radio" name="filter" id="filter-cleaning" hidden />
 
     <header class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3 mb-3">
       <div>
-        <h1 class="h4 mb-1">Cooking Ingredients</h1>
+        <h1 class="h4 mb-1">Kitchen Tools</h1>
       </div>
 
       <div class="d-flex gap-2 align-items-center">
@@ -173,7 +172,7 @@
             <button type="submit" title="Search">
               <img class="img-fluid" src="../assets/icons/search.png" alt="search" width="24" height="24" />
             </button>
-            <input type="text" class="form-control" placeholder="Search ingredients..." />
+            <input type="text" class="form-control" placeholder="Search tools..." />
           </div>
         </form>
       </div>
@@ -181,27 +180,33 @@
 
     <div class="filters" aria-label="Category filters">
       <label for="filter-all" class="btn-label">All Categories</label>
-      <label for="filter-spices" class="btn-label">Spices & Seasonings</label>
-      <label for="filter-pantry" class="btn-label">Pantry & Canned</label>
-      <label for="filter-oils" class="btn-label">Oils & Vinegars</label>
+      <label for="filter-blenders" class="btn-label">Blenders & Mixers</label>
+      <label for="filter-cutlery" class="btn-label">Cutlery & Boards</label>
+      <label for="filter-electric" class="btn-label">Electric Kitchen Tools</label>
+      <label for="filter-cookware" class="btn-label">Cookware</label>
+      <label for="filter-bakeware" class="btn-label">Bakeware</label>
+      <label for="filter-storage" class="btn-label">Storage & Containers</label>
+      <label for="filter-dinnerware" class="btn-label">Dinnerware & Serveware</label>
+      <label for="filter-cleaning" class="btn-label">Cleaning Supplies</label>
     </div>
 
     <section id="products" class="row g-3" aria-live="polite">
-      <div class="col-12 col-sm-6 col-md-4 product spices">
-        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="dried-oregano">
-          <img src="../assets/shop/Ingredients/Dried_Oregano.jpg" class="card-img-top" alt="Dried Oregano" loading="lazy" />
+      <!-- 2. Blenders & Mixers -->
+      <div class="col-12 col-sm-6 col-md-4 product blenders">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="hand-blender">
+          <img src="" class="card-img-top" alt="Hand Blender" loading="lazy" />
           <div class="card-body">
-            <h5 class="card-title mb-1">Dried Oregano</h5>
-            <div class="meta">30 g • Aromatic Mediterranean herb</div>
+            <h5 class="card-title mb-1">Hand Blender</h5>
+            <div class="meta">600 W • 2-speed • Detachable shaft</div>
             <div class="d-flex justify-content-between align-items-start mt-2">
               <div>
-                <strong class="text-success text-nowrap">Rp 27.000</strong>
-                <div class="small text-muted">Stock: 80</div>
+                <strong class="text-success text-nowrap">Rp 450.000</strong>
+                <div class="small text-muted">Stock: 75</div>
               </div>
               <div class="d-flex gap-2 align-items-start">
-                <a href="#details-oregano" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <a href="#details-hand-blender" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
                 <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
-                  <input type="hidden" name="product_id" value="dried-oregano">
+                  <input type="hidden" name="product_id" value="hand-blender">
                   <input type="hidden" name="quantity" value="1">
                   <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
                 </form>
@@ -211,21 +216,21 @@
         </article>
       </div>
 
-      <div class="col-12 col-sm-6 col-md-4 product pantry">
-        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="sea-salt-fine">
-          <img src="../assets/shop/Ingredients/Sea_Salt.jpg" class="card-img-top" alt="Sea Salt Fine" loading="lazy" />
+      <div class="col-12 col-sm-6 col-md-4 product blenders">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="stand-mixer">
+          <img src="" class="card-img-top" alt="Stand Mixer" loading="lazy" />
           <div class="card-body">
-            <h5 class="card-title mb-1">Sea Salt — Fine</h5>
-            <div class="meta">500 g • Natural sea salt</div>
+            <h5 class="card-title mb-1">Stand Mixer</h5>
+            <div class="meta">5 L bowl • 6 speeds • Dough hook</div>
             <div class="d-flex justify-content-between align-items-center mt-2">
               <div>
-                <strong class="text-success">Rp 37.500</strong>
-                <div class="small text-muted">Stock: 120</div>
+                <strong class="text-success">Rp 3.200.000</strong>
+                <div class="small text-muted">Stock: 18</div>
               </div>
               <div class="d-flex gap-2">
-                <a href="#details-sea-salt" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <a href="#details-stand-mixer" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
                 <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
-                  <input type="hidden" name="product_id" value="sea-salt-fine">
+                  <input type="hidden" name="product_id" value="stand-mixer">
                   <input type="hidden" name="quantity" value="1">
                   <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
                 </form>
@@ -235,21 +240,21 @@
         </article>
       </div>
 
-      <div class="col-12 col-sm-6 col-md-4 product oils">
-        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="olive-oil-extra-virgin">
-          <img src="../assets/shop/Ingredients/Olive_Oil_Virgin.png" class="card-img-top" alt="Olive Oil" loading="lazy" />
+      <div class="col-12 col-sm-6 col-md-4 product blenders">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="personal-blender">
+          <img src="" class="card-img-top" alt="Personal Blender" loading="lazy" />
           <div class="card-body">
-            <h5 class="card-title mb-1">Olive Oil — Extra Virgin</h5>
-            <div class="meta">250 ml • Premium cold-pressed</div>
+            <h5 class="card-title mb-1">Personal Blender</h5>
+            <div class="meta">600 ml cup • Pulse function</div>
             <div class="d-flex justify-content-between align-items-center mt-2">
               <div>
-                <strong class="text-success">Rp 112.500</strong>
-                <div class="small text-muted">Stock: 24</div>
+                <strong class="text-success">Rp 900.000</strong>
+                <div class="small text-muted">Stock: 42</div>
               </div>
               <div class="d-flex gap-2">
-                <a href="#details-olive-oil" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <a href="#details-personal-blender" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
                 <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
-                  <input type="hidden" name="product_id" value="olive-oil-extra-virgin">
+                  <input type="hidden" name="product_id" value="personal-blender">
                   <input type="hidden" name="quantity" value="1">
                   <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
                 </form>
@@ -259,21 +264,21 @@
         </article>
       </div>
 
-      <div class="col-12 col-sm-6 col-md-4 product spices">
-        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="black-pepper-ground">
-          <img src="../assets/shop/Ingredients/Black_Pepper_Ground.jpg" class="card-img-top" alt="Black Pepper" loading="lazy" />
+      <div class="col-12 col-sm-6 col-md-4 product blenders">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="food-processor">
+          <img src="" class="card-img-top" alt="Food Processor" loading="lazy" />
           <div class="card-body">
-            <h5 class="card-title mb-1">Black Pepper — Ground</h5>
-            <div class="meta">50 g • Aromatic spice</div>
+            <h5 class="card-title mb-1">Food Processor</h5>
+            <div class="meta">2 L bowl • 5 blades • 3 speeds</div>
             <div class="d-flex justify-content-between align-items-center mt-2">
               <div>
-                <strong class="text-success">Rp 18.000</strong>
-                <div class="small text-muted">Stock: 150</div>
+                <strong class="text-success">Rp 2.000.000</strong>
+                <div class="small text-muted">Stock: 25</div>
               </div>
               <div class="d-flex gap-2">
-                <a href="#details-black-pepper" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <a href="#details-food-processor" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
                 <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
-                  <input type="hidden" name="product_id" value="black-pepper-ground">
+                  <input type="hidden" name="product_id" value="food-processor">
                   <input type="hidden" name="quantity" value="1">
                   <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
                 </form>
@@ -283,525 +288,21 @@
         </article>
       </div>
 
-      <div class="col-12 col-sm-6 col-md-4 product spices">
-        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="cumin-powder">
-          <img src="../assets/shop/Ingredients/Cumin_Powder.jpg" class="card-img-top" alt="Cumin Powder" loading="lazy" />
+      <div class="col-12 col-sm-6 col-md-4 product blenders">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="juicer">
+          <img src="" class="card-img-top" alt="Juicer" loading="lazy" />
           <div class="card-body">
-            <h5 class="card-title mb-1">Cumin Powder</h5>
-            <div class="meta">40 g • Warm, earthy</div>
+            <h5 class="card-title mb-1">Juicer</h5>
+            <div class="meta">Slow masticating • Quiet operation</div>
             <div class="d-flex justify-content-between align-items-center mt-2">
               <div>
-                <strong class="text-success">Rp 22.500</strong>
-                <div class="small text-muted">Stock: 90</div>
-              </div>
-              <div class="d-flex gap-2">
-                <a href="#details-cumin" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
-                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
-                  <input type="hidden" name="product_id" value="cumin-powder">
-                  <input type="hidden" name="quantity" value="1">
-                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-4 product pantry">
-        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="brown-sugar">
-          <img src="../assets/shop/Ingredients/Brown_Sugar.jpg" class="card-img-top" alt="Brown Sugar" loading="lazy" />
-          <div class="card-body">
-            <h5 class="card-title mb-1">Brown Sugar</h5>
-            <div class="meta">500 g • Soft & moist</div>
-            <div class="d-flex justify-content-between align-items-center mt-2">
-              <div>
-                <strong class="text-success">Rp 48.000</strong>
-                <div class="small text-muted">Stock: 70</div>
-              </div>
-              <div class="d-flex gap-2">
-                <a href="#details-brown-sugar" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
-                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
-                  <input type="hidden" name="product_id" value="brown-sugar">
-                  <input type="hidden" name="quantity" value="1">
-                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-4 product pantry">
-        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="canned-tomatoes">
-          <img src="../assets/shop/Ingredients/Canned_Tomatoes.jpg" class="card-img-top" alt="Canned Tomatoes" loading="lazy" />
-          <div class="card-body">
-            <h5 class="card-title mb-1">Canned Tomatoes</h5>
-            <div class="meta">400 g • Peeled, diced</div>
-            <div class="d-flex justify-content-between align-items-center mt-2">
-              <div>
-                <strong class="text-success">Rp 30.000</strong>
-                <div class="small text-muted">Stock: 110</div>
-              </div>
-              <div class="d-flex gap-2">
-                <a href="#details-canned-tomatoes" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
-                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
-                  <input type="hidden" name="product_id" value="canned-tomatoes">
-                  <input type="hidden" name="quantity" value="1">
-                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-4 product pantry">
-        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="honey-wildflower">
-          <img src="../assets/shop/Ingredients/Honey_Wildflower.jpg" class="card-img-top" alt="Honey" loading="lazy" />
-          <div class="card-body">
-            <h5 class="card-title mb-1">Honey — Wildflower</h5>
-            <div class="meta">250 g • Natural sweetener</div>
-            <div class="d-flex justify-content-between align-items-center mt-2">
-              <div>
-                <strong class="text-success">Rp 67.500</strong>
-                <div class="small text-muted">Stock: 50</div>
-              </div>
-              <div class="d-flex gap-2">
-                <a href="#details-honey" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
-                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
-                  <input type="hidden" name="product_id" value="honey-wildflower">
-                  <input type="hidden" name="quantity" value="1">
-                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-4 product oils">
-        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="sesame-oil">
-          <img src="../assets/shop/Ingredients/Sesame_Oil.jpg" class="card-img-top" alt="Sesame Oil" loading="lazy" />
-          <div class="card-body">
-            <h5 class="card-title mb-1">Sesame Oil</h5>
-            <div class="meta">150 ml • Toasted aroma</div>
-            <div class="d-flex justify-content-between align-items-center mt-2">
-              <div>
-                <strong class="text-success">Rp 57.000</strong>
-                <div class="small text-muted">Stock: 45</div>
-              </div>
-              <div class="d-flex gap-2">
-                <a href="#details-sesame-oil" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
-                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
-                  <input type="hidden" name="product_id" value="sesame-oil">
-                  <input type="hidden" name="quantity" value="1">
-                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-4 product oils">
-        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="balsamic-vinegar">
-          <img src="../assets/shop/Ingredients/Balsamic_Vinnegar.jpg" class="card-img-top" alt="Balsamic Vinegar" loading="lazy" />
-          <div class="card-body">
-            <h5 class="card-title mb-1">Balsamic Vinegar</h5>
-            <div class="meta">250 ml • Aged</div>
-            <div class="d-flex justify-content-between align-items-center mt-2">
-              <div>
-                <strong class="text-success">Rp 82.500</strong>
-                <div class="small text-muted">Stock: 30</div>
-              </div>
-              <div class="d-flex gap-2">
-                <a href="#details-balsamic" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
-                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
-                  <input type="hidden" name="product_id" value="balsamic-vinegar">
-                  <input type="hidden" name="quantity" value="1">
-                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-4 product oils">
-        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="white-vinegar">
-          <img src="../assets/shop/Ingredients/White_Vinnegar.jpg" class="card-img-top" alt="White Vinegar" loading="lazy" />
-          <div class="card-body">
-            <h5 class="card-title mb-1">White Vinegar</h5>
-            <div class="meta">500 ml • Multipurpose</div>
-            <div class="d-flex justify-content-between align-items-center mt-2">
-              <div>
-                <strong class="text-success">Rp 22.000</strong>
-                <div class="small text-muted">Stock: 200</div>
-              </div>
-              <div class="d-flex gap-2">
-                <a href="#details-white-vinegar" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
-                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
-                  <input type="hidden" name="product_id" value="white-vinegar">
-                  <input type="hidden" name="quantity" value="1">
-                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-4 product spices">
-        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="garlic-powder">
-          <img src="../assets/shop/Ingredients/Garlic_Powder.jpg" class="card-img-top" alt="Garlic Powder" loading="lazy" />
-          <div class="card-body">
-            <h5 class="card-title mb-1">Garlic Powder</h5>
-            <div class="meta">60 g • Savoury & concentrated</div>
-            <div class="d-flex justify-content-between align-items-center mt-2">
-              <div>
-                <strong class="text-success">Rp 20.000</strong>
-                <div class="small text-muted">Stock: 140</div>
-              </div>
-              <div class="d-flex gap-2">
-                <a href="#details-garlic-powder" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
-                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
-                  <input type="hidden" name="product_id" value="garlic-powder">
-                  <input type="hidden" name="quantity" value="1">
-                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-4 product spices">
-        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="smoked-paprika">
-          <img src="../assets/shop/Ingredients/Smoked_Paprika.jpg" class="card-img-top" alt="Smoked Paprika" loading="lazy" />
-          <div class="card-body">
-            <h5 class="card-title mb-1">Smoked Paprika</h5>
-            <div class="meta">45 g • Sweet, smoky</div>
-            <div class="d-flex justify-content-between align-items-center mt-2">
-              <div>
-                <strong class="text-success">Rp 28.500</strong>
-                <div class="small text-muted">Stock: 95</div>
-              </div>
-              <div class="d-flex gap-2">
-                <a href="#details-smoked-paprika" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
-                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
-                  <input type="hidden" name="product_id" value="smoked-paprika">
-                  <input type="hidden" name="quantity" value="1">
-                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-4 product pantry">
-        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="coconut-milk">
-          <img src="../assets/shop/Ingredients/Coconut_Milk.jpg" class="card-img-top" alt="Coconut Milk" loading="lazy" />
-          <div class="card-body">
-            <h5 class="card-title mb-1">Coconut Milk</h5>
-            <div class="meta">400 ml • Creamy & rich</div>
-            <div class="d-flex justify-content-between align-items-center mt-2">
-              <div>
-                <strong class="text-success">Rp 33.000</strong>
-                <div class="small text-muted">Stock: 85</div>
-              </div>
-              <div class="d-flex gap-2">
-                <a href="#details-coconut-milk" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
-                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
-                  <input type="hidden" name="product_id" value="coconut-milk">
-                  <input type="hidden" name="quantity" value="1">
-                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-4 product pantry">
-        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="soy-sauce-light">
-          <img src="../assets/shop/Ingredients/Light_Soy_Sauce.png" class="card-img-top" alt="Soy Sauce" loading="lazy" />
-          <div class="card-body">
-            <h5 class="card-title mb-1">Soy Sauce — Light</h5>
-            <div class="meta">300 ml • Umami seasoning</div>
-            <div class="d-flex justify-content-between align-items-center mt-2">
-              <div>
-                <strong class="text-success">Rp 26.000</strong>
-                <div class="small text-muted">Stock: 160</div>
-              </div>
-              <div class="d-flex gap-2">
-                <a href="#details-soy-sauce" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
-                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
-                  <input type="hidden" name="product_id" value="soy-sauce-light">
-                  <input type="hidden" name="quantity" value="1">
-                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-4 product oils">
-        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="truffle-oil">
-          <img src="../assets/shop/Ingredients/Truffle_Oil.jpg" class="card-img-top" alt="Truffle Oil" loading="lazy" />
-          <div class="card-body">
-            <h5 class="card-title mb-1">Truffle Oil</h5>
-            <div class="meta">100 ml • Gourmet finishing oil</div>
-            <div class="d-flex justify-content-between align-items-center mt-2">
-              <div>
-                <strong class="text-success">Rp 145.000</strong>
-                <div class="small text-muted">Stock: 12</div>
-              </div>
-              <div class="d-flex gap-2">
-                <a href="#details-truffle-oil" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
-                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
-                  <input type="hidden" name="product_id" value="truffle-oil">
-                  <input type="hidden" name="quantity" value="1">
-                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-4 product spices">
-        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="turmeric-powder">
-          <img src="../assets/shop/Ingredients/Turmeric_Powder.jpg" class="card-img-top" alt="Turmeric Powder" loading="lazy" />
-          <div class="card-body">
-            <h5 class="card-title mb-1">Turmeric Powder</h5>
-            <div class="meta">100 g • Earthy, warm</div>
-            <div class="d-flex justify-content-between align-items-center mt-2">
-              <div>
-                <strong class="text-success">Rp 32.000</strong>
-                <div class="small text-muted">Stock: 95</div>
-              </div>
-              <div class="d-flex gap-2">
-                <a href="#details-turmeric" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
-                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
-                  <input type="hidden" name="product_id" value="turmeric-powder">
-                  <input type="hidden" name="quantity" value="1">
-                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-4 product spices">
-        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="cinnamon-sticks">
-          <img src="../assets/shop/Ingredients/Cinnamon_Sticks.png" class="card-img-top" alt="Cinnamon Sticks" loading="lazy" />
-          <div class="card-body">
-            <h5 class="card-title mb-1">Cinnamon Sticks</h5>
-            <div class="meta">50 g • Sweet, aromatic</div>
-            <div class="d-flex justify-content-between align-items-center mt-2">
-              <div>
-                <strong class="text-success">Rp 45.000</strong>
-                <div class="small text-muted">Stock: 60</div>
-              </div>
-              <div class="d-flex gap-2">
-                <a href="#details-cinnamon" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
-                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
-                  <input type="hidden" name="product_id" value="cinnamon-sticks">
-                  <input type="hidden" name="quantity" value="1">
-                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-4 product spices">
-        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="nutmeg-whole">
-          <img src="../assets/shop/Ingredients/Nutmeg_Whole.jpg" class="card-img-top" alt="Whole Nutmeg" loading="lazy" />
-          <div class="card-body">
-            <h5 class="card-title mb-1">Nutmeg — Whole</h5>
-            <div class="meta">40 g • Warm, sweet spice</div>
-            <div class="d-flex justify-content-between align-items-center mt-2">
-              <div>
-                <strong class="text-success">Rp 39.000</strong>
-                <div class="small text-muted">Stock: 48</div>
-              </div>
-              <div class="d-flex gap-2">
-                <a href="#details-nutmeg" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
-                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
-                  <input type="hidden" name="product_id" value="nutmeg-whole">
-                  <input type="hidden" name="quantity" value="1">
-                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-4 product spices">
-        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="bay-leaves">
-          <img src="../assets/shop/Ingredients/Bay_Leaves.jpg" class="card-img-top" alt="Bay Leaves" loading="lazy" />
-          <div class="card-body">
-            <h5 class="card-title mb-1">Bay Leaves</h5>
-            <div class="meta">15 g • Fragrant, savory</div>
-            <div class="d-flex justify-content-between align-items-center mt-2">
-              <div>
-                <strong class="text-success">Rp 18.000</strong>
-                <div class="small text-muted">Stock: 130</div>
-              </div>
-              <div class="d-flex gap-2">
-                <a href="#details-bay-leaves" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
-                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
-                  <input type="hidden" name="product_id" value="bay-leaves">
-                  <input type="hidden" name="quantity" value="1">
-                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-4 product spices">
-        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="dried-basil">
-          <img src="../assets/shop/Ingredients/Dried_Basil.jpg" class="card-img-top" alt="Dried Basil" loading="lazy" />
-          <div class="card-body">
-            <h5 class="card-title mb-1">Dried Basil</h5>
-            <div class="meta">25 g • Sweet herb</div>
-            <div class="d-flex justify-content-between align-items-center mt-2">
-              <div>
-                <strong class="text-success">Rp 21.000</strong>
-                <div class="small text-muted">Stock: 105</div>
-              </div>
-              <div class="d-flex gap-2">
-                <a href="#details-basil" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
-                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
-                  <input type="hidden" name="product_id" value="dried-basil">
-                  <input type="hidden" name="quantity" value="1">
-                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-4 product spices">
-        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="thyme-dried">
-          <img src="../assets/shop/Ingredients/Dried_Thyme.jpg" class="card-img-top" alt="Dried Thyme" loading="lazy" />
-          <div class="card-body">
-            <h5 class="card-title mb-1">Dried Thyme</h5>
-            <div class="meta">20 g • Robust Mediterranean herb</div>
-            <div class="d-flex justify-content-between align-items-center mt-2">
-              <div>
-                <strong class="text-success">Rp 19.000</strong>
-                <div class="small text-muted">Stock: 110</div>
-              </div>
-              <div class="d-flex gap-2">
-                <a href="#details-thyme" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
-                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
-                  <input type="hidden" name="product_id" value="thyme-dried">
-                  <input type="hidden" name="quantity" value="1">
-                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-4 product spices">
-        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="rosemary-dried">
-          <img src="../assets/shop/Ingredients/Dried_Rosemary.png" class="card-img-top" alt="Dried Rosemary" loading="lazy" />
-          <div class="card-body">
-            <h5 class="card-title mb-1">Dried Rosemary</h5>
-            <div class="meta">20 g • Pine-like fragrance</div>
-            <div class="d-flex justify-content-between align-items-center mt-2">
-              <div>
-                <strong class="text-success">Rp 24.000</strong>
-                <div class="small text-muted">Stock: 92</div>
-              </div>
-              <div class="d-flex gap-2">
-                <a href="#details-rosemary" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
-                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
-                  <input type="hidden" name="product_id" value="rosemary-dried">
-                  <input type="hidden" name="quantity" value="1">
-                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-4 product spices">
-        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="cardamom-pods">
-          <img src="../assets/shop/Ingredients/Cardamom_Pods.jpg" class="card-img-top" alt="Cardamom Pods" loading="lazy" />
-          <div class="card-body">
-            <h5 class="card-title mb-1">Cardamom Pods</h5>
-            <div class="meta">30 g • Floral, citrusy</div>
-            <div class="d-flex justify-content-between align-items-center mt-2">
-              <div>
-                <strong class="text-success">Rp 58.000</strong>
-                <div class="small text-muted">Stock: 40</div>
-              </div>
-              <div class="d-flex gap-2">
-                <a href="#details-cardamom" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
-                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
-                  <input type="hidden" name="product_id" value="cardamom-pods">
-                  <input type="hidden" name="quantity" value="1">
-                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-4 product spices">
-        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="cloves-whole">
-          <img src="../assets/shop/Ingredients/Cloves_Whole.png" class="card-img-top" alt="Whole Cloves" loading="lazy" />
-          <div class="card-body">
-            <h5 class="card-title mb-1">Cloves — Whole</h5>
-            <div class="meta">25 g • Warm, pungent</div>
-            <div class="d-flex justify-content-between align-items-center mt-2">
-              <div>
-                <strong class="text-success">Rp 36.000</strong>
-                <div class="small text-muted">Stock: 54</div>
-              </div>
-              <div class="d-flex gap-2">
-                <a href="#details-cloves" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
-                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
-                  <input type="hidden" name="product_id" value="cloves-whole">
-                  <input type="hidden" name="quantity" value="1">
-                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <div class="col-12 col-sm-6 col-md-4 product pantry">
-        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="vanilla-extract">
-          <img src="../assets/shop/Ingredients/Vanilla_Extract.png" class="card-img-top" alt="Vanilla Extract" loading="lazy" />
-          <div class="card-body">
-            <h5 class="card-title mb-1">Vanilla Extract</h5>
-            <div class="meta">50 ml • Pure vanilla</div>
-            <div class="d-flex justify-content-between align-items-center mt-2">
-              <div>
-                <strong class="text-success">Rp 95.000</strong>
+                <strong class="text-success">Rp 1.400.000</strong>
                 <div class="small text-muted">Stock: 28</div>
               </div>
               <div class="d-flex gap-2">
-                <a href="#details-vanilla" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <a href="#details-juicer" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
                 <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
-                  <input type="hidden" name="product_id" value="vanilla-extract">
+                  <input type="hidden" name="product_id" value="juicer">
                   <input type="hidden" name="quantity" value="1">
                   <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
                 </form>
@@ -811,21 +312,21 @@
         </article>
       </div>
 
-      <div class="col-12 col-sm-6 col-md-4 product spices">
-        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="saffron-threads">
-          <img src="../assets/shop/Ingredients/Saffron_Threads.png" class="card-img-top" alt="Saffron Threads" loading="lazy" />
+      <div class="col-12 col-sm-6 col-md-4 product blenders">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="smoothie-maker">
+          <img src="" class="card-img-top" alt="Smoothie Maker" loading="lazy" />
           <div class="card-body">
-            <h5 class="card-title mb-1">Saffron Threads</h5>
-            <div class="meta">0.5 g • Premium spice</div>
+            <h5 class="card-title mb-1">Smoothie Maker</h5>
+            <div class="meta">700 W • Ice crush • Travel cup</div>
             <div class="d-flex justify-content-between align-items-center mt-2">
               <div>
-                <strong class="text-success">Rp 420.000</strong>
-                <div class="small text-muted">Stock: 6</div>
+                <strong class="text-success">Rp 1.100.000</strong>
+                <div class="small text-muted">Stock: 36</div>
               </div>
               <div class="d-flex gap-2">
-                <a href="#details-saffron" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <a href="#details-smoothie-maker" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
                 <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
-                  <input type="hidden" name="product_id" value="saffron-threads">
+                  <input type="hidden" name="product_id" value="smoothie-maker">
                   <input type="hidden" name="quantity" value="1">
                   <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
                 </form>
@@ -835,21 +336,69 @@
         </article>
       </div>
 
-      <div class="col-12 col-sm-6 col-md-4 product pantry">
-        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="matcha-powder">
-          <img src="../assets/shop/Ingredients/Matcha_Powders.jpg" class="card-img-top" alt="Matcha Powder" loading="lazy" />
+      <div class="col-12 col-sm-6 col-md-4 product blenders">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="coffee-grinder">
+          <img src="" class="card-img-top" alt="Coffee Grinder" loading="lazy" />
           <div class="card-body">
-            <h5 class="card-title mb-1">Matcha Powder</h5>
-            <div class="meta">30 g • Ceremonial grade</div>
+            <h5 class="card-title mb-1">Coffee Grinder</h5>
+            <div class="meta">Stainless burrs • 18 grind settings</div>
             <div class="d-flex justify-content-between align-items-center mt-2">
               <div>
-                <strong class="text-success">Rp 125.000</strong>
+                <strong class="text-success">Rp 600.000</strong>
+                <div class="small text-muted">Stock: 58</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-coffee-grinder" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="coffee-grinder">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product blenders">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="chopper">
+          <img src="" class="card-img-top" alt="Food Chopper" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Food Chopper</h5>
+            <div class="meta">500 ml • One-touch chop • Compact</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 320.000</strong>
+                <div class="small text-muted">Stock: 90</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-chopper" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="chopper">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product blenders">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="dough-kneader">
+          <img src="" class="card-img-top" alt="Dough Kneader" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Dough Kneader</h5>
+            <div class="meta">1 kg capacity • Auto knead</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 1.800.000</strong>
                 <div class="small text-muted">Stock: 22</div>
               </div>
               <div class="d-flex gap-2">
-                <a href="#details-matcha" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <a href="#details-dough-kneader" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
                 <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
-                  <input type="hidden" name="product_id" value="matcha-powder">
+                  <input type="hidden" name="product_id" value="dough-kneader">
                   <input type="hidden" name="quantity" value="1">
                   <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
                 </form>
@@ -859,21 +408,1636 @@
         </article>
       </div>
 
-      <div class="col-12 col-sm-6 col-md-4 product pantry">
-        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="baking-powder">
-          <img src="../assets/shop/Ingredients/Baking_Powder.jpg" class="card-img-top" alt="Baking Powder" loading="lazy" />
+      <!-- 3. Cutlery & Boards -->
+      <div class="col-12 col-sm-6 col-md-4 product cutlery">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="knife-set">
+          <img src="" class="card-img-top" alt="Knife Set" loading="lazy" />
           <div class="card-body">
-            <h5 class="card-title mb-1">Baking Powder</h5>
-            <div class="meta">200 g • Leavening agent</div>
+            <h5 class="card-title mb-1">Knife Set</h5>
+            <div class="meta">6 pcs • Stainless steel • Ergonomic handles</div>
+            <div class="d-flex justify-content-between align-items-start mt-2">
+              <div>
+                <strong class="text-success text-nowrap">Rp 1.200.000</strong>
+                <div class="small text-muted">Stock: 30</div>
+              </div>
+              <div class="d-flex gap-2 align-items-start">
+                <a href="#details-knife-set" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="knife-set">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product cutlery">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="chefs-knife">
+          <img src="" class="card-img-top" alt="Chef's Knife" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Chef’s Knife</h5>
+            <div class="meta">20 cm blade • Full tang</div>
             <div class="d-flex justify-content-between align-items-center mt-2">
               <div>
-                <strong class="text-success">Rp 16.000</strong>
+                <strong class="text-success">Rp 450.000</strong>
+                <div class="small text-muted">Stock: 65</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-chefs-knife" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="chefs-knife">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product cutlery">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="paring-knife">
+          <img src="" class="card-img-top" alt="Paring Knife" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Paring Knife</h5>
+            <div class="meta">9 cm blade • Precision peeling</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 120.000</strong>
+                <div class="small text-muted">Stock: 120</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-paring-knife" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="paring-knife">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product cutlery">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="bread-knife">
+          <img src="" class="card-img-top" alt="Bread Knife" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Bread Knife</h5>
+            <div class="meta">Serrated • 22 cm blade</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 280.000</strong>
+                <div class="small text-muted">Stock: 70</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-bread-knife" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="bread-knife">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product cutlery">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="carving-knife">
+          <img src="" class="card-img-top" alt="Carving Knife" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Carving Knife</h5>
+            <div class="meta">Long blade • Precision slicing</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 350.000</strong>
+                <div class="small text-muted">Stock: 55</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-carving-knife" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="carving-knife">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product cutlery">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="steak-knives">
+          <img src="" class="card-img-top" alt="Steak Knives Set" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Steak Knives (Set of 6)</h5>
+            <div class="meta">Micro-serrated • Balanced handle</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 400.000</strong>
+                <div class="small text-muted">Stock: 40</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-steak-knives" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="steak-knives">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product cutlery">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="knife-block">
+          <img src="" class="card-img-top" alt="Knife Block" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Knife Block</h5>
+            <div class="meta">Universal slots • Non-slip base</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 300.000</strong>
+                <div class="small text-muted">Stock: 48</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-knife-block" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="knife-block">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product cutlery">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="sharpener">
+          <img src="" class="card-img-top" alt="Knife Sharpener" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Knife Sharpener</h5>
+            <div class="meta">2-stage • Coarse & fine wheels</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 220.000</strong>
+                <div class="small text-muted">Stock: 85</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-sharpener" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="sharpener">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product cutlery">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="kitchen-scissors">
+          <img src="" class="card-img-top" alt="Kitchen Scissors" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Kitchen Scissors</h5>
+            <div class="meta">Detachable blades • Bottle opener notch</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 95.000</strong>
+                <div class="small text-muted">Stock: 140</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-kitchen-scissors" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="kitchen-scissors">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product cutlery">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="wooden-cutting-board">
+          <img src="" class="card-img-top" alt="Wooden Cutting Board" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Wooden Cutting Board</h5>
+            <div class="meta">Acacia wood • Juice groove • 35×25 cm</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 220.000</strong>
+                <div class="small text-muted">Stock: 80</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-wooden-cutting-board" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="wooden-cutting-board">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product cutlery">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="plastic-cutting-board">
+          <img src="" class="card-img-top" alt="Plastic Cutting Board" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Plastic Cutting Board</h5>
+            <div class="meta">Non-slip feet • Dishwasher-safe • 32×22 cm</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 80.000</strong>
+                <div class="small text-muted">Stock: 150</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-plastic-cutting-board" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="plastic-cutting-board">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product cutlery">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="bamboo-cutting-board">
+          <img src="" class="card-img-top" alt="Bamboo Cutting Board" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Bamboo Cutting Board</h5>
+            <div class="meta">Lightweight • Knife-friendly • 34×24 cm</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 180.000</strong>
+                <div class="small text-muted">Stock: 95</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-bamboo-cutting-board" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="bamboo-cutting-board">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product cutlery">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="butcher-block">
+          <img src="" class="card-img-top" alt="Butcher Block Board" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Butcher Block</h5>
+            <div class="meta">End-grain • Heavy-duty • 40×30×4 cm</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 1.100.000</strong>
+                <div class="small text-muted">Stock: 15</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-butcher-block" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="butcher-block">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product cutlery">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="flexible-cutting-mats">
+          <img src="" class="card-img-top" alt="Flexible Cutting Mats Set" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Flexible Cutting Mats (Set of 3)</h5>
+            <div class="meta">Color-coded • Anti-slip • 30×22 cm</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 90.000</strong>
+                <div class="small text-muted">Stock: 130</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-flexible-cutting-mats" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="flexible-cutting-mats">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- 4. Electric Kitchen Tools -->
+      <div class="col-12 col-sm-6 col-md-4 product electric">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="electric-kettle">
+          <img src="" class="card-img-top" alt="Electric Kettle" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Electric Kettle</h5>
+            <div class="meta">1.7 L • Auto shut-off • 2200 W</div>
+            <div class="d-flex justify-content-between align-items-start mt-2">
+              <div>
+                <strong class="text-success text-nowrap">Rp 350.000</strong>
+                <div class="small text-muted">Stock: 95</div>
+              </div>
+              <div class="d-flex gap-2 align-items-start">
+                <a href="#details-electric-kettle" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="electric-kettle">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product electric">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="toaster">
+          <img src="" class="card-img-top" alt="Toaster" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Toaster</h5>
+            <div class="meta">2-slice • 6 browning levels • Defrost</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 450.000</strong>
+                <div class="small text-muted">Stock: 60</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-toaster" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="toaster">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product electric">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="coffee-maker">
+          <img src="" class="card-img-top" alt="Coffee Maker" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Coffee Maker</h5>
+            <div class="meta">12-cup • Programmable • Keep warm</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 1.200.000</strong>
+                <div class="small text-muted">Stock: 32</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-coffee-maker" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="coffee-maker">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product electric">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="air-fryer">
+          <img src="" class="card-img-top" alt="Air Fryer" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Air Fryer</h5>
+            <div class="meta">4 L • Digital controls • 1400 W</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 1.600.000</strong>
+                <div class="small text-muted">Stock: 40</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-air-fryer" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="air-fryer">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product electric">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="sandwich-maker">
+          <img src="" class="card-img-top" alt="Sandwich Maker" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Sandwich Maker</h5>
+            <div class="meta">Non-stick plates • Cut & seal triangles</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 380.000</strong>
+                <div class="small text-muted">Stock: 85</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-sandwich-maker" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="sandwich-maker">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product electric">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="rice-cooker">
+          <img src="" class="card-img-top" alt="Rice Cooker" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Rice Cooker</h5>
+            <div class="meta">1.8 L • Multi-menu • Keep warm 24h</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 550.000</strong>
+                <div class="small text-muted">Stock: 70</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-rice-cooker" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="rice-cooker">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product electric">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="induction-cooktop">
+          <img src="" class="card-img-top" alt="Induction Cooktop" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Induction Cooktop</h5>
+            <div class="meta">2000 W • Touch control • Timer</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 1.300.000</strong>
+                <div class="small text-muted">Stock: 45</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-induction-cooktop" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="induction-cooktop">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product electric">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="food-steamer">
+          <img src="" class="card-img-top" alt="Food Steamer" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Food Steamer</h5>
+            <div class="meta">2-tier • 60‑min timer • BPA-free baskets</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 600.000</strong>
+                <div class="small text-muted">Stock: 52</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-food-steamer" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="food-steamer">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product electric">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="electric-grill">
+          <img src="" class="card-img-top" alt="Electric Grill" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Electric Grill</h5>
+            <div class="meta">Non-stick plate • Adjustable temp • 1800 W</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 1.100.000</strong>
+                <div class="small text-muted">Stock: 34</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-electric-grill" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="electric-grill">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- 5. Cookware -->
+      <div class="col-12 col-sm-6 col-md-4 product cookware">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="frying-pan-28cm">
+          <img src="" class="card-img-top" alt="Frying Pan 28 cm" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Frying Pan — 28 cm</h5>
+            <div class="meta">Non-stick • Induction-ready • PFOA-free</div>
+            <div class="d-flex justify-content-between align-items-start mt-2">
+              <div>
+                <strong class="text-success text-nowrap">Rp 320.000</strong>
+                <div class="small text-muted">Stock: 85</div>
+              </div>
+              <div class="d-flex gap-2 align-items-start">
+                <a href="#details-frying-pan-28cm" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="frying-pan-28cm">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product cookware">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="saucepan-1-5l">
+          <img src="" class="card-img-top" alt="Saucepan 1.5 L with lid" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Saucepan — 1.5 L</h5>
+            <div class="meta">Stainless steel • Vented glass lid</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 280.000</strong>
+                <div class="small text-muted">Stock: 100</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-saucepan-1-5l" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="saucepan-1-5l">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product cookware">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="wok-32cm">
+          <img src="" class="card-img-top" alt="Wok 32 cm carbon steel" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Wok — 32 cm</h5>
+            <div class="meta">Carbon steel • Wooden handle • Flat base</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 420.000</strong>
+                <div class="small text-muted">Stock: 60</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-wok-32cm" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="wok-32cm">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product cookware">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="casserole-3l">
+          <img src="" class="card-img-top" alt="Casserole 3 L with lid" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Casserole — 3 L</h5>
+            <div class="meta">Enameled • Oven-safe • Even heating</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 550.000</strong>
+                <div class="small text-muted">Stock: 44</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-casserole-3l" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="casserole-3l">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product cookware">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="stock-pot-8l">
+          <img src="" class="card-img-top" alt="Stock Pot 8 L stainless steel" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Stock Pot — 8 L</h5>
+            <div class="meta">Stainless steel • Encapsulated base</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 650.000</strong>
+                <div class="small text-muted">Stock: 38</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-stock-pot-8l" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="stock-pot-8l">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product cookware">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="pressure-cooker-6l">
+          <img src="" class="card-img-top" alt="Pressure Cooker 6 L safety lock" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Pressure Cooker — 6 L</h5>
+            <div class="meta">Safety lock • Induction base • 2 pressure levels</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 1.250.000</strong>
+                <div class="small text-muted">Stock: 26</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-pressure-cooker-6l" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="pressure-cooker-6l">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product cookware">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="non-stick-set-5pcs">
+          <img src="" class="card-img-top" alt="Non-stick Cookware Set 5 pcs" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Non-stick Set — 5 pcs</h5>
+            <div class="meta">Pans + lids • PFOA-free coating</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 1.500.000</strong>
+                <div class="small text-muted">Stock: 34</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-non-stick-set-5pcs" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="non-stick-set-5pcs">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product cookware">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="griddle">
+          <img src="" class="card-img-top" alt="Griddle pan cast aluminum" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Griddle</h5>
+            <div class="meta">Ribbed surface • Even heat • 28×28 cm</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 420.000</strong>
+                <div class="small text-muted">Stock: 62</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-griddle" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="griddle">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product cookware">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="dutch-oven-5l">
+          <img src="" class="card-img-top" alt="Dutch Oven 5 L cast iron" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Dutch Oven — 5 L</h5>
+            <div class="meta">Enameled cast iron • Oven-safe • Heavy lid</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 1.800.000</strong>
+                <div class="small text-muted">Stock: 20</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-dutch-oven-5l" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="dutch-oven-5l">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- 6. Bakeware -->
+      <div class="col-12 col-sm-6 col-md-4 product bakeware">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="baking-trays">
+          <img src="" class="card-img-top" alt="Baking Trays set of 2 non-stick" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Baking Trays (Set of 2)</h5>
+            <div class="meta">Non-stick • 33×23 cm & 39×27 cm</div>
+            <div class="d-flex justify-content-between align-items-start mt-2">
+              <div>
+                <strong class="text-success text-nowrap">Rp 180.000</strong>
+                <div class="small text-muted">Stock: 90</div>
+              </div>
+              <div class="d-flex gap-2 align-items-start">
+                <a href="#details-baking-trays" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="baking-trays">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product bakeware">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="cake-pan-9in">
+          <img src="" class="card-img-top" alt="Cake Pan 9 inch round" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Cake Pan — 9 inch</h5>
+            <div class="meta">Heavy-gauge steel • Even bake</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 120.000</strong>
+                <div class="small text-muted">Stock: 110</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-cake-pan-9in" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="cake-pan-9in">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product bakeware">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="muffin-tin-12cup">
+          <img src="" class="card-img-top" alt="Muffin Tin 12 cup non-stick" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Muffin Tin — 12 Cup</h5>
+            <div class="meta">Non-stick • Easy release • Standard size</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 160.000</strong>
+                <div class="small text-muted">Stock: 95</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-muffin-tin-12cup" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="muffin-tin-12cup">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product bakeware">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="bread-loaf-pan">
+          <img src="" class="card-img-top" alt="Bread Loaf Pan 22×12 cm non-stick" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Bread Loaf Pan</h5>
+            <div class="meta">Non-stick • 22×12×6 cm • Rounded corners</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 110.000</strong>
+                <div class="small text-muted">Stock: 120</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-bread-loaf-pan" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="bread-loaf-pan">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product bakeware">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="pizza-pan-32cm">
+          <img src="" class="card-img-top" alt="Pizza Pan 32 cm perforated" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Pizza Pan — 32 cm</h5>
+            <div class="meta">Perforated • Crisp crust • Non-stick</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 130.000</strong>
+                <div class="small text-muted">Stock: 88</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-pizza-pan-32cm" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="pizza-pan-32cm">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product bakeware">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="cooling-rack">
+          <img src="" class="card-img-top" alt="Cooling Rack 40×25 cm stainless steel" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Cooling Rack</h5>
+            <div class="meta">Stainless steel • 40×25 cm • Oven-safe</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 90.000</strong>
+                <div class="small text-muted">Stock: 140</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-cooling-rack" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="cooling-rack">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product bakeware">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="rolling-pin">
+          <img src="" class="card-img-top" alt="Rolling Pin beechwood 40 cm" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Rolling Pin</h5>
+            <div class="meta">Beechwood • 40 cm • Smooth roll</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 75.000</strong>
+                <div class="small text-muted">Stock: 160</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-rolling-pin" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="rolling-pin">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product bakeware">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="mixing-bowls-3pcs">
+          <img src="" class="card-img-top" alt="Mixing Bowls set of 3 stainless steel with lids" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Mixing Bowls (Set of 3)</h5>
+            <div class="meta">Stainless steel • Tight lids • Nesting design</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 220.000</strong>
+                <div class="small text-muted">Stock: 76</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-mixing-bowls-3pcs" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="mixing-bowls-3pcs">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product bakeware">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="pastry-brush">
+          <img src="" class="card-img-top" alt="Pastry Brush silicone heat resistant" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Pastry Brush</h5>
+            <div class="meta">Silicone • Heat-resistant • Easy clean</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 45.000</strong>
+                <div class="small text-muted">Stock: 190</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-pastry-brush" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="pastry-brush">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- 7. Storage & Containers -->
+      <div class="col-12 col-sm-6 col-md-4 product storage">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="food-storage-boxes-10pcs">
+          <img src="" class="card-img-top" alt="Food Storage Boxes set of 10 with lids BPA-free" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Food Storage Boxes (10 pcs)</h5>
+            <div class="meta">BPA-free • Microwave-safe • Airtight lids</div>
+            <div class="d-flex justify-content-between align-items-start mt-2">
+              <div>
+                <strong class="text-success text-nowrap">Rp 260.000</strong>
+                <div class="small text-muted">Stock: 70</div>
+              </div>
+              <div class="d-flex gap-2 align-items-start">
+                <a href="#details-food-storage-boxes-10pcs" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="food-storage-boxes-10pcs">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product storage">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="glass-jars-6pcs">
+          <img src="" class="card-img-top" alt="Glass Jars set of 6 airtight lids 500 ml each" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Glass Jars (Set of 6)</h5>
+            <div class="meta">500 ml • Airtight clamp lids • Clear glass</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 180.000</strong>
+                <div class="small text-muted">Stock: 100</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-glass-jars-6pcs" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="glass-jars-6pcs">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product storage">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="spice-containers-12pcs">
+          <img src="" class="card-img-top" alt="Spice Containers set of 12 labels shaker lids rack-ready" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Spice Containers (12 pcs)</h5>
+            <div class="meta">Shaker lids • Labels included • Rack-ready</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 140.000</strong>
+                <div class="small text-muted">Stock: 120</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-spice-containers-12pcs" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="spice-containers-12pcs">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product storage">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="lunch-box-stainless">
+          <img src="" class="card-img-top" alt="Lunch Box stainless steel leak-proof 1 L" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Lunch Box — Stainless Steel</h5>
+            <div class="meta">Leak-proof • 1 L • Removable divider</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 150.000</strong>
+                <div class="small text-muted">Stock: 85</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-lunch-box-stainless" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="lunch-box-stainless">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product storage">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="airtight-containers-set">
+          <img src="" class="card-img-top" alt="Airtight Containers set stackable BPA-free assorted sizes" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Airtight Containers (Set)</h5>
+            <div class="meta">Stackable • BPA-free • Assorted sizes</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 240.000</strong>
+                <div class="small text-muted">Stock: 76</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-airtight-containers-set" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="airtight-containers-set">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product storage">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="fridge-storage-bins">
+          <img src="" class="card-img-top" alt="Fridge Storage Bins set of 4 clear pull-out handles" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Fridge Storage Bins (Set of 4)</h5>
+            <div class="meta">Clear • Pull-out handles • BPA-free</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 220.000</strong>
+                <div class="small text-muted">Stock: 64</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-fridge-storage-bins" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="fridge-storage-bins">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product storage">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="oil-dispenser-500ml">
+          <img src="" class="card-img-top" alt="Oil Dispenser 500 ml drip-free spout glass bottle" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Oil Dispenser — 500 ml</h5>
+            <div class="meta">Drip-free spout • Measurement window • Glass</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 85.000</strong>
+                <div class="small text-muted">Stock: 120</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-oil-dispenser-500ml" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="oil-dispenser-500ml">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product storage">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="plastic-containers-set">
+          <img src="" class="card-img-top" alt="Plastic Containers set nesting microwave-safe assorted" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Plastic Containers (Set)</h5>
+            <div class="meta">Microwave-safe • Nesting • Secure lids</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 120.000</strong>
+                <div class="small text-muted">Stock: 140</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-plastic-containers-set" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="plastic-containers-set">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product storage">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="pantry-organizer-shelf">
+          <img src="" class="card-img-top" alt="Pantry Organizer shelf expandable multi-tier" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Pantry Organizer Shelf</h5>
+            <div class="meta">Expandable • Multi-tier • Sturdy steel</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 140.000</strong>
+                <div class="small text-muted">Stock: 88</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-pantry-organizer-shelf" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="pantry-organizer-shelf">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- 8. Dinnerware & Serveware -->
+      <div class="col-12 col-sm-6 col-md-4 product dinnerware">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="plates-4pcs">
+          <img src="" class="card-img-top" alt="Plates set of 4 porcelain 26 cm white" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Plates (Set of 4)</h5>
+            <div class="meta">Porcelain • 26 cm • Chip-resistant</div>
+            <div class="d-flex justify-content-between align-items-start mt-2">
+              <div>
+                <strong class="text-success text-nowrap">Rp 280.000</strong>
+                <div class="small text-muted">Stock: 72</div>
+              </div>
+              <div class="d-flex gap-2 align-items-start">
+                <a href="#details-plates-4pcs" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="plates-4pcs">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product dinnerware">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="bowls-4pcs">
+          <img src="" class="card-img-top" alt="Bowls set of 4 porcelain 15 cm soup bowls white" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Bowls (Set of 4)</h5>
+            <div class="meta">Porcelain • 15 cm • Microwave-safe</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 220.000</strong>
+                <div class="small text-muted">Stock: 84</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-bowls-4pcs" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="bowls-4pcs">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product dinnerware">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="cups-mugs-4pcs">
+          <img src="" class="card-img-top" alt="Cups and Mugs set of 4 ceramic 300 ml assorted colors" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Cups & Mugs (Set of 4)</h5>
+            <div class="meta">Ceramic • 300 ml • Comfortable handle</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 200.000</strong>
+                <div class="small text-muted">Stock: 96</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-cups-mugs-4pcs" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="cups-mugs-4pcs">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product dinnerware">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="serving-tray">
+          <img src="" class="card-img-top" alt="Serving Tray wood rectangular handles 45×30 cm" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Serving Tray</h5>
+            <div class="meta">Wood • Integrated handles • 45×30 cm</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 160.000</strong>
+                <div class="small text-muted">Stock: 78</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-serving-tray" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="serving-tray">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product dinnerware">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="cutlery-set-16pcs">
+          <img src="" class="card-img-top" alt="Cutlery Set 16 pcs stainless steel mirror finish service for 4" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Cutlery Set — 16 pcs</h5>
+            <div class="meta">Stainless steel • Service for 4 • Mirror finish</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 380.000</strong>
+                <div class="small text-muted">Stock: 66</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-cutlery-set-16pcs" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="cutlery-set-16pcs">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product dinnerware">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="glassware-6pcs">
+          <img src="" class="card-img-top" alt="Glassware set of 6 tumblers 360 ml crystal clear" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Glassware (Set of 6)</h5>
+            <div class="meta">Tumblers • 360 ml • Crystal-clear glass</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 300.000</strong>
+                <div class="small text-muted">Stock: 72</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-glassware-6pcs" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="glassware-6pcs">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product dinnerware">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="pitcher-1-5l">
+          <img src="" class="card-img-top" alt="Pitcher 1.5 L glass lid spout for iced tea or juice" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Pitcher — 1.5 L</h5>
+            <div class="meta">Glass • Tight lid • Easy-pour spout</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 150.000</strong>
+                <div class="small text-muted">Stock: 88</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-pitcher-1-5l" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="pitcher-1-5l">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product dinnerware">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="serving-bowl-large">
+          <img src="" class="card-img-top" alt="Serving Bowl large 28 cm porcelain white" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Serving Bowl — Large</h5>
+            <div class="meta">Porcelain • 28 cm • Wide rim</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 180.000</strong>
+                <div class="small text-muted">Stock: 76</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-serving-bowl-large" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="serving-bowl-large">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product dinnerware">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="napkin-holder">
+          <img src="" class="card-img-top" alt="Napkin Holder stainless steel weighted arm modern design" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Napkin Holder</h5>
+            <div class="meta">Weighted arm • Stainless steel • Modern design</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 70.000</strong>
+                <div class="small text-muted">Stock: 130</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-napkin-holder" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="napkin-holder">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- 9. Cleaning Supplies -->
+      <div class="col-12 col-sm-6 col-md-4 product cleaning">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="dish-brush">
+          <img src="" class="card-img-top" alt="Dish Brush ergonomic handle replaceable head stiff bristles" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Dish Brush</h5>
+            <div class="meta">Replaceable head • Ergonomic grip • Stiff bristles</div>
+            <div class="d-flex justify-content-between align-items-start mt-2">
+              <div>
+                <strong class="text-success text-nowrap">Rp 35.000</strong>
+                <div class="small text-muted">Stock: 200</div>
+              </div>
+              <div class="d-flex gap-2 align-items-start">
+                <a href="#details-dish-brush" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="dish-brush">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product cleaning">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="sponges-6pack">
+          <img src="" class="card-img-top" alt="Sponges 6-pack dual side scrubber soft foam kitchen cleaning" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Sponges (6-pack)</h5>
+            <div class="meta">Dual-sided • Scrubber + foam • Long-lasting</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 25.000</strong>
+                <div class="small text-muted">Stock: 240</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-sponges-6pack" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="sponges-6pack">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product cleaning">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="dish-rack">
+          <img src="" class="card-img-top" alt="Dish Rack 2-tier stainless steel drip tray utensil holder" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Dish Rack</h5>
+            <div class="meta">2-tier • Drip tray • Utensil holder • Rust-resistant</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 280.000</strong>
+                <div class="small text-muted">Stock: 48</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-dish-rack" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="dish-rack">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product cleaning">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="spray-bottles-2pcs">
+          <img src="" class="card-img-top" alt="Spray Bottles set of 2 adjustable nozzle 500 ml each for cleaning solutions" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Spray Bottles (2 pcs)</h5>
+            <div class="meta">Adjustable nozzle • 500 ml • Leak-proof</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 40.000</strong>
+                <div class="small text-muted">Stock: 150</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-spray-bottles-2pcs" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="spray-bottles-2pcs">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product cleaning">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="mop">
+          <img src="" class="card-img-top" alt="Mop microfiber head bucket compatible adjustable handle home cleaning tool" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Mop</h5>
+            <div class="meta">Microfiber head • Adjustable handle • Bucket compatible</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 120.000</strong>
+                <div class="small text-muted">Stock: 90</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-mop" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="mop">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product cleaning">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="cleaning-cloths-6pcs">
+          <img src="" class="card-img-top" alt="Cleaning Cloths microfiber set of 6 lint-free absorbent reusable towels" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Cleaning Cloths (6 pcs)</h5>
+            <div class="meta">Microfiber • Lint-free • Super absorbent</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 45.000</strong>
+                <div class="small text-muted">Stock: 200</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-cleaning-cloths-6pcs" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="cleaning-cloths-6pcs">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product cleaning">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="bucket-12l">
+          <img src="" class="card-img-top" alt="Bucket 12 L durable plastic metal handle pour spout for cleaning and mopping" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Bucket — 12 L</h5>
+            <div class="meta">Durable plastic • Metal handle • Pour spout</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 55.000</strong>
+                <div class="small text-muted">Stock: 120</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-bucket-12l" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="bucket-12l">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product cleaning">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="dustpan-and-brush">
+          <img src="" class="card-img-top" alt="Dustpan and Brush set soft bristles clip-on compact household cleaning tool" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Dustpan & Brush</h5>
+            <div class="meta">Soft bristles • Clip-on design • Compact storage</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 50.000</strong>
+                <div class="small text-muted">Stock: 140</div>
+              </div>
+              <div class="d-flex gap-2">
+                <a href="#details-dustpan-and-brush" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
+                  <input type="hidden" name="product_id" value="dustpan-and-brush">
+                  <input type="hidden" name="quantity" value="1">
+                  <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 product cleaning">
+        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="scrubber">
+          <img src="" class="card-img-top" alt="Scrubber handheld non-scratch kitchen tile grout cleaning tool ergonomic" loading="lazy" />
+          <div class="card-body">
+            <h5 class="card-title mb-1">Scrubber</h5>
+            <div class="meta">Non-scratch • Ergonomic handle • Tough on grime</div>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <div>
+                <strong class="text-success">Rp 30.000</strong>
                 <div class="small text-muted">Stock: 180</div>
               </div>
               <div class="d-flex gap-2">
-                <a href="#details-baking-powder" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
+                <a href="#details-scrubber" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
                 <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
-                  <input type="hidden" name="product_id" value="baking-powder">
+                  <input type="hidden" name="product_id" value="scrubber">
                   <input type="hidden" name="quantity" value="1">
                   <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
                 </form>
@@ -883,30 +2047,6 @@
         </article>
       </div>
 
-      <div class="col-12 col-sm-6 col-md-4 product pantry">
-        <article class="card product-card h-100 border-0 shadow-sm" data-product-id="cornstarch">
-          <img src="../assets/shop/Ingredients/Cornstarch.jpg" class="card-img-top" alt="Cornstarch" loading="lazy" />
-          <div class="card-body">
-            <h5 class="card-title mb-1">Cornstarch</h5>
-            <div class="meta">200 g • Thickening agent</div>
-              <div class="d-flex justify-content-between align-items-center mt-2">
-                <div>
-                  <strong class="text-success">Rp 14.000</strong>
-                  <div class="small text-muted">Stock: 210</div>
-                </div>
-                <div class="d-flex gap-2">
-                  <a href="#details-cornstarch" class="small btn btn-sm btn-outline-secondary" role="button">Details</a>
-                  <form action="/cart/add" method="post" class="m-0 p-0 d-inline">
-                    <input type="hidden" name="product_id" value="cornstarch">
-                    <input type="hidden" name="quantity" value="1">
-                    <button type="submit" class="btn btn-sm btn-primary btn-add" aria-disabled="true" disabled>Add</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-      </div>
     </section>
   </main>
 
@@ -915,246 +2055,94 @@
     </div>
   </footer>
 
-<div id="details-oregano" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-oregano">
+  <!-- Details Modals -->
+  <!-- Blenders & Mixers -->
+  <div id="details-hand-blender" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-hand-blender">
     <div class="modal-content">
       <a href="#!" class="close" aria-label="Close">×</a>
-      <h2 id="modal-title-oregano">Dried Oregano</h2>
-      <p>Perfect for pizza, pasta, and salads. Store in an airtight container away from heat and light.</p>
+      <h2 id="modal-title-hand-blender">Hand Blender</h2>
+      <p>Compact 600 W immersion blender for soups, sauces, and smoothies. Detachable stainless shaft for easy cleaning. Use the low speed for delicate emulsions and high speed for purees.</p>
     </div>
   </div>
 
-  <div id="details-sea-salt" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-sea-salt">
+  <div id="details-stand-mixer" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-stand-mixer">
     <div class="modal-content">
       <a href="#!" class="close" aria-label="Close">×</a>
-      <h2 id="modal-title-sea-salt">Sea Salt — Fine</h2>
-      <p>Fine-grain sea salt with clean mineral flavor. Great for seasoning and finishing. Keep dry.</p>
+      <h2 id="modal-title-stand-mixer">Stand Mixer</h2>
+      <p>Powerful stand mixer with 5 L bowl, 6 speeds, whisk, beater, and dough hook. Ideal for baking, whipping cream, and kneading bread dough. Clean attachments with warm soapy water.</p>
     </div>
   </div>
 
-  <div id="details-olive-oil" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-olive-oil">
+  <div id="details-personal-blender" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-personal-blender">
     <div class="modal-content">
       <a href="#!" class="close" aria-label="Close">×</a>
-      <h2 id="modal-title-olive-oil">Olive Oil — Extra Virgin</h2>
-      <p>Cold-pressed extra virgin olive oil for dressings, drizzling and low‑heat cooking. Store in a cool, dark place.</p>
+      <h2 id="modal-title-personal-blender">Personal Blender</h2>
+      <p>Single-serve blender with 600 ml travel cup. Perfect for quick smoothies and protein shakes. Twist-to-blend safety design; not for hot liquids.</p>
     </div>
   </div>
 
-  <div id="details-black-pepper" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-black-pepper">
+  <div id="details-food-processor" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-food-processor">
     <div class="modal-content">
       <a href="#!" class="close" aria-label="Close">×</a>
-      <h2 id="modal-title-black-pepper">Black Pepper — Ground</h2>
-      <p>Freshly ground black pepper for robust seasoning. Keep sealed for best aroma.</p>
+      <h2 id="modal-title-food-processor">Food Processor</h2>
+      <p>Versatile 2 L processor with slicing, shredding, chopping, and dough blades. Prep vegetables, nuts, and pastry in seconds. Pulse for control; never overload the bowl.</p>
     </div>
   </div>
 
-  <div id="details-cumin" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-cumin">
+  <div id="details-juicer" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-juicer">
     <div class="modal-content">
       <a href="#!" class="close" aria-label="Close">×</a>
-      <h2 id="modal-title-cumin">Cumin Powder</h2>
-      <p>Warm, earthy cumin powder — essential for curries, stews and spice blends. Store in a cool dry place.</p>
+      <h2 id="modal-title-juicer">Juicer</h2>
+      <p>Slow masticating juicer extracts more juice with less foam and noise. Ideal for fruits, leafy greens, and wheatgrass. Rinse parts immediately after use for easier cleaning.</p>
     </div>
   </div>
 
-  <div id="details-brown-sugar" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-brown-sugar">
+  <div id="details-smoothie-maker" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-smoothie-maker">
     <div class="modal-content">
       <a href="#!" class="close" aria-label="Close">×</a>
-      <h2 id="modal-title-brown-sugar">Brown Sugar</h2>
-      <p>Soft, moist brown sugar perfect for baking and sauces. Keep airtight to prevent hardening.</p>
+      <h2 id="modal-title-smoothie-maker">Smoothie Maker</h2>
+      <p>700 W smoothie maker with ice-crush blades and on-the-go cup. Blend frozen fruits easily; avoid blending dry ingredients alone.</p>
     </div>
   </div>
 
-  <div id="details-canned-tomatoes" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-canned-tomatoes">
+  <div id="details-coffee-grinder" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-coffee-grinder">
     <div class="modal-content">
       <a href="#!" class="close" aria-label="Close">×</a>
-      <h2 id="modal-title-canned-tomatoes">Canned Tomatoes</h2>
-      <p>Peeled and diced tomatoes — great for sauces, soups and stews. Use within a few days after opening.</p>
+      <h2 id="modal-title-coffee-grinder">Coffee Grinder</h2>
+      <p>Burr grinder with 18 settings for espresso to French press. Consistent grind size for better flavor. Clean burrs with the included brush; do not wash the motor base.</p>
     </div>
   </div>
 
-  <div id="details-honey" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-honey">
+  <div id="details-chopper" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-chopper">
     <div class="modal-content">
       <a href="#!" class="close" aria-label="Close">×</a>
-      <h2 id="modal-title-honey">Honey — Wildflower</h2>
-      <p>Natural wildflower honey. Use as a sweetener or glaze. Store at room temperature; it may crystallize but is still fine.</p>
+      <h2 id="modal-title-chopper">Food Chopper</h2>
+      <p>One-touch mini chopper for onions, herbs, nuts, and dips. 500 ml bowl with safety lock. Pulse for coarse, hold for fine results.</p>
     </div>
   </div>
 
-  <div id="details-sesame-oil" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-sesame-oil">
+  <div id="details-dough-kneader" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-dough-kneader">
     <div class="modal-content">
       <a href="#!" class="close" aria-label="Close">×</a>
-      <h2 id="modal-title-sesame-oil">Sesame Oil</h2>
-      <p>Toasted sesame oil with a nutty aroma — use sparingly as a finishing oil for dressings and stir-fries.</p>
+      <h2 id="modal-title-dough-kneader">Dough Kneader</h2>
+      <p>Automatic kneader handles up to 1 kg flour. Even, hands-free kneading for bread, pizza, and noodles. Lightly oil the bowl to reduce sticking.</p>
     </div>
   </div>
 
-  <div id="details-balsamic" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-balsamic">
+  <div id="details-knife-set" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-knife-set">
     <div class="modal-content">
       <a href="#!" class="close" aria-label="Close">×</a>
-      <h2 id="modal-title-balsamic">Balsamic Vinegar</h2>
-      <p>Aged balsamic vinegar ideal for salads, glazes and reductions. Store in a cool pantry.</p>
+      <h2 id="modal-title-knife-set">Knife Set</h2>
+      <p>Comprehensive 6‑piece set for everyday prep: chef’s, bread, carving, utility, paring, and honing steel. Balanced handles and sharp stainless blades. Hand wash and dry promptly.</p>
     </div>
   </div>
 
-  <div id="details-white-vinegar" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-white-vinegar">
+  <div id="details-chefs-knife" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-chefs-knife">
     <div class="modal-content">
       <a href="#!" class="close" aria-label="Close">×</a>
-      <h2 id="modal-title-white-vinegar">White Vinegar</h2>
-      <p>Multipurpose white vinegar — great for pickling, cleaning and cooking. Store sealed at room temperature.</p>
+      <h2 id="modal-title-chefs-knife">Chef’s Knife</h2>
+      <p>20 cm full‑tang chef’s knife for slicing, dicing, and chopping. Maintain with regular honing; sharpen as needed. Avoid dishwasher.</p>
     </div>
   </div>
 
-  <div id="details-garlic-powder" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-garlic-powder">
-    <div class="modal-content">
-      <a href="#!" class="close" aria-label="Close">×</a>
-      <h2 id="modal-title-garlic-powder">Garlic Powder</h2>
-      <p>Savoury, concentrated garlic powder — convenient for rubs and quick seasoning.</p>
-    </div>
-  </div>
-
-  <div id="details-smoked-paprika" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-smoked-paprika">
-    <div class="modal-content">
-      <a href="#!" class="close" aria-label="Close">×</a>
-      <h2 id="modal-title-smoked-paprika">Smoked Paprika</h2>
-      <p>Sweet-smoky paprika for depth in stews, rubs and Spanish dishes. Store tightly sealed.</p>
-    </div>
-  </div>
-
-  <div id="details-coconut-milk" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-coconut-milk">
-    <div class="modal-content">
-      <a href="#!" class="close" aria-label="Close">×</a>
-      <h2 id="modal-title-coconut-milk">Coconut Milk</h2>
-      <p>Creamy coconut milk for curries and desserts. Shake or stir well; refrigerate after opening and use quickly.</p>
-    </div>
-  </div>
-
-  <div id="details-soy-sauce" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-soy-sauce">
-    <div class="modal-content">
-      <a href="#!" class="close" aria-label="Close">×</a>
-      <h2 id="modal-title-soy-sauce">Soy Sauce — Light</h2>
-      <p>Light soy sauce with a salty, umami flavor — perfect for marinades and seasoning. Store in a cool place.</p>
-    </div>
-  </div>
-
-  <div id="details-truffle-oil" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-truffle-oil">
-    <div class="modal-content">
-      <a href="#!" class="close" aria-label="Close">×</a>
-      <h2 id="modal-title-truffle-oil">Truffle Oil</h2>
-      <p>Gourmet finishing oil with truffle aroma — use sparingly to finish dishes; do not cook at high heat.</p>
-    </div>
-  </div>
-
-  <div id="details-turmeric" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-turmeric">
-    <div class="modal-content">
-      <a href="#!" class="close" aria-label="Close">×</a>
-      <h2 id="modal-title-turmeric">Turmeric Powder</h2>
-      <p>Bright, earthy turmeric for curries, marinades and golden lattes. Store away from direct sunlight.</p>
-    </div>
-  </div>
-
-  <div id="details-cinnamon" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-cinnamon">
-    <div class="modal-content">
-      <a href="#!" class="close" aria-label="Close">×</a>
-      <h2 id="modal-title-cinnamon">Cinnamon Sticks</h2>
-      <p>Whole cinnamon sticks for infusions, stews and baking. Tie into sachets or break as needed.</p>
-    </div>
-  </div>
-
-  <div id="details-nutmeg" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-nutmeg">
-    <div class="modal-content">
-      <a href="#!" class="close" aria-label="Close">×</a>
-      <h2 id="modal-title-nutmeg">Nutmeg — Whole</h2>
-      <p>Whole nutmeg with warm, sweet notes — grate fresh over custards, sauces, and savory dishes.</p>
-    </div>
-  </div>
-
-  <div id="details-bay-leaves" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-bay-leaves">
-    <div class="modal-content">
-      <a href="#!" class="close" aria-label="Close">×</a>
-      <h2 id="modal-title-bay-leaves">Bay Leaves</h2>
-      <p>Fragrant bay leaves for slow-cooked dishes and stocks. Remove before serving.</p>
-    </div>
-  </div>
-
-  <div id="details-basil" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-basil">
-    <div class="modal-content">
-      <a href="#!" class="close" aria-label="Close">×</a>
-      <h2 id="modal-title-basil">Dried Basil</h2>
-      <p>Sweet dried basil for pasta sauces, pizzas and Mediterranean dishes. Add toward the end of cooking for best flavor.</p>
-    </div>
-  </div>
-
-  <div id="details-thyme" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-thyme">
-    <div class="modal-content">
-      <a href="#!" class="close" aria-label="Close">×</a>
-      <h2 id="modal-title-thyme">Dried Thyme</h2>
-      <p>Robust thyme for roasting, soups and stews. Holds up well under long cooking.</p>
-    </div>
-  </div>
-
-  <div id="details-rosemary" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-rosemary">
-    <div class="modal-content">
-      <a href="#!" class="close" aria-label="Close">×</a>
-      <h2 id="modal-title-rosemary">Dried Rosemary</h2>
-      <p>Piney, aromatic rosemary for roasted meats, potatoes and focaccia. Crush before using to release flavor.</p>
-    </div>
-  </div>
-
-  <div id="details-cardamom" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-cardamom">
-    <div class="modal-content">
-      <a href="#!" class="close" aria-label="Close">×</a>
-      <h2 id="modal-title-cardamom">Cardamom Pods</h2>
-      <p>Floral, citrusy cardamom pods — great in chai, rice dishes and baked goods. Lightly crush to release seeds.</p>
-    </div>
-  </div>
-
-  <div id="details-cloves" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-cloves">
-    <div class="modal-content">
-      <a href="#!" class="close" aria-label="Close">×</a>
-      <h2 id="modal-title-cloves">Cloves — Whole</h2>
-      <p>Warm, pungent whole cloves for spiced drinks, pickles and marinades. Use sparingly, very aromatic.</p>
-    </div>
-  </div>
-
-  <div id="details-vanilla" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-vanilla">
-    <div class="modal-content">
-      <a href="#!" class="close" aria-label="Close">×</a>
-      <h2 id="modal-title-vanilla">Vanilla Extract</h2>
-      <p>Pure vanilla extract for baking and desserts. Store sealed away from heat and light for best quality.</p>
-    </div>
-  </div>
-
-  <div id="details-saffron" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-saffron">
-    <div class="modal-content">
-      <a href="#!" class="close" aria-label="Close">×</a>
-      <h2 id="modal-title-saffron">Saffron Threads</h2>
-      <p>Premium saffron threads — highly aromatic and coloring. Use a few threads infused in warm water for best effect.</p>
-    </div>
-  </div>
-
-  <div id="details-matcha" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-matcha">
-    <div class="modal-content">
-      <a href="#!" class="close" aria-label="Close">×</a>
-      <h2 id="modal-title-matcha">Matcha Powder</h2>
-      <p>Ceremonial-grade matcha powder for tea, lattes and baking. Sift before whisking to avoid clumps.</p>
-    </div>
-  </div>
-
-  <div id="details-baking-powder" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-baking-powder">
-    <div class="modal-content">
-      <a href="#!" class="close" aria-label="Close">×</a>
-      <h2 id="modal-title-baking-powder">Baking Powder</h2>
-      <p>Leavening agent for quick breads and cakes. Keep dry and replace if it loses its rise.</p>
-    </div>
-  </div>
-
-  <div id="details-cornstarch" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-cornstarch">
-    <div class="modal-content">
-      <a href="#!" class="close" aria-label="Close">×</a>
-      <h2 id="modal-title-cornstarch">Cornstarch</h2>
-      <p>Neutral thickening agent for sauces, gravies and custards. Mix with cold liquid before adding to hot liquids.</p>
-    </div>
-  </div>
-
-  
-</body>
-</html>
+  <div id="details-paring-knife" class="modal"
