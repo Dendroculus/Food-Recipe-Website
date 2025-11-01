@@ -77,6 +77,12 @@ main {
     font-size: 1.8rem;
     color: #20402d;
 }
+#home img {
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 0.1rem;
+    margin-right: 0.1rem;
+}
 
 :is(.other img, .other img:visited) {
     width: 2rem;
@@ -1856,6 +1862,11 @@ main {
     .other {
         width: 2rem;
         height: 2rem;
+    }
+
+    #home img {
+        width: 1.5rem;
+        height: 1.5rem;
     }
 
     :is(#home, #home:visited) {
