@@ -16,7 +16,7 @@ EN | [CN](/docs/readmeCN.md)
 
 ## ⚠️ Disclaimer
 
-Some images used in this project are sourced from Google Images and are for educational and demonstration purposes only. All rights belong to their respective owners.
+Some images used in this project were obtained from Google Images and are used solely for educational and demonstration purposes. All rights and credits belong to their respective owners. No copyright infringement is intended.
 
 ## 📌 About This Project
 
