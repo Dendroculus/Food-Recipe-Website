@@ -189,6 +189,7 @@ body {
 #home img {
   width: 2rem;
   height: 2rem;
+  filter: brightness(0.45);
   padding-bottom: 0.1rem;
 }
 
@@ -312,12 +313,22 @@ main h1 {
 #filter-all:checked ~ .filters label[for="filter-all"],
 #filter-spices:checked ~ .filters label[for="filter-spices"],
 #filter-pantry:checked ~ .filters label[for="filter-pantry"],
-#filter-oils:checked ~ .filters label[for="filter-oils"] {
+#filter-oils:checked ~ .filters label[for="filter-oils"],
+/* Kitchen Tools active filter styles */
+#filter-blenders:checked ~ .filters label[for="filter-blenders"],
+#filter-cutlery:checked ~ .filters label[for="filter-cutlery"],
+#filter-electric:checked ~ .filters label[for="filter-electric"],
+#filter-cookware:checked ~ .filters label[for="filter-cookware"],
+#filter-bakeware:checked ~ .filters label[for="filter-bakeware"],
+#filter-storage:checked ~ .filters label[for="filter-storage"],
+#filter-dinnerware:checked ~ .filters label[for="filter-dinnerware"],
+#filter-cleaning:checked ~ .filters label[for="filter-cleaning"] {
   background: linear-gradient(180deg, var(--accent), var(--accent-600));
   color:#fff;
   border-color:transparent;
   box-shadow:0 2px 8px rgba(14,165,164,.18);
 }
+/* Ingredients filtering */
 #filter-spices:checked ~ #products .product { display:none; }
 #filter-spices:checked ~ #products .product.spices { display:block; }
 
@@ -326,6 +337,31 @@ main h1 {
 
 #filter-oils:checked ~ #products .product { display:none; }
 #filter-oils:checked ~ #products .product.oils { display:block; }
+
+/* Kitchen Tools filtering */
+#filter-blenders:checked ~ #products .product { display:none; }
+#filter-blenders:checked ~ #products .product.blenders { display:block; }
+
+#filter-cutlery:checked ~ #products .product { display:none; }
+#filter-cutlery:checked ~ #products .product.cutlery { display:block; }
+
+#filter-electric:checked ~ #products .product { display:none; }
+#filter-electric:checked ~ #products .product.electric { display:block; }
+
+#filter-cookware:checked ~ #products .product { display:none; }
+#filter-cookware:checked ~ #products .product.cookware { display:block; }
+
+#filter-bakeware:checked ~ #products .product { display:none; }
+#filter-bakeware:checked ~ #products .product.bakeware { display:block; }
+
+#filter-storage:checked ~ #products .product { display:none; }
+#filter-storage:checked ~ #products .product.storage { display:block; }
+
+#filter-dinnerware:checked ~ #products .product { display:none; }
+#filter-dinnerware:checked ~ #products .product.dinnerware { display:block; }
+
+#filter-cleaning:checked ~ #products .product { display:none; }
+#filter-cleaning:checked ~ #products .product.cleaning { display:block; }
 
 .product { display:block; }
 .product .card-img-top { height: var(--img-height); object-fit: cover; border-radius: 1.5rem 1.5rem 0 0;}
@@ -462,7 +498,16 @@ main h1 {
     transform: none;
     text-align: center;
   }
-  
+  nav.navtop > ul li.right a#home img,
+  nav.navtop a#home img,
+  #home > img {
+    width: 1.45rem;       
+    height: auto;        
+    max-width: none;     
+    object-fit: contain; 
+    padding-bottom: 0;
+  }
+
   .navtop ul .left { order: 1; }
   .navtop ul .right { order: 3; }
 
@@ -536,11 +581,6 @@ main h1 {
 
   .product .card-img-top { height: 140px; }
 
-  #home img {
-    width: 1.5rem;
-    height: 1.5rem;
-    padding-bottom: 0;
-  }
 }
 
 @media (max-width: 480px) {
@@ -552,8 +592,17 @@ main h1 {
 
 
 @media (max-width:1024px) {
-    .celestial {
+  .celestial {
     left: 3rem;
     right: 5rem;  
+  }
+  nav.navtop > ul li.right a#home img,
+  nav.navtop a#home img,
+  #home > img {
+    width: 1.65rem;       
+    height: auto;        
+    max-width: none;     
+    object-fit: contain; 
+    padding-bottom: 0;
   }
 }
