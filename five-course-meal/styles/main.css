@@ -250,6 +250,59 @@ main {
     color: #007A70;
 }
 
+.cake-section {
+    background: linear-gradient(174.2deg, rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4%);
+}
+
+.card-img-top-container {
+    height: 12.5rem;
+    overflow: hidden;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: 0 -2.5rem;
+}
+
+.recipe-card {
+    background: white;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 122, 112, 0.15);
+}
+
+.recipe-card:hover .card-img-top {
+    transform: scale(1);
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.recipe-title {
+    font-family: 'Montserrat', sans-serif;
+    color: #007A70;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.recipe-comments {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin-bottom: 1.2rem;
+}
+
 .content {
     display: flex;
     gap: 1.5rem;
@@ -265,9 +318,10 @@ main {
 .text-content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 30%;
+    height: 20%;
     text-align: justify;
-    align-items: center;
     color: #fff;
     background: linear-gradient(135deg, #1f9188, #007A70);
     padding: 1.5rem;
@@ -545,14 +599,12 @@ main {
 }
 
 .recommended-section,
-.youtube-shorts-videos,
 .recipe-section {
     contain: layout style;
 }
 
 .recommended-card,
-.card,
-.short-item {
+.card {
     contain: layout style paint;
 }
 
@@ -1250,8 +1302,8 @@ main {
     }
 
     .recommended-card {
-        width: 12rem;
-        height: 8rem; 
+        width: 13rem;
+        height: 9rem; 
     }
 
     .overlay .text {
@@ -1342,7 +1394,7 @@ main {
     }
 
     .btn-secondary {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         padding: 0.6rem 1.2rem;
         transform: none;
     }
