@@ -904,10 +904,6 @@
     </section>
   </main>
 
-  <footer class="main-footer text-center py-4 border-top">
-    <div class="container">
-    </div>
-  </footer>
 
 <div id="details-oregano" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title-oregano">
     <div class="modal-content">
@@ -1146,6 +1142,183 @@
       <a href="#!" class="close" aria-label="Close">×</a>
       <h2 id="modal-title-cornstarch">Cornstarch</h2>
       <p>Neutral thickening agent for sauces, gravies and custards. Mix with cold liquid before adding to hot liquids.</p>
+    </div>
+  </div>
+
+    <footer class="main-footer">
+    <h1 class="footer-title">Socials</h1>
+    <div class="socials-logo">
+      <a href="https://github.com/Dendroculus/Food-Recipe-Website"><img class="img-fluid" src="../assets/logo/Github.png" alt="Github" /></a>
+      <a href="https://www.instagram.com/"><img class="img-fluid" src="../assets/logo/Instagram.png" alt="Instagram" /></a>
+      <a href="https://www.facebook.com/"><img class="img-fluid Facebook" src="../assets/logo/Facebook.png" alt="Facebook" /></a>
+      <a href="https://twitter.com/"><img class="img-fluid" src="../assets/logo/X.png" alt="X" /></a>
+      <a href="https://www.linkedin.com/"><img class="img-fluid" src="../assets/logo/LinkedIn.jpg" alt="LinkedIn"></a>
+    </div>
+    <nav class="footer-policy-links">
+      <a href="#terms-modal">Terms of Use</a>
+      <a href="#privacy-modal">Privacy Policy</a>
+      <a href="#cookies-modal">Cookies</a>
+      <a href="#disclaimer-modal">Disclaimer</a>
+    </nav>
+    <p class="footer-note">© 2024 Celestial. All rights reserved.</p>
+  </footer>
+
+  <div id="terms-modal" class="modal">
+    <div class="modal-content">
+      <a href="#!" class="close">×</a>
+      <h2>Terms of Use</h2>
+      <p>This project is created for educational purposes only. All content, images, and code included are for study and demonstration.</p>
+      <p>Images used in this project are sourced randomly for learning purposes and are not intended for redistribution or commercial use.</p>
+      <p>The code is released under the MIT License. You are free to study, modify, and use it for personal learning or academic projects.</p>
+    </div>
+  </div>
+
+  <div id="privacy-modal" class="modal">
+    <div class="modal-content">
+      <a href="#!" class="close">×</a>
+      <h2>Privacy Policy</h2>
+      <p>No personal data is collected in this project. Any email inputs (e.g., in forms) are purely for demonstration and do not send or store real data.</p>
+      <p>This project is meant only to show functionality and interface design for learning purposes.</p>
+    </div>
+  </div>
+
+  <div id="cookies-modal" class="modal">
+    <div class="modal-content">
+      <a href="#!" class="close">×</a>
+      <h2>Cookies</h2>
+      <p>This project does not use cookies. Any references to cookies are for interface demonstration purposes only.</p>
+      <button class="accept btn">ACCEPT ALL</button>
+      <button class="reject btn">REJECT ALL</button>
+      <a href="#customize-modal" class="customize btn">CUSTOMIZE COOKIES</a>
+    </div>
+  </div>
+
+  <div id="customize-modal" class="modal">
+    <div class="modal-content cookie-modal">
+      <a href="#!" class="close" aria-label="Close">×</a>
+
+      <header class="cookie-header">
+        <h2>Manage Cookie Preferences</h2>
+        <p class="cookie-intro">
+          We use cookies and similar technologies to deliver, maintain, and improve our services, and to provide a personalised web experience.
+          You can review how this information is used and customise your preferences below. You may change your choices at any time as
+          described in our <a href="#privacy-modal">Privacy Policy</a>.
+        </p>
+        <nav class="cookie-actions-top">
+          <a href="#!" class="ghost-action">Reject all</a>
+          <a href="#!" class="ghost-action">Accept all</a>
+        </nav>
+      </header>
+
+      <div class="cookie-body">
+        <section class="cookie-group">
+          <details open>
+            <summary>
+              <div class="sum-text">
+                <div class="title">Essential cookies</div>
+                <div class="desc">Required for the website to function. This includes security, network management, and accessibility.</div>
+              </div>
+              <span class="badge locked">Required</span>
+            </summary>
+            <ul class="list">
+              <li>Load balancing and session management</li>
+              <li>Fraud prevention and security</li>
+              <li>Basic preferences like language</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>
+              <div class="sum-text">
+                <div class="title">Analytics cookies</div>
+                <div class="desc">Help us understand site usage so we can improve recipes and features.</div>
+              </div>
+              <label class="switch" aria-label="Toggle analytics cookies">
+                <input type="checkbox" />
+                <span class="track"></span>
+                <span class="switch-text" aria-hidden="true"></span>
+              </label>
+            </summary>
+            <ul class="list">
+              <li>Aggregate traffic insights (pages visited, time on page)</li>
+              <li>Error tracking to fix broken pages</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>
+              <div class="sum-text">
+                <div class="title">Preference cookies</div>
+                <div class="desc">Remember your choices like theme, language, or favourite recipes.</div>
+              </div>
+              <label class="switch" aria-label="Toggle preference cookies">
+                <input type="checkbox" checked />
+                <span class="track"></span>
+                <span class="switch-text" aria-hidden="true"></span>
+              </label>
+            </summary>
+            <ul class="list">
+              <li>Stores display preferences (e.g., dark mode)</li>
+              <li>Keeps items saved to your recipe list</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>
+              <div class="sum-text">
+                <div class="title">Marketing cookies</div>
+                <div class="desc">Used to show you relevant content and offers based on your interests.</div>
+              </div>
+              <label class="switch" aria-label="Toggle marketing cookies">
+                <input type="checkbox" />
+                <span class="track"></span>
+                <span class="switch-text" aria-hidden="true"></span>
+              </label>
+            </summary>
+            <ul class="list">
+              <li>Limits how often you see the same promo</li>
+              <li>Measures campaign performance</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>
+              <div class="sum-text">
+                <div class="title">Precise geolocation data, and identification through device scanning</div>
+                <div class="desc">Allow us to use accurate location and device signals to deliver localised content.</div>
+              </div>
+              <label class="switch" aria-label="Toggle precise geolocation">
+                <input type="checkbox" />
+                <span class="track"></span>
+                <span class="switch-text" aria-hidden="true"></span>
+              </label>
+            </summary>
+            <ul class="list">
+              <li>Use exact location to tailor nearby seasonal ingredients</li>
+              <li>Identify device characteristics for fraud prevention</li>
+            </ul>
+          </details>
+        </section>
+
+        <a href="#!" class="partners-link">Partners</a>
+      </div>
+
+      <footer class="cookie-footer">
+        <small class="legal">
+          You can update your choices at any time. See our <a href="#privacy-modal">Privacy Policy</a> and <a href="#cookies-modal">Cookies</a>.
+        </small>
+        <a href="#!" class="btn-cta">Save &amp; Exit</a>
+      </footer>
+    </div>
+  </div>
+
+  <div id="disclaimer-modal" class="modal">
+    <div class="modal-content">
+      <a href="#!" class="close">×</a>
+      <h2>Disclaimer</h2>
+      <p>This website and its cookie settings are for educational purposes only as part of a school project. No actual data is collected or stored.</p>
+      <p>Some images used in this project are sourced from Google Images and are for educational and demonstration purposes only.
+      All rights belong to their respective owners</p>
     </div>
   </div>
 
