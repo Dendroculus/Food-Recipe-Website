@@ -310,11 +310,12 @@ main h1 {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(0,0,0,.06);
 }
+
+/* ACTIVE FILTER STATE (Ingredients + Kitchen Tools existing + Merch additions) */
 #filter-all:checked ~ .filters label[for="filter-all"],
 #filter-spices:checked ~ .filters label[for="filter-spices"],
 #filter-pantry:checked ~ .filters label[for="filter-pantry"],
 #filter-oils:checked ~ .filters label[for="filter-oils"],
-/* Kitchen Tools active filter styles */
 #filter-blenders:checked ~ .filters label[for="filter-blenders"],
 #filter-cutlery:checked ~ .filters label[for="filter-cutlery"],
 #filter-electric:checked ~ .filters label[for="filter-electric"],
@@ -322,48 +323,30 @@ main h1 {
 #filter-bakeware:checked ~ .filters label[for="filter-bakeware"],
 #filter-storage:checked ~ .filters label[for="filter-storage"],
 #filter-dinnerware:checked ~ .filters label[for="filter-dinnerware"],
-#filter-cleaning:checked ~ .filters label[for="filter-cleaning"] {
+#filter-cleaning:checked ~ .filters label[for="filter-cleaning"],
+/* Recipe Themed Merch active states */
+#filter-apparel:checked ~ .filters label[for="filter-apparel"],
+#filter-kitchenware:checked ~ .filters label[for="filter-kitchenware"],
+#filter-tabletop:checked ~ .filters label[for="filter-tabletop"],
+#filter-textiles:checked ~ .filters label[for="filter-textiles"],
+#filter-drinkware:checked ~ .filters label[for="filter-drinkware"],
+#filter-accessories:checked ~ .filters label[for="filter-accessories"],
+#filter-stationery:checked ~ .filters label[for="filter-stationery"],
+#filter-gift-kits:checked ~ .filters label[for="filter-gift-kits"],
+#filter-kids:checked ~ .filters label[for="filter-kids"],
+#filter-home-decor:checked ~ .filters label[for="filter-home-decor"],
+#filter-sustainable:checked ~ .filters label[for="filter-sustainable"],
+#filter-limited:checked ~ .filters label[for="filter-limited"] {
   background: linear-gradient(180deg, var(--accent), var(--accent-600));
   color:#fff;
   border-color:transparent;
   box-shadow:0 2px 8px rgba(14,165,164,.18);
 }
-/* Ingredients filtering */
-#filter-spices:checked ~ #products .product { display:none; }
-#filter-spices:checked ~ #products .product.spices { display:block; }
 
-#filter-pantry:checked ~ #products .product { display:none; }
-#filter-pantry:checked ~ #products .product.pantry { display:block; }
-
-#filter-oils:checked ~ #products .product { display:none; }
-#filter-oils:checked ~ #products .product.oils { display:block; }
-
-/* Kitchen Tools filtering */
-#filter-blenders:checked ~ #products .product { display:none; }
-#filter-blenders:checked ~ #products .product.blenders { display:block; }
-
-#filter-cutlery:checked ~ #products .product { display:none; }
-#filter-cutlery:checked ~ #products .product.cutlery { display:block; }
-
-#filter-electric:checked ~ #products .product { display:none; }
-#filter-electric:checked ~ #products .product.electric { display:block; }
-
-#filter-cookware:checked ~ #products .product { display:none; }
-#filter-cookware:checked ~ #products .product.cookware { display:block; }
-
-#filter-bakeware:checked ~ #products .product { display:none; }
-#filter-bakeware:checked ~ #products .product.bakeware { display:block; }
-
-#filter-storage:checked ~ #products .product { display:none; }
-#filter-storage:checked ~ #products .product.storage { display:block; }
-
-#filter-dinnerware:checked ~ #products .product { display:none; }
-#filter-dinnerware:checked ~ #products .product.dinnerware { display:block; }
-
-#filter-cleaning:checked ~ #products .product { display:none; }
-#filter-cleaning:checked ~ #products .product.cleaning { display:block; }
-
+/* DEFAULT: show everything */
 .product { display:block; }
+
+/* IMAGE + CARD STYLES */
 .product .card-img-top { height: var(--img-height); object-fit: cover; border-radius: 1.5rem 1.5rem 0 0;}
 .product-card .card-body { display:flex; flex-direction:column; gap:0.5rem; }
 .product-card .meta { color: var(--muted); font-size:.9rem; }
@@ -384,7 +367,7 @@ main h1 {
 }
 
 .product-card .btn-add:not([disabled]):not([aria-disabled="true"]):hover {
-  background-color: #007a70;
+  background-color: #007A70;
   transform: translateY(-0.125rem);
 }
 
@@ -422,6 +405,97 @@ main h1 {
 .main-footer, footer { background: transparent !important; border-top: 0 none !important; }
 
 .small.text-muted { color: var(--muted); font-size:.82rem; }
+
+/* INGREDIENTS FILTERING */
+#filter-spices:checked ~ #products .product { display:none; }
+#filter-spices:checked ~ #products .product.spices { display:block; }
+
+#filter-pantry:checked ~ #products .product { display:none; }
+#filter-pantry:checked ~ #products .product.pantry { display:block; }
+
+#filter-oils:checked ~ #products .product { display:none; }
+#filter-oils:checked ~ #products .product.oils { display:block; }
+
+/* KITCHEN TOOLS FILTERING */
+#filter-blenders:checked ~ #products .product { display:none; }
+#filter-blenders:checked ~ #products .product.blenders { display:block; }
+
+#filter-cutlery:checked ~ #products .product { display:none; }
+#filter-cutlery:checked ~ #products .product.cutlery { display:block; }
+
+#filter-electric:checked ~ #products .product { display:none; }
+#filter-electric:checked ~ #products .product.electric { display:block; }
+
+#filter-cookware:checked ~ #products .product { display:none; }
+#filter-cookware:checked ~ #products .product.cookware { display:block; }
+
+#filter-bakeware:checked ~ #products .product { display:none; }
+#filter-bakeware:checked ~ #products .product.bakeware { display:block; }
+
+#filter-storage:checked ~ #products .product { display:none; }
+#filter-storage:checked ~ #products .product.storage { display:block; }
+
+#filter-dinnerware:checked ~ #products .product { display:none; }
+#filter-dinnerware:checked ~ #products .product.dinnerware { display:block; }
+
+#filter-cleaning:checked ~ #products .product { display:none; }
+#filter-cleaning:checked ~ #products .product.cleaning { display:block; }
+
+/* RECIPE THEMED MERCH FILTERING */
+#filter-apparel:checked ~ #products .product { display:none; }
+#filter-apparel:checked ~ #products .product.apparel { display:block; }
+
+#filter-kitchenware:checked ~ #products .product { display:none; }
+#filter-kitchenware:checked ~ #products .product.kitchenware { display:block; }
+
+#filter-tabletop:checked ~ #products .product { display:none; }
+#filter-tabletop:checked ~ #products .product.tabletop { display:block; }
+
+#filter-textiles:checked ~ #products .product { display:none; }
+#filter-textiles:checked ~ #products .product.textiles { display:block; }
+
+#filter-drinkware:checked ~ #products .product { display:none; }
+#filter-drinkware:checked ~ #products .product.drinkware { display:block; }
+
+#filter-accessories:checked ~ #products .product { display:none; }
+#filter-accessories:checked ~ #products .product.accessories { display:block; }
+
+#filter-stationery:checked ~ #products .product { display:none; }
+#filter-stationery:checked ~ #products .product.stationery { display:block; }
+
+#filter-gift-kits:checked ~ #products .product { display:none; }
+#filter-gift-kits:checked ~ #products .product.gift-kits { display:block; }
+
+#filter-kids:checked ~ #products .product { display:none; }
+#filter-kids:checked ~ #products .product.kids { display:block; }
+
+#filter-home-decor:checked ~ #products .product { display:none; }
+#filter-home-decor:checked ~ #products .product.home-decor { display:block; }
+
+#filter-sustainable:checked ~ #products .product { display:none; }
+#filter-sustainable:checked ~ #products .product.sustainable { display:block; }
+
+#filter-limited:checked ~ #products .product { display:none; }
+#filter-limited:checked ~ #products .product.limited { display:block; }
+
+/* DIGITAL PRODUCTS FILTERING */
+#filter-recipes:checked ~ .filters label[for="filter-recipes"],
+#filter-ebooks:checked ~ .filters label[for="filter-ebooks"],
+#filter-printables:checked ~ .filters label[for="filter-printables"] {
+  background: linear-gradient(180deg, var(--accent), var(--accent-600));
+  color:#fff;
+  border-color:transparent;
+  box-shadow:0 2px 8px rgba(14,165,164,.18);
+}
+
+#filter-recipes:checked ~ #products .product { display:none; }
+#filter-recipes:checked ~ #products .product.recipes { display:block; }
+
+#filter-ebooks:checked ~ #products .product { display:none; }
+#filter-ebooks:checked ~ #products .product.ebooks { display:block; }
+
+#filter-printables:checked ~ #products .product { display:none; }
+#filter-printables:checked ~ #products .product.printables { display:block; }
 
 .modal {
   position: fixed;
