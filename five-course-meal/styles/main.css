@@ -278,7 +278,7 @@ main {
     text-align: center;
     font-size: 3.5rem;
     font-family: "Playwrite", sans-serif;
-    padding-bottom: 3.5rem;
+    padding-bottom: 1.5rem;
     color: #fff;
     animation: neonPulse 2s ease-in-out infinite;
     text-shadow: 
@@ -333,8 +333,8 @@ main {
     border-radius: 50%;
     cursor: pointer;
     overflow: hidden;
-    width: 15rem;
-    height: 15rem;
+    width: 15.6rem;
+    height: 15.6rem;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -402,7 +402,7 @@ main {
     max-width: 20rem; 
 }
 
-.main-course {
+.head-title {
     text-align: center;
     font-size: 3rem;
     font-family: 'Playwrite', sans-serif;
@@ -437,7 +437,7 @@ main {
     right: 0;
     bottom: 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2)),
-        url('../../assets/desserts/dessert_gif.gif');
+        url('../../assets/bg-image/dessert-gif.gif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -457,10 +457,6 @@ main {
 }
 
 .text-container .content {
-    background-image: url("../../assets/bg-image/cooking-bg.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     height: 35rem;
     display: flex;
     flex-wrap: wrap;
@@ -469,7 +465,34 @@ main {
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.main {
+    background-image: url("../../assets/bg-image/cooking-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: 10%;
+}
+
+.appetizer {
+  background-image: url("../../assets/bg-image/appetizer-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10%;
+}
+
+.salad {
+  background-image: url("../../assets/bg-image/salad-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10%;
+}
+
+.appetizer .text-container {
+  background-image: url("../../assets/bg-image/appetizer-bg.jpg")
 }
 
 .text-container .content > * {
@@ -1340,6 +1363,23 @@ main {
         margin-bottom: 2.5rem;
     }
 
+    .main {
+      width: 80%;
+    }
+
+    .appetizer {
+        width: 80%;
+    }
+
+    .salad {
+        width: 80%;
+    }
+
+    .summary-content {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
   .dessert-description {
         padding: 4rem 2rem;
         margin: 3rem auto;
@@ -1353,7 +1393,7 @@ main {
         background-position: center 30%;
     }
     
-    .summary-content {
+    .dessert-summary-content {
         padding: 2.5rem 3rem;
         margin-bottom: 3rem;
         border-radius: 16px;
@@ -1380,7 +1420,7 @@ main {
   }
 
   .more-recipes-section {
-        padding: 3.5rem 1.5rem;
+      padding: 3.5rem 1.5rem;
     }
     
   .container {
@@ -1476,6 +1516,18 @@ main {
         margin-bottom: 2.5rem;
     }
 
+  .main {
+      width: 80%;
+  }
+
+  .appetizer {
+        width: 80%;
+    }
+
+  .salad {
+        width: 80%;
+    }
+
   .dessert-description {
         padding: 4rem 2rem;
         margin: 3rem auto;
@@ -1489,7 +1541,7 @@ main {
         background-position: center 30%;
     }
     
-    .summary-content {
+    .dessert-summary-content {
         padding: 2.5rem 3rem;
         margin-bottom: 3rem;
         border-radius: 16px;
@@ -1497,6 +1549,11 @@ main {
         max-width: 90%;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .summary-content {
+        max-width: 80%;
+        margin: 0 auto;
     }
     
     .food-definition {
@@ -1544,7 +1601,7 @@ main {
         background-position: center 30%;
     }
     
-    .summary-content {
+    .dessert-summary-content {
         padding: 2.5rem 3rem;
         margin-bottom: 3rem;
         border-radius: 16px;
@@ -1646,6 +1703,23 @@ main {
         font-size: 2.5rem;
         margin-bottom: 2.5rem;
     }
+
+    .summary-content {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .main {
+        width: 80%;
+    }
+
+    .appetizer {
+        width: 80%;
+    }
+
+    .salad {
+        width: 80%;
+    }
     
    .dessert-description {
         max-height: 400px;
@@ -1655,7 +1729,7 @@ main {
         padding: 2rem 1.5rem;
     }
 
-    .summary-content {
+    .dessert-summary-content {
         margin-bottom: 2rem;
         padding: 1.5rem 1rem;
     }
@@ -1677,7 +1751,7 @@ main {
         font-size: 1rem;
     }
 
-    .main-course {
+    .head-title {
         font-size: 2.5rem;
     }
 
@@ -1880,6 +1954,23 @@ main {
       padding-top: 6.5rem;
     }
 
+    .summary-content {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .main {
+        width: 80%;
+    }
+
+    .appetizer {
+        width: 80%;
+    }
+
+    .salad {
+        width: 80%;
+    }
+
     .section-title {
       font-size: 3rem;
     }
@@ -1891,7 +1982,7 @@ main {
         max-height: 20rem;
     }
 
-    .summary-content {
+    .dessert-summary-content {
         padding: 1.2rem 0.8rem;
         margin-bottom: 1.5rem;
         max-width: 100%;
@@ -1967,8 +2058,7 @@ main {
     .more-recipes-section {
         padding: 1.5rem 0.8rem;
         max-height: 400px;
-        
-        margin: 0.5rem auto;
+        margin: 2.5rem auto;
     }
     
     .more-recipes-section::before {
