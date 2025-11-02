@@ -139,11 +139,11 @@
         </div>
       </li>
       <li class="celestial">
-        <a href="index.html">CELESTIAL 💫</a>
+        <a href="index.html">CELESTIAL <span class="emoji">💫</span></a>
       </li>
       <li class="right">
         <a href="forms/index.html"><img class="img-fluid" src="./assets/icons/user.png" alt="user" width="32" height="32" /></a>
-        <a href="./shop/ingredients_shop.html"><img class="img-fluid" src="./assets/icons/shopping_cart.png" alt="shopping bag" width="32" height="32" /></a>
+        <a href="./payment/payment.html"><img class="img-fluid" src="./assets/icons/shopping_cart.png" alt="shopping bag" width="32" height="32" /></a>
       </li>
     </ul>
   </nav>
@@ -213,24 +213,27 @@
         <button type="submit" title="Search">
           <img class="img-fluid" src="./assets/icons/search.png" alt="search" width="24" height="24" />
         </button>
-        <input type="text" class="form-control" placeholder="Start searching..." />
+        <input type="text" id="site-search" class="form-control" placeholder="Start searching..." />
       </div>
     </form>
   </div>
 
-  <section class="before-footer-features container my-4">
-    <h2 class="section-title">Featured — Recipe of the Week & Kitchen Tips</h2>
+  <section class="before-footer-features container my-4" aria-labelledby="featured-heading">
+    <h2 id="featured-heading" class="section-title">Featured — Recipe of the Week & Kitchen Tips</h2>
     <div class="row g-3">
       <div class="col-12 col-md-6">
-        <article class="card feature-card h-100 text-decoration-none">
+        <article class="card feature-card h-100 text-decoration-none" aria-labelledby="weekly-recipe-title">
           <div class="row g-0 h-100 align-items-stretch">
             <div class="col-4 col-sm-4 col-md-4">
-              <img src="./assets/main_course/Pork Chops Charcutiere Sauce.png" alt="Recipe of the Week" class="img-fluid rounded-start" />
+              <div class="media-wrap">
+                <img src="./assets/main_course/Pork Chops Charcutiere Sauce.png" alt="Recipe of the Week" class="img-fluid rounded-start" />
+                <span class="tag-badge" aria-hidden="true">Weekly Pick</span>
+              </div>
             </div>
             <div class="col-8 col-sm-8 col-md-8">
               <div class="card-body">
                 <h3 class="card-title">Recipe of the Week</h3>
-                <h4 class="mb-1">Pork Chops Charcutiere</h4>
+                <h4 id="weekly-recipe-title" class="mb-1">Pork Chops Charcutiere</h4>
                 <p class="small text-muted mb-2">30 min • Medium • ★ 4.8</p>
                 <p class="card-text">A quick star-worthy main that balances savory and bright flavors — perfect for weeknight dinners.</p>
                 <div class="d-flex gap-2 mt-2">
@@ -242,20 +245,27 @@
           </div>
         </article>
       </div>
+
       <div class="col-12 col-md-6">
         <div class="card h-100 spotlight-card">
           <div class="card-body">
             <h3 class="card-title">Kitchen Tips & Pantry Checklist</h3>
-            <ul class="list-unstyled small text-muted mb-3">
-              <li>• Use seasonal produce for better flavor and lower cost.</li>
-              <li>• Rest meat 5–10 minutes before slicing for juicier results.</li>
-              <li>• Keep a simple pantry: olive oil, vinegar, garlic, canned tomatoes, and dried herbs.</li>
+            <ul class="tips-list">
+              <li>Use seasonal produce for better flavor and lower cost.</li>
+              <li>Rest meat 5–10 minutes before slicing for juicier results.</li>
+              <li>Keep a simple pantry: olive oil, vinegar, garlic, canned tomatoes, and dried herbs.</li>
             </ul>
             <details class="mt-2 nutrition-details">
               <summary class="summary-btn">Quick Compare (click to open)</summary>
-              <div class="table-responsive mt-2">
+              <div class="table-responsive">
                 <table class="table table-sm align-middle nutrition-table mb-0">
                   <caption class="visually-hidden">Quick comparison of featured recipes</caption>
+                  <colgroup>
+                    <col style="width: 46%">
+                    <col style="width: 18%">
+                    <col style="width: 18%">
+                    <col style="width: 18%">
+                  </colgroup>
                   <thead>
                     <tr>
                       <th scope="col">Recipe</th>
@@ -266,28 +276,31 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Pork Chops Charcutiere</td>
-                      <td>30 min</td>
-                      <td>Medium</td>
-                      <td>520 kcal</td>
+                      <th scope="row">Pork Chops Charcutiere</th>
+                      <td data-label="Prep">30 min</td>
+                      <td data-label="Difficulty">Medium</td>
+                      <td class="num" data-label="Calories">520 kcal</td>
                     </tr>
                     <tr>
-                      <td>Panacotta</td>
-                      <td>2 hr</td>
-                      <td>Medium</td>
-                      <td>350 kcal</td>
+                      <th scope="row">Panacotta</th>
+                      <td data-label="Prep">2 hr</td>
+                      <td data-label="Difficulty">Medium</td>
+                      <td class="num" data-label="Calories">350 kcal</td>
                     </tr>
                     <tr>
-                      <td>Provino Salad</td>
-                      <td>10 min</td>
-                      <td>Easy</td>
-                      <td>210 kcal</td>
+                      <th scope="row">Provino Salad</th>
+                      <td data-label="Prep">10 min</td>
+                      <td data-label="Difficulty">Easy</td>
+                      <td class="num" data-label="Calories">210 kcal</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </details>
             <p class="small text-muted mt-3 mb-0">Want more? Use the search above or subscribe to get weekly recipes in your inbox.</p>
+            <div class="spotlight-cta">
+              <a href="#site-search" class="btn-ghost">Get the checklist</a>
+            </div>
           </div>
         </div>
       </div>    
