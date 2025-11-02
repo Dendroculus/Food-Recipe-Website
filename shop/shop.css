@@ -10,6 +10,7 @@
 
 * { 
   box-sizing: border-box; 
+  transition: all 0.2s ease-in-out; 
 }
 
 html { scroll-behavior: smooth; }
@@ -525,6 +526,21 @@ main h1 {
   animation: pop 0.3s ease;
   position: relative;
   word-spacing: 0.1rem;
+}
+
+.modal-image-wrapper {
+  width: 100%;
+  aspect-ratio: 16 / 9; 
+  overflow: hidden;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.modal-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .modal-content h2 { margin-bottom: 0.75rem; }
