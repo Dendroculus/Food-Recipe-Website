@@ -4,83 +4,2026 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Course Recipes</title>
+    <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/recipe.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <main class="recipe-page">
-        <div class="container-fluid">
-            <div class="row min-vh-100 align-items-center">
-                <div class="col-lg-6 p-0">
-                    <div class="recipe-image">
-                        <img src="../../assets/main_course/Chicken Cordon Bleu.png" alt="Chicken Cordon Bleu">
+    <header class="recipe-header">
+        <nav class="header-navigation">
+            <ul>
+                <li class="hamburger-menu">
+                    <nav class="menu">
+                        <input type="checkbox" id="check">
+                        <label for="check" class="checkbtn">
+                            <i class="bars"></i>
+                        </label>
+                        <div class="recipe-menu">
+                            <h3>Recipes</h3>
+                            <div id="main-course" class="border-bottom">
+                                <img src="../../assets/main_course/main_course_pfp.jpg" alt="Main Course Profile">
+                                <a href="../main-page-html/main-course.html">Main Course</a>
+                            </div>
+                            <div id="dessert" class="border-bottom">
+                                <img src="../../assets/desserts/desserts_pfp.jpg" alt="Dessert Profile">
+                                <a href="../main-page-html/dessert.html">Dessert</a>
+                            </div>
+                            <div id="salad" class="border-bottom">
+                                <img src="../../assets/salad/salad_pfp.jpg" alt="Salad Profile">
+                                <a href="../main-page-html/salad.html">Salad</a>
+                            </div>
+                            <div id="appetizer" class="border-bottom">
+                                <img src="../../assets/appetizers/appetizers_pfp.jpg" alt="Appetizer Profile">
+                                <a href="../main-page-html/appetizer.html">Appetizer</a>
+                            </div>
+                        </div>
+                    </nav>
+                </li>
+                <li class="celestial-logo">
+                    <a href="main-course.html">CELESTIAL 💫</a>
+                </li>
+                <li class="other-logo">
+                    <a href="../../index.html" target="_blank" id="home" class="other"><img src="../../assets/icons/house.png" alt="house" width="32" height="32"></a>
+                    <a href="../../forms/index.html" class="other" target="_blank"><img src="../../assets/icons/user.png" alt="user" width="32" height="32"></a>
+                    <a href="../../herbs & spices/index.html" class="other" target="_blank"><img src="../../assets/icons/shopping_cart.png" alt="shopping bag" width="32" height="32"></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="chicken-cordon-bleu">
+            <header class="recipe-header">
+                <div class="recipe-container">
+                    <div class="header-content">
+                        <div>
+                            <h1>Chicken Cordon Bleu</h1>
+                            <div class="recipe-meta">
+                                <div class="meta-item">
+                                    <i class="far fa-clock"></i>
+                                    <span>30 mins prep</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-fire"></i>
+                                    <span>45 mins cook</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-calendar-check"></i>
+                                    <span>1 hour 15 mins total</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-signal"></i>
+                                    <span>Easy</span>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(128 reviews)</span>
+                            </div>
+                        </div>
+                        <div class="recipe-image">
+                            <img src="../../assets/main_course/Chicken Cordon Bleu.png" alt="Chicken Cordon Bleu">
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="recipe-content">
-                        <header class="recipe-header">
-                            <h1 class="recipe-title">CHICKEN CORDON BLEU</h1>
-                            <p class="recipe-subtitle">Chicken, Bread, Cheese & Ham</p>
-                            <div class="recipe-meta-grid">
-                                <i class="bi bi-clock-history"></i>
-                                <div>
-                                    <strong>45 MINS</strong>
-                                </div>
-                            </div>
-                            <div class="meta-item">
-                                <i class="bi bi-bookmark-check-fill"></i>
-                                <div>
-                                    <strong>APPROVED</strong>
-                                </div>
-                            </div>
-                        </header>
-                        <section class="recipe-about">
-                            <h2 class="section-title border-bottom">ABOUT THE RECIPES</h2>
-                            <p class="recipe-description">
-                                A cordon bleu is a dish that traditionally consists of meat wrapped around cheese, then breaded and pan-fried or deep-fried. Many modern versions of the classic French recipe, such as this one, are baked. Classic chicken cordon bleu is made with the following ingredients: chicken cutlets, cooked ham, Swiss cheese, bread crumbs, and simple spices. It's usually topped with a rich cream sauce spiked with a hint of Dijon mustard.
-                            </p>
-                        </section>
-                        <section class="nutriton-facts">
-                            <h2 class="section-title border-bottom">NUTRITION PER SERVING</h2>
-                            <div class="nutrition-grid">
-                                <div class="nutrition-item">
-                                    <span class="value">419</span>
-                                    <span class="label">Calories</span>
-                                </div>
-                                <div class="nutrition-item">
-                                    <span class="value">19g</span>
-                                    <span class="label">Fat</span>
-                                </div>
-                                <div class="nutrition-item">
-                                    <span class="value">13g</span>
-                                    <span class="label">Carbs</span>
-                                </div>
-                                <div class="nutrition-item">
-                                    <span class="value">46g</span>
-                                    <span class="label">Protein</span>
-                                </div>
-                            </div>
-                            <a class="more-nutrition-facts" href="#">Show Full Nutrition Label</a>
-                        </section>
-                        <div class="recipe-actions">
-                            <button class="print-button">
-                                <i class="bi bi-printer"></i>
-                                PRINT RECIPE
-                            </button>
-                            <button class="save-button">
-                                <i class="bi bi-bookmark"></i>
-                                SAVE RECIPE
-                            </button>
+            </header>
+            <div class="recipe-container">
+                <div class="main-content">
+                    <div class="left-column">
+                        <div class="recipe-info-card">
+                            <h2 class="title">Description</h2>
+                            <p class="description">Chicken Cordon Bleu is one of the original family favorite classic dinners. Whether you bake it or fry it, its ooey-gooey cheese, savory ham, and crunchy breadcrumb coating make it seriously delicious.</p>
                         </div>
-
+                        <div class="recipe-info-card">
+                            <div class="title">Ingredients</div>
+                            <ul class="ingredients-list">
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">4 boneless skinless chicken breast</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1 teaspoon salt</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1 teaspoon black pepper</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">8 thin slices ham</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">8 thin slices swiss cheese</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1/2 cup all-purpose flour</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1 egg</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1 tablespoon water</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1 cup plain bread crumbs</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1/2 cup vegetable oil, for frying</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">2 tablespoon butter</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1 tablespoon cornstarch</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1 cup milk</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1 tablespoon dijon mustard</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1 tablespoon brown sugar</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1 teaspoon apple cider vinegar</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="middle-column">
+                        <div class="recipe-info-card">
+                            <h2 class="title">Instructions</h2>
+                            <ol class="instructions-list">
+                                <li class="instructions-item">
+                                    <p>Working one at a time, place chicken breast between two pieces of parchment paper or plastic wrap. Use a mallet to pound chicken to 1/4-inch thickness. Season both sides with salt and pepper.</p>
+                                </li>
+                                <li class="instructions-item">
+                                    <p>Layer 2 slices of ham and 2 slices of swiss cheese on each chicken breast. Roll up tightly.</p>
+                                </li>
+                                <li class="instructions-item">
+                                    <p>Spread flour onto one plate, and bread crumbs out onto another. In a shallow bowl, whisk together egg with 1 tablespoon water.</p>
+                                </li>
+                                <li class="instructions-item">
+                                    <p>Roll stuffed chicken in flour to coat. Dip in egg mixture, and then roll in bread crumbs to coat.</p>
+                                </li>
+                            </ol>
+                            <h3 class="subtitle">Frying</h3>
+                            <ol class="instructions-list">
+                                <li class="instructions-item">
+                                    <p>Heat 1/2 cup of vegetable oil in a large heavy skillet to 350 degrees Fahrenheit. Place chicken in oil and cook for 4 to 5 minutes per side, until chicken is golden brown and cooked through to an internal temperature of 165 degrees Fahrenheit. Monitor the temperature of the oil and adjust heat as necessary to maintain near 350 degrees.</p>
+                                </li>
+                            </ol>
+                            <h3 class="subtitle">Baking</h3>
+                            <ol class="instructions-list">
+                                <li class="instructions-item">
+                                    <p>Preheat oven to 450 degrees Fahrenheit and lightly grease a 9x13 pan or baking sheet.</p>
+                                </li>
+                                <li class="instructions-item">
+                                    <p>Place the prepared chicken onto the pan. Spray the tops lightly with nonstick cooking spray. Bake in the preheated oven for 25 to 30 minutes until chicken is golden brown and cooked through to an internal temperature of 165 degrees Fahrenheit.</p>
+                                </li>
+                            </ol>
+                            <h3 class="subtitle">Creamy Dijon Mustard Sauce</h3>
+                            <ol class="instructions-list">
+                                <li class="instructions-item">
+                                    <p>Melt the butter in a small saucepan over medium high heat. Whisk in cornstarch until all specks of white are absorbed. Pour in milk and whisk in dijon mustard, brown sugar, and cider vinegar. Continue to whisk until sauce is thickened, which should only take a couple of minutes.</p>
+                                </li>
+                                <li class="instructions-item">
+                                    <p>Serve over cooked chicken cordon bleu.</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="right-column">
+                            <div class="recipe-info-card">
+                                <h2 class="title">Nutrition Information</h2>
+                                <p>Per serving</p>
+                                <div class="nutrition-grid">
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">684</div>
+                                        <div class="nutrition-label">Calories</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">42g</div>
+                                        <div class="nutrition-label">Carbs</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">54g</div>
+                                        <div class="nutrition-label">Protein</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">32g</div>
+                                        <div class="nutrition-label">Fat</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">15g</div>
+                                        <div class="nutrition-label">Saturated Fat</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">1g</div>
+                                        <div class="nutrition-label">Trans Fat</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">200mg</div>
+                                        <div class="nutrition-label">Cholestrol</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">1776mg</div>
+                                        <div class="nutrition-label">Sodium</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">788mg</div>
+                                        <div class="nutrition-label">Potassium</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">2g</div>
+                                        <div class="nutrition-label">Fiber</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">8g</div>
+                                        <div class="nutrition-label">Sugar</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">655IU</div>
+                                        <div class="nutrition-label">Vitamin A</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">1mg</div>
+                                        <div class="nutrition-label">Vitamin C</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">415mg</div>
+                                        <div class="nutrition-label">Calcium</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">3mg</div>
+                                        <div class="nutrition-label">Iron</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-box">
+                                <h3 class="info-title">
+                                    <i class="fas fa-tags"></i> Tags
+                                </h3>
+                                <div class="tags">
+                                    <span class="tag">Main Course</span>
+                                    <span class="tag">Chicken</span>
+                                    <span class="tag">Bread Crumbs</span>
+                                    <span class="tag">Easy</span>
+                                    <span class="tag">Family Favorite</span>
+                                    <span class="tag">Frying</span>
+                                </div>
+                            </div>
+                            <div class="youtube-video-container">
+                                <iframe src="https://www.youtube.com/embed/g-hIEDWOjRg?si=3-6tMoc6_j8dhIKb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                            </div>
+                            <div class="action-buttons">
+                                <a href="#" class="btn btn-block">
+                                    <i class="fas fa-print"></i> Print Recipe
+                                </a>
+                                <a href="#" class="btn btn-outline btn-block">
+                                    <i class="fas fa-bookmark"></i> Save Recipe
+                                </a>
+                            </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="recipe-container-fluid">
-            
-        </div>
+        </section>
+        <section id="salmon-steak">
+            <header class="recipe-header">
+                <div class="recipe-container">
+                    <div class="header-content">
+                        <div>
+                            <h1>Salmon Steak</h1>
+                            <div class="recipe-meta">
+                                <div class="meta-item">
+                                    <i class="far fa-clock"></i>
+                                    <span>10 mins prep</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-fire"></i>
+                                    <span>14 mins cook</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-calendar-check"></i>
+                                    <span>24 mins total</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-signal"></i>
+                                    <span>Easy</span>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(100 reviews)</span>
+                            </div>
+                        </div>
+                        <div class="recipe-image">
+                            <img src="../../assets/main_course/Salmon Steak in Coconut Milk with Peas.png" alt="Salmon Steak in Coconut Milk with Peas">
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="recipe-container">
+                <div class="main-content">
+                    <div class="left-column">
+                        <div class="recipe-info-card">
+                            <h2 class="title">Description</h2>
+                            <p class="description">The richness of the coconut milk combined with the savory cilantro and peas endows this dish with complex flavors and a colorful presentation. A perfect modern comfort food, best enjoyed during the mid-summer North American salmon season!</p>
+                        </div>
+                        <div class="recipe-info-card">
+                            <div class="title">Ingredients</div>
+                            <ul class="ingredients-list">
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1 tablespoon olive oil, <span class="low-opacity">extra virgin</span></span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1 medium orange, <span class="low-opacity">zested and squeezed</span></span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1 cup coconut milk</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1/4 cup shredded coconut + 1 tablespoon to garnish</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1 pinch chili pepper powder</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1 tablespoon cilantro, <span class="low-opacity">finely chopped</span></span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">4 salmon steaks, <span class="low-opacity">boneless and skinless</span></span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1/4 pound shelled peas, <span class="low-opacity">fresh or frozen</span></span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">Salt and freshly ground pepper, <span class="low-opacity">to taste</span></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="middle-column">
+                        <div class="recipe-info-card">
+                            <h2 class="title">Instructions</h2>
+                            <ol class="instructions-list">
+                                <li class="instructions-item">
+                                    <p>Preheat your oven to 400ºF / 200ºC. Bring a quart of salted water to a boil to blanch the peas.</p>
+                                </li>
+                            </ol>
+                            <h3 class="subtitle">Start the Sauce</h3>
+                            <ol class="instructions-list">
+                                <li class="instructions-item">
+                                    <p>Pour coconut milk and shredded coconut into a saucepan (Add orange juice, orange zest and a pinch of chili pepper).</p>
+                                </li>
+                                <li class="instructions-item">
+                                    <p>Bring to a simmer and cook on low heat for several minutes. Stir and set aside until ready to serve.</p>
+                                </li>
+                            </ol>
+                            <h3 class="subtitle">Cooking</h3>
+                            <ol class="instructions-list">
+                                <li class="instructions-item">
+                                    <p>Season the salmon steaks with salt and pepper on both sides.</p>
+                                </li>
+                                <li class="instructions-item">
+                                    <p>Heat the olive oil in a large skillet and sear the salmon, skin side up until brown.</p>
+                                </li>
+                                <li class="instructions-item">
+                                    <p>Transfer the steaks to an oiled roasting tray and bake 8 minutes.</p>
+                                </li>
+                            </ol>
+                            <h3 class="subtitle">Blanch the Peas</h3>
+                            <ol class="instructions-list">
+                                <li class="instructions-item">
+                                    <p>Plunge the peas in boiling salted water and cook them until tender. Depending on their size, it could take up to 2 minutes. Drain and reserve.</p>
+                                </li>
+                            </ol>
+                            <h3 class="subtitle">Serving</h3>
+                            <ol class="instructions-list">
+                                <li class="instructions-item">
+                                    <p>Just before serving, chop the cilantro leaves and add them to the simmering sauce.</p>
+                                </li>
+                                <li class="instructions-item">
+                                    <p>Serve the salmon on individual pre-heated plates. Spoon the coconut sauce all around. Garnish with the blanched peas and remaining shredded coconut.</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="right-column">
+                            <div class="recipe-info-card">
+                                <h2 class="title">Nutrition Information</h2>
+                                <p>Per serving</p>
+                                <div class="nutrition-grid">
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">616</div>
+                                        <div class="nutrition-label">Calories</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">11g</div>
+                                        <div class="nutrition-label">Carbs</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">70g</div>
+                                        <div class="nutrition-label">Protein</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">58g</div>
+                                        <div class="nutrition-label">Fat</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">15g</div>
+                                        <div class="nutrition-label">Saturated Fat</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">0g</div>
+                                        <div class="nutrition-label">Trans Fat</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">202mg</div>
+                                        <div class="nutrition-label">Cholestrol</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">906mg</div>
+                                        <div class="nutrition-label">Sodium</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">1300mg</div>
+                                        <div class="nutrition-label">Potassium</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">1g</div>
+                                        <div class="nutrition-label">Fiber</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">9g</div>
+                                        <div class="nutrition-label">Sugar</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">37mcg</div>
+                                        <div class="nutrition-label">Vitamin D</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">49mg</div>
+                                        <div class="nutrition-label">Calcium</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">2mg</div>
+                                        <div class="nutrition-label">Iron</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-box">
+                                <h3 class="info-title">
+                                    <i class="fas fa-tags"></i> Tags
+                                </h3>
+                                <div class="tags">
+                                    <span class="tag">Main Course</span>
+                                    <span class="tag">Fish</span>
+                                    <span class="tag">Coconut Milk</span>
+                                    <span class="tag">Peas</span>
+                                    <span class="tag">Easy</span>
+                                    <span class="tag">Family Favorite</span>
+                                </div>
+                            </div>
+                            <div class="youtube-video-container">
+                                <iframe src="https://www.youtube.com/embed/u8uB3uB7zQE?si=kWJwav0q1jOVuNqp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                            </div>
+                            <div class="action-buttons">
+                                <a href="#" class="btn btn-block">
+                                    <i class="fas fa-print"></i> Print Recipe
+                                </a>
+                                <a href="#" class="btn btn-outline btn-block">
+                                    <i class="fas fa-bookmark"></i> Save Recipe
+                                </a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="shrimp-avocado-cocktail">
+            <header class="recipe-header">
+                <div class="recipe-container">
+                    <div class="header-content">
+                        <div>
+                            <h1>Shrimp Avocado Cocktail</h1>
+                            <div class="recipe-meta">
+                                <div class="meta-item">
+                                    <i class="far fa-clock"></i>
+                                    <span>45 mins prep</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-fire"></i>
+                                    <span>1 hr additional</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-calendar-check"></i>
+                                    <span>1 hr 45 mins total</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-signal"></i>
+                                    <span>Easy</span>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(220 reviews)</span>
+                            </div>
+                        </div>
+                        <div class="recipe-image">
+                            <img src="../../assets/main_course/Shrimp Avocado Cocktail.png" alt="Shrimp Avocado Cocktail">
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="recipe-container">
+                <div class="main-content">
+                    <div class="left-column">
+                        <div class="recipe-info-card">
+                            <h2 class="title">Description</h2>
+                            <p class="description">This tangy and refreshing Mexican shrimp cocktail recipe screams "summertime" with a mouthwatering blend of chopped tomatoes, jalapenos, clam juice, and hot pepper sauce. Learn to make this vibrant dish and dive into 5-star flavor.</p>
+                        </div>
+                        <div class="recipe-info-card">
+                            <div class="title">Ingredients</div>
+                            <ul class="ingredients-list">
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1/3 cup Spanish onion, chopped</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1/4 cup freshly squeezed lime juice</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1 pound chilled cooked medium shrimp - peeled, deveined, and tails removed</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">2 roma (plum) tomatoes, chopped</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1 cucumber, finely chopped</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1 stalk celery</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1 jalapeno pepper, seeded and finely chopped</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">2 teaspoons salt</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">2 teaspoons ground black pepper</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1 1/2 cups chilled tomato and clam juice cocktail</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1 cup chilled ketchup</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1 bunch fresh cilantro - stems discarded and leaves chopped</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">2 table spoons hot pepper sauce</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">2 avocados - peeled, pitted and chopped</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="middle-column">
+                        <div class="recipe-info-card">
+                            <h2 class="title">Instructions</h2>
+                            <ol class="instructions-list">
+                                <li class="instructions-item">
+                                    <p>Gather all ingredients.</p>
+                                </li>
+                            </ol>
+                            <h3 class="subtitle">Start Mixing</h3>
+                            <ol class="instructions-list">
+                                <li class="instructions-item">
+                                    <p>Mix onion with lime juice in a small bowl and allow to stand for 10 minutes.</p>
+                                </li>
+                                <li class="instructions-item">
+                                    <p>Meanwhile, toss shrimp, roma tomatoes, cucumber, celery, jalapeno, salt, and black pepper in a medium bowl until thoroughly combined.</p>
+                                </li>
+                                <li class="instructions-item">
+                                    <p>Whisk tomato and clam juice cocktail, ketchup, cilantro, and hot pepper sauce in a separate bowl; stir dressing into shrimp mixture.</p>
+                                </li>
+                                <li class="instructions-item">
+                                    <p>Gently fold in avocados. Stir in onion mixture. Cover and chill thoroughly, at least 1 hour.</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="right-column">
+                            <div class="recipe-info-card">
+                                <h2 class="title">Nutrition Information</h2>
+                                <p>Per serving</p>
+                                <div class="nutrition-grid">
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">410</div>
+                                        <div class="nutrition-label">Calories</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">42g</div>
+                                        <div class="nutrition-label">Carbs</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">29g</div>
+                                        <div class="nutrition-label">Protein</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">17g</div>
+                                        <div class="nutrition-label">Fat</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">3g</div>
+                                        <div class="nutrition-label">Saturated Fat</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">0g</div>
+                                        <div class="nutrition-label">Trans Fat</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">221mg</div>
+                                        <div class="nutrition-label">Cholestrol</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">2626mg</div>
+                                        <div class="nutrition-label">Sodium</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">1349mg</div>
+                                        <div class="nutrition-label">Potassium</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">9g</div>
+                                        <div class="nutrition-label">Fiber</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">21g</div>
+                                        <div class="nutrition-label">Sugar</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">49mg</div>
+                                        <div class="nutrition-label">Vitamin C</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">114mg</div>
+                                        <div class="nutrition-label">Calcium</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">6mg</div>
+                                        <div class="nutrition-label">Iron</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-box">
+                                <h3 class="info-title">
+                                    <i class="fas fa-tags"></i> Tags
+                                </h3>
+                                <div class="tags">
+                                    <span class="tag">Main Course</span>
+                                    <span class="tag">Shrimp</span>
+                                    <span class="tag">Avocado</span>
+                                    <span class="tag">Cilantro</span>
+                                    <span class="tag">Easy</span>
+                                    <span class="tag">Family Favorite</span>
+                                </div>
+                            </div>
+                            <div class="youtube-video-container">
+                                <iframe src="https://www.youtube.com/embed/rC1zu-HWWPs?si=gAMzJ4E2RbB8YS8H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                            </div>
+                            <div class="action-buttons">
+                                <a href="#" class="btn btn-block">
+                                    <i class="fas fa-print"></i> Print Recipe
+                                </a>
+                                <a href="#" class="btn btn-outline btn-block">
+                                    <i class="fas fa-bookmark"></i> Save Recipe
+                                </a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="lobster-mango-salad">
+            <header class="recipe-header">
+                <div class="recipe-container">
+                    <div class="header-content">
+                        <div>
+                            <h1>Lobster Mango Salad</h1>
+                            <div class="recipe-meta">
+                                <div class="meta-item">
+                                    <i class="far fa-clock"></i>
+                                    <span>30 mins prep</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-fire"></i>
+                                    <span>30 mins cook</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-calendar-check"></i>
+                                    <span>1 hr total</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-signal"></i>
+                                    <span>Medium</span>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(200 reviews)</span>
+                            </div>
+                        </div>
+                        <div class="recipe-image">
+                            <img src="../../assets/main_course/Lobster Mango Salad.png" alt="Lobster Mango Salad">
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="recipe-container">
+                <div class="main-content">
+                    <div class="left-column">
+                        <div class="recipe-info-card">
+                            <h2 class="title">Description</h2>
+                            <p class="description">This Lobster Avocado Mango Salad has to be my all time favorite recipes. It's great for a lunch with "the girls" or that special 40th Anniversary dinner for my own parents or anytime I need a beach vacation in my own backyard.</p>
+                        </div>
+                        <div class="recipe-info-card">
+                            <div class="title">Ingredients</div>
+                            <ul class="ingredients-list">
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1 pound cooked lobster meat</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1 cup mayonnaise</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">2 tablespoons fresh lemon juice</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">3 tablespoons Dijon-style mustard</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1 tablespoon minced red onion</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">Tabasco sauce</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1/2 teaspoon salt</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">2 cups ripe or frozen mango</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1 cup minced red bell pepper</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1 tablespoon minced jalapeno</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">2 avocados cut in 1/2-inch dice</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">3 tablespoons minced red onion</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">2 tablespoons lime juice</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">Salt and pepper</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="middle-column">
+                        <div class="recipe-info-card">
+                            <h2 class="title">Instructions</h2>
+                            <ol class="instructions-list">
+                                <li class="instructions-item">
+                                    <p>Dice half of the lobster into 1/2-inch pieces. Slice the other half into nice pieces for the top of the stack. Place in separate bowls.</p>
+                                </li>
+                            </ol>
+                            <h3 class="subtitle">Mixing Ingredients</h3>
+                            <ol class="instructions-list">
+                                <li class="instructions-item">
+                                    <p>In a small bowl, mix together the mayonnaise, lemon juice, mustard, 1 tablespoon red onion, Tabasco, and salt. Toss with diced lobster pieces and set aside.</p>
+                                </li>
+                                <li class="instructions-item">
+                                    <p>In a medium bowl, toss the mango, bell pepper, and jalapeno together and set aside.</p>
+                                </li>
+                                <li class="instructions-item">
+                                    <p>In a small bowl, toss the avocado, red onion, and lime juice together. Season with salt and pepper and set aside.</p>
+                                </li>
+                            </ol>
+                            <h3 class="subtitle">Making</h3>
+                            <ol class="instructions-list">
+                                <li class="instructions-item">
+                                    <p>Divide the avocado mixture between 4-3 inch round ring molds or biscuit cutters and gently press together. Top with mango mixture and gently press into the ring. Spoon the diced lobster mixture onto the mango and gently press to hold its shape.</p>
+                                </li>
+                                <li class="instructions-item">
+                                    <p>Arrange several pieces of sliced lobster to the top of the stack. Unmold on the plate you wish to serve the salad on.</p>
+                                </li>
+                                <li class="instructions-item">
+                                    <p>Garnish with fresh basil and basil oil, if desired.</p>
+                                </li>
+                            </ol>
+                            <h3 class="subtitle">Finishing</h3>
+                            <ol class="instructions-list">
+                                <li class="instructions-item">
+                                    <p>Spoon avocado mixture into the bottom of a martini glass about 1-inch deep. Spoon a layer of mango mixture over the avocado. Add the diced lobster over the mango mixture and top with several lobster slices. Repeat for a total of 8 cocktails.</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="right-column">
+                            <div class="recipe-info-card">
+                                <h2 class="title">Nutrition Information</h2>
+                                <p>Per serving</p>
+                                <div class="nutrition-grid">
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">406.7</div>
+                                        <div class="nutrition-label">Calories</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">24.5g</div>
+                                        <div class="nutrition-label">Carbs</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">68.8g</div>
+                                        <div class="nutrition-label">Protein</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">3.8g</div>
+                                        <div class="nutrition-label">Fat</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">0.8g</div>
+                                        <div class="nutrition-label">Saturated Fat</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">0g</div>
+                                        <div class="nutrition-label">Trans Fat</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">323.5mg</div>
+                                        <div class="nutrition-label">Cholestrol</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">1343.9mg</div>
+                                        <div class="nutrition-label">Sodium</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">7.7g</div>
+                                        <div class="nutrition-label">Fiber</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">11.2g</div>
+                                        <div class="nutrition-label">Sugar</div>
+                                    </div>
+                                    </div>
+                                </div>
+                            <div class="info-box">
+                                <h3 class="info-title">
+                                    <i class="fas fa-tags"></i> Tags
+                                </h3>
+                                <div class="tags">
+                                    <span class="tag">Main Course</span>
+                                    <span class="tag">Lobster</span>
+                                    <span class="tag">Salad</span>
+                                    <span class="tag">Fruit</span>
+                                    <span class="tag">Easy</span>
+                                    <span class="tag">Family Favorite</span>
+                                </div>
+                            </div>
+                            <div class="youtube-video-container">
+                                <iframe src="https://www.youtube.com/embed/f0JeLVQmZLk?si=_xXzVvDMFFAWSZew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                            </div>
+                            <div class="action-buttons">
+                                <a href="#" class="btn btn-block">
+                                    <i class="fas fa-print"></i> Print Recipe
+                                </a>
+                                <a href="#" class="btn btn-outline btn-block">
+                                    <i class="fas fa-bookmark"></i> Save Recipe
+                                </a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="pork-chops">
+            <header class="recipe-header">
+                <div class="recipe-container">
+                    <div class="header-content">
+                        <div>
+                            <h1>Pork Chops Charcutiere Sauce</h1>
+                            <div class="recipe-meta">
+                                <div class="meta-item">
+                                    <i class="far fa-clock"></i>
+                                    <span>10 mins prep</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-fire"></i>
+                                    <span>15 mins cook</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-calendar-check"></i>
+                                    <span>25 mins total</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-signal"></i>
+                                    <span>Medium</span>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(210 reviews)</span>
+                            </div>
+                        </div>
+                        <div class="recipe-image">
+                            <img src="../../assets/main_course/Pork Chops Charcutiere Sauce.png" alt="Pork Chops Charcutiere Sauce">
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="recipe-container">
+                <div class="main-content">
+                    <div class="left-column">
+                        <div class="recipe-info-card">
+                            <h2 class="title">Description</h2>
+                            <p class="description">This classic French bistro dish is a delight, featuring tender pan-seared pork chops paired with a rich, flavorful Charcutière sauce. The sauce, made with a base of sautéed onions, mushrooms, and a touch of Dijon mustard, is enhanced by the addition of white wine and veal stock, creating a savory and creamy texture. The dish is then garnished with thin juliennes of gherkins, adding a delightful crunch and tang that complements the richness of the sauce.</p>
+                        </div>
+                        <div class="recipe-info-card">
+                            <div class="title">Ingredients</div>
+                            <ul class="ingredients-list">
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">4 pork steaks, chops</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">2 tablespoon(s) olive oil</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">salt</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">pepper</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1 tablespoon(s) thyme</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">2 clove(s) of garlic</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">250g white wine</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1 tablespoon(s) granulated sugar</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1 tablespoon(s) mustard, dijon</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">200g heavy cream 35%</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="middle-column">
+                        <div class="recipe-info-card">
+                            <h2 class="title">Instructions</h2>
+                            <ol class="instructions-list">
+                                <li class="instructions-item">
+                                    <p>Place a pot over high heat.</p>
+                                </li>
+                            </ol>
+                            <h3 class="subtitle">Start Cooking</h3>
+                            <ol class="instructions-list">
+                                <li class="instructions-item">
+                                    <p>Spread olive oil, salt, and pepper over the pork chops and add them to the pot.</p>
+                                </li>
+                                <li class="instructions-item">
+                                    <p>Add thyme, the garlic finely chopped, and sauté the pork chops for 2-3 minutes on each side, until they are golden-brown.</p>
+                                </li>
+                                <li class="instructions-item">
+                                    <p>Deglaze the pot with the wine and let it evaporate completely.</p>
+                                </li>
+                            </ol>
+                            <h3 class="subtitle">Preparing</h3>
+                            <ol class="instructions-list">
+                                <li class="instructions-item">
+                                    <p>Add the sugar, mustard, heavy cream, and cover with the lid. Lower the heat to medium and simmer for 10-15 minutes until the sauce thickens.</p>
+                                </li>
+                                <li class="instructions-item">
+                                    <p>Remove from the heat and serve with the mashed potatoes, cucumber pickles, oregano, and thyme.</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="right-column">
+                            <div class="recipe-info-card">
+                                <h2 class="title">Nutrition Information</h2>
+                                <p>Per serving</p>
+                                <div class="nutrition-grid">
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">512</div>
+                                        <div class="nutrition-label">Calories</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">5.1g</div>
+                                        <div class="nutrition-label">Carbs</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">36g</div>
+                                        <div class="nutrition-label">Protein</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">36g</div>
+                                        <div class="nutrition-label">Fat</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">15g</div>
+                                        <div class="nutrition-label">Saturated Fat</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">0g</div>
+                                        <div class="nutrition-label">Trans Fat</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">1.1g</div>
+                                        <div class="nutrition-label">Sodium</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">0g</div>
+                                        <div class="nutrition-label">Fiber</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sidebars-container">
+                                <div class="info-box">
+                                    <h3 class="info-title">
+                                        <i class="fas fa-tags"></i> Tags
+                                    </h3>
+                                    <div class="tags">
+                                        <span class="tag">Main Course</span>
+                                        <span class="tag">Pork</span>
+                                        <span class="tag">Charcutiere Sauce</span>
+                                        <span class="tag">French Bistro</span>
+                                        <span class="tag">Easy</span>
+                                        <span class="tag">Authentic Dish</span>
+                                    </div>
+                                </div>
+                                <div class="youtube-video-container">
+                                    <iframe src="https://www.youtube.com/embed/k8Hm92kNQUc?si=Ou9KR9vVliWok1e-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                                </div>
+                                <div class="action-buttons">
+                                    <a href="#" class="btn btn-block">
+                                        <i class="fas fa-print"></i> Print Recipe
+                                    </a>
+                                    <a href="#" class="btn btn-outline btn-block">
+                                        <i class="fas fa-bookmark"></i> Save Recipe
+                                    </a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="mousse-terrine">
+            <header class="recipe-header">
+                <div class="recipe-container">
+                    <div class="header-content">
+                        <div>
+                            <h1>Mousse Terrine</h1>
+                            <div class="recipe-meta">
+                                <div class="meta-item">
+                                    <i class="far fa-clock"></i>
+                                    <span>20 mins prep</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-fire"></i>
+                                    <span>45 mins cook</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-calendar-check"></i>
+                                    <span>1 hr 5 mins total</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-signal"></i>
+                                    <span>Medium</span>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(300 reviews)</span>
+                            </div>
+                        </div>
+                        <div class="recipe-image">
+                            <img src="../../assets/main_course/Sole and Salmon Mousse Terrine with Indian Sauce.jpg" alt="Sole and Salmon Mousse Terrine with Indian Sauce">
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="recipe-container">
+                <div class="main-content">
+                    <div class="left-column">
+                        <div class="recipe-info-card">
+                            <h2 class="title">Description</h2>
+                            <p class="description">The curry sauce is the ideal partner of this sole and salmon fish terrine. I particularly like the freshness of this appetizer, before a heavy meal. It is even better with the crunch of a fresh baguette.</p>
+                        </div>
+                        <div class="recipe-info-card">
+                            <div class="title">Ingredients</div>
+                            <ul class="ingredients-list">
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">0.75 pound skinless and boneless sole fillets</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">Salt and pepper, to taste</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1 egg white</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1.5 cups whipping cream</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">0.5 bunch of chives</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1 tablespoon chopped fresh dill</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1 tablespoon dry vermouth</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1 large egg</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1 teaspoon cumin powder</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1 tablespoon white wine vinegar</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1 teaspoon Dijon mustard</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">0.5 cup olive oil</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">0.5 cup sunflower oil</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">Juice of 1 lemon</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">2 tablespoons curry powder</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1 teaspoon fennel powder</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">Toast (Optional)</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">6 large smoked salmon slices</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="middle-column">
+                        <div class="recipe-info-card">
+                            <h2 class="title">Instructions</h2>
+                            <h3 class="subtitle">Make the Fish Terrine</h3>
+                            <ol class="instructions-list">
+                                <li class="instructions-item">
+                                    <p>Debone and cut the fresh sole into bite-sized pieces. Season with salt and pepper. </p>
+                                </li>
+                                <li class="instructions-item">
+                                    <p>Blend the fish in a food processor until it is very smooth. Gradually add the egg whites and whipping cream. After the whipping cream is combined, mix.</p>
+                                </li>
+                                <li class="instructions-item">
+                                    <p>Transfer the mixture to a bowl. Add the chopped chives and the smoked salmon cut in tiny cubes. Add the fresh pink peppercorns and chopped fresh dill. Mix the ingredients with a spatula.</p>
+                                </li>
+                                <li class="instructions-item">
+                                    <p>Mold the mixture in a buttered terrine dish. Wrap the terrine with plastic cling wrap, and cook for approximately 45 minutes in a Bain Marie at 350°F. Insert a toothpick to check if the salmon cooked. It should be dry. Remove from the oven and refrigerate. </p>
+                                </li>
+                            </ol>
+                            <h3 class="subtitle">Make the Indian Sauce</h3>
+                            <ol class="instructions-list">
+                                <li class="instructions-item">
+                                    <p>In a food processor, combine the egg, vinegar, and Dijon. Process until it becomes smooth and creamy.</p>
+                                </li>
+                                <li class="instructions-item">
+                                    <p>Without stopping the machine, slowly add the combined oil using the funnel located on top of the lid. When the mayonnaise mixture becomes mold stop the machine.</p>
+                                </li>
+                                <li class="instructions-item">
+                                    <p>Season with salt, white pepper, and lemon juice. Blend for a few more seconds. Add the curry powder, cumin, and fennel powder. Blend until the Mayonnaise is smooth and creamy once more.</p>
+                                </li>
+                            </ol>
+                            <h3 class="subtitle">Serving</h3>
+                            <ol class="instructions-list">
+                                <li class="instructions-item">
+                                    <p>Remove the terrine from the mold and cut it into thin slices. Serve with the Indian sauce and warm toasted baguette.</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="right-column">
+                            <div class="recipe-info-card">
+                                <h2 class="title">Nutrition Information</h2>
+                                <p>Per serving</p>
+                                <div class="nutrition-grid">
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">616</div>
+                                        <div class="nutrition-label">Calories</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">11g</div>
+                                        <div class="nutrition-label">Carbs</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">70g</div>
+                                        <div class="nutrition-label">Protein</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">58g</div>
+                                        <div class="nutrition-label">Fat</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">15g</div>
+                                        <div class="nutrition-label">Saturated Fat</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">0g</div>
+                                        <div class="nutrition-label">Trans Fat</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">202mg</div>
+                                        <div class="nutrition-label">Cholestrol</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">906mg</div>
+                                        <div class="nutrition-label">Sodium</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">1300mg</div>
+                                        <div class="nutrition-label">Potassium</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">1g</div>
+                                        <div class="nutrition-label">Fiber</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">9g</div>
+                                        <div class="nutrition-label">Sugar</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">37mcg</div>
+                                        <div class="nutrition-label">Vitamin D</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-box">
+                                <h3 class="info-title">
+                                    <i class="fas fa-tags"></i> Tags
+                                </h3>
+                                <div class="tags">
+                                    <span class="tag">Main Course</span>
+                                    <span class="tag">Fish</span>
+                                    <span class="tag">Coconut Milk</span>
+                                    <span class="tag">Peas</span>
+                                    <span class="tag">Easy</span>
+                                    <span class="tag">Family Favorite</span>
+                                </div>
+                            </div>
+                            <div class="youtube-video-container">
+                                <iframe src="https://www.youtube.com/embed/nWURxQv2nsI?si=1gdJsvE1FyRiflTU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                            </div>
+                            <div class="action-buttons">
+                                <a href="#" class="btn btn-block">
+                                    <i class="fas fa-print"></i> Print Recipe
+                                </a>
+                                <a href="#" class="btn btn-outline btn-block">
+                                    <i class="fas fa-bookmark"></i> Save Recipe
+                                </a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="short-ribs">
+            <header class="recipe-header">
+                <div class="recipe-container">
+                    <div class="header-content">
+                        <div>
+                            <h1>Braised Short Ribs</h1>
+                            <div class="recipe-meta">
+                                <div class="meta-item">
+                                    <i class="far fa-clock"></i>
+                                    <span>25 mins prep</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-fire"></i>
+                                    <span>3 hr 30 mins cook</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-calendar-check"></i>
+                                    <span>3 hr 55 mins total</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-signal"></i>
+                                    <span>Easy</span>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(180 reviews)</span>
+                            </div>
+                        </div>
+                        <div class="recipe-image">
+                            <img src="../../assets/main_course/Coffee-Rubbed Braised Short Ribs.png" alt="Coffee-Rubbed Braised Short Ribs">
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="recipe-container">
+                <div class="main-content">
+                    <div class="left-column">
+                        <div class="recipe-info-card">
+                            <h2 class="title">Description</h2>
+                            <p class="description">Braised short ribs are a rich, hearty dish that features beef short cooked low and slow in a flavorful braising liquid until the meat is fall-apart tender. It’s the kind of comforting dish that’s perfect for a cozy Sunday supper, yet fancy enough to serve company for a dinner party or special occasion. Plus, the ribs are even better reheated the next day, making them a great make-ahead dish (and leftovers you’ll look forward to).</p>
+                        </div>
+                        <div class="recipe-info-card">
+                            <div class="title">Ingredients</div>
+                            <ul class="ingredients-list">
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">6 bone-in short ribs (about 5 3/4 pounds)</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">Kosher salt</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">Extra-virgin olive oil</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1 large Spanish onion, cut into 1/2-inch pieces</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">2 ribs celery, cut into 1/2-inch pieces</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">2 carrots, peeled, cut in 1/2 lengthwise, then cut into 1/2-inch pieces</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">2 cloves garlic, smashed</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1 1/2 cups tomato paste</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">2 to 3 cups hearty red wine</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">2 cups water</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1 bunch fresh thyme, tied with kitchen string</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">2 bay leaves</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="middle-column">
+                        <div class="recipe-info-card">
+                            <h2 class="title">Instructions</h2>
+                            <h3 class="subtitle">Cooking Ribs</h3>
+                            <ol class="instructions-list">
+                                <li class="instructions-item">
+                                    <p>Season each short rib generously with salt. Coat a pot large enough to accommodate all the meat and vegetables with olive oil and bring to a high heat. Add the short ribs to the pan and brown very well, about 2 to 3 minutes per side. Do not overcrowd pan. Cook in batches, if necessary.</p>
+                                </li>
+                                <li class="instructions-item">
+                                    <p>Preheat the oven to 375 degrees F.</p>
+                                </li>
+                            </ol>
+                            <h3 class="subtitle">Adding Ingredient</h3>
+                            <ol class="instructions-list">
+                                <li class="instructions-item">
+                                    <p>While the short ribs are browning, puree all the vegetables and garlic in the food processor until it forms a coarse paste. When the short ribs are very brown on all sides, remove them from the pan.</p>
+                                </li>
+                                <li class="instructions-item">
+                                    <p>Drain the fat, coat the bottom of same pan with fresh oil and add the pureed vegetables. Season the vegetables generously with salt and brown until they are very dark and a crud has formed on the bottom of the pan, approximately 5 to 7 minutes. </p>
+                                </li>
+                                <li class="instructions-item">
+                                    <p>Scrape the crud and let it reform. Scrape the crud again and add the tomato paste. Brown the tomato paste for 4 to 5 minutes. Add the wine and scrape the bottom of the pan. Lower the heat if things start to burn. Reduce the mixture by half.</p>
+                                </li>
+                            </ol>
+                            <h3 class="subtitle">Perfecting and Serving</h3>
+                            <ol class="instructions-list">
+                                <li class="instructions-item">
+                                    <p>Return the short ribs to the pan and add 2 cups water or until the water has just about covered the meat. Add the thyme bundle and bay leaves. Cover the pan and place in the preheated oven for 3 hours.</p>
+                                </li>
+                                <li class="instructions-item">
+                                    <p>Check periodically during the cooking process and add more water, if needed. Turn the ribs over halfway through the cooking time.</p>
+                                </li>
+                                <li class="instructions-item">
+                                    <p>Remove the lid during the last 20 minutes of cooking to let things get nice and brown and to let the sauce reduce. When done the meat should be very tender but not falling apart. Serve with the braising liquid.</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="right-column">
+                            <div class="recipe-info-card">
+                                <h2 class="title">Nutrition Information</h2>
+                                <p>Per serving</p>
+                                <div class="nutrition-grid">
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">1117</div>
+                                        <div class="nutrition-label">Calories</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">17g</div>
+                                        <div class="nutrition-label">Carbs</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">37g</div>
+                                        <div class="nutrition-label">Protein</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">94g</div>
+                                        <div class="nutrition-label">Fat</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">39g</div>
+                                        <div class="nutrition-label">Saturated Fat</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">0g</div>
+                                        <div class="nutrition-label">Trans Fat</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">181mg</div>
+                                        <div class="nutrition-label">Cholestrol</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">1308mg</div>
+                                        <div class="nutrition-label">Sodium</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">3g</div>
+                                        <div class="nutrition-label">Fiber</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">8g</div>
+                                        <div class="nutrition-label">Sugar</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">225mg</div>
+                                        <div class="nutrition-label">Calcium</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">1mg</div>
+                                        <div class="nutrition-label">Iron</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">225mg</div>
+                                        <div class="nutrition-label">Calcium</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">0.6mg</div>
+                                        <div class="nutrition-label">Vitamin D</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">137.7mg</div>
+                                        <div class="nutrition-label">Phosphorus</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sidebar-container">
+                                <div class="info-box">
+                                    <h3 class="info-title">
+                                        <i class="fas fa-tags"></i> Tags
+                                    </h3>
+                                    <div class="tags">
+                                        <span class="tag">Main Course</span>
+                                        <span class="tag">Short Ribs</span>
+                                        <span class="tag">Easy</span>
+                                        <span class="tag">French</span>
+                                    </div>
+                                </div>
+                                <div class="youtube-video-container">
+                                    <iframe src="https://www.youtube.com/embed/QnxLau7m600?si=R9QG56j4wIJTIkGT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                                </div>
+                                <div class="action-buttons">
+                                    <a href="#" class="btn btn-block">
+                                        <i class="fas fa-print"></i> Print Recipe
+                                    </a>
+                                    <a href="#" class="btn btn-outline btn-block">
+                                        <i class="fas fa-bookmark"></i> Save Recipe
+                                    </a>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="arugula-prosciutto-salad">
+            <header class="recipe-header">
+                <div class="recipe-container">
+                    <div class="header-content">
+                        <div>
+                            <h1>Arugula & Prosciutto Salad</h1>
+                            <div class="recipe-meta">
+                                <div class="meta-item">
+                                    <i class="far fa-clock"></i>
+                                    <span>15 mins prep</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-calendar-check"></i>
+                                    <span>15 mins total</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-signal"></i>
+                                    <span>Easy</span>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(220 reviews)</span>
+                            </div>
+                        </div>
+                        <div class="recipe-image">
+                            <img src="../../assets/main_course/Fig Arugula and Prosciutto Salad.jpg" alt="Arugula & Prosciutto Salad">
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="recipe-container">
+                <div class="main-content">
+                    <div class="left-column">
+                        <div class="recipe-info-card">
+                            <h2 class="title">Description</h2>
+                            <p class="description">This fresh, flavorful salad combines peppery arugula, tender prosciutto, and shaved Parmesan with pops of color from cherry tomatoes and crunch from toasted pine nuts. A simple lemon vinaigrette ties everything together for a well-balanced dish.</p>
+                        </div>
+                        <div class="recipe-info-card">
+                            <div class="title">Ingredients</div>
+                            <ul class="ingredients-list">
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">5 oz fresh arugula</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">4 oz prosciutto</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1/2 cup cherry tomatoes</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1/4 cup shaved Parmesan Cheese</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">3 tablespoons toasted pine nuts/sliced almonds</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1/4 cup extra-virgin olive oil</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">2 tablespoons fresh lemon juice</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1 teaspoon Dijon mustard</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">Salt and freshly ground black pepper</span>
+                                </li>
+                                <li class="ingredient-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="list">1/2 cup croutons</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="middle-column">
+                        <div class="recipe-info-card">
+                            <h2 class="title">Instructions</h2>
+                            <ol class="instructions-list">
+                                <li class="instructions-item">
+                                    <p>In a small bowl, whisk together the olive oil, lemon juice, Dijon mustard, salt, and pepper.</p>
+                                </li>
+                                <li class="instructions-item">
+                                    <p>In a large bowl, combine arugula, prosciutto, cherry tomatoes, Parmesan, and pine nuts.</p>
+                                </li>
+                                <li class="instructions-item">
+                                    <p>Drizzle the dressing over the salad and toss gently to coat.</p>
+                                </li>
+                                <li class="instructions-item">
+                                    <p>Top with croutons, if using, and serve immediately.</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="right-column">
+                            <div class="recipe-info-card">
+                                <h2 class="title">Nutrition Information</h2>
+                                <p>Per serving</p>
+                                <div class="nutrition-grid">
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">214</div>
+                                        <div class="nutrition-label">Calories</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">2g</div>
+                                        <div class="nutrition-label">Carbs</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">10g</div>
+                                        <div class="nutrition-label">Protein</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">19g</div>
+                                        <div class="nutrition-label">Fat</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">7g</div>
+                                        <div class="nutrition-label">Saturated Fat</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">0g</div>
+                                        <div class="nutrition-label">Trans Fat</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">28mg</div>
+                                        <div class="nutrition-label">Cholestrol</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">570mg</div>
+                                        <div class="nutrition-label">Sodium</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">200mg</div>
+                                        <div class="nutrition-label">Potassium</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">1g</div>
+                                        <div class="nutrition-label">Fiber</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">1g</div>
+                                        <div class="nutrition-label">Sugar</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">952IU</div>
+                                        <div class="nutrition-label">Vitamin A</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">7mg</div>
+                                        <div class="nutrition-label">Vitamin C</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">225mg</div>
+                                        <div class="nutrition-label">Calcium</div>
+                                    </div>
+                                    <div class="nutrition-item">
+                                        <div class="nutrition-value">1mg</div>
+                                        <div class="nutrition-label">Iron</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-box">
+                                <h3 class="info-title">
+                                    <i class="fas fa-tags"></i> Tags
+                                </h3>
+                                <div class="tags">
+                                    <span class="tag">Main Course</span>
+                                    <span class="tag">Arugula</span>
+                                    <span class="tag">Salad</span>
+                                    <span class="tag">Prosciutto</span>
+                                    <span class="tag">Easy</span>
+                                    <span class="tag">Everbody's Favorite</span>
+                                </div>
+                            </div>
+                            <div class="youtube-video-container">
+                                <iframe src="https://www.youtube.com/embed/8AcuwACDhWU?si=Iq1RZxelb8mi-EBd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                            </div>
+                            <div class="action-buttons">
+                                <a href="#" class="btn btn-block">
+                                    <i class="fas fa-print"></i> Print Recipe
+                                </a>
+                                <a href="#" class="btn btn-outline btn-block">
+                                    <i class="fas fa-bookmark"></i> Save Recipe
+                                </a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer class="main-footer">
+    <h1 class="footer-title">Socials</h1>
+    <div class="socials-logo">
+      <a href="#"><img class="img-fluid" src="../../assets/logo/Github.png" alt="Github" /></a>
+      <a href="#"><img class="img-fluid" src="../../assets/logo/Instagram.png" alt="Instagram" /></a>
+      <a href="#"><img class="img-fluid Facebook" src="../../assets/logo/Facebook.png" alt="Facebook" /></a>
+      <a href="#"><img class="img-fluid" src="../../assets/logo/X.png" alt="X" /></a>
+      <a href="#"><img class="img-fluid" src="../../assets/logo/LinkedIn.jpg" alt="LinkedIn"></a>
+    </div>
+    <nav class="footer-policy-links">
+      <a href="#terms-modal">Terms of Use</a>
+      <a href="#privacy-modal">Privacy Policy</a>
+      <a href="#cookies-modal">Cookies</a>
+      <a href="#disclaimer-modal">Disclaimer</a>
+    </nav>
+    <p class="footer-note">© 2024 Celestial. All rights reserved.</p>
+  </footer>
+
+  <div id="terms-modal" class="modal">
+    <div class="modal-content">
+      <a href="#!" class="close">×</a>
+      <h2>Terms of Use</h2>
+      <p>This project is created for educational purposes only. All content, images, and code included are for study and demonstration.</p>
+      <p>Images used in this project are sourced randomly for learning purposes and are not intended for redistribution or commercial use.</p>
+      <p>The code is released under the MIT License. You are free to study, modify, and use it for personal learning or academic projects.</p>
+    </div>
+  </div>
+
+  <div id="privacy-modal" class="modal">
+    <div class="modal-content">
+      <a href="#!" class="close">×</a>
+      <h2>Privacy Policy</h2>
+      <p>No personal data is collected in this project. Any email inputs (e.g., in forms) are purely for demonstration and do not send or store real data.</p>
+      <p>This project is meant only to show functionality and interface design for learning purposes.</p>
+    </div>
+  </div>
+
+  <div id="cookies-modal" class="modal">
+    <div class="modal-content">
+      <a href="#!" class="close">×</a>
+      <h2>Cookies</h2>
+      <p>This project does not use cookies. Any references to cookies are for interface demonstration purposes only.</p>
+      <button class="accept btn">ACCEPT ALL</button>
+      <button class="reject btn">REJECT ALL</button>
+      <a href="#customize-modal" class="customize btn">CUSTOMIZE COOKIES</a>
+    </div>
+  </div>
+
+  <div id="customize-modal" class="modal">
+    <div class="modal-content cookie-modal">
+      <a href="#!" class="close" aria-label="Close">×</a>
+
+      <header class="cookie-header">
+        <h2>Manage Cookie Preferences</h2>
+        <p class="cookie-intro">
+          We use cookies and similar technologies to deliver, maintain, and improve our services, and to provide a personalised web experience.
+          You can review how this information is used and customise your preferences below. You may change your choices at any time as
+          described in our <a href="#privacy-modal">Privacy Policy</a>.
+        </p>
+        <nav class="cookie-actions-top">
+          <a href="#!" class="ghost-action">Reject all</a>
+          <a href="#!" class="ghost-action">Accept all</a>
+        </nav>
+      </header>
+
+      <div class="cookie-body">
+        <section class="cookie-group">
+          <details open>
+            <summary>
+              <div class="sum-text">
+                <div class="title">Essential cookies</div>
+                <div class="desc">Required for the website to function. This includes security, network management, and accessibility.</div>
+              </div>
+              <span class="badge locked">Required</span>
+            </summary>
+            <ul class="list">
+              <li>Load balancing and session management</li>
+              <li>Fraud prevention and security</li>
+              <li>Basic preferences like language</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>
+              <div class="sum-text">
+                <div class="title">Analytics cookies</div>
+                <div class="desc">Help us understand site usage so we can improve recipes and features.</div>
+              </div>
+              <label class="switch" aria-label="Toggle analytics cookies">
+                <input type="checkbox" />
+                <span class="track"></span>
+                <span class="switch-text" aria-hidden="true"></span>
+              </label>
+            </summary>
+            <ul class="list">
+              <li>Aggregate traffic insights (pages visited, time on page)</li>
+              <li>Error tracking to fix broken pages</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>
+              <div class="sum-text">
+                <div class="title">Preference cookies</div>
+                <div class="desc">Remember your choices like theme, language, or favourite recipes.</div>
+              </div>
+              <label class="switch" aria-label="Toggle preference cookies">
+                <input type="checkbox" checked />
+                <span class="track"></span>
+                <span class="switch-text" aria-hidden="true"></span>
+              </label>
+            </summary>
+            <ul class="list">
+              <li>Stores display preferences (e.g., dark mode)</li>
+              <li>Keeps items saved to your recipe list</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>
+              <div class="sum-text">
+                <div class="title">Marketing cookies</div>
+                <div class="desc">Used to show you relevant content and offers based on your interests.</div>
+              </div>
+              <label class="switch" aria-label="Toggle marketing cookies">
+                <input type="checkbox" />
+                <span class="track"></span>
+                <span class="switch-text" aria-hidden="true"></span>
+              </label>
+            </summary>
+            <ul class="list">
+              <li>Limits how often you see the same promo</li>
+              <li>Measures campaign performance</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>
+              <div class="sum-text">
+                <div class="title">Precise geolocation data, and identification through device scanning</div>
+                <div class="desc">Allow us to use accurate location and device signals to deliver localised content.</div>
+              </div>
+              <label class="switch" aria-label="Toggle precise geolocation">
+                <input type="checkbox" />
+                <span class="track"></span>
+                <span class="switch-text" aria-hidden="true"></span>
+              </label>
+            </summary>
+            <ul class="list">
+              <li>Use exact location to tailor nearby seasonal ingredients</li>
+              <li>Identify device characteristics for fraud prevention</li>
+            </ul>
+          </details>
+        </section>
+
+        <a href="#!" class="partners-link">Partners</a>
+      </div>
+
+      <footer class="cookie-footer">
+        <small class="legal">
+          You can update your choices at any time. See our <a href="#privacy-modal">Privacy Policy</a> and <a href="#cookies-modal">Cookies</a>.
+        </small>
+        <a href="#!" class="btn-cta">Save &amp; Exit</a>
+      </footer>
+    </div>
+  </div>
+
+  <div id="disclaimer-modal" class="modal">
+    <div class="modal-content">
+      <a href="#!" class="close">×</a>
+      <h2>Disclaimer</h2>
+      <p>This website and its cookie settings are for educational purposes only as part of a school project. No actual data is collected or stored.</p>
+      <p>Some images used in this project are sourced from Google Images and are for educational and demonstration purposes only.
+      All rights belong to their respective owners</p>
+    </div>
+  </div>
 </body>
 </html>

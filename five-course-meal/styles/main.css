@@ -854,7 +854,7 @@ main {
     text-decoration: none;
     color: #007A70;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     display: block;
     margin-bottom: 0.5rem;
     transition: color 0.2s ease;
@@ -2019,6 +2019,7 @@ main {
 
     :is(.celestial-logo a, .celestial-logo a:visited) {
         font-size: 1.2rem;
+        display: block;
         max-width: 120px;
     }
 
@@ -2122,10 +2123,6 @@ main {
         display: block;
         margin: 0 1.2rem;
     }
-            
-    :is(.celestial-logo a, .celestial-logo a:visited) {
-        font-size: 1rem;
-    }
 
     .recipe-menu {
         width: 200px;
@@ -2155,11 +2152,6 @@ main {
     .other img {
         width: 18px;
         height: 18px;
-    }
-
-    :is(.card a, .card a:visited) {
-        font-size: 1.2rem;
-        display: block;
     }
 
     .btn-secondary {
