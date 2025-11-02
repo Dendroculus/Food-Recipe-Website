@@ -528,6 +528,21 @@ main h1 {
   word-spacing: 0.1rem;
 }
 
+.modal-image-wrapper {
+  width: 100%;
+  aspect-ratio: 16 / 9; 
+  overflow: hidden;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.modal-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .modal-content h2 { margin-bottom: 0.75rem; }
 .modal-content p { line-height: 1.5; }
 
