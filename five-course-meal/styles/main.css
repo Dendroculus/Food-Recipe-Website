@@ -612,6 +612,7 @@ main {
     position: relative;
     margin-bottom: 0.5rem;
 }
+
 .top-line::after {
     content: "";
     position: absolute;
@@ -853,6 +854,7 @@ main {
 :is(.card a, .card a:visited) {
     text-decoration: none;
     color: #007A70;
+    text-decoration: underline;
     font-weight: 600;
     font-size: 1.2rem;
     display: block;
@@ -1363,7 +1365,7 @@ main {
 
 .partners-link:hover { text-decoration: underline; }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
 
    .main-title {
         padding-top: 4rem;
@@ -1495,7 +1497,7 @@ main {
     text-decoration: none;
     color: #007A70;
     font-weight: 600;
-    font-size: 1.7rem;
+    font-size: 2.5rem;
     display: block;
     margin-bottom: 0.5rem;
     transition: color 0.2s ease;
@@ -2020,6 +2022,7 @@ main {
     :is(.celestial-logo a, .celestial-logo a:visited) {
         font-size: 1.2rem;
         display: block;
+        margin-right: 2rem;
         max-width: 120px;
     }
 
@@ -2142,6 +2145,10 @@ main {
     .recipe-menu img {
         width: 5rem;
         height: 3rem;
+    }
+
+    .recommended-card {
+        height: 7rem;
     }
             
     .other {
