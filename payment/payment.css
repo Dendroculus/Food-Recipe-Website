@@ -494,6 +494,11 @@ body {
   max-height: 80vh;
 }
 
+@keyframes pop {
+  from { transform: scale(0.96); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
 #shopping-modal .modal-content {
   max-height: 100vh;
 }
