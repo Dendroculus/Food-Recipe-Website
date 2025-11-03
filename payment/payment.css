@@ -86,6 +86,10 @@ body {
   animation: float 3s ease-in-out infinite;
 }
 
+.modal-content .payment-logos {
+  justify-content: center;
+}
+
 @keyframes float {
   0%, 100% {
     transform: translateY(0);
