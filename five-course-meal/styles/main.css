@@ -1967,6 +1967,26 @@ main {
         grid-template-rows: auto 1fr auto;
     }
 
+    .recipe-menu {
+        width: 200px;
+        padding: 3rem 1rem 1.5rem;
+    }
+
+    .recipe-menu a {
+      font-size: 0.7rem;
+    }
+
+    .recipe-menu h3 {
+        font-size: 1.2rem;
+        margin-top: 2.5rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .recipe-menu img {
+        width: 5rem;
+        height: 3rem;
+    }
+
     .cookie-body { max-height: calc(100vh - 220px); }
     .cookie-footer { border-radius: 0; }
 
