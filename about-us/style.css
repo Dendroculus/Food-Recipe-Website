@@ -1,0 +1,232 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/Montserrat/static/Montserrat-Regular.ttf') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playwrite';
+  src: url('/fonts/Playwrite_DE_SAS/static/PlaywriteDESAS-Regular.ttf') format('woff2');
+  font-weight: bold;
+  font-display: swap;
+}
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif; /* Changed from Inter */
+            line-height: 1.6;
+            background-color: #f9f6f2; /* Replaced var(--secondary-color) */
+            color: #333; /* Replaced var(--text-color) */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            position: relative; /* Ditambahkan untuk positioning */
+        }
+        
+        /* --- Navigasi Baru --- */
+        .site-header-nav {
+            position: absolute;
+            top: 1.5rem;
+            right: 2rem;
+            z-index: 10;
+        }
+
+        .main-nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .main-nav li a {
+            text-decoration: none;
+            font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif; /* Changed from Inter */
+            font-weight: 600;
+            color: #c0392b; /* Replaced var(--primary-color) */
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .main-nav li a:hover {
+            color: #333; /* Replaced var(--text-color) */
+            text-decoration: underline;
+        }
+        /* --- End Navigasi Baru --- */
+
+        /* --- Typography --- */
+        h1, h2, h3 {
+            font-family: 'Playwrite DE SAS', serif; /* Changed from Georgia */
+            color: #c0392b; /* Replaced var(--primary-color) */
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2rem;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+
+        /* --- Layout & Main Components --- */
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            flex-grow: 1; /* Ensures main content pushes footer down */
+        }
+        
+        .header-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+        }
+
+        /* --- Contact Form Section --- */
+        .contact-form {
+            max-width: 600px;
+            margin: 2rem auto 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #555;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif; /* Changed from Inter */
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #c0392b; /* Replaced var(--primary-color) */
+            box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 0.85rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #ffffff;
+            background-color: #c0392b; /* Replaced var(--primary-color) */
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #a53125; /* Darker red on hover */
+            transform: translateY(-2px);
+        }
+
+        /* --- Alternative Contact --- */
+        .alternative-contact {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #eee;
+        }
+        
+        .alternative-contact p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        .social-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+        
+        .social-links li a {
+            text-decoration: none;
+            font-weight: 600;
+            color: #c0392b; /* Replaced var(--primary-color) */
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+        
+        .social-links li a:hover {
+            color: #333;
+        }
+
+        /* --- Footer --- */
+        .site-footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #333;
+            color: #f9f6f2;
+            margin-top: auto; /* Pushes footer to the bottom */
+        }
+
+        /* --- Responsive Design --- */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .container {
+                width: 100%;
+                margin: 0;
+                border-radius: 0;
+                padding: 1.5rem;
+                margin-top: 4rem; /* Menambahkan margin agar tidak tertutup nav */
+            }
+
+            /* --- Penyesuaian Navigasi Mobile --- */
+            .site-header-nav {
+                top: 1rem;
+                right: 1.5rem;
+            }
+            .main-nav ul {
+                gap: 1rem;
+            }
+            .main-nav li a {
+                font-size: 0.9rem;
+            }
+        }

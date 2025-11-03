@@ -3,16 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About Us - Our Recipe Book</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>About Us</header>
-    <a>Welcome !</a>
-    <a>As a huge fan of Food, it is our goal to teach people how to cook it using the simplest way possible. Prepare your taste buds for an ultimate showdown of delectable food and dishes!</a>
-    <a>Celestial</a>
-    <a>Our team has passion in cooking and continuous craving for the distinctive taste. It is time for our food to be noticed, known, tasted, and enjoyed by the rest of the world</a>
-    <a>We Love Food!</a>
-    <a>In this space, We always share fresh, flavorful,and (mostly) healthy recipes that our team love to make and eat in my real, actual, every day life. Our goal is to inspire you with food that is both approachable and exciting, whether you’re cooking for yourself, your family, your roommates, or your friends. We want you to be so excited about these recipes that you eagerly await 5pm when you can go home from work and start cooking.</a>
-    <footer></footer>
+    <header class="site-header-nav">
+        <nav class="main-nav">
+            <ul>
+                <!-- Anda bisa mengubah href ke link yang sesuai -->
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Account</a></li>
+            </ul>
+        </nav>
+    </header>  
+    <main class="container">
+        <h1>About Us</h1>
+
+        <img src="https://placehold.co/1000x300/c0392b/ffffff?text=Our+Culinary+Journey" 
+             alt="A collage of delicious food" 
+             class="header-image"
+             onerror="this.src='https://placehold.co/1000x300/cccccc/333333?text=Image+Not+Found'">
+
+        <section class="about-mission">
+            <h2>Our Mission</h2>
+            <p>Welcome to <strong>Our Recipe Book</strong>! We believe that cooking should be a joyful, creative, and accessible experience for everyone. Our mission is to share delicious, reliable, and inspiring recipes that empower you to create amazing meals in your own kitchen, whether you're a seasoned chef or just starting out.</p>
+            <p>We're passionate about fresh ingredients, simple techniques, and the magic that happens when people come together over a good meal. From quick weeknight dinners to elaborate holiday feasts, we're here to guide you every step of the way.</p>
+        </section>
+
+        <section class="our-team">
+            <h2>Meet the Team</h2>
+            <div class="team-section">
+                
+                <div class="team-member">
+                    <img src="https://placehold.co/150x150/f3a683/ffffff?text=Jane+D." 
+                         alt="Portrait of Jane Doe"
+                         onerror="this.src='https://placehold.co/150x150/cccccc/333333?text=Photo'">
+                    <h3>Jane Doe</h3>
+                    <div class="team-member-role">Founder & Head Chef</div>
+                    <p>With 15 years of professional kitchen experience, Jane is the creative force behind our recipes, focusing on seasonal ingredients and bold flavors.</p>
+                </div>
+
+                <div class="team-member">
+                    <img src="https://placehold.co/150x150/77dd77/ffffff?text=Mark+S." 
+                         alt="Portrait of Mark Smith"
+                         onerror="this.src='https://placehold.co/150x150/cccccc/333333?text=Photo'">
+                    <h3>Mark Smith</h3>
+                    <div class="team-member-role">Pastry Expert & Photographer</div>
+                    <p>Mark makes all our baking dreams come true. He's also the eye behind the camera, making every dish look as delicious as it tastes.</p>
+                </div>
+
+                <div class="team-member">
+                    <img src="https://placehold.co/150x150/8ecae6/ffffff?text=Alex+C." 
+                         alt="Portrait of Alex Chen"
+                         onerror="this.src='https://placehold.co/150x150/cccccc/333333?text=Photo'">
+                    <h3>Alex Chen</h3>
+                    <div class="team-member-role">Recipe Tester & Community Manager</div>
+                    <p>Alex ensures every recipe is foolproof and delicious. They also love connecting with our amazing community of home cooks!</p>
+                </div>
+
+                <div class="team-member">
+                    <img src="https://placehold.co/150x150/8ecae6/ffffff?text=Alex+C." 
+                         alt="Portrait of Alex Chen"
+                         onerror="this.src='https://placehold.co/150x150/cccccc/333333?text=Photo'">
+                    <h3>Alex Chen</h3>
+                    <div class="team-member-role">Recipe Tester & Community Manager</div>
+                    <p>Alex ensures every recipe is foolproof and delicious. They also love connecting with our amazing community of home cooks!</p>
+                </div>
+
+                <div class="team-member">
+                    <img src="https://placehold.co/150x150/8ecae6/ffffff?text=Alex+C." 
+                         alt="Portrait of Alex Chen"
+                         onerror="this.src='https://placehold.co/150x150/cccccc/333333?text=Photo'">
+                    <h3>Alex Chen</h3>
+                    <div class="team-member-role">Recipe Tester & Community Manager</div>
+                    <p>Alex ensures every recipe is foolproof and delicious. They also love connecting with our amazing community of home cooks!</p>
+                </div>
+                
+            </div>
+        </section>
+        
+        <section class="alternative-contact">
+            <h3>Contact Us</h3>
+            <p>Get daily inspiration and updates from our kitchen!</p>
+            <ul class="social-links">
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Pinterest</a></li>
+                <li><a href="#">Facebook</a></li>
+            </ul>
+            <p style="margin-top: 1.5rem;">For partnerships, email us at: <a href="mailto:hello@ourrecipebook.com" style="color: var(--primary-color); text-decoration: none;">hello@ourrecipebook.com</a></p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; Celestial 2025. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
