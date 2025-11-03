@@ -570,3 +570,51 @@ body {
   color: #333;
 }
 .close:hover { color: #000; transform: scale(1.2); }
+
+@media (max-width: 768px) {
+  .shop-contents {
+    gap: 1.5rem;
+    margin: 0.5rem 0;
+  }
+
+  .shop-modal-pfps {
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+
+  #shopping-modal .shop-contents p {
+    font-size: 1.05rem;
+  }
+  .form-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .payment-header  {
+    display: flex;
+    flex-direction: column;
+  }
+  .payment-header .back-link {
+    position: static;
+    margin-bottom: 1rem;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .shop-contents {
+    gap: 1rem;
+    margin: 0.4rem 0;
+    padding: 0.5rem;
+  }
+
+  .shop-modal-pfps {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  #shopping-modal .shop-contents p {
+    font-size: 0.95rem;
+  }
+}
+
+
