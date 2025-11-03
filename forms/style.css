@@ -197,6 +197,8 @@ body{
 }
 .container_gambar img, .container_gambar_signup img{
   width: 3rem; height: 3rem; transition: 0.5s ease;
+  /* Prevent Bootstrap's img-fluid max-width from shrinking icons */
+  max-width: none;
 }
 .container_gambar a:hover, .container_gambar_signup a:hover{
   transform: translateY(-0.5rem);
@@ -292,7 +294,6 @@ body{
   border-radius: 999px;
 }
 
-
 @media (max-width: 900px){
   body{ padding: 1rem; }
   .form_box{ width: min(48rem, 96vw); }
@@ -356,7 +357,10 @@ body{
     background: transparent;
     box-shadow: none;
   }
-  .container_gambar img, .container_gambar_signup img{ width: 2.25rem; height: 2.25rem; }
+  .container_gambar img, .container_gambar_signup img{
+    width: 2.25rem; height: 2.25rem;
+    max-width: none;
+  }
 
   .switch-link:focus-visible,
   #button:focus-visible,
