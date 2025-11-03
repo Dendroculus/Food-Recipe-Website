@@ -141,7 +141,7 @@
                 <div class="payment-logo"><img class="img-fluid" src="../assets/logo/AliPay.png" alt="AliPay"></div>
                 <div class="payment-logo"><img class="img-fluid" src="../assets/logo/AmazonPay.png" alt="Amazon Pay"></div>
                 <div class="payment-logo"><img class="img-fluid" src="../assets/logo/Stripe.png" alt="Stripe"></div>
-                <div class="others-payment"><a href="#!"><img class="img-fluid" src="../assets/icons/More.png" alt="Payments"></a></div>
+                <div class="others-payment"><a href="#more-payments-modal"><img class="img-fluid" src="../assets/icons/More.png" alt="Payments"></a></div>
               </div>
             </div>
           </section>
@@ -164,51 +164,73 @@
     <p>© 2024 Celestial. All rights reserved.</p>
   </footer>
 
-    <div id="terms-modal" class="modal">
+    <div id="more-payments-modal" class="modal">
     <div class="modal-content">
       <a href="#!" class="close">×</a>
-      <h2>Terms of Use</h2>
-      <p>This project is created for educational purposes only. All content, images, and code included are for study and demonstration.</p>
-      <p>Images used in this project are sourced randomly for learning purposes and are not intended for redistribution or commercial use.</p>
-      <p>The code is released under the MIT License. You are free to study, modify, and use it for personal learning or academic projects.</p>
-    </div>
-
-    </div>
-      <div id="privacy-modal" class="modal">
-      <div class="modal-content">
-        <a href="#!" class="close">×</a>
-        <h2>Privacy Policy</h2>
-        <p>No personal data is collected in this project. Any email inputs (e.g., in forms) are purely for demonstration and do not send or store real data.</p>
-        <p>This project is meant only to show functionality and interface design for learning purposes.</p>
+      <h2>More Payment Options</h2>
+      <p>In addition to the main payment methods displayed, we also accept:</p>
+      <div class="payment-logos">
+        <div class="payment-logo"><img class="img-fluid" src="../assets/logo/QRIS.png" alt="QRIS"></div>
+        <div class="payment-logo"><img class="img-fluid" src="../assets/logo/OVO.png" alt="OVO"></div>
+        <div class="payment-logo"><img class="img-fluid" src="../assets/logo/MANDIRI.png" alt="Mandiri"></div>
+        <div class="payment-logo"><img class="img-fluid" src="../assets/logo/BCA.png" alt="BCA"></div>
+        <div class="payment-logo"><img class="img-fluid" src="../assets/logo/ShopeePay.png" alt="ShopeePay"></div>
+        <div class="payment-logo"><img class="img-fluid" src="../assets/logo/BNI.png" alt="BNI"></div>
+        <div class="payment-logo"><img class="img-fluid" src="../assets/logo/UOB.png" alt="UOB"></div>
+        <div class="payment-logo"><img class="img-fluid" src="../assets/logo/CIMBNIAGA.png" alt="CIMBNIAGA"></div>
+        <div class="payment-logo"><img class="img-fluid" src="../assets/logo/OCBC.png" alt="OCBC"></div>
+        <div class="payment-logo"><img class="img-fluid" src="../assets/logo/GoPay.png" alt="GoPay"></div>
+        <div class="payment-logo"><img class="img-fluid" src="../assets/logo/DANA.png" alt="DANA"></div>
+        <div class="payment-logo"><img class="img-fluid" src="../assets/logo/KREDIVO.png" alt="KREDIVO"></div>
       </div>
     </div>
+  </div>
 
-    <div id="security-modal" class="modal">
-      <div class="modal-content">
-        <a href="#!" class="close">×</a>
-        <h2>Security</h2>
+  <div id="terms-modal" class="modal">
+  <div class="modal-content">
+    <a href="#!" class="close">×</a>
+    <h2>Terms of Use</h2>
+    <p>This project is created for educational purposes only. All content, images, and code included are for study and demonstration.</p>
+    <p>Images used in this project are sourced randomly for learning purposes and are not intended for redistribution or commercial use.</p>
+    <p>The code is released under the MIT License. You are free to study, modify, and use it for personal learning or academic projects.</p>
+  </div>
 
-        <p>We take the security of your information seriously. This site uses HTTPS to protect data in transit and follows common industry practices to help keep your information safe.</p>
-
-        <h3>Payments</h3>
-        <p>Payments are processed by trusted, PCI-compliant third-party providers. We do not store full card numbers on our servers — only tokenized references where required by the payment provider.</p>
-
-        <h3>Account & Data</h3>
-        <p>We retain personal data only as needed to provide services. Sensitive data (like passwords) should be stored hashed on production systems, and access is limited to authorized personnel only.</p>
-
-        <h3>How You Can Help</h3>
-        <ul>
-          <li>Use a strong, unique password. Consider a password manager.</li>
-          <li>Enable two-factor authentication where available.</li>
-          <li>Don't share your credentials and log out from shared devices.</li>
-          <li>Beware of phishing — we will never ask for your password or full card details by email.</li>
-        </ul>
-
-        <p><strong>Report issues:</strong> If you find a security problem, please contact us at security@celestial.example (replace with your real email) so we can investigate and respond promptly.</p>
-
-        <p><em>Note:</em> This summary describes our approach but is not a guarantee. No system is 100% secure.</p>
-      </div>
+  </div>
+    <div id="privacy-modal" class="modal">
+    <div class="modal-content">
+      <a href="#!" class="close">×</a>
+      <h2>Privacy Policy</h2>
+      <p>No personal data is collected in this project. Any email inputs (e.g., in forms) are purely for demonstration and do not send or store real data.</p>
+      <p>This project is meant only to show functionality and interface design for learning purposes.</p>
     </div>
+  </div>
+
+  <div id="security-modal" class="modal">
+    <div class="modal-content">
+      <a href="#!" class="close">×</a>
+      <h2>Security</h2>
+
+      <p>We take the security of your information seriously. This site uses HTTPS to protect data in transit and follows common industry practices to help keep your information safe.</p>
+
+      <h3>Payments</h3>
+      <p>Payments are processed by trusted, PCI-compliant third-party providers. We do not store full card numbers on our servers — only tokenized references where required by the payment provider.</p>
+
+      <h3>Account & Data</h3>
+      <p>We retain personal data only as needed to provide services. Sensitive data (like passwords) should be stored hashed on production systems, and access is limited to authorized personnel only.</p>
+
+      <h3>How You Can Help</h3>
+      <ul>
+        <li>Use a strong, unique password. Consider a password manager.</li>
+        <li>Enable two-factor authentication where available.</li>
+        <li>Don't share your credentials and log out from shared devices.</li>
+        <li>Beware of phishing — we will never ask for your password or full card details by email.</li>
+      </ul>
+
+      <p><strong>Report issues:</strong> If you find a security problem, please contact us at security@celestial.example (replace with your real email) so we can investigate and respond promptly.</p>
+
+      <p><em>Note:</em> This summary describes our approach but is not a guarantee. No system is 100% secure.</p>
+    </div>
+  </div>
 
 </body>
 </html>
