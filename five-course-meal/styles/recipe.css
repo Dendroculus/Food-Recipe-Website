@@ -1,12 +1,14 @@
 @font-face {
   font-family: 'Montserrat';
   src: url('/fonts/Montserrat/static/Montserrat-Regular.ttf') format('woff2');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Playwrite';
   src: url('/fonts/Playwrite_DE_SAS/static/PlaywriteDESAS-Regular.ttf') format('woff2');
-  font-weight: bold;
+  font-weight: 400; 
+  font-display: swap;
 }
 
 * {
@@ -38,6 +40,7 @@ html {
 body {
     color: #333;
     line-height: 1.6;
+    overflow: hidden;
 }
 
 main {
@@ -142,7 +145,7 @@ h1 {
 
 .main-content {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 3fr 5fr 1fr;
     gap: 1rem;
 }
 
@@ -322,9 +325,7 @@ h1 {
     cursor: pointer;
     transition: all 0.3s ease;
     text-align: center;
-    flex: 1;
     text-decoration: none;
-    min-width: 0;
 }
 
 .btn:hover {
@@ -352,7 +353,8 @@ h1 {
 .action-buttons {
     display: flex;
     gap: 1rem;
-    margin-top: 1.5rem;
+    margin-top: 0.5rem;
+    flex-direction: column;
 }
 
 .rating {
@@ -451,6 +453,7 @@ h1 {
         padding: 1rem 0;
         border-radius: 0;
         margin-bottom: 1rem;
+        margin-top: 0.8rem;
     }
 
     :is(.celestial-logo a, .celestial-logo a:visited) {
@@ -483,10 +486,10 @@ h1 {
     }
     
     .instructions-item::before {
-        width: 1.5rem;
-        height: 1.5rem;
-        top: 1rem;
-        font-size: 2rem;
+        width: 1rem;
+        height: 1rem;
+        top: 1.3rem;
+        font-size: 0.8rem;
     }
     
     .nutrition-grid {
@@ -523,8 +526,12 @@ h1 {
 
 @media (max-width: 360px) {
 
+    .recipe-header {
+        margin-top: 1rem;
+    }
+
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
     
     .recipe-meta {
@@ -534,15 +541,19 @@ h1 {
     .nutrition-grid {
         grid-template-columns: 1fr;
     }
+
+    .instructions-list {
+        list-style-position: inside;
+    }
     
     .instructions-item {
         padding: 0.8rem 0 0.8rem 2rem;
     }
     
     .instructions-item::before {
-        width: 1.2rem;
-        height: 1.2rem;
-        top: 0.8rem;
-        font-size: 0.7rem;
+        width: 1rem;
+        height: 1rem;
+        top: 1rem;
+        font-size: 0.8rem;
     }
 }

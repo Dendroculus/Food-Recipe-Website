@@ -1365,7 +1365,7 @@ main {
 
 .partners-link:hover { text-decoration: underline; }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
 
    .main-title {
         padding-top: 4rem;
@@ -1460,6 +1460,12 @@ main {
   }
 
   .recommended-section {
+        margin: 1rem 0.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+  .recommended-section {
       display: flex;
       justify-content: center;
   }
@@ -1516,6 +1522,12 @@ main {
     padding: 2rem;
   }
 
+}
+
+@media screen and (max-width: 1300px) {
+    .main-title {
+        padding-top: 7.5rem;
+    }
 }
 
 @media screen and (max-width: 960px) {
@@ -1699,6 +1711,12 @@ main {
         padding-top: 8rem;
         font-size: 2.5rem;
         margin-bottom: 2.5rem;
+    }
+
+    .recommended-section {
+        margin: 1rem 0.5rem;
+        display: flex;
+        flex-direction: column;
     }
 }
 
