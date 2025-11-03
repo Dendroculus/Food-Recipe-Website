@@ -8,7 +8,7 @@
   --color-text-muted: #7f8c8d;
   --color-heading: #007A70;
   --color-surface: #ffffff;
-  --color-surface-muted: rgba(255, 255, 255, 0.7);
+  --color-surface-muted: rgba(255, 255, 255, 0.85);
   --bg-grad-page: linear-gradient(174.2deg, rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4%);
   --shadow-1: 0 8px 32px rgba(0, 0, 0, 0.1);
   --shadow-2: 0 10px 20px rgba(0, 0, 0, 0.15);
@@ -72,13 +72,21 @@ main {
   content: '';
   position: absolute;
   bottom: -8px;
-  left: 0;
-  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 400px;
   height: 1rem;
   background-image: url("data:image/svg+xml,%3Csvg width='200' height='20' viewBox='0 0 200 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 15 Q 50 5, 90 15 Q 130 25, 170 15 Q 190 10, 190 15' stroke='%23007A70' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+}
+
+#home img {
+  width: 2rem;
+  height: 2rem;
+  padding-bottom: 0.1rem;
 }
 
 .head-title {
@@ -105,6 +113,10 @@ main {
 .dessert-summary-content img {
   border-radius: var(--radius-2);
   box-shadow: var(--shadow-1);
+  margin-bottom: 1.5rem;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .about-section-box {
@@ -118,7 +130,7 @@ main {
 
 .about-section-box p {
   font-size: 1.1rem;
-  line-height: 1.6;
+  line-height: 1.7;
   color: var(--color-text);
 }
 
@@ -128,25 +140,59 @@ main {
 
 .team-section-wrapper {
   margin: 3rem auto;
+  width: min(95%, 1200px);
 }
 
-.team-card-text {
+.team-member {
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: var(--radius-3);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.team-pfp img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  margin: 0 auto;
+  box-shadow: 0 8px 20px rgba(0, 122, 112, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.team-pfp img:hover {
+  transform: scale(1.05);
+}
+
+.team-info {
   padding: 1rem;
 }
 
-.team-info .team-role {
-  color: black;
-  font-weight: 600;
+.team-info .team-name {
+  color: var(--color-brand);
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
 }
 
-.team-info .team-name {
-  color: black;
-  font-weight: 700;
+.team-info .team-role {
+  color: var(--color-brand-3);
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-style: italic;
 }
 
 .team-info .team-bio {
-  color: black;
-  line-height: 1.6;
+  color: #444;
+  line-height: 1.7;
+  font-size: 1.05rem;
 }
 
 .contact-section-box {
@@ -172,15 +218,22 @@ main {
 .contact-section-box .cta-button {
   padding: 0.8rem 1.5rem;
   text-decoration: none;
+  font-size: 0.95rem;
 }
 
 .contact-section-box .contact-email-text {
   margin-top: 1.5rem;
+  font-size: 1.05rem;
 }
 
 .contact-section-box .contact-email-link {
   color: var(--color-brand);
   text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-section-box .contact-email-link:hover {
+  text-decoration: underline;
 }
 
 .cta-button {
@@ -633,54 +686,58 @@ main {
 
 @media (max-width: 1300px) {
   .main-title {
-    padding-top: 4rem;
-    font-size: 2.5rem;
+    padding-top: 5rem;
+    font-size: 2.8rem;
     margin-bottom: 2.5rem;
   }
   .dessert-summary-content {
-    padding: 2.5rem 3rem;
-    margin-bottom: 3rem;
-    border-radius: 16px;
-    background: var(--color-surface-muted);
-    max-width: 90%;
+    padding: 2.5rem 2rem;
+    margin-bottom: 2.5rem;
+    border-radius: 20px;
+    max-width: 92%;
     margin-left: auto;
     margin-right: auto;
+  }
+  .team-member {
+    padding: 1.2rem;
   }
 }
 
 @media (max-width: 960px) {
   .main-title {
-    padding-top: 4rem;
+    padding-top: 5rem;
     font-size: 2.5rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
   }
   .dessert-summary-content {
-    padding: 2.5rem 3rem;
-    margin-bottom: 3rem;
-    border-radius: 16px;
-    background: var(--color-surface-muted);
-    max-width: 90%;
+    padding: 2rem 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 18px;
+    max-width: 94%;
     margin-inline: auto;
   }
   .about-section-box p {
-    font-size: 1.1rem;
-    line-height: 1.7;
+    font-size: 1.05rem;
+    line-height: 1.65;
+  }
+  .team-info .team-name {
+    font-size: 1.6rem;
   }
 }
 
 @media (max-width: 912px) {
   .main-title {
-    padding-top: 8.5rem;
-    font-size: 2.5rem;
-    margin-bottom: 2.5rem;
+    padding-top: 7rem;
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
   }
 }
 
 @media (max-width: 820px) {
   .main-title {
-    padding-top: 8rem;
-    font-size: 2.5rem;
-    margin-bottom: 2.5rem;
+    padding-top: 6.5rem;
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -688,59 +745,233 @@ main {
   body {
     overflow-x: hidden;
   }
+  
   .main-title {
-    padding-top: 6.5rem;
-    font-size: 2.5rem;
-    margin-bottom: 2.5rem;
+    padding-top: 6rem;
+    font-size: 2.2rem;
+    margin-bottom: 1.8rem;
   }
+  
   .dessert-summary-content {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem 1rem;
+    border-radius: 16px;
+  }
+  
+  .dessert-summary-content img {
+    margin-bottom: 1rem;
+    border-radius: 12px;
+  }
+  
+  .head-title {
+    font-size: 2rem;
+    padding-top: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-section-box {
+    width: 94%;
+    margin: 1.2rem auto;
+  }
+  
+  .about-section-box p {
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+  
+  .team-section-wrapper {
+    margin: 2rem auto;
+    width: 96%;
+  }
+  
+  .team-member {
     margin-bottom: 2rem;
     padding: 1.5rem 1rem;
+    border-radius: 16px;
   }
-  .cta-button {
-    width: 100%;
-    justify-content: center;
-    padding: 0.9rem 1.5rem;
+  
+  .team-pfp img {
+    width: 140px;
+    height: 140px;
+    margin-bottom: 1rem;
+  }
+  
+  .team-info {
+    padding: 0.5rem;
+  }
+  
+  .team-info .team-name {
+    font-size: 1.5rem;
+    margin-bottom: 0.4rem;
+  }
+  
+  .team-info .team-role {
     font-size: 1rem;
+    margin-bottom: 0.8rem;
   }
-  .head-title {
-    font-size: 2.5rem;
+  
+  .team-info .team-bio {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  .contact-section-box {
+    margin: 2.5rem auto;
+  }
+  
+  .contact-section-box .head-title {
+    font-size: 2rem;
+  }
+  
+  .contact-section-box .social-links {
+    gap: 0.6rem;
+    margin: 1.2rem 0;
+  }
+  
+  .cta-button {
+    padding: 0.75rem 1.2rem;
+    font-size: 0.9rem;
+  }
+  
+  .contact-section-box .contact-email-text {
+    font-size: 0.95rem;
+    padding: 0 0.5rem;
+  }
+  
+  .footer-policy-links {
+    gap: 1.2rem;
+  }
+  
+  .cookie-modal {
+    width: 100vw;
+    max-height: 100vh;
+    border-radius: 0;
+    padding: 1rem;
   }
 }
 
 @media (max-width: 480px) {
   .main-title {
-    padding-top: 6.5rem;
+    padding-top: 5.5rem;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
   }
-  .section-title {
-    font-size: 3rem;
+  
+  .main-title::after {
+    width: 90%;
+    height: 0.8rem;
   }
+  
   .dessert-summary-content {
     padding: 1.2rem 0.8rem;
+    margin-bottom: 1.2rem;
+    border-radius: 14px;
+  }
+  
+  .dessert-summary-content img {
+    border-radius: 10px;
+    margin-bottom: 0.8rem;
+  }
+  
+  .head-title {
+    font-size: 1.6rem;
+    padding-top: 1rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .about-section-box {
+    width: 96%;
+  }
+  
+  .about-section-box p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  .team-section-wrapper {
+    width: 98%;
+  }
+  
+  .team-member {
     margin-bottom: 1.5rem;
-    max-width: 100%;
-    max-height: 20rem;
+    padding: 1.2rem 0.8rem;
+    border-radius: 14px;
   }
-  .cta-button {
-    padding: 0.8rem 1.2rem;
+  
+  .team-pfp img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 0.8rem;
+  }
+  
+  .team-info .team-name {
+    font-size: 1.3rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .team-info .team-role {
     font-size: 0.9rem;
-    width: 80%;
+    margin-bottom: 0.6rem;
   }
+  
+  .team-info .team-bio {
+    font-size: 0.9rem;
+    line-height: 1.55;
+  }
+  
+  .contact-section-box {
+    margin: 2rem auto;
+  }
+  
+  .contact-section-box .head-title {
+    font-size: 1.6rem;
+  }
+  
+  .contact-section-box .social-links {
+    gap: 0.5rem;
+  }
+  
+  .cta-button {
+    padding: 0.65rem 1rem;
+    font-size: 0.85rem;
+  }
+  
+  .contact-section-box .contact-email-text {
+    font-size: 0.9rem;
+  }
+  
   .footer-title {
-    font-size: 1.25rem;
+    font-size: 1.8rem;
   }
+  
   .socials-logo img {
-    width: 2rem;
+    width: 2.2rem;
   }
+  
+  .footer-policy-links {
+    gap: 0.8rem;
+  }
+  
   .footer-policy-links a {
     font-size: 0.8rem;
   }
-  .about-section-box .head-title {
-    font-size: 2rem;
-    margin-top: 0.25rem;
+}
+
+@media (max-width: 375px) {
+  .main-title {
+    font-size: 1.6rem;
+    padding-top: 5rem;
   }
-  .about-section-box p {
-    font-size: 1rem;
-    line-height: 1.55;
+  
+  .head-title {
+    font-size: 1.4rem;
+  }
+  
+  .team-info .team-name {
+    font-size: 1.2rem;
+  }
+  
+  .team-info .team-bio {
+    font-size: 0.85rem;
   }
 }
