@@ -625,6 +625,9 @@ main h1 {
     display: none;
     position: fixed;
     top: var(--nav-mobile-h);
+    max-height: 28vh;
+    max-width: 30vh;
+    border-radius: 1.5rem;
     left: 0;
     right: 0;
     bottom: 0;
@@ -741,7 +744,7 @@ main h1 {
 }
 
 .socials-logo img:hover {
-  transform: translateY(-0.3rem);
+  transform: translateY(-0.4rem);
 }
 
 .socials-logo a {
