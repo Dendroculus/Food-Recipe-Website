@@ -494,12 +494,68 @@ body {
   max-height: 80vh;
 }
 
+#shopping-modal .modal-content {
+  max-height: 100vh;
+}
+
+.shop-contents {
+  display: flex;
+  align-items: center;
+  gap: 2rem; 
+  margin: 0.5rem;
+  text-decoration: none;
+}
+
+.shop-contents:hover {
+  background-color: #f0f6f6;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 191, 165, 0.35);
+  cursor: pointer;
+  transform: translateY(-0.125rem);
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.shop-contents:hover .shop-modal-pfps {
+  animation: spin 4s linear infinite;
+}
+
+
+#shopping-modal .shop-contents p {
+  font-size: 1.15rem;
+  color: #007A70;
+  font-weight: 600;
+}
+
+.shop-modal-pfps {
+  width: 7rem;
+  height: 7rem;           
+  overflow: hidden;       
+  border-radius: 5rem; 
+  border: 1px solid black;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.5); 
+  display: inline-block; 
+}
+
+.shop-modal-pfps img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;       
+  display: block;
+}
+
+.shop-contents p {
+  text-align: center;
+  font-weight: 550;
+  color: black;
+}
+
 .modal-content h2 { margin-bottom: 0.75rem; }
 .modal-content p { line-height: 1.5; }
-@keyframes pop {
-  from { transform: scale(0.96); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
-}
+
 .close {
   position: absolute;
   top: 0.75rem;
@@ -509,86 +565,3 @@ body {
   color: #333;
 }
 .close:hover { color: #000; transform: scale(1.2); }
-
-
-@media (max-width: 768px) {
-  body {
-    padding: 1rem 0.5rem;
-  }
-
-  .payment-box {
-    padding: 1.5rem;
-    border-radius: 1.25rem;
-  }
-
-  .payment-header h1 {
-    font-size: 1.75rem;
-  }
-
-  .back-link {
-    position: static;
-    display: inline-block;
-    margin-bottom: 1rem;
-  }
-
-  .form-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .cart-item {
-    grid-template-columns: 4rem 1fr;
-    grid-template-rows: auto auto;
-  }
-
-  .cart-item-image {
-    width: 4rem;
-    height: 4rem;
-  }
-
-  .cart-item-price {
-    grid-column: 2;
-    justify-content: flex-start;
-    padding-top: 0.5rem;
-  }
-
-  .form-actions {
-    flex-direction: column-reverse;
-  }
-
-  .btn-primary,
-  .btn-secondary {
-    width: 100%;
-  }
-
-  .footer-links {
-    gap: 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .payment-header h1 {
-    font-size: 1.5rem;
-  }
-
-  .subtitle {
-    font-size: 0.9rem;
-  }
-
-  .empty-cart-icon {
-    font-size: 3rem;
-  }
-
-  .empty-cart-message {
-    font-size: 1.1rem;
-  }
-
-  .payment-logos {
-    flex-direction: column;
-  }
-
-  .payment-logo {
-    text-align: center;
-  }
-}
-
-
