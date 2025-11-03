@@ -626,7 +626,7 @@ main h1 {
     position: fixed;
     top: var(--nav-mobile-h);
     max-height: 28vh;
-    max-width: 30vh;
+    max-width: 48vh;
     border-radius: 1.5rem;
     left: 0;
     right: 0;
