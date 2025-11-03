@@ -1,122 +1,511 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Our Recipe Book</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    crossorigin="anonymous"
+  />
+  
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../styles.css">
+  <title>About Us - Celestial Recipe Book</title>
 </head>
+
 <body>
-    
-    <header class="header-navigation">
-        <nav class="main-nav">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Account</a></li>
+  <nav class="navtop container-fluid">
+    <ul class="list-unstyled">
+      <li class="left">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" hidden />
+        <label for="menu-toggle" class="menu-button" title="Menu">☰</label>
+        <div id="primary-nav" class="nav-left">
+          <div class="dropdown-container">
+            <a href="#" class="recipes-link">RECIPES</a>
+            <ul class="navtop-dropdown">
+              <li>
+                <a href="../five-course-meal/main-page-html/main-course.html">
+                  <img class="img-fluid" src="../assets/main_course/main_course_pfp.jpg" alt="Main course" loading="lazy" />
+                  <span>Main Course</span>
+                </a>
+              </li>
+              <li>
+                <a href="../five-course-meal/main-page-html/appetizer.html">
+                  <img class="img-fluid" src="../assets/appetizers/appetizers_pfp.jpg" alt="Appetizers" loading="lazy" />
+                  <span>Appetizers</span>
+                </a>
+              </li>
+              <li>
+                <a href="../five-course-meal/main-page-html/salad.html">
+                  <img class="img-fluid" src="../assets/salad/salad_pfp.jpg" alt="Salad" loading="lazy" />
+                  <span>Salad</span>
+                </a>
+              </li>
+              <li>
+                <a href="../five-course-meal/main-page-html/dessert.html">
+                  <img class="img-fluid" src="../assets/desserts/desserts_pfp.jpg" alt="Desserts" loading="lazy" />
+                  <span>Desserts</span>
+                </a>
+              </li>
             </ul>
-        </nav>
-    </header>  
+          </div>
+          <div class="dropdown-container">
+            <a href="#">INSPIRATION</a>
+            <ul class="navtop-dropdown">
+              <li>
+                <a href="#">
+                  <img class="img-fluid" src="../assets/inspiration/stellar_tips_pfp.jpg" alt="Stellar Tips" loading="lazy" />
+                  <span>Stellar Tips</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="img-fluid" src="../assets/inspiration/seasonal_constellation_pfp.png" alt="Seasonal Constellations" loading="lazy" />
+                  <span>Seasonal Constellations</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="img-fluid" src="../assets/inspiration/kitchen_universe_pfp.png" alt="Kitchen Universe" loading="lazy" />
+                  <span>Kitchen Universe</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="img-fluid" src="../assets/inspiration/guiding_stars_pfp.png" alt="Guiding Stars" loading="lazy" />
+                  <span>Guiding Stars</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img class="img-fluid" src="../assets/inspiration/orbit_of_flavors_pfp.png" alt="Orbit Of Flavors" loading="lazy" />
+                  <span>Orbit Of Flavors</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown-container">
+            <a href="#">SHOP</a>
+            <ul class="navtop-dropdown">
+              <li>
+                <a href="../shop/ingredients_shop.html">
+                  <img class="img-fluid" src="../assets/shop/Ingredients/ingredients_pfp.jpg" alt="Main course" loading="lazy" />
+                  <span>Cooking Ingredients</span>
+                </a>
+              </li>
+              <li>
+                <a href="../shop/kitchen_tools.html">
+                  <img class="img-fluid" src="../assets/shop/Kitchen Tools/kitchen_tools_pfp.jpg" alt="Kitchen Tools" loading="lazy" />
+                  <span>Kitchen Tools</span>
+                </a>
+              </li>
+              <li>
+                <a href="../shop/recipe_themed_merch.html">
+                  <img class="img-fluid" src="../assets/shop/Recipe Themed/recipe_themed_merch_pfp.png" alt="Recipe Themed Merch" loading="lazy" />
+                  <span>Recipe Themed Merch</span>
+                </a>
+              </li>
+              <li>
+                <a href="../shop/digital_products.html">
+                  <img class="img-fluid" src="../assets/shop/Digital Products/digital_products_pfp.PNG" alt="Digital Products" loading="lazy" />
+                  <span>Digital Products</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown-container">
+            <a href="about-us.html">ABOUT US</a>
+              <ul class="navtop-dropdown">
+                <li>
+                  <a href="#our-story">
+                    <img class="img-fluid" src="../assets/about us/about_us_pfp.png" alt="Our Story" loading="lazy" />
+                    <span>Our Story</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#meet-the-team">
+                    <img class="img-fluid" src="../assets/about us/meet_the_team_pfp.png" alt="Meet the Team" loading="lazy" />
+                    <span>Meet the Team</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#our-mission">
+                    <img class="img-fluid" src="../assets/about us/our_mission_pfp.png" alt="Our Mission" loading="lazy" />
+                    <span>Our Mission</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#contact-us">
+                    <img class="img-fluid" src="../assets/about us/contact_us_pfp.png" alt="Contact Us" loading="lazy" />
+                    <span>Contact Us</span>
+                  </a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="celestial">
+        <a href="index.html">CELESTIAL <span class="emoji">💫</span></a>
+      </li>
+      <li class="right">
+        <a href="../forms/index.html"><img class="img-fluid" src="../assets/icons/user.png" alt="user" width="32" height="32" /></a>
+        <a href="../payment/payment.html"><img class="img-fluid" src="../assets/icons/shopping_cart.png" alt="shopping bag" width="32" height="32" /></a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1 class="main-title">About Us</h1>
     
-    <main>
-        
-        <h1 class="main-title">About Us</h1>
-        
-        <section class="dessert-summary-content about-section-box">
-            <img src="chef.jpg">
-            <h2 class="head-title">Our Story</h2>
-            
-            <p>Our story begins not in a fancy professional kitchen, but at a humble kitchen table, cluttered with flour and filled with laughter. It all began with our love for one simple thing: the power of food to bring people together. We were friends who started out simply sharing recipes via text message and gathering on weekends to try new dishes.</p>
-
-        <section class="our-team team-section-wrapper">
-            <h2 class="head-title">Meet the Team</h2>
-            
-            <div class="recipe-section">
-        
-                <div class="card">
-                    <div class="card-image">
-                        <img src="" alt="Jessica Gunawan">
-                    </div>
-                    <div class="team-card-text">
-                        <a>Jessica Gunawan</a>
-                        <p>Founder & Head Chef</p>
-                        <p class="team-card-description">With 15 years of professional kitchen experience, Jane is the creative force behind our recipes, focusing on seasonal ingredients and bold flavors.</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-image">
-                        <img src="" alt="Hans Valerie">
-                    </div>
-                    <div class="team-card-text">
-                        <a>Hans Valerie</a>
-                        <p>Pastry Expert & Photographer</p>
-                        <p class="team-card-description">Mark makes all our baking dreams come true. He's also the eye behind the camera, making every dish look as delicious as it tastes.</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-image">
-                        <img src="" alt="Kindy Lim">
-                    </div>
-                    <div class="team-card-text">
-                        <a>Kindy Lim</a>
-                        <p>Recipe Tester & Community Manager</p>
-                        <p class="team-card-description">Alex ensures every recipe is foolproof and delicious. They also love connecting with our amazing community of home cooks!</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-image">
-                        <img src="" alt="Edbert Chandra">
-                    </div>
-                    <div class="team-card-text">
-                        <a>Edbert Chandra</a>
-                        <p>Recipe Tester & Community Manager</p>
-                        <p class="team-card-description">Alex ensures every recipe is foolproof and delicious. They also love connecting with our amazing community of home cooks!</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="card-image">
-                        <img src="" alt="Steven Lienardi">
-                    </div>
-                    <div class="team-card-text">
-                        <a>Steven Lienardi</a>
-                        <p>Recipe Tester & Community Manager</p>
-                        <p class="team-card-description">Alex ensures every recipe is foolproof and delicious. They also love connecting with our amazing community of home cooks!</p>
-                    </div>
-                </div>
-                
+    <section class="about-section-box" id="our-story">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="dessert-summary-content text-center">
+              <img 
+                src="../assets/bg-image/cooking-bg.jpg" 
+                alt="Chef preparing dishes in a warm kitchen" 
+                loading="lazy" 
+              />
+              <h2 class="head-title">Our Story</h2>
+              <p>
+                Our story begins not in a fancy professional kitchen, but at a humble kitchen table, cluttered with flour and filled with laughter. It all started on a rainy Saturday afternoon when five friends gathered to bake bread together. What began as a simple hobby soon turned into a passionate journey to bring people together through the universal language of food.
+              </p>
+              <p>
+                We quickly realized that cooking isn't just about following recipes—it's about creating memories, sharing culture, and building connections. From those early weekend gatherings, we started sharing our favorite recipes via text message and hosting monthly cooking nights. Before we knew it, our little group had grown into a vibrant community of home cooks, professional chefs, and food enthusiasts from all walks of life.
+              </p>
+              <p>
+                Today, Celestial Recipe Book is the culmination of countless hours spent perfecting recipes, testing techniques, and listening to what our community loves. We believe that everyone deserves access to delicious, reliable, and inspiring recipes—whether you're cooking your first meal or your thousandth. Our mission is simple: to make cooking joyful, accessible, and a little bit magical for everyone.
+              </p>
             </div>
-        </section>
-        
-        <section class="dessert-summary-content about-section-box">
-            <h2 class="head-title">Our Mission</h2>
-            
-            <p>Welcome to <strong>Celestial Recipe Book</strong>! We believe that cooking should be a joyful, creative, and accessible experience for everyone. Our mission is to share delicious, reliable, and inspiring recipes that empower you to create amazing meals in your own kitchen, whether you're a seasoned chef or just starting out.</p>
-            <p>We're passionate about fresh ingredients, simple techniques, and the magic that happens when people come together over a good meal. From quick weeknight dinners to elaborate holiday feasts, we're here to guide you every step of the way.</p>
-        </section>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="team-section-wrapper" id="meet-the-team">
+      <div class="container">
+        <h2 class="head-title">Meet the Team</h2>
+        <div class="row align-items-center team-member mb-5">
+          <div class="col-md-4 text-center">
+            <div class="team-pfp">
+              <img src="https://avatars.githubusercontent.com/u/167067576?v=4" alt="Jessica Gunawan" class="img-fluid rounded-circle" loading="lazy" />
+            </div>
+          </div>
 
-        <section class="dessert-summary-content about-section-box contact-section-box">
-            <h3 class="head-title">Contact Us</h3>
-            <p>Get daily inspiration and updates from our kitchen!</p>
-            
-            <ul class="social-links">
-                <li><a href="#" class="cta-button">Github</a></li>
-                <li><a href="#" class="cta-button">Instagram</a></li>
-                <li><a href="#" class="cta-button">Facebook</a></li>
-                <li><a href="#" class="cta-button">X</a></li>
-                <li><a href="#" class="cta-button">Linked in</a></li>
+          <div class="col-md-8">
+            <div class="team-info">
+              <h3 class="team-name">Jessica Gunawan</h3>
+              <p class="team-role">Founder &amp; Head Chef</p>
+              <p class="team-bio">
+                With 15 years of professional kitchen experience spanning Michelin-starred restaurants and cozy neighborhood bistros, Jessica is the creative force behind our recipes. She has a special talent for taking complex culinary techniques and making them approachable for home cooks. Jessica's passion lies in seasonal ingredients and bold, unexpected flavor combinations that elevate everyday meals into memorable experiences. When she's not in the kitchen, you'll find her at local farmers' markets or teaching cooking classes to aspiring chefs.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center team-member flex-md-row-reverse mb-5">
+          <div class="col-md-4 text-center">
+            <div class="team-pfp">
+              <img src="https://avatars.githubusercontent.com/u/224712928?v=4" alt="Hans Valerie" class="img-fluid rounded-circle" loading="lazy" />
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="team-info text-md-end">
+              <h3 class="team-name">Hans Valerie</h3>
+              <p class="team-role">Pastry Expert &amp; Photographer</p>
+              <p class="team-bio">
+                Hans is a master pastry chef trained in Paris and Tokyo, bringing a unique blend of French precision and Japanese artistry to our desserts. Beyond his incredible baking skills, Hans is the eye behind every beautiful food photograph you see on our site. He believes that we eat with our eyes first, and his stunning imagery makes every dish look as delicious as it tastes. Hans has a special gift for transforming simple ingredients into elegant desserts that both look and taste extraordinary. His mantra: "Baking is science, but presentation is art."
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center team-member mb-5">
+          <div class="col-md-4 text-center">
+            <div class="team-pfp">
+              <img src="https://avatars.githubusercontent.com/u/230555205?v=4" alt="Kindy Lim" class="img-fluid rounded-circle" loading="lazy" />
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="team-info">
+              <h3 class="team-name">Kindy Lim</h3>
+              <p class="team-role">Recipe Tester &amp; Community Manager</p>
+              <p class="team-bio">
+                Kindy is the heart and soul of our community. As our lead recipe tester, they ensure every single recipe works flawlessly in real home kitchens—not just professional test kitchens. Kindy tests each recipe at least three times using everyday equipment and ingredients you can find at your local grocery store. Beyond testing, Kindy manages our thriving online community, responding to questions, sharing cooking tips, and celebrating our members' culinary victories. They have an incredible knack for making everyone feel welcome and supported in their cooking journey, no matter their skill level.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center team-member flex-md-row-reverse mb-5">
+          <div class="col-md-4 text-center">
+            <div class="team-pfp">
+              <img src="https://avatars.githubusercontent.com/u/160008363?v=4" alt="Edbert Chandra" class="img-fluid rounded-circle" loading="lazy" />
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="team-info text-md-end">
+              <h3 class="team-name">Edbert Chandra</h3>
+              <p class="team-role">Content Strategist &amp; Food Writer</p>
+              <p class="team-bio">
+                Edbert is a storyteller at heart who believes every recipe has a narrative worth sharing. With a background in cultural anthropology and food journalism, he crafts compelling stories around food traditions, ingredient origins, and the cultural significance of dishes from around the world. Edbert's writing brings recipes to life by connecting them to the people, places, and histories that make them special. He's passionate about preserving culinary heritage while exploring innovative ways to adapt traditional recipes for modern kitchens and diverse dietary needs.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center team-member mb-5">
+          <div class="col-md-4 text-center">
+            <div class="team-pfp">
+              <img src="https://avatars.githubusercontent.com/u/235623182?v=4" alt="Steven Lienardi" class="img-fluid rounded-circle" loading="lazy" />
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="team-info">
+              <h3 class="team-name">Steven Lienardi</h3>
+              <p class="team-role">Culinary Consultant &amp; Innovation Lead</p>
+              <p class="team-bio">
+                Steven brings global flavors and cutting-edge techniques to our kitchen. With experience in molecular gastronomy, plant-based cuisine, and traditional cooking methods from six continents, Steven constantly pushes the boundaries of what's possible in a home kitchen. He specializes in adapting professional techniques for home cooks and developing innovative twists on classic recipes. Steven is also deeply committed to sustainable cooking practices and helps us source eco-friendly ingredients and minimize food waste. His motto: "Tradition is important, but innovation keeps cooking exciting."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section-box" id="our-mission">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="dessert-summary-content text-center">
+              <h2 class="head-title">Our Mission</h2>
+              <p>
+                Welcome to <strong>Celestial Recipe Book</strong>! We believe that cooking should be a joyful, creative, and accessible experience for everyone—from complete beginners taking their first steps in the kitchen to experienced home cooks looking for new inspiration. Our mission is to share delicious, reliable, and inspiring recipes that empower you to create amazing meals in your own kitchen, regardless of your skill level or the equipment you have available.
+              </p>
+              <p>
+                We're passionate about fresh, seasonal ingredients and believe that the best meals start with quality produce. But we also understand that cooking is about more than just ingredients—it's about the techniques you use, the love you put into your food, and the memories you create around the table. That's why we focus on teaching simple, foundational techniques that unlock a world of culinary possibilities, while also celebrating the magic that happens when people come together over a good meal.
+              </p>
+              <p>
+                From quick weeknight dinners that get food on the table in 30 minutes to elaborate holiday feasts that bring the whole family together, we're here to guide you every step of the way. We test every recipe multiple times, provide clear step-by-step instructions, and offer helpful tips and variations so you can make each dish your own. Our goal is to build your confidence in the kitchen and inspire you to experiment, explore new flavors, and discover the joy of cooking for yourself and the people you love.
+              </p>
+              <p>
+                We also believe in building a supportive, inclusive community where home cooks can learn from each other, share their successes (and occasional kitchen disasters!), and celebrate the universal language of food. Whether you're here to master the basics, explore new cuisines, or simply find tonight's dinner inspiration, we're honored to be part of your culinary journey. Welcome to our kitchen—let's cook something amazing together!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section-box contact-section-box" id="contact-us">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="dessert-summary-content text-center">
+              <h3 class="head-title">Contact Us</h3>
+              <p>Get daily inspiration, exclusive recipes, and cooking tips delivered straight to your inbox! Follow us on social media to join our vibrant community of food lovers.</p>
+
+              <ul class="social-links list-unstyled d-flex flex-wrap justify-content-center">
+                <li><a href="https://github.com/Dendroculus/Food-Recipe-Website" class="cta-button" rel="noopener noreferrer" target="_blank">Github</a></li>
+                <li><a href="https://instagram.com" class="cta-button" rel="noopener noreferrer" target="_blank">Instagram</a></li>
+                <li><a href="https://facebook.com" class="cta-button" rel="noopener noreferrer" target="_blank">Facebook</a></li>
+                <li><a href="https://x.com" class="cta-button" rel="noopener noreferrer" target="_blank">X</a></li>
+                <li><a href="https://linkedin.com" class="cta-button" rel="noopener noreferrer" target="_blank">LinkedIn</a></li>
+              </ul>
+
+              <p class="contact-email-text">
+                For partnerships, media inquiries, or just to say hello, email us at:
+                <a href="mailto:hello@celestialrecipes.com" class="contact-email-link">hello@celestialrecipes.com</a>
+              </p>
+              <p class="contact-email-text mt-3">
+                We read every message and typically respond within 48 hours. We'd love to hear from you!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <h1 class="footer-title">Socials</h1>
+    <div class="socials-logo">
+      <a href="https://github.com/Dendroculus/Food-Recipe-Website"><img class="img-fluid" src="../assets/logo/Github.png" alt="Github" /></a>
+      <a href="https://www.instagram.com/"><img class="img-fluid" src="../assets/logo/Instagram.png" alt="Instagram" /></a>
+      <a href="https://www.facebook.com/"><img class="img-fluid Facebook" src="../assets/logo/Facebook.png" alt="Facebook" /></a>
+      <a href="https://twitter.com/"><img class="img-fluid" src="../assets/logo/X.png" alt="X" /></a>
+      <a href="https://www.linkedin.com/"><img class="img-fluid" src="../assets/logo/LinkedIn.jpg" alt="LinkedIn"></a>
+    </div>
+    <nav class="footer-policy-links">
+      <a href="#terms-modal">Terms of Use</a>
+      <a href="#privacy-modal">Privacy Policy</a>
+      <a href="#cookies-modal">Cookies</a>
+      <a href="#disclaimer-modal">Disclaimer</a>
+    </nav>
+    <p class="footer-note">© 2024 Celestial. All rights reserved.</p>
+  </footer>
+
+  <div id="terms-modal" class="modal">
+    <div class="modal-content">
+      <a href="#!" class="close">×</a>
+      <h2>Terms of Use</h2>
+      <p>This project is created for educational purposes only. All content, images, and code included are for study and demonstration.</p>
+      <p>Images used in this project are sourced randomly for learning purposes and are not intended for redistribution or commercial use.</p>
+      <p>The code is released under the MIT License. You are free to study, modify, and use it for personal learning or academic projects.</p>
+    </div>
+  </div>
+
+  <div id="privacy-modal" class="modal">
+    <div class="modal-content">
+      <a href="#!" class="close">×</a>
+      <h2>Privacy Policy</h2>
+      <p>No personal data is collected in this project. Any email inputs (e.g., in forms) are purely for demonstration and do not send or store real data.</p>
+      <p>This project is meant only to show functionality and interface design for learning purposes.</p>
+    </div>
+  </div>
+
+  <div id="cookies-modal" class="modal">
+    <div class="modal-content">
+      <a href="#!" class="close">×</a>
+      <h2>Cookies</h2>
+      <p>This project does not use cookies. Any references to cookies are for interface demonstration purposes only.</p>
+      <button class="accept btn">ACCEPT ALL</button>
+      <button class="reject btn">REJECT ALL</button>
+      <a href="#customize-modal" class="customize btn">CUSTOMIZE COOKIES</a>
+    </div>
+  </div>
+
+  <div id="customize-modal" class="modal">
+    <div class="modal-content cookie-modal">
+      <a href="#!" class="close" aria-label="Close">×</a>
+
+      <header class="cookie-header">
+        <h2>Manage Cookie Preferences</h2>
+        <p class="cookie-intro">
+          We use cookies and similar technologies to deliver, maintain, and improve our services, and to provide a personalised web experience.
+          You can review how this information is used and customise your preferences below. You may change your choices at any time as
+          described in our <a href="#privacy-modal">Privacy Policy</a>.
+        </p>
+        <nav class="cookie-actions-top">
+          <a href="#!" class="ghost-action">Reject all</a>
+          <a href="#!" class="ghost-action">Accept all</a>
+        </nav>
+      </header>
+
+      <div class="cookie-body">
+        <section class="cookie-group">
+          <details open>
+            <summary>
+              <div class="sum-text">
+                <div class="title">Essential cookies</div>
+                <div class="desc">Required for the website to function. This includes security, network management, and accessibility.</div>
+              </div>
+              <span class="badge locked">Required</span>
+            </summary>
+            <ul class="list">
+              <li>Load balancing and session management</li>
+              <li>Fraud prevention and security</li>
+              <li>Basic preferences like language</li>
             </ul>
-            
-            <p class="contact-email-text">For partnerships, email us at: <a href="AAAAAA@ourrecipebook.com" class="contact-email-link">AAAAAAA@ourrecipebook.com</a></p>
-        </section>
-    </main>
+          </details>
 
-    <footer class="main-footer">
-        <p class="footer-note">&copy; Celestial 2025. All Rights Reserved.</p>
-    </footer>
+          <details>
+            <summary>
+              <div class="sum-text">
+                <div class="title">Analytics cookies</div>
+                <div class="desc">Help us understand site usage so we can improve recipes and features.</div>
+              </div>
+              <label class="switch" aria-label="Toggle analytics cookies">
+                <input type="checkbox" />
+                <span class="track"></span>
+                <span class="switch-text" aria-hidden="true"></span>
+              </label>
+            </summary>
+            <ul class="list">
+              <li>Aggregate traffic insights (pages visited, time on page)</li>
+              <li>Error tracking to fix broken pages</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>
+              <div class="sum-text">
+                <div class="title">Preference cookies</div>
+                <div class="desc">Remember your choices like theme, language, or favourite recipes.</div>
+              </div>
+              <label class="switch" aria-label="Toggle preference cookies">
+                <input type="checkbox" checked />
+                <span class="track"></span>
+                <span class="switch-text" aria-hidden="true"></span>
+              </label>
+            </summary>
+            <ul class="list">
+              <li>Stores display preferences (e.g., dark mode)</li>
+              <li>Keeps items saved to your recipe list</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>
+              <div class="sum-text">
+                <div class="title">Marketing cookies</div>
+                <div class="desc">Used to show you relevant content and offers based on your interests.</div>
+              </div>
+              <label class="switch" aria-label="Toggle marketing cookies">
+                <input type="checkbox" />
+                <span class="track"></span>
+                <span class="switch-text" aria-hidden="true"></span>
+              </label>
+            </summary>
+            <ul class="list">
+              <li>Limits how often you see the same promo</li>
+              <li>Measures campaign performance</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>
+              <div class="sum-text">
+                <div class="title">Precise geolocation data, and identification through device scanning</div>
+                <div class="desc">Allow us to use accurate location and device signals to deliver localised content.</div>
+              </div>
+              <label class="switch" aria-label="Toggle precise geolocation">
+                <input type="checkbox" />
+                <span class="track"></span>
+                <span class="switch-text" aria-hidden="true"></span>
+              </label>
+            </summary>
+            <ul class="list">
+              <li>Use exact location to tailor nearby seasonal ingredients</li>
+              <li>Identify device characteristics for fraud prevention</li>
+            </ul>
+          </details>
+        </section>
+
+        <a href="#!" class="partners-link">Partners</a>
+      </div>
+
+      <footer class="cookie-footer">
+        <small class="legal">
+          You can update your choices at any time. See our <a href="#privacy-modal">Privacy Policy</a> and <a href="#cookies-modal">Cookies</a>.
+        </small>
+        <a href="#!" class="btn-cta">Save &amp; Exit</a>
+      </footer>
+    </div>
+  </div>
+
+  <div id="disclaimer-modal" class="modal">
+    <div class="modal-content">
+      <a href="#!" class="close">×</a>
+      <h2>Disclaimer</h2>
+      <p>This website and its cookie settings are for educational purposes only as part of a school project. No actual data is collected or stored.</p>
+      <p>Some images used in this project are sourced from Google Images and are for educational and demonstration purposes only.
+      All rights belong to their respective owners</p>
+    </div>
+  </div>
 
 </body>
 </html>
