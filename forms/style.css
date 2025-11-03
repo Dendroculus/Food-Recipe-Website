@@ -373,3 +373,102 @@ body{
   .form_box{ width: 94vw; }
   #footer a{ font-size: .95rem; }
 }
+
+@media (max-width: 480px) {
+  body {
+    padding: 0.75rem;
+  }
+
+  .form_box {
+    width: min(94vw, 420px);       
+    min-height: auto;              
+    max-height: calc(100vh - 1.5rem); 
+    padding: 1rem 1rem 1.25rem;    
+    border-radius: 1rem;        
+    box-shadow: 0 12px 36px rgba(0,0,0,0.12);
+    background: rgba(255,225,225,0.92); 
+    overflow: auto;               
+    -webkit-overflow-scrolling: touch; 
+    margin: 0 auto;                
+  }
+
+  #left, #right {
+    padding: 1rem 1rem 1rem;
+  }
+
+  #head h1, .head_right h1 {
+    font-size: clamp(1.05rem, 4.5vw, 1.25rem);
+    margin-bottom: 0.25rem;
+  }
+  #details {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .form_login input[type="email"],
+  .form_login input[type="password"],
+  .form_signup input[type="text"],
+  .form_signup input[type="email"],
+  .form_signup input[type="password"] {
+    padding: 0.7rem 0.75rem;
+    margin-bottom: 0.9rem;
+    font-size: 0.95rem;
+    border-radius: 10px;
+  }
+
+  #footer, #footer_signup {
+    margin: 0.25rem 0 0.75rem;
+    gap: 0.5rem;
+  }
+  #footer label { margin-right: 0.5rem; }
+
+  #button, #button_signup {
+    padding: 0.7rem 0;
+    font-size: 1rem;
+    border-radius: 999px;
+    box-shadow: 0 10px 22px rgba(255,77,43,0.26);
+  }
+
+  #or, #or_signup {
+    margin: 0.8rem 0;
+  }
+
+    #footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #footer .remember-wrap {
+    margin: 0;
+  }
+
+  #footer label {
+    margin-right: 0.5rem; 
+  }
+
+  #footer a.forgot-password {
+    display: flex;
+    margin: 0.5rem 0 0 0; 
+    text-align: center;
+  }
+
+  .container_gambar, .container_gambar_signup {
+    gap: 1rem;
+    margin-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .container_gambar a, .container_gambar_signup a {
+    width: 2rem;
+    height: 2rem;
+  }
+  .container_gambar img, .container_gambar_signup img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .overlay-container { display: none !important; }
+
+  .form_login input:focus, .form_signup input:focus {
+    box-shadow: 0 8px 20px rgba(255,90,71,0.14);
+  }
+}

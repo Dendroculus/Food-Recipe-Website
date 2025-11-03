@@ -590,7 +590,7 @@ body {
 }
 .socials-logo { display: flex; justify-content: center; gap: 0.5rem; border-radius: 0.5rem; }
 .socials-logo img { width: 2.5rem; }
-.socials-logo img:hover { transform: translateY(-0.3rem); }
+.socials-logo img:hover { transform: translateY(-0.4rem); }
 .socials-logo a { position: relative; }
 .socials-logo a::after {
   content: '';
@@ -616,10 +616,9 @@ body {
 }
 .footer-policy-links a { text-decoration: none; color: darkgrey; }
 .footer-policy-links:hover a { color: gray; }
-.footer-policy-links a:hover { color: black; transform: scale(1.03); }
+.footer-policy-links a:hover { color: black; transform: scale(1.03); font-weight: 600; }
 .footer-policy-links:hover a:not(:hover) { opacity: 0.4; }
 
-/* Modals */
 .modal {
   position: fixed;
   top: 0;
@@ -648,10 +647,12 @@ body {
 }
 .modal-content h2 { margin-bottom: 0.75rem; }
 .modal-content p { line-height: 1.5; }
+
 @keyframes pop {
   from { transform: scale(0.96); opacity: 0; }
   to { transform: scale(1); opacity: 1; }
 }
+
 .close {
   position: absolute;
   top: 0.75rem;
