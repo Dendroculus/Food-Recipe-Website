@@ -185,6 +185,14 @@ main {
     overflow-y: auto;
 }
 
+.special-diets {
+    width: 25%;
+}
+
+.special-diets img {
+    width: 4rem;
+}
+
 #check:checked ~ .recipe-menu {
     left: 0;
 }
@@ -358,7 +366,7 @@ main {
     animation: rainbow-border 3s infinite;
 }
 
-.dessert-section-description {
+.section-description {
     position: absolute;
     bottom: 2rem;
     left: 0;
@@ -380,7 +388,7 @@ main {
     animation-duration: 5s; 
 }
 
-.recipe-card:hover .dessert-section-description {
+.recipe-card:hover .section-description {
     opacity: 1;
     transform: translateY(0);
 }
@@ -499,8 +507,12 @@ main {
   border-radius: 10%;
 }
 
-.appetizer .text-container {
-  background-image: url("../../assets/bg-image/appetizer-bg.jpg")
+.diet {
+  background-image: url("../../assets/special_diets/vegan/Vegan\ BG.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10%;
 }
 
 .text-container .content > * {
