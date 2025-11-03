@@ -923,7 +923,7 @@ body {
     position: fixed;
     top: 0;
     z-index: 1000;
-    background: linear-gradient(174.2deg, rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4%);
+    background: linear-gradient(174.2deg, rgba(255,244,228,0.6) 7.1%, rgba(240,246,238,0.35) 67.4%);
   }
   
   .navtop > ul {
@@ -933,6 +933,8 @@ body {
     align-items: center;
     min-height: var(--nav-mobile-h);
   }
+  
+
   .celestial {
     flex: 1;
     order: 2;
@@ -969,6 +971,9 @@ body {
     display: none;
     position: fixed;
     top: var(--nav-mobile-h);
+    max-height: 28vh;
+    max-width: 30vh;
+    border-radius: 1.5rem;
     left: 0;
     right: 0;
     bottom: 0;
@@ -980,6 +985,7 @@ body {
     flex-direction: column;
     gap: 0.5rem;
   }
+
   #menu-toggle:checked ~ .nav-left { display: flex; }
   .dropdown-container { position: static; padding-bottom: 0.25rem; }
   .navtop-dropdown {
@@ -993,6 +999,7 @@ body {
     padding: 0.25rem 0 0.75rem;
     min-width: 100%;
   }
+  
   .navtop-dropdown li a { grid-template-columns: 3.5rem auto; padding: 0.5rem 0.25rem; }
   .navtop-dropdown li a img { width: 3rem; height: 3rem; border: none; box-shadow: none; }
   .navtop-dropdown li a:hover { background: #f6fbfa; }
@@ -1059,7 +1066,7 @@ body {
     .celestial {
     animation: float 3s ease-in-out infinite;
   }
-
+  
   @keyframes float {
     0%, 100% {
       transform: translateY(0);
