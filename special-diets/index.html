@@ -3,12 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../five-course-meal/styles/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>Special diets</title>
 </head>
 <body>
-  <header>
-    
-  </header>
+   <header>
+        <nav class="header-navigation">
+            <ul>
+                <li class="hamburger-menu">
+                    <nav class="menu">
+                        <input type="checkbox" id="check">
+                        <label for="check" class="checkbtn">
+                            <i class="bars"></i>
+                        </label>
+                        <div class="recipe-menu special-diets">
+                            <h3>Special Diets</h3>
+                            <div id="vegetarian" class="border-bottom">
+                                <img src="../assets/special_diets/vegetarian/Vegetarian BG.avif" alt="Vegetarian Background">
+                                <a href="main-course.html">Vegetarian</a>
+                            </div>
+                            <div id="vegan" class="border-bottom">
+                                <img src="../assets/special_diets/vegan/Vegan BG.jpg" alt="Vegan Background">
+                                <a href="dessert.html">Vegan</a>
+                            </div>
+                            <div id="gluten-free" class="border-bottom">
+                                <img src="../assets/special_diets/gluten_free/Gluten-Free BG.jpg" alt="Gluten-Free Background">
+                                <a href="salad.html">Gluten Free</a>
+                            </div>
+                            <div id="dairy-free" class="border-bottom">
+                                <img src="../assets/special_diets/dairy_free/Dairy-Free BG.avif" alt="Dairy Free Background" width="100" height="100">
+                                <a href="appetizer.html">Dairy Free</a>
+                            </div>
+                        </div>
+                    </nav>
+                </li>
+                <li class="celestial-logo">
+                    <a href="../../about-us/about-us.html">CELESTIAL 💫</a>
+                </li>
+                <li class="other-logo">
+                    <a href="../index.html" target="_blank" id="home" class="other"><img src="../assets/icons/house.png" alt="house" width="32" height="32"></a>
+                    <a href="../forms/index.html" class="other" target="_blank"><img src="../assets/icons/user.png" alt="user" width="32" height="32"></a>
+                    <a href="../shop/ingredients_shop.html" class="other" target="_blank"><img src="../assets/icons/shopping_cart.png" alt="shopping bag" width="32" height="32"></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <h1 class="head-title">Special Diets</h1>
+        <div class="diet text-container">
+            <div class="content">
+                <p class="check-out">Explore our website's full appetizer recipe collection. Log in or create your account to easily save, revisit and review all your favourite appetizer dishes!</p>
+            </div>
+        </div>
+        <section class="recommended-section">
+            <div class="heading-container">
+                <h3 class="top-pick-heading">
+                    <span class="top-line">Top Picks</span>
+                    <span class="bottom-line">Special Diets</span>
+                </h3>   
+            </div>
+            <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="recipe-card">
+                            <div class="card-img-container">
+                                <img src="../assets/special_diets/vegetarian/applecrumble.jpg" class="card-img" alt="Apple Crumble">
+                                <div class="section-description">Apple Crumble</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="recipe-card">
+                            <div class="card-img-container">
+                                <img src="../assets/special_diets/gluten_free/Chicken Enchiladas.webp" class="card-img" alt="Chicken Enchiladas">
+                                <div class="section-description">Chicken Enchiladas</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="recipe-card">
+                            <div class="card-img-container">
+                                <img src="../assets/special_diets/vegan/bananabread.jpg" class="card-img" alt="Banana Bread">
+                                <div class="section-description">Banana Bread</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="recipe-card">
+                            <div class="card-img-container">
+                                <img src="../assets/special_diets/dairy_free/Caponata.jpg" class="card-img" alt="Caponata">
+                                <div class="section-description">Caponata</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <div class="all-recipes">
+            <h3 class="all-recipes">V<span class="blink">e</span>ge<span class="long-blink">t</span>ar<span class="blink">i</span>an</h3>
+        </div>
+        <section class="recipe-section">
+            <div class="card">
+                <div class="card-image">
+                    <img src="../assets/special_diets/vegetarian/applecrumble.jpg" alt="Apple Crumble">
+                </div>
+                <div class="text">
+                    <a href="../recipes-html/main-course-recipes.html#chicken-cordon-bleu">Apple Crumble</a>
+                    <p>30 mins</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="../assets/special_diets/vegetarian/CauliflowerSteaks.jpg" alt="Cauliflower Steaks">
+                </div>
+                <div class="text">
+                    <a href="../recipes-html/main-course-recipes.html#lobster-mango-salad">Cauliflower Steaks</a>
+                    <p>25 mins</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="../assets/special_diets/vegetarian/Dal Tadka.jpg" alt="Dal Tadka">
+                </div>
+                <div class="text">
+                    <a href="../recipes-html/main-course-recipes.html#pork-chops">Dal Tadka</a>
+                    <p>25 mins</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="../assets/special_diets/vegetarian/Koshari.jpg" alt="Koshari">
+                </div>
+                <div class="text">
+                    <a href="../recipes-html/main-course-recipes.html#salmon-steak">Koshari</a>
+                    <p>25 mins</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="../assets/special_diets/vegetarian/Pea and Mint Soup.jpg" alt="Pea and Mint Soup">
+                </div>
+                <div class="text">
+                    <a href="../recipes-html/main-course-recipes.html#shrimp-avocado-cocktail">Pea and Mint Soup</a>
+                    <p>20 mins</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="../assets/special_diets/vegetarian/Ratatouille.jpg" alt="Ratatouille">
+                </div>
+                <div class="text">
+                    <a href="../recipes-html/main-course-recipes.html#mousse-terrine">Ratatouille</a>
+                    <p>20 mins</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="../assets/special_diets/vegetarian/Sauteed fiddleheads.jpg" alt="Sauteed fiddleheads">
+                </div>
+                <div class="text">
+                    <a href="../recipes-html/main-course-recipes.html#short-ribs">Sauteed fiddleheads</a>
+                    <p>30 mins</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image">
+                    <img src="../assets/special_diets/vegetarian/Vegetarian spring roll.jpg" alt="Vegetarian spring roll">
+                </div>
+                <div class="text">
+                    <a href="../recipes-html/main-course-recipes.html#arugula-prosciutto-salad">Vegetarian spring roll</a>
+                    <p>30 mins</p>
+                </div>
+            </div>
+        </section>
+        <section class="button">
+         <div class="text-center mt-4">
+            <button type="button" class="btn btn-secondary">More ></button>
+        </div>
+        </section>
+    </main>
 </body>
 </html>
