@@ -752,9 +752,12 @@ main {
   }
 
   .stellar-nav-container {
-    grid-template-columns: auto 1fr auto;
-    padding: 0.75rem 1rem;
+    padding: 0.75rem 0.5rem;
     gap: 1rem;
+  }
+
+  .stellar-nav-right {
+    gap: 0.5rem;
   }
 
   .stellar-nav-left {
@@ -777,6 +780,15 @@ main {
     transform: translateY(-20px);
     transition: all 0.3s ease;
     z-index: 999;
+  }
+
+  .stellar-link {
+    font-size: 1rem;
+    color: white;
+  }
+
+  .main-title {
+    margin-top: 1.25rem;
   }
 
   .stellar-menu-toggle:checked ~ .stellar-nav-container .stellar-nav-left {
@@ -832,6 +844,10 @@ main {
     border-radius: 8px;
   }
 
+  .stellar-menu-btn span {
+    background: var(--color-brand); 
+  }
+
   .stellar-dropdown:hover .stellar-dropdown-menu,
   .stellar-dropdown:focus-within .stellar-dropdown-menu {
     opacity: 0;
@@ -847,6 +863,13 @@ main {
     margin-top: 0.5rem;
   }
 
+   .stellar-brand {
+    padding: 0.4rem 0.9rem; 
+    max-width: 153px;
+    gap: 0.05rem;
+    white-space: nowrap;   
+  }
+
   .stellar-dropdown-menu a {
     padding: 1rem;
     color: white;
@@ -858,11 +881,14 @@ main {
   }
 
   .brand-text {
-    font-size: 1.1rem;
+    font-size: 0.95rem;
+    white-space: nowrap;
+    margin-left: 0rem;
   }
 
   .brand-icon {
     font-size: 1.2rem;
+    flex-shrink: 0;
   }
 }
 
