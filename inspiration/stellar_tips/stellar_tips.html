@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stellar Tips - Celestial 💫</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="stellar-tips.css">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  
+  <nav class="stellar-nav">
+    <input type="checkbox" id="stellar-menu-toggle" class="stellar-menu-toggle" hidden />
+    
+    <div class="stellar-nav-container">
+      <div class="stellar-nav-left-wrapper">
+        <label for="stellar-menu-toggle" class="stellar-menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <div class="stellar-nav-left" id="stellar-nav-left">
+          <!-- RECIPES -->
+          <div class="stellar-dropdown">
+            <!-- Mobile: checkbox + label toggles open/close -->
+            <input type="checkbox" id="toggle-recipes" class="stellar-submenu-toggle" hidden>
+            <label for="toggle-recipes" class="stellar-link toggle-label">RECIPES</label>
+            <!-- Desktop trigger (hover) -->
+            <a href="#" class="stellar-link desktop-trigger">RECIPES</a>
+            <div class="stellar-dropdown-menu">
+              <a href="/five-course-meal/main-page-html/main-course.html">
+                <img src="/assets/main_course/main_course_pfp.jpg" alt="Main course" loading="lazy" />
+                <span>Main Course</span>
+              </a>
+              <a href="/five-course-meal/main-page-html/appetizer.html">
+                <img src="/assets/appetizers/appetizers_pfp.jpg" alt="Appetizers" loading="lazy" />
+                <span>Appetizers</span>
+              </a>
+              <a href="/five-course-meal/main-page-html/salad.html">
+                <img src="/assets/salad/salad_pfp.jpg" alt="Salad" loading="lazy" />
+                <span>Salad</span>
+              </a>
+              <a href="/five-course-meal/main-page-html/dessert.html">
+                <img src="/assets/desserts/desserts_pfp.jpg" alt="Desserts" loading="lazy" />
+                <span>Desserts</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- INSPIRATION -->
+          <div class="stellar-dropdown">
+            <input type="checkbox" id="toggle-inspiration" class="stellar-submenu-toggle" hidden>
+            <label for="toggle-inspiration" class="stellar-link toggle-label active">INSPIRATION</label>
+            <a href="#" class="stellar-link active desktop-trigger">INSPIRATION</a>
+            <div class="stellar-dropdown-menu">
+              <a href="#">
+                <img src="/assets/inspiration/stellar_tips_pfp.jpg" alt="Stellar Tips" loading="lazy" />
+                <span>Stellar Tips</span>
+              </a>
+              <a href="#">
+                <img src="/assets/inspiration/seasonal_constellation_pfp.png" alt="Seasonal Constellations" loading="lazy" />
+                <span>Seasonal Constellations</span>
+              </a>
+              <a href="#">
+                <img src="/assets/inspiration/kitchen_universe_pfp.png" alt="Kitchen Universe" loading="lazy" />
+                <span>Kitchen Universe</span>
+              </a>
+              <a href="#">
+                <img src="/assets/inspiration/guiding_stars_pfp.png" alt="Guiding Stars" loading="lazy" />
+                <span>Guiding Stars</span>
+              </a>
+              <a href="#">
+                <img src="/assets/inspiration/orbit_of_flavors_pfp.png" alt="Orbit Of Flavors" loading="lazy" />
+                <span>Orbit Of Flavors</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- SHOP -->
+          <div class="stellar-dropdown">
+            <input type="checkbox" id="toggle-shop" class="stellar-submenu-toggle" hidden>
+            <label for="toggle-shop" class="stellar-link toggle-label">SHOP</label>
+            <a href="#" class="stellar-link desktop-trigger">SHOP</a>
+            <div class="stellar-dropdown-menu">
+              <a href="/shop/ingredients_shop.html">
+                <img src="/assets/shop/Ingredients/ingredients_pfp.jpg" alt="Cooking Ingredients" loading="lazy" />
+                <span>Cooking Ingredients</span>
+              </a>
+              <a href="/shop/kitchen_tools.html">
+                <img src="/assets/shop/Kitchen Tools/kitchen_tools_pfp.jpg" alt="Kitchen Tools" loading="lazy" />
+                <span>Kitchen Tools</span>
+              </a>
+              <a href="/shop/recipe_themed_merch.html">
+                <img src="/assets/shop/Recipe Themed/recipe_themed_merch_pfp.png" alt="Recipe Themed Merch" loading="lazy" />
+                <span>Recipe Themed Merch</span>
+              </a>
+              <a href="/shop/digital_products.html">
+                <img src="/assets/shop/Digital Products/digital_products_pfp.PNG" alt="Digital Products" loading="lazy" />
+                <span>Digital Products</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- ABOUT US -->
+          <div class="stellar-dropdown">
+            <input type="checkbox" id="toggle-about" class="stellar-submenu-toggle" hidden>
+            <label for="toggle-about" class="stellar-link toggle-label">ABOUT US</label>
+            <a href="/about-us/about-us.html#our-story" class="stellar-link desktop-trigger">ABOUT US</a>
+            <div class="stellar-dropdown-menu">
+              <a href="/about-us/about-us.html#our-story">
+                <img src="/assets/about us/about_us_pfp.png" alt="Our Story" loading="lazy" />
+                <span>Our Story</span>
+              </a>
+              <a href="/about-us/about-us.html#meet-the-team">
+                <img src="/assets/about us/meet_the_team_pfp.png" alt="Meet the Team" loading="lazy" />
+                <span>Meet the Team</span>
+              </a>
+              <a href="/about-us/about-us.html#our-mission">
+                <img src="/assets/about us/our_mission_pfp.png" alt="Our Mission" loading="lazy" />
+                <span>Our Mission</span>
+              </a>
+              <a href="/about-us/about-us.html#contact-us">
+                <img src="/assets/about us/contact_us_pfp.png" alt="Contact Us" loading="lazy" />
+                <span>Contact Us</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="/index.html" class="stellar-brand">
+        <span class="brand-text">CELESTIAL</span>
+        <span class="brand-icon">💫</span>
+        <div class="brand-glow"></div>
+      </a>
+
+      <div class="stellar-nav-right">
+        <a href="/index.html" id="home" class="stellar-icon-link" title="Home">
+          <img src="/assets/icons/house.png" alt="home"/>
+        </a>
+        <a href="/forms/index.html" class="stellar-icon-link" title="Account">
+          <img src="/assets/icons/user.png" alt="user"/>
+        </a>
+        <a href="/payment/payment.html" class="stellar-icon-link" title="Cart">
+          <img src="/assets/icons/shopping_cart.png" alt="shopping bag"/>
+        </a>
+      </div>
+    </div>
+  </nav>
+  
+  <section class="stellar-hero">
+    <div class="container">
+      <h1 class="main-title">Stellar Tips</h1>
+      <p class="hero-subtitle">Pro cooking secrets from across the culinary cosmos ✨</p>
+    </div>
+  </section>
+
+  <main class="container my-5">
+    
+    <section class="tips-category mb-5">
+      <div class="category-header">
+        <h2 class="category-title">
+          <span class="category-icon">🌟</span>
+          Essential Techniques
+        </h2>
+        <p class="category-desc">Master these fundamental skills and watch your cooking orbit to new heights</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="tip-card h-100">
+            <div class="tip-number">01</div>
+            <div class="tip-icon-wrapper">
+              <svg class="tip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+              </svg>
+            </div>
+            <h3 class="tip-title">Mise en Place</h3>
+            <p class="tip-description">
+              This French technique means "everything in its place." Before you start cooking, prep and organize all your ingredients. Chop vegetables, measure spices, and arrange tools within reach. This prevents mid-cooking chaos and helps you cook like a professional chef.
+            </p>
+            <div class="tip-meta">
+              <span class="badge-custom bg-prep">Preparation</span>
+              <span class="difficulty">★★☆☆☆</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="tip-card h-100">
+            <div class="tip-number">02</div>
+            <div class="tip-icon-wrapper">
+              <svg class="tip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 6v6l4 2"/>
+              </svg>
+            </div>
+            <h3 class="tip-title">Let Meat Rest</h3>
+            <p class="tip-description">
+              After cooking meat, let it rest for 5-10 minutes before slicing. This crucial step allows the juices to redistribute throughout the meat, resulting in a more tender, flavorful, and juicy final dish. Cover loosely with foil to keep it warm.
+            </p>
+            <div class="tip-meta">
+              <span class="badge-custom bg-technique">Technique</span>
+              <span class="difficulty">★★★☆☆</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="tip-card h-100">
+            <div class="tip-number">03</div>
+            <div class="tip-icon-wrapper">
+              <svg class="tip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
+                <line x1="6" y1="1" x2="6" y2="4"/>
+                <line x1="10" y1="1" x2="10" y2="4"/>
+                <line x1="14" y1="1" x2="14" y2="4"/>
+              </svg>
+            </div>
+            <h3 class="tip-title">Room Temperature Magic</h3>
+            <p class="tip-description">
+              Take meat, eggs, and dairy out of the fridge 20-30 minutes before cooking. Room temperature ingredients cook more evenly, preventing the pan from cooling down too much when you add them. This is especially important for baking and searing proteins.
+            </p>
+            <div class="tip-meta">
+              <span class="badge-custom bg-prep">Preparation</span>
+              <span class="difficulty">★☆☆☆☆</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="tip-card h-100">
+            <div class="tip-number">04</div>
+            <div class="tip-icon-wrapper">
+              <svg class="tip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+              </svg>
+            </div>
+            <h3 class="tip-title">Salt Your Pasta Water</h3>
+            <p class="tip-description">
+              Make your pasta water taste like the sea! Use about 1-2 tablespoons of salt per pound of pasta. This is your only chance to season the pasta itself from the inside out. Well-salted pasta water makes a world of difference in the final dish.
+            </p>
+            <div class="tip-meta">
+              <span class="badge-custom bg-technique">Technique</span>
+              <span class="difficulty">★☆☆☆☆</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="tip-card h-100">
+            <div class="tip-number">05</div>
+            <div class="tip-icon-wrapper">
+              <svg class="tip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+              </svg>
+            </div>
+            <h3 class="tip-title">Layer Your Flavors</h3>
+            <p class="tip-description">
+              Build flavor throughout the cooking process rather than seasoning all at once. Start with aromatics like onions and garlic, add spices during cooking to bloom them, and finish with fresh herbs. This creates depth and complexity in your dishes.
+            </p>
+            <div class="tip-meta">
+              <span class="badge-custom bg-flavor">Flavor</span>
+              <span class="difficulty">★★★★☆</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="tip-card h-100">
+            <div class="tip-number">06</div>
+            <div class="tip-icon-wrapper">
+              <svg class="tip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 3h18v18H3zM9 3v18M15 3v18M3 9h18M3 15h18"/>
+              </svg>
+            </div>
+            <h3 class="tip-title">Sharp Knives = Safe Knives</h3>
+            <p class="tip-description">
+              Contrary to popular belief, a sharp knife is safer than a dull one. Sharp knives require less pressure and give you better control, reducing the chance of slipping. Keep your knives sharp and hone them regularly before each use.
+            </p>
+            <div class="tip-meta">
+              <span class="badge-custom bg-safety">Safety</span>
+              <span class="difficulty">★★☆☆☆</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="tips-category mb-5">
+      <div class="category-header">
+        <h2 class="category-title">
+          <span class="category-icon">🌶️</span>
+          Flavor Enhancement
+        </h2>
+        <p class="category-desc">Unlock stellar flavors with these cosmic cooking secrets</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="tip-card h-100">
+            <div class="tip-number">07</div>
+            <div class="tip-icon-wrapper">
+              <svg class="tip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <circle cx="12" cy="12" r="6"/>
+                <circle cx="12" cy="12" r="2"/>
+              </svg>
+            </div>
+            <h3 class="tip-title">Toast Your Spices</h3>
+            <p class="tip-description">
+              Toast whole spices in a dry pan for 30-60 seconds until fragrant. This awakens their essential oils and amplifies their flavor exponentially. Grind them fresh for maximum impact. Your spice cabinet will never be the same!
+            </p>
+            <div class="tip-meta">
+              <span class="badge-custom bg-flavor">Flavor</span>
+              <span class="difficulty">★★★☆☆</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="tip-card h-100">
+            <div class="tip-number">08</div>
+            <div class="tip-icon-wrapper">
+              <svg class="tip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/>
+              </svg>
+            </div>
+            <h3 class="tip-title">Save Your Pasta Water</h3>
+            <p class="tip-description">
+              That starchy pasta water is liquid gold! Always reserve 1-2 cups before draining. Use it to adjust sauce consistency and help it cling to pasta. The starch acts as a natural thickener and emulsifier, creating silky, restaurant-quality sauces.
+            </p>
+            <div class="tip-meta">
+              <span class="badge-custom bg-technique">Technique</span>
+              <span class="difficulty">★★☆☆☆</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="tip-card h-100">
+            <div class="tip-number">09</div>
+            <div class="tip-icon-wrapper">
+              <svg class="tip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <path d="M7 10l5 5 5-5"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+              </svg>
+            </div>
+            <h3 class="tip-title">Acid Brightens Everything</h3>
+            <p class="tip-description">
+              A squeeze of lemon juice, splash of vinegar, or pinch of citrus zest can transform a dish from flat to fantastic. Add acid at the end of cooking to brighten flavors and balance richness. It's the secret ingredient in many restaurant dishes!
+            </p>
+            <div class="tip-meta">
+              <span class="badge-custom bg-flavor">Flavor</span>
+              <span class="difficulty">★★★☆☆</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="tip-card h-100">
+            <div class="tip-number">10</div>
+            <div class="tip-icon-wrapper">
+              <svg class="tip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                <path d="M2 17l10 5 10-5"/>
+                <path d="M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <h3 class="tip-title">Don't Crowd the Pan</h3>
+            <p class="tip-description">
+              Give your ingredients space to breathe! Overcrowding lowers the pan temperature, causing food to steam instead of sear. Work in batches if needed. Proper browning develops deep, caramelized flavors that make dishes truly stellar.
+            </p>
+            <div class="tip-meta">
+              <span class="badge-custom bg-technique">Technique</span>
+              <span class="difficulty">★★★☆☆</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="tip-card h-100">
+            <div class="tip-number">11</div>
+            <div class="tip-icon-wrapper">
+              <svg class="tip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"/>
+                <path d="M21 21l-4.35-4.35"/>
+                <circle cx="11" cy="11" r="3"/>
+              </svg>
+            </div>
+            <h3 class="tip-title">Preheat Properly</h3>
+            <p class="tip-description">
+              Always preheat your pan, oven, or grill before adding food. A properly heated cooking surface is essential for developing flavor, creating good texture, and preventing sticking. For ovens, wait at least 15-20 minutes after it beeps.
+            </p>
+            <div class="tip-meta">
+              <span class="badge-custom bg-technique">Technique</span>
+              <span class="difficulty">★★☆☆☆</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="tip-card h-100">
+            <div class="tip-number">12</div>
+            <div class="tip-icon-wrapper">
+              <svg class="tip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <h3 class="tip-title">Taste As You Go</h3>
+            <p class="tip-description">
+              The most important tool in your kitchen is your palate! Taste your food throughout the cooking process and adjust seasoning accordingly. Flavors concentrate as liquids reduce, so season lightly at first and build up gradually.
+            </p>
+            <div class="tip-meta">
+              <span class="badge-custom bg-flavor">Flavor</span>
+              <span class="difficulty">★★★★☆</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="tips-category mb-5">
+      <div class="category-header">
+        <h2 class="category-title">
+          <span class="category-icon">👨‍🍳</span>
+          Pro Chef Secrets
+        </h2>
+        <p class="category-desc">Insider techniques from the culinary constellation</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="tip-card h-100">
+            <div class="tip-number">13</div>
+            <div class="tip-icon-wrapper">
+              <svg class="tip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+              </svg>
+            </div>
+            <h3 class="tip-title">Use Your Senses</h3>
+            <p class="tip-description">
+              Trust your senses over timers! Listen for sizzling sounds, watch for color changes, smell for aromatics, and touch for texture. Recipes are guidelines, but your senses tell you when food is actually ready. This is how pros cook without measuring.
+            </p>
+            <div class="tip-meta">
+              <span class="badge-custom bg-pro">Pro Tips</span>
+              <span class="difficulty">★★★★★</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="tip-card h-100">
+            <div class="tip-number">14</div>
+            <div class="tip-icon-wrapper">
+              <svg class="tip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                <path d="M9 22V12h6v10"/>
+              </svg>
+            </div>
+            <h3 class="tip-title">Master Mother Sauces</h3>
+            <p class="tip-description">
+              Learn the five French mother sauces: Béchamel, Velouté, Espagnole, Hollandaise, and Tomato. These form the foundation of countless recipes. Once mastered, you can create infinite variations and elevate any dish from ordinary to extraordinary.
+            </p>
+            <div class="tip-meta">
+              <span class="badge-custom bg-pro">Pro Tips</span>
+              <span class="difficulty">★★★★☆</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="tip-card h-100">
+            <div class="tip-number">15</div>
+            <div class="tip-icon-wrapper">
+              <svg class="tip-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2v20"/>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+              </svg>
+            </div>
+            <h3 class="tip-title">Finish with Fat</h3>
+            <p class="tip-description">
+              Swirl in cold butter, drizzle quality olive oil, or add a dollop of cream at the end of cooking. This technique, called "mounting," adds richness, sheen, and rounds out flavors. It's the difference between home cooking and restaurant quality.
+            </p>
+            <div class="tip-meta">
+              <span class="badge-custom bg-pro">Pro Tips</span>
+              <span class="difficulty">★★★☆☆</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="chef-secret-card my-5">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-8">
+          <div class="secret-badge">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+            </svg>
+            Chef's Secret of the Week
+          </div>
+          <h3 class="secret-title">The Power of Umami Bombs</h3>
+          <p class="secret-description">
+            Boost savory depth in any dish with "umami bombs" like tomato paste, soy sauce, miso, Parmesan rind, anchovies, or dried mushrooms. These ingredients add profound savory complexity without being identifiable. Just a small amount can transform a good dish into an unforgettable one. Try adding a teaspoon of tomato paste to your next pasta sauce or a splash of soy sauce to your beef stew!
+          </p>
+          <div class="secret-stats">
+            <div class="stat-item">
+              <strong>Impact Level:</strong> High
+            </div>
+            <div class="stat-item">
+              <strong>Difficulty:</strong> Easy
+            </div>
+            <div class="stat-item">
+              <strong>Works Best In:</strong> Soups, Sauces, Braises
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="secret-illustration">
+            <div class="orbit-ring"></div>
+            <div class="orbit-ring ring-2"></div>
+            <div class="orbit-ring ring-3"></div>
+            <div class="central-star">✨</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-tips-section mb-5">
+      <h2 class="section-title text-center mb-4">⚡ Quick Orbital Tips</h2>
+      <div class="row g-3">
+        <div class="col-md-6 col-lg-3">
+          <div class="quick-tip">
+            <div class="quick-icon">🧂</div>
+            <h4>Season Early & Often</h4>
+            <p>Build flavor layers by seasoning throughout cooking, not just at the end.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="quick-tip">
+            <div class="quick-icon">🔥</div>
+            <h4>High Heat = Flavor</h4>
+            <p>Don't fear high heat for searing! Caramelization creates deep, complex flavors.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="quick-tip">
+            <div class="quick-icon">🧊</div>
+            <h4>Cold Butter for Pastry</h4>
+            <p>Keep butter ice-cold for flaky pastries. Freeze it and grate for best results.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="quick-tip">
+            <div class="quick-icon">🌿</div>
+            <h4>Fresh Herbs Last</h4>
+            <p>Add delicate herbs like basil and cilantro at the end to preserve bright flavors.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="quick-tip">
+            <div class="quick-icon">🥘</div>
+            <h4>Deglaze for Depth</h4>
+            <p>Use wine or stock to scrape up browned bits—that's where flavor lives!</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="quick-tip">
+            <div class="quick-icon">🍳</div>
+            <h4>Non-Stick Myth</h4>
+            <p>Stainless steel or cast iron give better browning than non-stick pans.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="quick-tip">
+            <div class="quick-icon">🌡️</div>
+            <h4>Instant-Read Thermometer</h4>
+            <p>The best tool for perfect meat every time. No more guessing!</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="quick-tip">
+            <div class="quick-icon">🥄</div>
+            <h4>Wooden Spoons Win</h4>
+            <p>Won't scratch pans, won't conduct heat, and won't melt. A kitchen essential!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <h1 class="footer-title">Socials</h1>
+    <div class="socials-logo">
+      <a href="https://github.com/Dendroculus/Food-Recipe-Website"><img class="img-fluid" src="/assets/logo/Github.png" alt="Github" /></a>
+      <a href="https://www.instagram.com/"><img class="img-fluid" src="/assets/logo/Instagram.png" alt="Instagram" /></a>
+      <a href="https://www.facebook.com/"><img class="img-fluid Facebook" src="/assets/logo/Facebook.png" alt="Facebook" /></a>
+      <a href="https://twitter.com/"><img class="img-fluid" src="/assets/logo/X.png" alt="X" /></a>
+      <a href="https://www.linkedin.com/"><img class="img-fluid" src="/assets/logo/LinkedIn.jpg" alt="LinkedIn"></a>
+    </div>
+    <nav class="footer-policy-links">
+      <a href="#terms-modal">Terms of Use</a>
+      <a href="#privacy-modal">Privacy Policy</a>
+      <a href="#cookies-modal">Cookies</a>
+      <a href="#disclaimer-modal">Disclaimer</a>
+    </nav>
+    <p class="footer-note">© 2024 Celestial. All rights reserved.</p>
+  </footer>
+
+  <div id="terms-modal" class="modal">
+    <div class="modal-content">
+      <a href="#!" class="close">×</a>
+      <h2>Terms of Use</h2>
+      <p>This project is created for educational purposes only. All content, images, and code included are for study and demonstration.</p>
+      <p>Images used in this project are sourced randomly for learning purposes and are not intended for redistribution or commercial use.</p>
+      <p>The code is released under the MIT License. You are free to study, modify, and use it for personal learning or academic projects.</p>
+    </div>
+  </div>
+
+  <div id="privacy-modal" class="modal">
+    <div class="modal-content">
+      <a href="#!" class="close">×</a>
+      <h2>Privacy Policy</h2>
+      <p>No personal data is collected in this project. Any email inputs (e.g., in forms) are purely for demonstration and do not send or store real data.</p>
+      <p>This project is meant only to show functionality and interface design for learning purposes.</p>
+    </div>
+  </div>
+
+  <div id="cookies-modal" class="modal">
+    <div class="modal-content">
+      <a href="#!" class="close">×</a>
+      <h2>Cookies</h2>
+      <p>This project does not use cookies. Any references to cookies are for interface demonstration purposes only.</p>
+      <button class="accept btn">ACCEPT ALL</button>
+      <button class="reject btn">REJECT ALL</button>
+      <a href="#customize-modal" class="customize btn">CUSTOMIZE COOKIES</a>
+    </div>
+  </div>
+
+  <div id="customize-modal" class="modal">
+    <div class="modal-content cookie-modal">
+      <a href="#!" class="close" aria-label="Close">×</a>
+
+      <header class="cookie-header">
+        <h2>Manage Cookie Preferences</h2>
+        <p class="cookie-intro">
+          We use cookies and similar technologies to deliver, maintain, and improve our services, and to provide a personalised web experience.
+          You can review how this information is used and customise your preferences below. You may change your choices at any time as
+          described in our <a href="#privacy-modal">Privacy Policy</a>.
+        </p>
+        <nav class="cookie-actions-top">
+          <a href="#!" class="ghost-action">Reject all</a>
+          <a href="#!" class="ghost-action">Accept all</a>
+        </nav>
+      </header>
+
+      <div class="cookie-body">
+        <section class="cookie-group">
+          <details open>
+            <summary>
+              <div class="sum-text">
+                <div class="title">Essential cookies</div>
+                <div class="desc">Required for the website to function. This includes security, network management, and accessibility.</div>
+              </div>
+              <span class="badge locked">Required</span>
+            </summary>
+            <ul class="list">
+              <li>Load balancing and session management</li>
+              <li>Fraud prevention and security</li>
+              <li>Basic preferences like language</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>
+              <div class="sum-text">
+                <div class="title">Analytics cookies</div>
+                <div class="desc">Help us understand site usage so we can improve recipes and features.</div>
+              </div>
+              <label class="switch" aria-label="Toggle analytics cookies">
+                <input type="checkbox" />
+                <span class="track"></span>
+                <span class="switch-text" aria-hidden="true"></span>
+              </label>
+            </summary>
+            <ul class="list">
+              <li>Aggregate traffic insights (pages visited, time on page)</li>
+              <li>Error tracking to fix broken pages</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>
+              <div class="sum-text">
+                <div class="title">Preference cookies</div>
+                <div class="desc">Remember your choices like theme, language, or favourite recipes.</div>
+              </div>
+              <label class="switch" aria-label="Toggle preference cookies">
+                <input type="checkbox" checked />
+                <span class="track"></span>
+                <span class="switch-text" aria-hidden="true"></span>
+              </label>
+            </summary>
+            <ul class="list">
+              <li>Stores display preferences (e.g., dark mode)</li>
+              <li>Keeps items saved to your recipe list</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>
+              <div class="sum-text">
+                <div class="title">Marketing cookies</div>
+                <div class="desc">Used to show you relevant content and offers based on your interests.</div>
+              </div>
+              <label class="switch" aria-label="Toggle marketing cookies">
+                <input type="checkbox" />
+                <span class="track"></span>
+                <span class="switch-text" aria-hidden="true"></span>
+              </label>
+            </summary>
+            <ul class="list">
+              <li>Limits how often you see the same promo</li>
+              <li>Measures campaign performance</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>
+              <div class="sum-text">
+                <div class="title">Precise geolocation data, and identification through device scanning</div>
+                <div class="desc">Allow us to use accurate location and device signals to deliver localised content.</div>
+              </div>
+              <label class="switch" aria-label="Toggle precise geolocation">
+                <input type="checkbox" />
+                <span class="track"></span>
+                <span class="switch-text" aria-hidden="true"></span>
+              </label>
+            </summary>
+            <ul class="list">
+              <li>Use exact location to tailor nearby seasonal ingredients</li>
+              <li>Identify device characteristics for fraud prevention</li>
+            </ul>
+          </details>
+        </section>
+
+        <a href="#!" class="partners-link">Partners</a>
+      </div>
+
+      <footer class="cookie-footer">
+        <small class="legal">
+          You can update your choices at any time. See our <a href="#privacy-modal">Privacy Policy</a> and <a href="#cookies-modal">Cookies</a>.
+        </small>
+        <a href="#!" class="btn-cta">Save &amp; Exit</a>
+      </footer>
+    </div>
+  </div>
+
+  <div id="disclaimer-modal" class="modal">
+    <div class="modal-content">
+      <a href="#!" class="close">×</a>
+      <h2>Disclaimer</h2>
+      <p>This website and its cookie settings are for educational purposes only as part of a school project. No actual data is collected or stored.</p>
+      <p>Some images used in this project are sourced from Google Images and are for educational and demonstration purposes only.
+      All rights belong to their respective owners</p>
+    </div>
+  </div>
+
+</body>
+</html>
