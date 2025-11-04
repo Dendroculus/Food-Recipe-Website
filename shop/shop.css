@@ -674,6 +674,15 @@ main h1 {
 
 }
 
+@media (max-width: 960px) {
+  .product .card-body {height: auto;}
+  #card-desc {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+} 
+
 @media (max-width: 768px) {
   .navtop > ul {
     padding: 0.5rem 1rem;
@@ -703,6 +712,11 @@ main h1 {
     max-width: none;     
     object-fit: contain; 
     padding-bottom: 0;
+  }
+  #card-desc {
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
   }
   .site-search .search { height: 3rem; }
   .site-search .search input { font-size: 0.9rem; }
