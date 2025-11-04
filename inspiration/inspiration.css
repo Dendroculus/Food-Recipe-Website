@@ -49,8 +49,16 @@ body {
   padding-top: 140px;
   padding-bottom: 60px;
   text-align: center;
-  background: linear-gradient(135deg, var(--color-brand) 0%, var(--color-brand-2) 100%);
-  color: white;
+    background-image:
+    linear-gradient(to bottom, rgba(255, 116, 24, 0.28) 0%, rgba(171, 91, 38, 0.18) 100%),
+    linear-gradient(
+      to bottom,
+      rgba(255,244,228,0.92) 0%,
+      rgba(255,247,230,0.86) 30%,
+      rgba(254,250,232,0.80) 60%,
+      rgba(253,255,238,0.74) 100%
+    );
+  color: var(--color-brand);
   position: relative;
   overflow: hidden;
 }
@@ -419,10 +427,14 @@ main {
   left: 0;
   right: 0;
   z-index: 1000;
-  background: linear-gradient(135deg, 
-    rgba(0, 122, 112, 0.95) 0%, 
-    rgba(0, 180, 160, 0.95) 50%,
-    rgba(0, 122, 112, 0.95) 100%);
+  background: linear-gradient(to bottom, rgba(255, 116, 24, 0.18) 0%, rgba(171, 91, 38, 0.08) 100%), 
+    linear-gradient(
+      to bottom,
+      rgba(255,244,228,0.92) 0%,
+      rgba(255,247,230,0.86) 30%,
+      rgba(254,250,232,0.80) 60%,
+      rgba(253,255,238,0.74) 100%
+    );
   backdrop-filter: blur(12px);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
@@ -450,7 +462,7 @@ main {
 }
 
 .stellar-link {
-  color: white;
+  color: var(--color-brand);
   text-decoration: none;
   font-weight: 700;
   font-size: 0.9rem;
@@ -470,7 +482,7 @@ main {
   transform: translateX(-50%);
   width: 0;
   height: 2px;
-  background: white;
+  background: var(--color-brand-2);
   transition: width 0.3s ease;
 }
 
@@ -572,7 +584,7 @@ main {
   font-family: 'Playwrite', sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
-  color: white;
+  color: var(--color-brand);
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   letter-spacing: 0.05em;
 }
@@ -613,8 +625,8 @@ main {
 }
 
 .stellar-icon-link {
-  width: 44px;
-  height: 44px;
+  width: 2.75rem;
+  height: 2.75rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -622,7 +634,7 @@ main {
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
-  border: 2px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(0, 0, 0, 0.2);
 }
 
 .stellar-icon-link:hover {
@@ -632,9 +644,9 @@ main {
 }
 
 .stellar-icon-link img {
-  width: 22px;
-  height: 22px;
-  filter: brightness(0) invert(1);
+  width: 1.375rem;
+  height: 1.375rem;
+  filter: brightness(0.5) invert(1);
   transition: transform 0.3s ease;
 }
 
