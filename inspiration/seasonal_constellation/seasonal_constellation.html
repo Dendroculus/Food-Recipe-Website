@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seasonal Constellation - Culinary Delights</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../inspiration.css">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="seasonal.css">
+</head>
+<body>
+    <nav class="stellar-nav">
+    <input type="checkbox" id="stellar-menu-toggle" class="stellar-menu-toggle" hidden />
+
+    <div class="stellar-nav-container">
+      <div class="stellar-nav-left-wrapper">
+        <label for="stellar-menu-toggle" class="stellar-menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+
+        <div class="stellar-nav-left" id="stellar-nav-left">
+          <div class="stellar-dropdown">
+            <input type="checkbox" id="toggle-recipes" class="stellar-submenu-toggle" hidden>
+            <label for="toggle-recipes" class="stellar-link toggle-label">RECIPES</label>
+            <a href="#" class="stellar-link desktop-trigger">RECIPES</a>
+            <div class="stellar-dropdown-menu">
+              <a href="/five-course-meal/main-page-html/main-course.html">
+                <img src="/assets/main_course/main_course_pfp.jpg" alt="Main course" loading="lazy" />
+                <span>Main Course</span>
+              </a>
+              <a href="/five-course-meal/main-page-html/appetizer.html">
+                <img src="/assets/appetizers/appetizers_pfp.jpg" alt="Appetizers" loading="lazy" />
+                <span>Appetizers</span>
+              </a>
+              <a href="/five-course-meal/main-page-html/salad.html">
+                <img src="/assets/salad/salad_pfp.jpg" alt="Salad" loading="lazy" />
+                <span>Salad</span>
+              </a>
+              <a href="/five-course-meal/main-page-html/dessert.html">
+                <img src="/assets/desserts/desserts_pfp.jpg" alt="Desserts" loading="lazy" />
+                <span>Desserts</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="stellar-dropdown">
+            <input type="checkbox" id="toggle-inspiration" class="stellar-submenu-toggle" hidden>
+            <label for="toggle-inspiration" class="stellar-link toggle-label active">INSPIRATION</label>
+            <a href="#" class="stellar-link active desktop-trigger">INSPIRATION</a>
+            <div class="stellar-dropdown-menu">
+              <a href="../stellar_tips/stellar_tips.html">
+                <img src="/assets/inspiration/stellar_tips_pfp.jpg" alt="Stellar Tips" loading="lazy" />
+                <span>Stellar Tips</span>
+              </a>
+              <a href="./seasonal_constellation.html">
+                <img src="/assets/inspiration/seasonal_constellation_pfp.png" alt="Seasonal Constellations" loading="lazy" />
+                <span>Seasonal Constellations</span>
+              </a>
+              <a href="#">
+                <img src="/assets/inspiration/kitchen_universe_pfp.png" alt="Kitchen Universe" loading="lazy" />
+                <span>Kitchen Universe</span>
+              </a>
+              <a href="#">
+                <img src="/assets/inspiration/guiding_stars_pfp.png" alt="Guiding Stars" loading="lazy" />
+                <span>Guiding Stars</span>
+              </a>
+              <a href="#">
+                <img src="/assets/inspiration/orbit_of_flavors_pfp.png" alt="Orbit Of Flavors" loading="lazy" />
+                <span>Orbit Of Flavors</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="stellar-dropdown">
+            <input type="checkbox" id="toggle-shop" class="stellar-submenu-toggle" hidden>
+            <label for="toggle-shop" class="stellar-link toggle-label">SHOP</label>
+            <a href="#" class="stellar-link desktop-trigger">SHOP</a>
+            <div class="stellar-dropdown-menu">
+              <a href="/shop/ingredients_shop.html">
+                <img src="/assets/shop/Ingredients/ingredients_pfp.jpg" alt="Cooking Ingredients" loading="lazy" />
+                <span>Cooking Ingredients</span>
+              </a>
+              <a href="/shop/kitchen_tools.html">
+                <img src="/assets/shop/Kitchen Tools/kitchen_tools_pfp.jpg" alt="Kitchen Tools" loading="lazy" />
+                <span>Kitchen Tools</span>
+              </a>
+              <a href="/shop/recipe_themed_merch.html">
+                <img src="/assets/shop/Recipe Themed/recipe_themed_merch_pfp.png" alt="Recipe Themed Merch" loading="lazy" />
+                <span>Recipe Themed Merch</span>
+              </a>
+              <a href="/shop/digital_products.html">
+                <img src="/assets/shop/Digital Products/digital_products_pfp.PNG" alt="Digital Products" loading="lazy" />
+                <span>Digital Products</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="stellar-dropdown">
+            <input type="checkbox" id="toggle-about" class="stellar-submenu-toggle" hidden>
+            <label for="toggle-about" class="stellar-link toggle-label">ABOUT US</label>
+            <a href="/about-us/about-us.html#our-story" class="stellar-link desktop-trigger">ABOUT US</a>
+            <div class="stellar-dropdown-menu">
+              <a href="/about-us/about-us.html#our-story">
+                <img src="/assets/about us/about_us_pfp.png" alt="Our Story" loading="lazy" />
+                <span>Our Story</span>
+              </a>
+              <a href="/about-us/about-us.html#meet-the-team">
+                <img src="/assets/about us/meet_the_team_pfp.png" alt="Meet the Team" loading="lazy" />
+                <span>Meet the Team</span>
+              </a>
+              <a href="/about-us/about-us.html#our-mission">
+                <img src="/assets/about us/our_mission_pfp.png" alt="Our Mission" loading="lazy" />
+                <span>Our Mission</span>
+              </a>
+              <a href="/about-us/about-us.html#contact-us">
+                <img src="/assets/about us/contact_us_pfp.png" alt="Contact Us" loading="lazy" />
+                <span>Contact Us</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="/index.html" class="stellar-brand">
+        <span class="brand-text">CELESTIAL</span>
+        <span class="brand-icon">💫</span>
+        <div class="brand-glow"></div>
+      </a>
+
+      <div class="stellar-nav-right">
+        <a href="/index.html" id="home" class="stellar-icon-link" title="Home">
+          <img src="/assets/icons/house.png" alt="home"/>
+        </a>
+        <a href="/forms/index.html" class="stellar-icon-link" title="Account">
+          <img src="/assets/icons/user.png" alt="user"/>
+        </a>
+        <a href="/payment/payment.html" class="stellar-icon-link" title="Cart">
+          <img src="/assets/icons/shopping_cart.png" alt="shopping bag"/>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <header class="stellar-hero">
+    <div class="container">
+      <h1 class="main-title">Seasonal Constellation</h1>
+      <p class="hero-subtitle">Discover recipes that celebrate the flavors of each season</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="current-season-spotlight">
+      <div class="season-badge">
+        <span class="season-icon">🍂</span>
+        <span class="season-text">AUTUMN EDITION</span>
+      </div>
+      <h2 class="spotlight-title">Autumn's Harvest</h2>
+      <p class="spotlight-description">
+        Embrace the cozy flavors of fall with warming spices, hearty vegetables, 
+        and comforting dishes that bring the essence of autumn to your table.
+      </p>
+    </section>
+
+    <section class="seasons-grid">
+      <article class="season-card spring">
+        <div class="season-card-image">
+          <img src="/assets/bg-image/SPRING.png" alt="Spring" class="img-fluid">
+        </div>
+        <div class="season-card-content">
+          <div class="season-card-header">
+            <span class="season-emoji">🌸</span>
+            <h3 class="season-name">Spring</h3>
+          </div>
+          <div class="season-card-body">
+            <p class="season-months">March - May</p>
+            <p class="season-description">
+              Fresh greens, tender herbs, and vibrant vegetables celebrate renewal and growth.
+            </p>
+            <div class="season-highlights">
+              <h4>Featured Ingredients:</h4>
+              <div class="ingredient-tags">
+                <span class="tag badge">Asparagus</span>
+                <span class="tag badge">Peas</span>
+                <span class="tag badge">Strawberries</span>
+                <span class="tag badge">Spring Onions</span>
+                <span class="tag badge">Radishes</span>
+              </div>
+            </div>
+            <div class="recipe-preview">
+              <h4>Popular Recipes:</h4>
+              <ul class="recipe-list list-unstyled">
+                <li>🥗 Spring Vegetable Salad</li>
+                <li>🍓 Strawberry Spinach Salad</li>
+                <li>🥘 Asparagus Risotto</li>
+              </ul>
+            </div>
+          </div>
+          <a href="#" class="season-cta btn">Explore Spring Recipes →</a>
+        </div>
+      </article>
+
+      <article class="season-card summer">
+        <div class="season-card-image">
+          <img src="/assets/bg-image/SUMMER.png" alt="Summer" class="img-fluid">
+        </div>
+        <div class="season-card-content">
+          <div class="season-card-header">
+            <span class="season-emoji">☀️</span>
+            <h3 class="season-name">Summer</h3>
+          </div>
+          <div class="season-card-body">
+            <p class="season-months">June - August</p>
+            <p class="season-description">
+              Bright, refreshing flavors with juicy fruits, ripe tomatoes, and grilled delights.
+            </p>
+            <div class="season-highlights">
+              <h4>Featured Ingredients:</h4>
+              <div class="ingredient-tags">
+                <span class="tag badge">Tomatoes</span>
+                <span class="tag badge">Corn</span>
+                <span class="tag badge">Berries</span>
+                <span class="tag badge">Zucchini</span>
+                <span class="tag badge">Peaches</span>
+              </div>
+            </div>
+            <div class="recipe-preview">
+              <h4>Popular Recipes:</h4>
+              <ul class="recipe-list list-unstyled">
+                <li>🍅 Caprese Salad</li>
+                <li>🌽 Grilled Corn Salsa</li>
+                <li>🍑 Peach Cobbler</li>
+              </ul>
+            </div>
+          </div>
+          <a href="#" class="season-cta btn">Explore Summer Recipes →</a>
+        </div>
+      </article>
+
+      <article class="season-card autumn active-season">
+        <div class="season-card-image">
+          <img src="/assets/bg-image/AUTUMN.png" alt="Autumn" class="img-fluid">
+        </div>
+        <div class="season-card-content">
+          <div class="season-card-header">
+            <span class="season-emoji">🍂</span>
+            <h3 class="season-name">Autumn</h3>
+            <span class="current-badge badge">Current Season</span>
+          </div>
+          <div class="season-card-body">
+            <p class="season-months">September - November</p>
+            <p class="season-description">
+              Warming spices, root vegetables, and hearty comfort foods for cooler days.
+            </p>
+            <div class="season-highlights">
+              <h4>Featured Ingredients:</h4>
+              <div class="ingredient-tags">
+                <span class="tag badge">Pumpkin</span>
+                <span class="tag badge">Squash</span>
+                <span class="tag badge">Apples</span>
+                <span class="tag badge">Sweet Potato</span>
+                <span class="tag badge">Brussels Sprouts</span>
+              </div>
+            </div>
+            <div class="recipe-preview">
+              <h4>Popular Recipes:</h4>
+              <ul class="recipe-list list-unstyled">
+                <li>🎃 Pumpkin Soup</li>
+                <li>🍎 Apple Pie</li>
+                <li>🥧 Butternut Squash Risotto</li>
+              </ul>
+            </div>
+          </div>
+          <a href="#" class="season-cta btn">Explore Autumn Recipes →</a>
+        </div>
+      </article>
+
+      <article class="season-card winter">
+        <div class="season-card-image">
+          <img src="/assets/bg-image/WINTER.png" alt="Winter" class="img-fluid">
+        </div>
+        <div class="season-card-content">
+          <div class="season-card-header">
+            <span class="season-emoji">❄️</span>
+            <h3 class="season-name">Winter</h3>
+          </div>
+          <div class="season-card-body">
+            <p class="season-months">December - February</p>
+            <p class="season-description">
+              Rich stews, roasted meats, and warming dishes to comfort through the cold.
+            </p>
+            <div class="season-highlights">
+              <h4>Featured Ingredients:</h4>
+              <div class="ingredient-tags">
+                <span class="tag badge">Kale</span>
+                <span class="tag badge">Citrus</span>
+                <span class="tag badge">Root Vegetables</span>
+                <span class="tag badge">Cabbage</span>
+                <span class="tag badge">Pomegranate</span>
+              </div>
+            </div>
+            <div class="recipe-preview">
+              <h4>Popular Recipes:</h4>
+              <ul class="recipe-list list-unstyled">
+                <li>🍲 Beef Stew</li>
+                <li>🥬 Kale Soup</li>
+                <li>🍊 Citrus Salad</li>
+              </ul>
+            </div>
+          </div>
+          <a href="#" class="season-cta btn">Explore Winter Recipes →</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="seasonal-calendar">
+      <h2 class="section-title">Seasonal Harvest Calendar</h2>
+      <p class="section-subtitle">Your guide to what's fresh each month</p>
+      
+      <div class="calendar-grid row g-3">
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="month-card card h-100">
+            <div class="card-body">
+              <div class="month-header">January</div>
+              <div class="month-produce">
+                <span>🥬 Kale</span>
+                <span>🍊 Oranges</span>
+                <span>🥕 Carrots</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="month-card card h-100">
+            <div class="card-body">
+              <div class="month-header">February</div>
+              <div class="month-produce">
+                <span>🥦 Broccoli</span>
+                <span>🍋 Lemons</span>
+                <span>🧄 Garlic</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="month-card card h-100">
+            <div class="card-body">
+              <div class="month-header">March</div>
+              <div class="month-produce">
+                <span>🥬 Spinach</span>
+                <span>🌱 Herbs</span>
+                <span>🥕 Beets</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="month-card card h-100">
+            <div class="card-body">
+              <div class="month-header">April</div>
+              <div class="month-produce">
+                <span>🥒 Asparagus</span>
+                <span>🥬 Lettuce</span>
+                <span>🌿 Peas</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="month-card card h-100">
+            <div class="card-body">
+              <div class="month-header">May</div>
+              <div class="month-produce">
+                <span>🍓 Strawberries</span>
+                <span>🥒 Cucumbers</span>
+                <span>🌿 Mint</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="month-card card h-100">
+            <div class="card-body">
+              <div class="month-header">June</div>
+              <div class="month-produce">
+                <span>🍅 Tomatoes</span>
+                <span>🫐 Blueberries</span>
+                <span>🌽 Corn</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="month-card card h-100">
+            <div class="card-body">
+              <div class="month-header">July</div>
+              <div class="month-produce">
+                <span>🍑 Peaches</span>
+                <span>🥒 Zucchini</span>
+                <span>🌶️ Peppers</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="month-card card h-100">
+            <div class="card-body">
+              <div class="month-header">August</div>
+              <div class="month-produce">
+                <span>🍉 Watermelon</span>
+                <span>🍆 Eggplant</span>
+                <span>🌽 Corn</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="month-card card h-100">
+            <div class="card-body">
+              <div class="month-header">September</div>
+              <div class="month-produce">
+                <span>🍎 Apples</span>
+                <span>🎃 Pumpkin</span>
+                <span>🍇 Grapes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="month-card card h-100">
+            <div class="card-body">
+              <div class="month-header">October</div>
+              <div class="month-produce">
+                <span>🥔 Sweet Potato</span>
+                <span>🌰 Squash</span>
+                <span>🍐 Pears</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="month-card card h-100">
+            <div class="card-body">
+              <div class="month-header">November</div>
+              <div class="month-produce">
+                <span>🥕 Carrots</span>
+                <span>🍠 Yams</span>
+                <span>🥔 Potatoes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="month-card card h-100">
+            <div class="card-body">
+              <div class="month-header">December</div>
+              <div class="month-produce">
+                <span>🥬 Kale</span>
+                <span>🍊 Tangerines</span>
+                <span>🌰 Chestnuts</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-seasonal">
+      <h2 class="section-title">Why Eat Seasonally?</h2>
+      <div class="benefits-grid row g-4">
+        <div class="col-lg-3 col-md-6">
+          <div class="benefit-card card h-100">
+            <div class="card-body text-center">
+              <div class="benefit-icon">🌍</div>
+              <h3>Better for Environment</h3>
+              <p>Reduce carbon footprint by choosing locally grown, in-season produce</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="benefit-card card h-100">
+            <div class="card-body text-center">
+              <div class="benefit-icon">💰</div>
+              <h3>Save Money</h3>
+              <p>Seasonal ingredients are abundant and more affordable</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="benefit-card card h-100">
+            <div class="card-body text-center">
+              <div class="benefit-icon">😋</div>
+              <h3>Maximum Flavor</h3>
+              <p>Enjoy produce at its peak ripeness and tastiness</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="benefit-card card h-100">
+            <div class="card-body text-center">
+              <div class="benefit-icon">💪</div>
+              <h3>More Nutrients</h3>
+              <p>Fresh, seasonal food retains more vitamins and minerals</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+    <footer class="main-footer">
+    <h1 class="footer-title">Socials</h1>
+    <div class="socials-logo">
+      <a href="https://github.com/Dendroculus/Food-Recipe-Website"><img class="img-fluid" src="/assets/logo/Github.png" alt="Github" /></a>
+      <a href="https://www.instagram.com/"><img class="img-fluid" src="/assets/logo/Instagram.png" alt="Instagram" /></a>
+      <a href="https://www.facebook.com/"><img class="img-fluid Facebook" src="/assets/logo/Facebook.png" alt="Facebook" /></a>
+      <a href="https://twitter.com/"><img class="img-fluid" src="/assets/logo/X.png" alt="X" /></a>
+      <a href="https://www.linkedin.com/"><img class="img-fluid" src="/assets/logo/LinkedIn.jpg" alt="LinkedIn"></a>
+    </div>
+    <nav class="footer-policy-links">
+      <a href="#terms-modal">Terms of Use</a>
+      <a href="#privacy-modal">Privacy Policy</a>
+      <a href="#cookies-modal">Cookies</a>
+      <a href="#disclaimer-modal">Disclaimer</a>
+    </nav>
+    <p class="footer-note">© 2024 Celestial. All rights reserved.</p>
+  </footer>
+
+  <div id="terms-modal" class="modal">
+    <div class="modal-content">
+      <a href="#!" class="close">×</a>
+      <h2>Terms of Use</h2>
+      <p>This project is created for educational purposes only. All content, images, and code included are for study and demonstration.</p>
+      <p>Images used in this project are sourced randomly for learning purposes and are not intended for redistribution or commercial use.</p>
+      <p>The code is released under the MIT License. You are free to study, modify, and use it for personal learning or academic projects.</p>
+    </div>
+  </div>
+
+  <div id="privacy-modal" class="modal">
+    <div class="modal-content">
+      <a href="#!" class="close">×</a>
+      <h2>Privacy Policy</h2>
+      <p>No personal data is collected in this project. Any email inputs (e.g., in forms) are purely for demonstration and do not send or store real data.</p>
+      <p>This project is meant only to show functionality and interface design for learning purposes.</p>
+    </div>
+  </div>
+
+  <div id="cookies-modal" class="modal">
+    <div class="modal-content">
+      <a href="#!" class="close">×</a>
+      <h2>Cookies</h2>
+      <p>This project does not use cookies. Any references to cookies are for interface demonstration purposes only.</p>
+      <button class="accept btn">ACCEPT ALL</button>
+      <button class="reject btn">REJECT ALL</button>
+      <a href="#customize-modal" class="customize btn">CUSTOMIZE COOKIES</a>
+    </div>
+  </div>
+
+  <div id="customize-modal" class="modal">
+    <div class="modal-content cookie-modal">
+      <a href="#!" class="close" aria-label="Close">×</a>
+
+      <header class="cookie-header">
+        <h2>Manage Cookie Preferences</h2>
+        <p class="cookie-intro">
+          We use cookies and similar technologies to deliver, maintain, and improve our services, and to provide a personalised web experience.
+          You can review how this information is used and customise your preferences below. You may change your choices at any time as
+          described in our <a href="#privacy-modal">Privacy Policy</a>.
+        </p>
+        <nav class="cookie-actions-top">
+          <a href="#!" class="ghost-action">Reject all</a>
+          <a href="#!" class="ghost-action">Accept all</a>
+        </nav>
+      </header>
+
+      <div class="cookie-body">
+        <section class="cookie-group">
+          <details open>
+            <summary>
+              <div class="sum-text">
+                <div class="title">Essential cookies</div>
+                <div class="desc">Required for the website to function. This includes security, network management, and accessibility.</div>
+              </div>
+              <span class="badge locked">Required</span>
+            </summary>
+            <ul class="list">
+              <li>Load balancing and session management</li>
+              <li>Fraud prevention and security</li>
+              <li>Basic preferences like language</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>
+              <div class="sum-text">
+                <div class="title">Analytics cookies</div>
+                <div class="desc">Help us understand site usage so we can improve recipes and features.</div>
+              </div>
+              <label class="switch" aria-label="Toggle analytics cookies">
+                <input type="checkbox" />
+                <span class="track"></span>
+                <span class="switch-text" aria-hidden="true"></span>
+              </label>
+            </summary>
+            <ul class="list">
+              <li>Aggregate traffic insights (pages visited, time on page)</li>
+              <li>Error tracking to fix broken pages</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>
+              <div class="sum-text">
+                <div class="title">Preference cookies</div>
+                <div class="desc">Remember your choices like theme, language, or favourite recipes.</div>
+              </div>
+              <label class="switch" aria-label="Toggle preference cookies">
+                <input type="checkbox" checked />
+                <span class="track"></span>
+                <span class="switch-text" aria-hidden="true"></span>
+              </label>
+            </summary>
+            <ul class="list">
+              <li>Stores display preferences (e.g., dark mode)</li>
+              <li>Keeps items saved to your recipe list</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>
+              <div class="sum-text">
+                <div class="title">Marketing cookies</div>
+                <div class="desc">Used to show you relevant content and offers based on your interests.</div>
+              </div>
+              <label class="switch" aria-label="Toggle marketing cookies">
+                <input type="checkbox" />
+                <span class="track"></span>
+                <span class="switch-text" aria-hidden="true"></span>
+              </label>
+            </summary>
+            <ul class="list">
+              <li>Limits how often you see the same promo</li>
+              <li>Measures campaign performance</li>
+            </ul>
+          </details>
+
+          <details>
+            <summary>
+              <div class="sum-text">
+                <div class="title">Precise geolocation data, and identification through device scanning</div>
+                <div class="desc">Allow us to use accurate location and device signals to deliver localised content.</div>
+              </div>
+              <label class="switch" aria-label="Toggle precise geolocation">
+                <input type="checkbox" />
+                <span class="track"></span>
+                <span class="switch-text" aria-hidden="true"></span>
+              </label>
+            </summary>
+            <ul class="list">
+              <li>Use exact location to tailor nearby seasonal ingredients</li>
+              <li>Identify device characteristics for fraud prevention</li>
+            </ul>
+          </details>
+        </section>
+
+        <a href="#!" class="partners-link">Partners</a>
+      </div>
+
+      <footer class="cookie-footer">
+        <small class="legal">
+          You can update your choices at any time. See our <a href="#privacy-modal">Privacy Policy</a> and <a href="#cookies-modal">Cookies</a>.
+        </small>
+        <a href="#!" class="btn-cta">Save &amp; Exit</a>
+      </footer>
+    </div>
+  </div>
+
+  <div id="disclaimer-modal" class="modal">
+    <div class="modal-content">
+      <a href="#!" class="close">×</a>
+      <h2>Disclaimer</h2>
+      <p>This website and its cookie settings are for educational purposes only as part of a school project. No actual data is collected or stored.</p>
+      <p>Some images used in this project are sourced from Google Images and are for educational and demonstration purposes only.
+      All rights belong to their respective owners</p>
+    </div>
+  </div>
+
+</body>
+</html>
