@@ -259,6 +259,10 @@ main {
     background: #f4fdff;
 }
 
+.recipe-menu > div:active {
+    color: #41d8d8;
+}
+
 .recipe-menu img {
   width: 8rem;
   height: 5rem;
@@ -876,10 +880,14 @@ main {
     color: #007A70;
     text-decoration: underline;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     display: block;
     margin-bottom: 0.5rem;
     transition: color 0.2s ease;
+}
+
+:is(.card a:hover, .card a:active) {
+    color: #35c5ad;
 }
 
 .card p {
