@@ -663,11 +663,11 @@ main h1 {
     left: 1rem;
     right: 1rem;
     z-index: 900;
-    margin: 0;
+    margin: 1.5rem 0;
   }
 
   .shop-main {
-    padding-top: calc(var(--nav-mobile-h) + 4.5rem);
+    padding-top: calc(var(--nav-mobile-h) + 5.5rem);
   }
 
   .product .card-img-top { height: 140px; }
@@ -675,6 +675,7 @@ main h1 {
 }
 
 @media (max-width: 960px) {
+
   .product .card-body {height: auto;}
   #card-desc {
     display: flex;
@@ -698,6 +699,14 @@ main h1 {
     right: 7.25rem;  
     transform: none;
     text-align: center;
+  }
+}
+
+@media (max-width: 540px) {
+  #card-desc {
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
   }
 }
 
