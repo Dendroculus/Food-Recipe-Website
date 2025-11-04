@@ -96,6 +96,14 @@ main {
     background-color: #e9e8e8;
 }
 
+.other img:hover {
+  filter: brightness(0) saturate(200%) invert(48%) sepia(94%) hue-rotate(120deg);
+}
+
+.other #home img:hover {
+  filter: brightness(0) saturate(200%) invert(48%) sepia(94%) hue-rotate(120deg);
+}
+
 .celestial-logo {
   flex-shrink: 0;
   min-width: 0;
