@@ -76,6 +76,7 @@ body {
 }
 
 .celestial {
+  position: relative;
   animation: float 3s ease-in-out infinite;
 }
 
@@ -118,7 +119,11 @@ body {
   opacity: 0;
   transform: translateY(0.375rem);
   transition: opacity 0.16s ease, transform 0.16s ease;
-  background: #fff;
+  background: linear-gradient(180deg, rgba(255,255,255,0.75), rgba(255,255,255,0.5));
+  backdrop-filter: blur(8px) saturate(120%);
+  -webkit-backdrop-filter: blur(8px) saturate(120%);
+  border: 1px solid rgba(255,255,255,0.35);
+  box-shadow: 0 0.875rem 2.25rem rgba(0,0,0,0.06);
   min-width: 20rem;
   padding: 0.75rem 0 0 0;
   border-radius: 0.75rem;
@@ -127,6 +132,7 @@ body {
   z-index: 1;
   list-style: none;
 }
+
 .dropdown-container:hover .navtop-dropdown {
   opacity: 1;
   transform: translateY(0);
