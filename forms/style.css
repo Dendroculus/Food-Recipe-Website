@@ -355,6 +355,11 @@ body{
   .overlay-panel h2 {
     font-size: clamp(1.3rem, 1.5vw, 1.8rem);
   }
+
+  #footer_signup label {
+    display: block;
+    margin-left: .75rem;
+}
 }
 
 @media (max-width: 900px) and (min-width: 601px) {
@@ -382,6 +387,7 @@ body{
   #footer label {
     margin-right: 4rem;
   }
+
 }
 
 @media (max-width: 768px) and (min-width: 481px) {
