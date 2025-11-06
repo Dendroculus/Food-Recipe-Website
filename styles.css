@@ -1463,3 +1463,247 @@ body {
     padding: 7rem 5rem 1rem;
   }
 }
+
+
+@media only screen 
+  and (min-width: 810px) 
+  and (max-width: 1112px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+  
+  .navtop > ul {
+    padding: 1.2rem 2.5rem 0.8rem 2.5rem;
+    gap: 2rem;
+  }
+
+  .nav-left {
+    gap: 2rem;
+  }
+
+  .navtop a {
+    font-size: 0.8rem;
+  }
+
+  .celestial a {
+    font-size: 1.7rem;
+  }
+
+  .navtop-dropdown {
+    min-width: 17rem;
+  }
+
+  .navtop-dropdown li a {
+    grid-template-columns: 6rem auto;
+    font-size: 0.82rem;
+  }
+
+  .navtop-dropdown li a img {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .hero-search-container {
+    padding: 8.5rem 5rem 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-text-and-desc {
+    max-width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .herodesc {
+    font-size: 1.1rem;
+    text-align: center;
+    max-width: 90%;
+    margin: 0.5rem auto;
+  }
+
+  .more {
+    justify-content: center;
+    gap: 1.2rem;
+  }
+
+  .site-search {
+    width: 100%;
+    max-width: 650px;
+  }
+
+  .site-search .search {
+    margin: 2.5rem auto;
+    height: 3.75rem;
+  }
+
+  .site-search .search input {
+    font-size: 1.05rem;
+  }
+
+  .today-picks {
+    margin: 2.5rem auto;
+    max-width: 95%;
+  }
+
+  .today-picks h1 {
+    text-align: center;
+    font-size: 1.6rem;
+  }
+
+  .today-picks-fyp {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    justify-items: center;
+    max-width: 100%;
+  }
+
+  .fyp-image {
+    width: 100%;
+    max-width: 22rem;
+  }
+
+  .fyp-image img {
+    height: 10rem;
+  }
+
+  .quick-recipes {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .quick-recipes .input-group {
+    flex-direction: row;
+  }
+
+  .quick-recipes input {
+    font-size: 1rem;
+  }
+
+  .before-footer-features {
+    padding: 0 2.5rem;
+  }
+
+  .before-footer-features .section-title {
+    font-size: 1.8rem;
+  }
+
+  .feature-card .col-md-4 {
+    flex: 0 0 35%;
+    max-width: 35%;
+  }
+
+  .feature-card .col-md-8 {
+    flex: 0 0 65%;
+    max-width: 65%;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card-text {
+    font-size: 0.95rem;
+  }
+
+  .footer-title {
+    font-size: 2.8rem;
+  }
+
+  .socials-logo img {
+    width: 2.5rem;
+  }
+
+  .footer-policy-links {
+    gap: 2rem;
+  }
+}
+
+@media only screen 
+  and (min-width: 1080px) 
+  and (max-width: 1112px) 
+  and (orientation: landscape) {
+  
+  .today-picks-fyp {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+
+  .fyp-image {
+    max-width: 19rem;
+  }
+
+  .hero-search-container {
+    padding: 7.5rem 6rem 1rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .hero-text-and-desc {
+    max-width: 50%;
+  }
+
+  .hero h1 {
+    text-align: left;
+  }
+
+  .herodesc {
+    text-align: left;
+    margin: 0.5rem 0;
+  }
+
+  .site-search {
+    max-width: 400px;
+  }
+
+  .today-picks {
+    margin: 2rem 3rem;
+  }
+}
+
+@media only screen 
+  and (min-width: 810px) 
+  and (max-width: 834px) 
+  and (orientation: portrait) {
+  
+  .today-picks-fyp {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-search-container {
+    flex-direction: column;
+  }
+
+  .hero h1 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .herodesc {
+    text-align: center;
+  }
+
+  .more {
+    justify-content: center;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .navtop a,
+  .more .explore,
+  .more .subscribe,
+  .btn,
+  .fyp-image a {
+    min-height: 44px;
+    min-width: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .right img {
+    padding: 8px;
+  }
+}
