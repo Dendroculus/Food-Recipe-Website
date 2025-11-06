@@ -968,7 +968,7 @@ body {
     flex: 1;
     order: 2;
     position: absolute;
-    left: 31%;
+    left: 37%;
     transform: translateX(-50%);
     text-align: center;
   }
@@ -1136,5 +1136,15 @@ body {
   transform: translateY(-3px);
 }
 
-
+@media (min-width: 769px) and (max-width: 992px) {
+  .navtop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
   
+  .hero-search-container {
+    padding-top: 8rem; 
+  }
+}
