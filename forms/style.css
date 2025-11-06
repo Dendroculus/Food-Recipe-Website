@@ -42,7 +42,7 @@ html, body { margin: 0; padding: 0; height: 100vh; }
 
 body{
   font-family: 'Montserrat';
-  background: url(/assets/forms/background.png) no-repeat center/cover;
+  background: url(/assets/forms/background_upscayl_2x_upscayl-standard-4x.png) no-repeat center/cover;
   color: #111;
   line-height: 1.4;
   display:flex;
