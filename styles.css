@@ -1343,6 +1343,10 @@ body {
     max-width: 28rem;
   }
 
+  .hero {
+    margin-top: var(--nav-desktop-h);
+  }
+
   .hero h1 {
     font-size: 1.8rem;
   }
