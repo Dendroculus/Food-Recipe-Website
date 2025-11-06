@@ -49,7 +49,7 @@ body {
   padding-top: 140px;
   padding-bottom: 60px;
   text-align: center;
-    background-image:
+  background-image:
     linear-gradient(to bottom, rgba(255, 116, 24, 0.28) 0%, rgba(171, 91, 38, 0.18) 100%),
     linear-gradient(
       to bottom,
@@ -87,7 +87,7 @@ body {
 
 .main-title {
   font-family: 'Playwrite', sans-serif;
-  font-size: 4rem;
+  font-size: clamp(2rem, 6vw, 4rem);
   margin-bottom: 1rem;
   position: relative;
   z-index: 1;
@@ -117,7 +117,7 @@ main {
 }
 
 .category-title {
-  font-size: 2.5rem;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
   font-family: 'Playwrite', sans-serif;
   color: var(--color-heading);
   margin-bottom: 0.5rem;
@@ -126,17 +126,19 @@ main {
   justify-content: center;
   gap: 1rem;
   font-weight: 700;
+  flex-wrap: wrap;
 }
 
 .category-icon {
-  font-size: 2.5rem;
+  font-size: clamp(2rem, 4vw, 2.5rem);
 }
 
 .category-desc {
   color: var(--color-text-muted);
-  font-size: 1.1rem;
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
   max-width: 600px;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .tip-card {
@@ -148,6 +150,8 @@ main {
   position: relative;
   overflow: hidden;
   border-top: 4px solid transparent;
+  display: flex;
+  flex-direction: column;
 }
 
 .tip-card::before {
@@ -175,7 +179,7 @@ main {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 800;
   color: rgba(0, 122, 112, 0.1);
   font-family: 'Montserrat', sans-serif;
@@ -191,6 +195,7 @@ main {
   justify-content: center;
   margin-bottom: 1.5rem;
   transition: transform 0.3s ease;
+  flex-shrink: 0;
 }
 
 .tip-card:hover .tip-icon-wrapper {
@@ -204,7 +209,7 @@ main {
 }
 
 .tip-title {
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
   font-weight: 700;
   color: var(--color-heading);
   margin-bottom: 1rem;
@@ -216,6 +221,7 @@ main {
   line-height: 1.7;
   margin-bottom: 1.5rem;
   flex-grow: 1;
+  font-size: clamp(0.9rem, 2vw, 1rem);
 }
 
 .tip-meta {
@@ -224,13 +230,14 @@ main {
   align-items: center;
   flex-wrap: wrap;
   gap: 0.5rem;
+  margin-top: auto;
 }
 
 .badge-custom {
   display: inline-block;
   padding: 0.4rem 1rem;
   border-radius: 20px;
-  font-size: 0.85rem;
+  font-size: clamp(0.75rem, 1.5vw, 0.85rem);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -259,7 +266,7 @@ main {
 
 .difficulty {
   color: #f39c12;
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
   font-weight: 600;
 }
 
@@ -281,7 +288,7 @@ main {
   padding: 0.6rem 1.2rem;
   border-radius: 25px;
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: clamp(0.8rem, 1.5vw, 0.9rem);
   margin-bottom: 1.5rem;
   backdrop-filter: blur(10px);
 }
@@ -289,16 +296,17 @@ main {
 .secret-badge svg {
   width: 20px;
   height: 20px;
+  flex-shrink: 0;
 }
 
 .secret-title {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 4vw, 2rem);
   margin-bottom: 1rem;
   font-weight: 700;
 }
 
 .secret-description {
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 2vw, 1.1rem);
   line-height: 1.8;
   margin-bottom: 2rem;
   opacity: 0.95;
@@ -311,7 +319,7 @@ main {
 }
 
 .stat-item {
-  font-size: 0.95rem;
+  font-size: clamp(0.85rem, 1.5vw, 0.95rem);
 }
 
 .stat-item strong {
@@ -382,7 +390,7 @@ main {
 }
 
 .section-title {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 4vw, 2rem);
   font-family: 'Playwrite', sans-serif;
   color: var(--color-heading);
   font-weight: 700;
@@ -396,6 +404,8 @@ main {
   text-align: center;
   transition: all 0.3s ease;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .quick-tip:hover {
@@ -404,21 +414,22 @@ main {
 }
 
 .quick-icon {
-  font-size: 2.5rem;
+  font-size: clamp(2rem, 4vw, 2.5rem);
   margin-bottom: 1rem;
 }
 
 .quick-tip h4 {
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 2vw, 1.1rem);
   font-weight: 700;
   color: var(--color-heading);
   margin-bottom: 0.5rem;
 }
 
 .quick-tip p {
-  font-size: 0.9rem;
+  font-size: clamp(0.85rem, 1.5vw, 0.9rem);
   color: var(--color-text-muted);
   margin: 0;
+  flex-grow: 1;
 }
 
 .stellar-nav {
@@ -450,6 +461,12 @@ main {
   gap: 2rem;
 }
 
+.stellar-nav-left-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .stellar-nav-left {
   display: flex;
   gap: 2rem;
@@ -465,13 +482,14 @@ main {
   color: var(--color-brand);
   text-decoration: none;
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: clamp(0.8rem, 1.5vw, 0.9rem);
   letter-spacing: 0.08em;
   padding: 0.5rem 1rem;
   border-radius: 8px;
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
+  white-space: nowrap;
 }
 
 .stellar-link::before {
@@ -534,7 +552,7 @@ main {
   color: #007A70;
   text-decoration: none;
   font-weight: 700;
-  font-size: 0.85rem;
+  font-size: clamp(0.75rem, 1.5vw, 0.85rem);
   letter-spacing: 0.05em;
   transition: all 0.2s ease;
 }
@@ -554,6 +572,7 @@ main {
   border: 2px solid #00BFA5;
   box-shadow: 0 4px 12px rgba(0, 191, 165, 0.3);
   transition: transform 0.3s ease;
+  flex-shrink: 0;
 }
 
 .stellar-dropdown-menu a:hover img {
@@ -572,6 +591,7 @@ main {
   backdrop-filter: blur(10px);
   border: 2px solid rgba(255, 255, 255, 0.3);
   transition: all 0.3s ease;
+  justify-self: center;
 }
 
 .stellar-brand:hover {
@@ -582,16 +602,18 @@ main {
 
 .brand-text {
   font-family: 'Playwrite', sans-serif;
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
   font-weight: 700;
   color: var(--color-brand);
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   letter-spacing: 0.05em;
+  white-space: nowrap;
 }
 
 .brand-icon {
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
   animation: twinkle 2s ease-in-out infinite;
+  flex-shrink: 0;
 }
 
 @keyframes twinkle {
@@ -635,6 +657,7 @@ main {
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
   border: 2px solid rgba(0, 0, 0, 0.2);
+  flex-shrink: 0;
 }
 
 .stellar-icon-link:hover {
@@ -672,7 +695,7 @@ main {
 .stellar-menu-btn span {
   width: 25px;
   height: 3px;
-  background: white;
+  background: var(--color-brand);
   border-radius: 2px;
   transition: all 0.3s ease;
 }
@@ -681,70 +704,92 @@ main {
   background: rgba(255, 255, 255, 0.25);
 }
 
-@media (max-width: 992px) {
-  .stellar-hero {
-    padding-top: 120px;
-    padding-bottom: 40px;
-  }
-  
-  .category-title {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  
-  .chef-secret-card {
-    padding: 2rem;
-  }
-  
-  .secret-illustration {
-    width: 150px;
-    height: 150px;
+.toggle-label { display: none; }           
+.desktop-trigger { display: inline-block; } 
+.stellar-submenu-toggle { display: none; }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .stellar-nav-container {
+    padding: 0.85rem 1.5rem 0.3rem;
+    gap: 1.5rem;
   }
 
-  .stellar-nav-container {
-    grid-template-columns: auto 1fr auto;
-    padding: 1rem 1.5rem;
+  .stellar-nav-left {
+    gap: 1.5rem;
+  }
+
+  .stellar-link {
+    padding: 0.45rem 0.85rem;
   }
 
   .stellar-brand {
-    justify-self: center;
+    padding: 0.65rem 1.25rem;
   }
 
-  .brand-text {
-    font-size: 1.25rem;
+  .stellar-icon-link {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .stellar-icon-link img {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  .stellar-hero {
+    padding-top: 130px;
+    padding-bottom: 50px;
+  }
+
+  .tips-category {
+    margin-bottom: 3.5rem;
   }
 }
 
-.toggle-label { display: none; }           
-.desktop-trigger { display: inline-block; } 
-.stellar-submenu-toggle { display: none; } 
-
-@media (max-width: 768px) {
-  .stellar-hero {
-    padding-top: 100px;
-  }
-  
-  .tip-card {
-    padding: 1.5rem;
-  }
-  
-  .tip-number {
-    font-size: 2rem;
-  }
-  
-  .chef-secret-card {
-    padding: 1.5rem;
-  }
-  
-  .secret-title {
-    font-size: 1.5rem;
-  }
-  
-  .secret-stats {
-    flex-direction: column;
+@media (max-width: 768px) and (min-width: 601px) {
+  .stellar-nav-container {
+    padding: 0.75rem 1.25rem;
     gap: 1rem;
   }
 
+  .stellar-hero {
+    padding-top: 120px;
+    padding-bottom: 45px;
+  }
+
+  .stellar-brand {
+    padding: 0.6rem 1.15rem;
+  }
+
+  .stellar-icon-link {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  .stellar-icon-link img {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  .tip-card {
+    padding: 1.75rem;
+  }
+
+  .chef-secret-card {
+    padding: 2.25rem;
+  }
+
+  .secret-illustration {
+    width: 160px;
+    height: 160px;
+  }
+
+  .quick-tips-section {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 600px) {
   .stellar-menu-btn {
     display: flex;
     z-index: 1002;
@@ -752,12 +797,23 @@ main {
   }
 
   .stellar-nav-container {
-    padding: 0.75rem 0.5rem;
-    gap: 1rem;
+    padding: 0.75rem 1rem;
+    gap: 0.75rem;
+    grid-template-columns: auto 1fr auto;
   }
 
   .stellar-nav-right {
-    gap: 0.5rem;
+    gap: 0.65rem;
+  }
+
+  .stellar-icon-link {
+    width: 2.35rem;
+    height: 2.35rem;
+  }
+
+  .stellar-icon-link img {
+    width: 1.15rem;
+    height: 1.15rem;
   }
 
   .stellar-nav-left {
@@ -785,10 +841,6 @@ main {
   .stellar-link {
     font-size: 1rem;
     color: white;
-  }
-
-  .main-title {
-    margin-top: 1.25rem;
   }
 
   .stellar-menu-toggle:checked ~ .stellar-nav-container .stellar-nav-left {
@@ -844,10 +896,6 @@ main {
     border-radius: 8px;
   }
 
-  .stellar-menu-btn span {
-    background: var(--color-brand); 
-  }
-
   .stellar-dropdown:hover .stellar-dropdown-menu,
   .stellar-dropdown:focus-within .stellar-dropdown-menu {
     opacity: 0;
@@ -863,11 +911,10 @@ main {
     margin-top: 0.5rem;
   }
 
-   .stellar-brand {
-    padding: 0.4rem 0.9rem; 
-    max-width: 153px;
-    gap: 0.05rem;
-    white-space: nowrap;   
+  .stellar-brand {
+    padding: 0.5rem 1rem;
+    gap: 0.35rem;
+    white-space: nowrap;
   }
 
   .stellar-dropdown-menu a {
@@ -880,44 +927,386 @@ main {
     padding-left: 1rem;
   }
 
-  .brand-text {
-    font-size: 0.95rem;
-    white-space: nowrap;
-    margin-left: 0rem;
+  .stellar-hero {
+    padding-top: 110px;
+    padding-bottom: 40px;
   }
 
-  .brand-icon {
-    font-size: 1.2rem;
-    flex-shrink: 0;
+  .tip-card {
+    padding: 1.65rem;
+  }
+
+  .chef-secret-card {
+    padding: 2rem;
+  }
+
+  .secret-illustration {
+    width: 140px;
+    height: 140px;
+  }
+
+  .orbit-ring:nth-child(1) {
+    width: 120px;
+    height: 120px;
+  }
+
+  .orbit-ring.ring-2 {
+    width: 80px;
+    height: 80px;
+  }
+
+  .orbit-ring.ring-3 {
+    width: 40px;
+    height: 40px;
+  }
+
+  .central-star {
+    font-size: 2.5rem;
+  }
+
+  .category-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .tips-category {
+    margin-bottom: 3rem;
   }
 }
 
-@media (max-width: 480px) {
-  main {
-    padding: 1rem 0.5rem;
-  }
-  
-  .category-header {
-    margin-bottom: 2rem;
-  }
-  
-  .tip-card {
-    padding: 1.25rem;
-  }
-  
-  .chef-secret-card {
-    padding: 1.25rem;
+@media (max-width: 480px) and (min-width: 421px) {
+  .stellar-nav-container {
+    padding: 0.7rem 0.85rem;
+    gap: 0.6rem;
   }
 
-  .brand-text {
-    font-size: 0.95rem;
+  .stellar-nav-right {
+    gap: 0.55rem;
   }
 
-  .brand-icon {
-    font-size: 1rem;
+  .stellar-icon-link {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+
+  .stellar-icon-link img {
+    width: 1.1rem;
+    height: 1.1rem;
   }
 
   .stellar-brand {
+    padding: 0.45rem 0.9rem;
+    gap: 0.3rem;
+  }
+
+  .stellar-hero {
+    padding-top: 105px;
+    padding-bottom: 35px;
+  }
+
+  main {
+    padding: 1.5rem 0.85rem;
+  }
+
+  .tip-card {
+    padding: 1.5rem;
+  }
+
+  .chef-secret-card {
+    padding: 1.75rem;
+  }
+
+  .secret-illustration {
+    width: 130px;
+    height: 130px;
+  }
+
+  .orbit-ring:nth-child(1) {
+    width: 110px;
+    height: 110px;
+  }
+
+  .orbit-ring.ring-2 {
+    width: 70px;
+    height: 70px;
+  }
+
+  .orbit-ring.ring-3 {
+    width: 35px;
+    height: 35px;
+  }
+
+  .central-star {
+    font-size: 2.25rem;
+  }
+
+  .category-header {
+    margin-bottom: 2.25rem;
+  }
+
+  .tips-category {
+    margin-bottom: 2.75rem;
+  }
+
+  .quick-tips-section {
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (max-width: 420px) and (min-width: 361px) {
+  .stellar-nav-container {
+    padding: 0.65rem 0.75rem;
+    gap: 0.5rem;
+  }
+
+  .stellar-nav-right {
+    gap: 0.5rem;
+  }
+
+  .stellar-icon-link {
+    width: 2.15rem;
+    height: 2.15rem;
+  }
+
+  .stellar-icon-link img {
+    width: 1.05rem;
+    height: 1.05rem;
+  }
+
+  .stellar-brand {
+    padding: 0.4rem 0.8rem;
+    gap: 0.25rem;
+  }
+
+  .stellar-hero {
+    padding-top: 100px;
+    padding-bottom: 32px;
+  }
+
+  main {
+    padding: 1.35rem 0.75rem;
+  }
+
+  .tip-card {
+    padding: 1.35rem;
+  }
+
+  .tip-icon-wrapper {
+    width: 52px;
+    height: 52px;
+    margin-bottom: 1.25rem;
+  }
+
+  .tip-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .chef-secret-card {
+    padding: 1.5rem;
+  }
+
+  .secret-badge {
     padding: 0.5rem 1rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .secret-badge svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .secret-illustration {
+    width: 120px;
+    height: 120px;
+  }
+
+  .orbit-ring:nth-child(1) {
+    width: 100px;
+    height: 100px;
+  }
+
+  .orbit-ring.ring-2 {
+    width: 65px;
+    height: 65px;
+  }
+
+  .orbit-ring.ring-3 {
+    width: 32px;
+    height: 32px;
+  }
+
+  .central-star {
+    font-size: 2rem;
+  }
+
+  .secret-stats {
+    gap: 1.5rem;
+  }
+
+  .category-header {
+    margin-bottom: 2rem;
+  }
+
+  .tips-category {
+    margin-bottom: 2.5rem;
+  }
+
+  .quick-tips-section {
+    margin-bottom: 2.25rem;
+  }
+
+  .quick-tip {
+    padding: 1.25rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .stellar-nav-container {
+    padding: 0.6rem 0.65rem;
+    gap: 0.4rem;
+  }
+
+  .stellar-nav-right {
+    gap: 0.45rem;
+  }
+
+  .stellar-icon-link {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .stellar-icon-link img {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .stellar-menu-btn {
+    padding: 6px;
+    gap: 4px;
+  }
+
+  .stellar-menu-btn span {
+    width: 22px;
+    height: 2.5px;
+  }
+
+  .stellar-brand {
+    padding: 0.35rem 0.7rem;
+    gap: 0.2rem;
+  }
+
+  .stellar-nav-left {
+    top: 65px;
+    max-height: calc(100vh - 65px);
+    padding: 1.25rem 0.85rem;
+  }
+
+  .toggle-label {
+    padding: 0.85rem;
+  }
+
+  .stellar-dropdown-menu a {
+    padding: 0.85rem;
+    font-size: 0.85rem;
+  }
+
+  .stellar-dropdown-menu a img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .stellar-hero {
+    padding-top: 95px;
+    padding-bottom: 28px;
+  }
+
+  main {
+    padding: 1.2rem 0.65rem;
+  }
+
+  .tip-card {
+    padding: 1.2rem;
+  }
+
+  .tip-icon-wrapper {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 1.15rem;
+  }
+
+  .tip-icon {
+    width: 26px;
+    height: 26px;
+  }
+
+  .tip-description {
+    margin-bottom: 1.25rem;
+  }
+
+  .badge-custom {
+    padding: 0.35rem 0.85rem;
+  }
+
+  .chef-secret-card {
+    padding: 1.35rem;
+  }
+
+  .secret-badge {
+    padding: 0.45rem 0.9rem;
+    margin-bottom: 1.15rem;
+    font-size: 0.75rem;
+  }
+
+  .secret-badge svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .secret-description {
+    margin-bottom: 1.75rem;
+  }
+
+  .secret-illustration {
+    width: 110px;
+    height: 110px;
+  }
+
+  .orbit-ring:nth-child(1) {
+    width: 90px;
+    height: 90px;
+  }
+
+  .orbit-ring.ring-2 {
+    width: 60px;
+    height: 60px;
+  }
+
+  .orbit-ring.ring-3 {
+    width: 30px;
+    height: 30px;
+  }
+
+  .central-star {
+    font-size: 1.85rem;
+  }
+
+  .secret-stats {
+    gap: 1.25rem;
+  }
+
+  .category-header {
+    margin-bottom: 1.85rem;
+  }
+
+  .tips-category {
+    margin-bottom: 2.25rem;
+  }
+
+  .quick-tips-section {
+    margin-bottom: 2rem;
+  }
+
+  .quick-tip {
+    padding: 1.15rem;
   }
 }

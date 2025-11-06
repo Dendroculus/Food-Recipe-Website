@@ -83,12 +83,6 @@ main {
   background-position: center;
 }
 
-#home img {
-  width: 2rem;
-  height: 2rem;
-  padding-bottom: 0.1rem;
-}
-
 .head-title {
   text-align: center;
   font-size: 3rem;
