@@ -617,10 +617,10 @@ main h1 {
 
 .partners-link:hover { text-decoration: underline; }
 
-.h4 {
+.h3 {
   color: #007A70;
   font-family: 'Playwrite', serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 @media (max-width:576px){
@@ -641,6 +641,7 @@ main h1 {
 }
 
 @media (max-width: 768px) {
+
   .shop-main { 
     padding-top: calc(var(--nav-mobile-h) + 4.5rem);
     padding-left: 0.75rem !important;
@@ -694,8 +695,8 @@ main h1 {
     margin-bottom: 1rem;
   }
 
-  header .h4 {
-    font-size: 1.25rem;
+  header .h3 {
+    font-size: 2.5rem;
     margin-bottom: 0;
     width: 100%;
   }
@@ -751,21 +752,22 @@ main h1 {
   }
 
   .product-card .card-title {
-    font-size: 1.1rem;
+    font-size: 1.9rem;
   }
 
   .product-card .meta {
-    font-size: 0.85rem;
+    font-size: 1.2rem;
   }
 
   .btn-sm {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     padding: 0.4rem 0.6rem;
     min-height: 36px;
+    border-radius: 0.5rem;
   }
 
   #card-desc {
-    flex-direction: column !important;
+    font-size: 1.2rem;
     align-items: flex-start !important;
   }
 
@@ -776,7 +778,7 @@ main h1 {
 
   #card-desc .d-flex.gap-2 {
     width: 100%;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
 
   .modal-content {
@@ -838,6 +840,11 @@ main h1 {
 }
 
 @media (max-width: 480px) {
+
+  header .h3 {
+    font-size: 1.5rem;
+  }
+
   .shop-main {
     padding-top: calc(var(--nav-mobile-h) + 4.25rem);
     padding-left: 0.5rem !important;
@@ -866,10 +873,6 @@ main h1 {
 
   .site-search .search:focus-within button {
     left: calc(100% - 2.5rem);
-  }
-
-  header .h4 {
-    font-size: 1.1rem;
   }
 
   .filters {
@@ -922,9 +925,6 @@ main h1 {
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-  .shop-main {
-    padding-top: 7rem;
-  }
 
   .container {
     padding-left: 1.5rem;
