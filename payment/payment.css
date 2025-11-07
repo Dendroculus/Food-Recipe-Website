@@ -615,6 +615,10 @@ body {
   #shopping-modal .shop-contents p {
     font-size: 0.95rem;
   }
+
+  .payment-footer li {
+    font-size: 0.8rem;
+  }
 }
 
 
