@@ -1215,6 +1215,10 @@ body {
   .hero-search-container {
     padding-top: 8rem; 
   }
+  
+  .main-footer {
+    margin-top: 3.5rem;
+  }
 }
 
 
