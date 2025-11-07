@@ -396,9 +396,9 @@ main {
   transform: translateX(0.3125rem);
 }
 
-.why-seasonal {
+.why-seasonal .section-title {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 .benefit-card {
