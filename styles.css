@@ -704,12 +704,14 @@ body {
 }
 .modal-content .reject {
   background-color: #e9fffa;
+  width: 100%;
   color: #007a70;
   border: 1px solid rgba(0,0,0,0.06);
   border-radius: 2rem;
 }
 .modal-content .customize {
   background-color: #eaf7f4;
+  width: 100%;
   color: #007a70;
   border: 1px solid rgba(0,0,0,0.06);
   border-radius: 2rem;
@@ -863,6 +865,7 @@ body {
   font-weight: 800;
   letter-spacing: .04em;
   text-transform: uppercase;
+  text-wrap: nowrap;
   box-shadow: 0 10px 24px rgba(27,107,100,0.25);
 }
 .btn-cta:hover { background: #12544f; }
@@ -1287,7 +1290,7 @@ body {
 
   .btn-cta {
     padding: 0.65rem 0.85rem;
-    font-size: 0.85rem;
+    font-size: 0.85em;
   }
 
   .partners-link {
