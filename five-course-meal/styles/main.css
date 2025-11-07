@@ -906,7 +906,8 @@ main {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin: 3rem auto;
+    margin: 0 auto;
+    margin-top: 3rem;
     padding: 5rem 2rem;
     min-height: 2.5rem;
     width: 80%;
@@ -1690,7 +1691,8 @@ main {
     .more-recipes-section {
         padding: 1.5rem 0.8rem;
         max-height: 400px;
-        margin: 2.5rem auto;
+        margin: 0 auto;
+        margin-top: 3.5rem;
     }
     
     .more-recipes-section::before {
