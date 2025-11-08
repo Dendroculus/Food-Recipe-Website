@@ -116,6 +116,35 @@ body {
     animation-delay: 4.5s;
 }
 
+
+.bubble-9 {
+    width: 130px;
+    height: 130px;
+    left: 40%;
+    top: 40%;
+    animation-duration: 22s;
+    animation-delay: 6s;
+}
+
+.bubble-10 {
+    width: 50px;
+    height: 50px;
+    left: 25%;
+    top: 50%;
+    animation-duration: 13s;
+    animation-delay: 1.5s;
+}
+
+.bubble-11 {
+    width: 75px;
+    height: 75px;
+    left: 75%;
+    top: 85%;
+    animation-duration: 16s;
+    animation-delay: 3.5s;
+}
+
+
 @keyframes float {
     0%, 100% {
         transform: translate(0, 0) scale(1);
