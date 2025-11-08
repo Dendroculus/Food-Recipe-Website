@@ -226,6 +226,16 @@ main {
   font-weight: 600;
 }
 
+.contact-us-socials {
+  color: var(--color-brand);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-us-socials:hover {
+  text-decoration: underline;
+}
+
 .contact-section-box .contact-email-link:hover {
   text-decoration: underline;
 }
