@@ -131,7 +131,7 @@ h1 {
 .recipe-image {
     width: 30rem;
     height: 20rem;
-    border-radius: 2rem;
+    border-radius: 32px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
@@ -150,7 +150,7 @@ h1 {
 
 .recipe-info-card {
     background: #fff;
-    border-radius: 2rem;
+    border-radius: 32px;
     padding: 1.5rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     margin-bottom: 1.5rem;
@@ -221,7 +221,7 @@ h1 {
     height: 2rem;
     background: #00b3a1;
     color: #fff;
-    border-radius: 2rem;
+    border-radius: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -263,7 +263,7 @@ h1 {
 
 .info-box {
     background: #fff;
-    border-radius: 2rem;
+    border-radius: 32px;
     padding: 1.2rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
@@ -288,7 +288,7 @@ h1 {
 .tag {
     background: #b1fff7;
     padding: 0.3rem 0.9rem;
-    border-radius: 2rem;
+    border-radius: 32px;
     font-size: 0.9rem;
     color: #001f1c;
     cursor: pointer;
@@ -301,7 +301,7 @@ h1 {
     height: 0;
     margin: 1.25rem auto;
     overflow: hidden;
-    border-radius: 2rem;
+    border-radius: 32px;
 }
 
 .youtube-video-container iframe {
@@ -319,7 +319,7 @@ h1 {
     background: #007A70;
     color: #fff;
     border: none;
-    border-radius: 3rem;
+    border-radius: 48px;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;

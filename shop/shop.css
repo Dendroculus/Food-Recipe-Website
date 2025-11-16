@@ -47,7 +47,7 @@ main h1 {
   gap: 0.625rem;
   padding: 0 1rem;
   background: #e9e9e9;
-  border-radius: 1.375rem;
+  border-radius: 22px;
   box-shadow: 0 0.625rem 2rem rgba(0,0,0,0.08);
   transition: box-shadow 0.2s ease, filter 0.2s ease, transform 0.2s ease;
   z-index: 1;
@@ -108,7 +108,7 @@ main h1 {
 .filters label {
   cursor:pointer;
   padding:.35rem .6rem;
-  border-radius:.375rem;
+  border-radius:6px;
   border:1px solid rgba(0,0,0,.08);
   background:#fff;
   color:#212529;
@@ -156,7 +156,7 @@ main h1 {
 
 .product { display:block; }
 
-.product .card-img-top { height: var(--img-height); object-fit: cover; border-radius: 1.5rem 1.5rem 0 0;}
+.product .card-img-top { height: var(--img-height); object-fit: cover; border-radius: 24px 24px 0 0;}
 .product-card .card-body { display:flex; flex-direction:column; gap:0.5rem; }
 .product-card .meta { color: var(--muted); font-size:.9rem; }
 
@@ -181,7 +181,7 @@ main h1 {
 
 .product-card {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  border-radius: 1.5rem
+  border-radius: 24px;
 }
 
 .product-card:hover {
@@ -313,7 +313,7 @@ main h1 {
   background: #fff;
   color: #222;
   padding: 1.25rem;
-  border-radius: 0.75rem;
+  border-radius: 12px;
   width: 90%;
   max-width: 30rem;
   box-shadow: 0 20px 60px rgba(0,0,0,0.3);
@@ -326,7 +326,7 @@ main h1 {
   width: 100%;
   aspect-ratio: 16 / 9; 
   overflow: hidden;
-  border-radius: 0.5rem;
+  border-radius: 8px;
   margin-bottom: 1rem;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
@@ -379,19 +379,19 @@ main h1 {
   width: 100%;
   color: #fff;
   border: none;
-  border-radius: 2rem;
+  border-radius: 32px;
 }
 .modal-content .reject {
   background-color: #e9fffa;
   color: #007a70;
   border: 1px solid rgba(0,0,0,0.06);
-  border-radius: 2rem;
+  border-radius: 32px;
 }
 .modal-content .customize {
   background-color: #eaf7f4;
   color: #007a70;
   border: 1px solid rgba(0,0,0,0.06);
-  border-radius: 2rem;
+  border-radius: 32px;
 }
 
 .modal-content .accept:hover {
@@ -763,7 +763,7 @@ main h1 {
     font-size: 1.2rem;
     padding: 0.4rem 0.6rem;
     min-height: 36px;
-    border-radius: 0.5rem;
+    border-radius: 8px;
   }
 
   #card-desc {
