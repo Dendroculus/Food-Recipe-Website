@@ -415,7 +415,7 @@ main {
 .modal-content .reject,
 .modal-content .customize {
   margin-top: 0.25rem;
-  border-radius: 2rem;
+  border-radius: 32px;
 }
 
 .modal-content .accept {
