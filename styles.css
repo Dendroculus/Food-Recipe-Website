@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'Montserrat';
-  src: url('/fonts/Montserrat/static/Montserrat-Regular.ttf') format('woff2');
+  src: url('/fonts/Montserrat/static/Montserrat-Regular.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Playwrite';
-  src: url('/fonts/Playwrite_DE_SAS/static/PlaywriteDESAS-Regular.ttf') format('woff2');
+  src: url('/fonts/Playwrite_DE_SAS/static/PlaywriteDESAS-Regular.ttf') format('truetype');
   font-weight: bold;
 }
 
@@ -47,7 +47,7 @@ body {
   display: flex;
   align-items: center;
   padding: 1.5rem 2.5rem 0 2.5rem;
-  border-radius: 0 0 3 32px 32px;
+  border-radius: 0 0 32px 32px;
 }
 
 .navtop ul .left, .navtop ul .right {
