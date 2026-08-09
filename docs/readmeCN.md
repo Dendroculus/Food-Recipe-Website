@@ -52,7 +52,7 @@
 
 1.  **克隆仓库：**
     ```bash
-    git clone https://github.com/Dendroculus/Food-Recipe-Website.git
+    git clone https://github.com/Yoruxyv/Food-Recipe-Website.git
     ```
 2.  **进入项目目录：**
     ```bash
@@ -120,11 +120,11 @@ Food-Recipe-Website/
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/Dendroculus">
-        <img src="https://github.com/Dendroculus.png?size=100" width="100" height="100" alt="Hans 展豪" />
+      <a href="https://github.com/Yoruxyv">
+        <img src="https://github.com/Yoruxyv.png?size=100" width="100" height="100" alt="Hans 展豪" />
       </a>
       <br />
-      <a href="https://github.com/Dendroculus"><strong>Hans 展豪</strong></a>
+      <a href="https://github.com/Yoruxyv"><strong>Hans 展豪</strong></a>
     </td>
     <td align="center">
       <a href="https://github.com/Jess2Jes">

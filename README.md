@@ -43,7 +43,7 @@ Want to tinker with the code? Here’s how:
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/Dendroculus/Food-Recipe-Website.git](https://github.com/Dendroculus/Food-Recipe-Website.git)
+    git clone [https://github.com/Yoruxyv/Food-Recipe-Website.git](https://github.com/Yoruxyv/Food-Recipe-Website.git)
     ```
 2.  **Navigate to the project directory:**
     ```bash
@@ -106,11 +106,11 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/Dendroculus">
-        <img src="https://github.com/Dendroculus.png?size=100" width="100" height="100" alt="Hans 展豪" />
+      <a href="https://github.com/Yoruxyv">
+        <img src="https://github.com/Yoruxyv.png?size=100" width="100" height="100" alt="Hans 展豪" />
       </a>
       <br />
-      <a href="https://github.com/Dendroculus"><strong>Hans 展豪</strong></a>
+      <a href="https://github.com/Yoruxyv"><strong>Hans 展豪</strong></a>
     </td>
     <td align="center">
       <a href="https://github.com/Jess2Jes">
